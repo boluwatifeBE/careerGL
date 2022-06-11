@@ -1,9 +1,9 @@
-import Card from '@/components/Card';
-import CauseContent from '@/components/CourseContent';
+import config from 'config';
+import careerConfig from 'config/careers';
 import { Header } from '@/components/Form';
 import { PageSEO } from '@/components/SEO';
-import config from 'config';
 import { InferGetStaticPropsType } from 'next';
+import Career from '@/components/careers/CareerPage';
 
 const SLUG = 'programming';
 
@@ -28,20 +28,7 @@ export default function Go(
       />
       <div className='fade-in divide-y-2 divide-gray-100 dark:divide-gray-800'>
         <Header title={title} subtitle={description} />
-
-        <div className='container py-12'>
-          <div className='-m-4 flex flex-wrap'>
-            {config.careers.map(({ slug, title, description, banner }) => (
-              <Card
-                key={slug}
-                title={title}
-                description={description}
-                banner={banner}
-                href={`/careers/${slug}`}
-              />
-            ))}
-          </div>
-        </div>
+        <Career careermaps={careerConfig.programming}/>
       </div>
     </>
   );

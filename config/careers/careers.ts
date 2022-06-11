@@ -1,9 +1,3 @@
-export type CareerContent = {
-  name: string;
-  slug?: string;
-  description?: string;
-};
-
 export interface Career {
   title: string;
   slug: string;
