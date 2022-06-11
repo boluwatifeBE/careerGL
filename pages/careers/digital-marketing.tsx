@@ -1,33 +1,34 @@
-import CourseContent from '@/components/CourseContent';
+import config from 'config';
+import careerConfig from 'config/careers';
 import { Header } from '@/components/Form';
 import { PageSEO } from '@/components/SEO';
-import config from 'config';
 import { InferGetStaticPropsType } from 'next';
+import Career from '@/components/careers/CareerPage';
 
-const SLUG = 'come';
+const SLUG = 'digital-marketing';
 
 export function getStaticProps() {
-  const course = config.courses.find(course => course.slug === SLUG);
+  const career = config.careers.find(career => career.slug === SLUG);
 
-  return { props: { course } };
+  return { props: { career } };
 }
 
 export default function Go(
   props: InferGetStaticPropsType<typeof getStaticProps>,
 ): React.ReactElement {
-  const { course } = props;
-  const { title, description } = course;
+  const { career } = props;
+  const { title, description } = career;
 
   return (
     <>
       <PageSEO
         title={title}
         description={description}
-        imageUrl={`/static/courses/${SLUG}/banner.png`}
+        imageUrl={`/static/careers/${SLUG}/banner.png`}
       />
       <div className='fade-in divide-y-2 divide-gray-100 dark:divide-gray-800'>
         <Header title={title} subtitle={description} />
-        <CourseContent course={course} />
+        <Career careermaps={careerConfig.marketing}/>
       </div>
     </>
   );

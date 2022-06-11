@@ -1,6 +1,6 @@
 import { contact, Contact } from './contact';
 import { Course, courses } from './courses';
-import { Career, careers } from './careers';
+import { Career, careers } from './careers/careers';
 import { Project, projects } from './projects';
 
 interface Config {
