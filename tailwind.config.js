@@ -36,6 +36,22 @@ module.exports = {
         gray: colors.neutral,
         'placeholder-light': '#F0F0F0',
         'placeholder-dark': '#252525',
+        appColor: {
+          50: '#e5db01',
+          100: '#cbc201',
+          200: '#b2aa01',
+          300: '#989201',
+          400: '#7f7a01',
+          500: '#666100',
+          600: '#4c4900',
+          700: '#333100',
+          800: '#191800',
+          900: '#000000',
+        },
+      },
+      backgroundImage: {
+        'gradient-to-b':
+          'linear-gradient(to bottom,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);',
       },
       typography: theme => ({
         DEFAULT: {

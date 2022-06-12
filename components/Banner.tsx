@@ -14,22 +14,22 @@ function Banner(props: BannerProps): React.ReactElement {
   const [aboutColor] = useRandomColorPair();
 
   return (
-    <div className='fade-in  flex  flex-col justify-center px-6 py-10 dark:text-white lg:px-10'>
-      <h1 className='text-3xl font-bold dark:text-white lg:text-5xl'>
+    <div className='fade-in  flex  flex-col justify-center px-4 py-10 dark:text-white '>
+      <h1 className='text-2xl font-bold dark:text-white lg:text-3xl'>
         Hi there
       </h1>
-      <p className='my-2 text-lg lg:my-4 lg:text-2xl'>
+      <p className='text-md my-2 lg:my-4 lg:text-lg'>
         {siteMetadata.description}
       </p>
-      <p className='font-light lg:text-xl'>
+      <p className='text-md font-light lg:text-lg'>
         We also have a{' '}
         <Link
-          className='ml-2 mr-2 font-normal text-black'
+          className='text-md ml-2 mr-2 dark:text-white lg:text-lg'
           href={siteMetadata.youtube}
         >
           <RoughNotation
             show
-            type='highlight'
+            type='underline'
             animationDelay={250}
             animationDuration={2000}
             color={aboutColor}

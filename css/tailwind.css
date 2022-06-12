@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  /* body {
+    @apply bg-[#141414] text-white !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-red-600;
+  } */
+
+  header {
+    @apply sticky top-0 z-50 bg-[#fff]/50  transition-all dark:bg-gray-900/50;
+  }
+}
+
 .task-list-item::before {
   @apply hidden;
 }
