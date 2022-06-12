@@ -13,13 +13,13 @@ function Card({ title, description, banner, href }): React.ReactElement {
   );
 
   return (
-    <div className='md p-4 md:w-1/2' style={{ maxWidth: '544px' }}>
+    <div className='md p-3   ' style={{ maxWidth: '544px' }}>
       <div
         className={`${
           banner && 'h-full'
-        }  overflow-hidden rounded-md border-2 border-gray-100 border-opacity-60 dark:border-gray-800`}
+        }  overflow-hidden rounded-md border-2 border-gray-100 border-opacity-60 bg-gray-100 hover:bg-gray-50 dark:border-gray-800 dark:bg-gray-800 dark:hover:bg-gray-700 `}
       >
-        {banner  &&
+        {banner &&
           (href ? (
             <Link href={href} aria-label={`Link to ${title}`}>
               {image}
@@ -28,7 +28,7 @@ function Card({ title, description, banner, href }): React.ReactElement {
             image
           ))}
         <div className='p-6'>
-          <h2 className='mb-3 text-2xl font-bold leading-8 tracking-tight'>
+          <h2 className='mb-3 text-[21px] font-bold leading-8 tracking-tight text-gray-800 dark:text-gray-200'>
             {href ? (
               <Link href={href} aria-label={`Link to ${title}`}>
                 {title}
@@ -37,13 +37,13 @@ function Card({ title, description, banner, href }): React.ReactElement {
               title
             )}
           </h2>
-          <p className='prose mb-3 max-w-none text-gray-500 line-clamp-2 dark:text-gray-400'>
+          <p className='prose mb-3 max-w-none text-[14px] text-gray-500 line-clamp-2 dark:text-gray-400'>
             {description}
           </p>
           {href && (
             <Link
               href={href}
-              className='text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400'
+              className='text-[14px] font-medium leading-6 text-appColor-200 hover:text-appColor-50 dark:hover:text-appColor-50'
               aria-label={`Link to ${title}`}
             >
               Learn more &rarr;

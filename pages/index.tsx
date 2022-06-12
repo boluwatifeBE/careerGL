@@ -37,7 +37,7 @@ export default function Home({
       <div className='divide-y divide-gray-200 dark:divide-gray-700'>
         <Banner frontMatter={author} />
         <div className='container py-12'>
-          <div className='-m-4 flex flex-wrap'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3'>
             {config.careers.map(({ slug, title, description, banner }) => (
               <Card
                 key={slug}
