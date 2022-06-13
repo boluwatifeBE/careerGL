@@ -17,6 +17,6 @@ const config: Config = {
   careers,
 };
 
-export const POSTS_PER_PAGE = 8;
+export const POSTS_PER_PAGE = 3;
 
 export default config;
