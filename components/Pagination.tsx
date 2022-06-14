@@ -3,14 +3,11 @@ import Link from '@/components/Link';
 interface Props {
   totalPages: number;
   currentPage: number;
-  type?: 'blog';
+  // type?: 'blog';
+  type?: string;
 }
 
-export default function Pagination({
-  totalPages,
-  currentPage,
-  type = 'blog',
-}: Props) {
+export default function Pagination({ totalPages, currentPage, type }: Props) {
   const prevPage = currentPage - 1 > 0;
   const nextPage = currentPage + 1 <= totalPages;
 
