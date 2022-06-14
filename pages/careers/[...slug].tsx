@@ -1,92 +1,68 @@
-import Draft from '@/components/Draft';
-import { MDXLayoutRenderer } from '@/components/MDXComponents';
-import {
-  formatSlug,
-  getAllFilesFrontMatter,
-  getFileBySlug,
-  getFiles,
-} from '@/lib/mdx';
-import { GetStaticProps, InferGetStaticPropsType } from 'next';
-import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
-import { CourseFrontMatter } from 'types/CourseFrontMatter';
-import { Toc } from 'types/Toc';
+import { Header } from '@/components/Form';
+import { PageSEO } from '@/components/SEO';
+import config from 'config';
+import Career from '@/components/careers/CareerPage';
+import { CareerMapType, getAllCareers, getCareerById, getCareerByParentId } from 'config/careers/careerType';
+import { InferGetStaticPropsType } from 'next';
+import { careerConfig } from 'config/careers';
 
-const DEFAULT_LAYOUT = 'CourseLayout';
+// type CareerProps = {
+//   careermap: CareerMapType[];
+// };
+
+// type StaticPathItem = {
+//   params: {
+//     slug: string[];
+//   };
+// };
 
 export async function getStaticPaths() {
-  const courses = getFiles('courses');
+  const careers = getAllCareers();
+  const paths = careers.map((career) => ({
+    params: { slug: [career.parentId] },
+  }));
 
-  return {
-    paths: courses.map(course => ({
-      params: {
-        slug: formatSlug(course).split('/'),
-      },
-    })),
-    fallback: false,
-  };
+  // { fallback: false } means other routes should 404.
+  return { paths, fallback: false };
 }
 
-// @ts-ignore
-export const getStaticProps: GetStaticProps<{
-  course: { mdxSource: string; toc: Toc; frontMatter: CourseFrontMatter };
-  authorDetails: AuthorFrontMatter[];
-  prev?: { slug: string; title: string };
-  next?: { slug: string; title: string };
-}> = async ({ params }) => {
-  const slug = (params.slug as string[]).join('/');
-  const allCourses = await getAllFilesFrontMatter('courses');
-
-  const courseIndex = allCourses.findIndex(
-    course => formatSlug(course.slug) === slug,
-  );
-  const prev: { slug: string; title: string } =
-    allCourses[courseIndex + 1] || null;
-  const next: { slug: string; title: string } =
-    allCourses[courseIndex - 1] || null;
-  const course = await getFileBySlug<CourseFrontMatter>('courses', slug);
-  // @ts-ignore
-  const authorList = course.frontMatter.authors || ['default'];
-  const authorPromise = authorList.map(async author => {
-    const authorResults = await getFileBySlug<AuthorFrontMatter>('authors', [
-      author,
-    ]);
-    return authorResults.frontMatter;
-  });
-  const authorDetails = await Promise.all(authorPromise);
-
-  return {
-    props: {
-      course,
-      authorDetails,
-      prev,
-      next,
-    },
+type ContextType = {
+  params: {
+    slug: string;
   };
 };
 
-export default function Course({
-  course,
-  authorDetails,
-  prev,
-  next,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
-  const { mdxSource, toc, frontMatter } = course;
+export async function getStaticProps(context: ContextType) {
+  
+  const slug1: string = context?.params.slug.toString();
+  const career = config.careers.find(career => career.slug === slug1);
+
+  return {
+    props: {
+      slug: career,
+      slug1
+    },
+  };
+}
+
+export default function Careers(
+  props: InferGetStaticPropsType<typeof getStaticProps>,
+): React.ReactElement {
+  const { slug, slug1 } = props;
+  const { title, description } = slug;
+  const careerContents = getAllCareers().filter((careermap) => careermap.parentId === slug1);
 
   return (
     <>
-      {'draft' in frontMatter && frontMatter.draft !== true ? (
-        <MDXLayoutRenderer
-          layout={frontMatter.layout || DEFAULT_LAYOUT}
-          toc={toc}
-          mdxSource={mdxSource}
-          frontMatter={frontMatter}
-          authorDetails={authorDetails}
-          prev={prev}
-          next={next}
-        />
-      ) : (
-        <Draft />
-      )}
+      <PageSEO
+        title={title}
+        description={description}
+        imageUrl={`/static/careers/${slug1}/banner.png`}
+      />
+      <div className='fade-in divide-y-2 divide-gray-100 dark:divide-gray-800'>
+        <Header title={title} subtitle={description} />
+        <Career slug={slug1} careermaps={careerContents} />
+      </div>
     </>
   );
 }

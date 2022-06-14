@@ -15,7 +15,7 @@ interface CareerConfig {
   marketing: CareerMapType[];
 }
 
-const careerConfig: CareerConfig = {
+export const careerConfig: CareerConfig = {
   programming,
   marketing,
   graphics,
@@ -24,4 +24,18 @@ const careerConfig: CareerConfig = {
   teaching,
 };
 
-export default careerConfig;
+const careerMerge = [
+  ...careerConfig.programming, 
+  ...careerConfig.marketing,
+  ...careerConfig.graphics,
+  ...careerConfig.photography,
+  ...careerConfig.music,
+  ...careerConfig.teaching,
+].reduce((previous, current) => {
+  previous[current.id] ? [ ...previous[current.id].id, ...current.id ] : previous[current.id] = current;
+  return previous;
+}, {});
+
+export const output = Object.values(careerMerge);
+
+// export default careerConfig;

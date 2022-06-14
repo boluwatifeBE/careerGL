@@ -43,13 +43,14 @@ export const programming: CareerMapType[] =
       url: "https://twitter.com/kamranahmedse"
     },
     featured: true,
-    imageUrl: "/roadmaps/frontend.png",
+    imageUrl: "/careers/programming/frontend.png",
     jsonUrl: "/project/frontend.json",
-    resourcesPath: "/roadmaps/100-frontend/resources.md",
+    resourcesPath: "/careers/programming/100-frontend/resources.md",
     pdfUrl: "https://kamranahmedse.gumroad.com/l/frontend-roadmap",
-    contentPathsFilePath: "/roadmaps/100-frontend/content-paths.json",
+    contentPathsFilePath: "/careers/programming/100-frontend/content-paths.json",
     id: "frontend",
-    metaPath: "/roadmaps/100-frontend/meta.json",
+    parentId: "programming",
+    metaPath: "/careers/programming/100-frontend/meta.json",
     isUpcoming: false
   },
   {
@@ -88,17 +89,18 @@ export const programming: CareerMapType[] =
     featuredTitle: "Backend",
     featuredDescription: "Step by step guide to becoming a backend developer in 2022",
     featured: true,
-    imageUrl: "/roadmaps/backend.png",
+    imageUrl: "/careers/programming/backend.png",
     jsonUrl: "/project/backend.json",
-    resourcesPath: "/roadmaps/101-backend/resources.md",
+    resourcesPath: "/careers/programming/101-backend/resources.md",
     author: {
       name: "Kamran Ahmed",
       url: "https://twitter.com/kamranahmedse"
     },
     pdfUrl: "https://kamranahmedse.gumroad.com/l/backend-roadmap",
-    contentPathsFilePath: "/roadmaps/101-backend/content-paths.json",
+    contentPathsFilePath: "/careers/programming/101-backend/content-paths.json",
     id: "backend",
-    metaPath: "/roadmaps/101-backend/meta.json",
+    parentId: "programming",
+    metaPath: "/careers/programming/101-backend/meta.json",
     isUpcoming: false
   },
   {
@@ -131,9 +133,9 @@ export const programming: CareerMapType[] =
     featuredTitle: "DevOps",
     featuredDescription: "Step by step guide for DevOps or operations role in 2022",
     featured: true,
-    imageUrl: "/roadmaps/devops.png",
+    imageUrl: "/careers/programming/devops.png",
     jsonUrl: "/project/devops.json",
-    resourcesPath: "/roadmaps/102-devops/resources.md",
+    resourcesPath: "/careers/programming/102-devops/resources.md",
     versions: [
       "latest",
       "2018",
@@ -145,7 +147,8 @@ export const programming: CareerMapType[] =
     },
     pdfUrl: "https://kamranahmedse.gumroad.com/l/devops-roadmap",
     id: "devops",
-    metaPath: "/roadmaps/102-devops/meta.json",
+    parentId: "programming",
+    metaPath: "/careers/programming/102-devops/meta.json",
     isUpcoming: false
   },
   {
@@ -175,8 +178,8 @@ export const programming: CareerMapType[] =
     isTextHeavy: false,
     isCommunity: false,
     featured: true,
-    landingPath: "/roadmaps/103-react/landscape.md",
-    resourcesPath: "/roadmaps/103-react/resources.md",
+    landingPath: "/careers/programming/103-react/landscape.md",
+    resourcesPath: "/careers/programming/103-react/resources.md",
     jsonUrl: "/project/react.json",
     versions: [
       "latest",
@@ -189,7 +192,8 @@ export const programming: CareerMapType[] =
     },
     pdfUrl: "https://kamranahmedse.gumroad.com/l/react-roadmap",
     id: "react",
-    metaPath: "/roadmaps/103-react/meta.json",
+    parentId: "programming",
+    metaPath: "/careers/programming/103-react/meta.json",
     isUpcoming: false
   },
   {
@@ -218,8 +222,8 @@ export const programming: CareerMapType[] =
     isCommunity: false,
     featured: true,
     jsonUrl: "/project/angular.json",
-    landingPath: "/roadmaps/104-angular/landscape.md",
-    resourcesPath: "/roadmaps/104-angular/resources.md",
+    landingPath: "/careers/programming/104-angular/landscape.md",
+    resourcesPath: "/careers/programming/104-angular/resources.md",
     versions: [
       "latest",
       "2018",
@@ -231,7 +235,8 @@ export const programming: CareerMapType[] =
     },
     pdfUrl: "https://kamranahmedse.gumroad.com/l/angular-roadmap",
     id: "angular",
-    metaPath: "/roadmaps/104-angular/meta.json",
+    parentId: "programming",
+    metaPath: "/careers/programming/104-angular/meta.json",
     isUpcoming: false
   },
   {
@@ -260,8 +265,8 @@ export const programming: CareerMapType[] =
     isCommunity: false,
     featured: true,
     jsonUrl: "/project/android.json",
-    landingPath: "/roadmaps/105-android/landscape.md",
-    resourcesPath: "/roadmaps/105-android/resources.md",
+    landingPath: "/careers/programming/105-android/landscape.md",
+    resourcesPath: "/careers/programming/105-android/resources.md",
     versions: [
       "latest",
       "2018",
@@ -272,7 +277,8 @@ export const programming: CareerMapType[] =
       url: "https://twitter.com/kamranahmedse"
     },
     id: "android",
-    metaPath: "/roadmaps/105-android/meta.json",
+    parentId: "programming",
+    metaPath: "/careers/programming/105-android/meta.json",
     isUpcoming: false
   },
   {
@@ -301,8 +307,8 @@ export const programming: CareerMapType[] =
     isCommunity: false,
     featured: true,
     jsonUrl: "/project/python.json",
-    resourcesPath: "/roadmaps/106-python/resources.md",
-    landingPath: "/roadmaps/106-python/landscape.md",
+    resourcesPath: "/careers/programming/106-python/resources.md",
+    landingPath: "/careers/programming/106-python/landscape.md",
     pdfUrl: "https://kamranahmedse.gumroad.com/l/python-roadmap",
     versions: [
       "latest"
@@ -312,7 +318,8 @@ export const programming: CareerMapType[] =
       url: "https://twitter.com/kamranahmedse"
     },
     id: "python",
-    metaPath: "/roadmaps/106-python/meta.json",
+    parentId: "programming",
+    metaPath: "/careers/programming/106-python/meta.json",
     isUpcoming: false
   },
   {
@@ -352,8 +359,8 @@ export const programming: CareerMapType[] =
     isUpcoming: false,
     featured: true,
     jsonUrl: "/project/golang.json",
-    landingPath: "/roadmaps/107-golang/landscape.md",
-    resourcesPath: "/roadmaps/107-golang/resources.md",
+    landingPath: "/careers/programming/107-golang/landscape.md",
+    resourcesPath: "/careers/programming/107-golang/resources.md",
     pdfUrl: "https://kamranahmedse.gumroad.com/l/go-roadmap",
     versions: [
       "latest",
@@ -365,7 +372,8 @@ export const programming: CareerMapType[] =
       url: "https://twitter.com/kamranahmedse"
     },
     id: "golang",
-    metaPath: "/roadmaps/107-golang/meta.json"
+    parentId: "programming",
+    metaPath: "/careers/programming/107-golang/meta.json"
   },
   {
     seo: {
@@ -403,8 +411,8 @@ export const programming: CareerMapType[] =
     isUpcoming: false,
     featured: true,
     jsonUrl: "/project/java.json",
-    landingPath: "/roadmaps/108-java/landscape.md",
-    resourcesPath: "/roadmaps/108-java/resources.md",
+    landingPath: "/careers/programming/108-java/landscape.md",
+    resourcesPath: "/careers/programming/108-java/resources.md",
     versions: [
       "latest",
       "2018",
@@ -416,7 +424,8 @@ export const programming: CareerMapType[] =
     },
     pdfUrl: "https://kamranahmedse.gumroad.com/l/java-roadmap",
     id: "java",
-    metaPath: "/roadmaps/108-java/meta.json"
+    parentId: "programming",
+    metaPath: "/careers/programming/108-java/meta.json"
   },
   {
     seo: {
@@ -447,8 +456,8 @@ export const programming: CareerMapType[] =
     description: "Step by step guide to becoming a modern PostgreSQL DB Administrator in 2022",
     featuredTitle: "DBA",
     featuredDescription: "Step by step guide to become a PostgreSQL DBA in 2022",
-    landingPath: "/roadmaps/109-postgresql-dba/landscape.md",
-    resourcesPath: "/roadmaps/109-postgresql-dba/resources.md",
+    landingPath: "/careers/programming/109-postgresql-dba/landscape.md",
+    resourcesPath: "/careers/programming/109-postgresql-dba/resources.md",
     author: {
       name: "Alexey Lesovsky",
       url: "https://github.com/lesovsky"
@@ -459,7 +468,8 @@ export const programming: CareerMapType[] =
     detailed: false,
     versions: [],
     id: "postgresql-dba",
-    metaPath: "/roadmaps/109-postgresql-dba/meta.json",
+    parentId: "programming",
+    metaPath: "/careers/programming/109-postgresql-dba/meta.json",
     isUpcoming: false
   },
   {
@@ -486,8 +496,8 @@ export const programming: CareerMapType[] =
     isCommunity: false,
     isUpcoming: true,
     featured: true,
-    landingPath: "/roadmaps/110-aws/landscape.md",
-    resourcesPath: "/roadmaps/110-aws/resources.md",
+    landingPath: "/careers/programming/110-aws/landscape.md",
+    resourcesPath: "/careers/programming/110-aws/resources.md",
     versions: [
       "latest",
       "2018",
@@ -498,7 +508,8 @@ export const programming: CareerMapType[] =
       url: "https://twitter.com/kamranahmedse"
     },
     id: "aws",
-    metaPath: "/roadmaps/110-aws/meta.json"
+    parentId: "programming",
+    metaPath: "/careers/programming/110-aws/meta.json"
   },
   {
     seo: {
@@ -525,13 +536,14 @@ export const programming: CareerMapType[] =
     featuredDescription: "Step by step guide to becoming a modern QA Engineer in 2022",
     isUpcoming: true,
     featured: true,
-    landingPath: "/roadmaps/111-qa/landscape.md",
-    resourcesPath: "/roadmaps/111-qa/resources.md",
+    landingPath: "/careers/programming/111-qa/landscape.md",
+    resourcesPath: "/careers/programming/111-qa/resources.md",
     author: {
       name: "Anas Fitiani",
       url: "https://github.com/anas-qa"
     },
     id: "qa",
-    metaPath: "/roadmaps/111-qa/meta.json"
+    parentId: "programming",
+    metaPath: "/careers/programming/111-qa/meta.json"
   }
 ];

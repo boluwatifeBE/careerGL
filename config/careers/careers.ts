@@ -14,11 +14,11 @@ export const careers: Career[] = [
       'Master the fundamentals and advanced features of the programming languages',
   },
   {
-    title: 'Digital Marketing',
-    slug: 'digital-marketing',
+    title: 'Marketing',
+    slug: 'marketing',
     banner: '',
     description:
-      'Master the fundamentals and advanced features of the Digital Marketing career',
+      'Master the fundamentals and advanced features of the Marketing career',
   },
   {
     title: 'Graphics',
