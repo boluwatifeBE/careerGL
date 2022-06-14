@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-type RoadmapGridItemProps = {
+type CareermapGridItemProps = {
   title: string;
   subtitle: string;
   isCommunity?: boolean;
@@ -9,7 +9,7 @@ type RoadmapGridItemProps = {
   url: string;
 };
 
-export function CareermapItem(props: RoadmapGridItemProps) {
+export function CareermapItem(props: CareermapGridItemProps) {
   const {
     title,
     subtitle,
@@ -48,7 +48,6 @@ export function CareermapItem(props: RoadmapGridItemProps) {
         </div>
 
         {isUpcoming && (
-          // <div className='h-full w-full bg-gray-50 dark:bg-gray-900'>
           <div className=' absolute inset-y-0 inset-x-0 flex items-center justify-center bg-gray-500/75  dark:bg-gray-900/75'>
             <p className='z-10 rounded-xl bg-gray-200 py-2 px-[17px] font-bold drop-shadow-lg dark:bg-gray-600'>
               Upcoming

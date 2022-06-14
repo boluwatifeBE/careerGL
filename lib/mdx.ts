@@ -25,7 +25,7 @@ import rehypeSlug from 'rehype-slug';
 
 const root = process.cwd();
 
-export function getFiles(type: 'blog' | 'authors' | 'courses') {
+export function getFiles(type: 'blog' | 'authors' | 'courses' | 'careers') {
   const prefixPaths = path.join(root, 'data', type);
   const files = getAllFilesRecursively(prefixPaths);
   // Only want to return blog/path and ignore root, replace is needed to work on Windows
@@ -35,7 +35,7 @@ export function getFiles(type: 'blog' | 'authors' | 'courses') {
 }
 
 export function formatSlug(slug: string) {
-  return slug.replace(/\.(mdx|md)/, '');
+  return slug.replace(/\.(mdx|md|json)/, '');
 }
 
 export function dateSortDesc(a: string, b: string) {

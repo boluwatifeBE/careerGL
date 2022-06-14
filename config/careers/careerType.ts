@@ -1,3 +1,5 @@
+import { output } from 'config/careers';
+
 export type CareerMapType = {
     seo?: {
       title?: string;
@@ -25,5 +27,28 @@ export type CareerMapType = {
     isCommunity?: boolean;
     isUpcoming?: boolean;
     id?: string;
+    parentId?: string;
     pdfUrl?: string;
 };
+
+export function getCareerById(id: string): CareerMapType | undefined {
+  return (output as CareerMapType[]).find((careermap) => careermap.id === id);
+}
+
+export function getCareerByParentId(parentId: string): CareerMapType | undefined {
+  return (output as CareerMapType[]).find((careermap) => careermap.parentId === parentId);
+}
+
+export function getAllCareers(): CareerMapType[] {
+  return output as CareerMapType[];
+}
+
+export function getFeaturedCareers(): CareerMapType[] {
+  const careermaps: CareerMapType[] = getAllCareers();
+
+  return careermaps.filter((careermap) => careermap.featured);
+}
+
+export function isInteractiveCareer(id: string): boolean {
+  return ['frontend', 'backend'].includes(id);
+}

@@ -48,7 +48,8 @@ export const graphics: CareerMapType[] =
     resourcesPath: "/roadmaps/100-frontend/resources.md",
     pdfUrl: "https://kamranahmedse.gumroad.com/l/frontend-roadmap",
     contentPathsFilePath: "/roadmaps/100-frontend/content-paths.json",
-    id: "frontend",
+    id: "frontend2",
+    parentId: "graphics",
     metaPath: "/roadmaps/100-frontend/meta.json",
     isUpcoming: false
   },
@@ -97,7 +98,8 @@ export const graphics: CareerMapType[] =
     },
     pdfUrl: "https://kamranahmedse.gumroad.com/l/backend-roadmap",
     contentPathsFilePath: "/roadmaps/101-backend/content-paths.json",
-    id: "backend",
+    id: "backend2",
+    parentId: "graphics",
     metaPath: "/roadmaps/101-backend/meta.json",
     isUpcoming: false
   },
