@@ -1,29 +1,30 @@
+import config from 'config';
 import { Header } from '@/components/Form';
 import { PageSEO } from '@/components/SEO';
-import config from 'config';
-import Career from '@/components/careers/CareerPage';
-import { CareerMapType, getAllCareers, getCareerById, getCareerByParentId } from 'config/careers/careerType';
 import { InferGetStaticPropsType } from 'next';
-import { careerConfig } from 'config/careers';
+import Career from '@/components/careers/CareerPage';
+import { getAllCareers } from 'config/careers/careerType';
 
-// type CareerProps = {
-//   careermap: CareerMapType[];
-// };
-
-// type StaticPathItem = {
-//   params: {
-//     slug: string[];
-//   };
-// };
+type StaticPathItem = {
+  params: {
+    slug: string[];
+  };
+};
 
 export async function getStaticPaths() {
   const careers = getAllCareers();
-  const paths = careers.map((career) => ({
-    params: { slug: [career.parentId] },
-  }));
+  const paramsList: StaticPathItem[] = careers.flatMap((career) => {
+    return {
+      params: {
+        slug: [career.parentId]
+      },
+    };
+  });
 
-  // { fallback: false } means other routes should 404.
-  return { paths, fallback: false };
+  return {
+    paths: paramsList,
+    fallback: false,
+  };
 }
 
 type ContextType = {
@@ -33,35 +34,32 @@ type ContextType = {
 };
 
 export async function getStaticProps(context: ContextType) {
-  
-  const slug1: string = context?.params.slug.toString();
-  const career = config.careers.find(career => career.slug === slug1);
+  const slug: string = context?.params.slug.toString();
+  const career = config.careers.find(career => career.slug === slug);
 
   return {
-    props: {
-      slug: career,
-      slug1
-    },
+    props: { careerObject: career, slug },
   };
 }
 
-export default function Careers(
+export default function CareerSlug(
   props: InferGetStaticPropsType<typeof getStaticProps>,
 ): React.ReactElement {
-  const { slug, slug1 } = props;
-  const { title, description } = slug;
-  const careerContents = getAllCareers().filter((careermap) => careermap.parentId === slug1);
+  
+  const { careerObject, slug } = props;
+  const { title, description } = careerObject;
+  const careerContents = getAllCareers().filter((careermap) => careermap.parentId === slug);
 
   return (
     <>
       <PageSEO
         title={title}
         description={description}
-        imageUrl={`/static/careers/${slug1}/banner.png`}
+        imageUrl={`/static/careers/${slug}/banner.png`}
       />
       <div className='fade-in divide-y-2 divide-gray-100 dark:divide-gray-800'>
         <Header title={title} subtitle={description} />
-        <Career slug={slug1} careermaps={careerContents} />
+        <Career slug={slug} careermaps={careerContents} />
       </div>
     </>
   );

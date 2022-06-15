@@ -43,14 +43,14 @@ export const graphics: CareerMapType[] =
       url: "https://twitter.com/kamranahmedse"
     },
     featured: true,
-    imageUrl: "/roadmaps/frontend.png",
+    imageUrl: "/careers/frontend.png",
     jsonUrl: "/project/frontend.json",
-    resourcesPath: "/roadmaps/100-frontend/resources.md",
+    resourcesPath: "/careers/100-frontend/resources.md",
     pdfUrl: "https://kamranahmedse.gumroad.com/l/frontend-roadmap",
-    contentPathsFilePath: "/roadmaps/100-frontend/content-paths.json",
+    contentPathsFilePath: "/careers/graphics/100-frontend/content-paths.json",
     id: "frontend2",
     parentId: "graphics",
-    metaPath: "/roadmaps/100-frontend/meta.json",
+    metaPath: "/careers/100-frontend/meta.json",
     isUpcoming: false
   },
   {
@@ -89,18 +89,18 @@ export const graphics: CareerMapType[] =
     featuredTitle: "Backend",
     featuredDescription: "Step by step guide to becoming a backend developer in 2022",
     featured: true,
-    imageUrl: "/roadmaps/backend.png",
+    imageUrl: "/careers/backend.png",
     jsonUrl: "/project/backend.json",
-    resourcesPath: "/roadmaps/101-backend/resources.md",
+    resourcesPath: "/careers/101-backend/resources.md",
     author: {
       name: "Kamran Ahmed",
       url: "https://twitter.com/kamranahmedse"
     },
     pdfUrl: "https://kamranahmedse.gumroad.com/l/backend-roadmap",
-    contentPathsFilePath: "/roadmaps/101-backend/content-paths.json",
+    contentPathsFilePath: "/careers/graphics/101-backend/content-paths.json",
     id: "backend2",
     parentId: "graphics",
-    metaPath: "/roadmaps/101-backend/meta.json",
+    metaPath: "/careers/101-backend/meta.json",
     isUpcoming: false
   },
 ];
