@@ -43,14 +43,14 @@ export const teaching: CareerMapType[] =
       url: "https://twitter.com/kamranahmedse"
     },
     featured: true,
-    imageUrl: "/roadmaps/frontend.png",
+    imageUrl: "/careers/frontend.png",
     jsonUrl: "/project/frontend.json",
-    resourcesPath: "/roadmaps/100-frontend/resources.md",
+    resourcesPath: "/careers/100-frontend/resources.md",
     pdfUrl: "https://kamranahmedse.gumroad.com/l/frontend-roadmap",
-    contentPathsFilePath: "/roadmaps/100-frontend/content-paths.json",
+    contentPathsFilePath: "/careers/teaching/100-frontend/content-paths.json",
     id: "Mathematics",
     parentId: "teaching",
-    metaPath: "/roadmaps/100-frontend/meta.json",
+    metaPath: "/careers/100-frontend/meta.json",
     isUpcoming: false
   }
 ];
