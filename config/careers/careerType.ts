@@ -31,6 +31,15 @@ export type CareerMapType = {
     pdfUrl?: string;
 };
 
+export type CareerTreeType = {
+  name?: string;
+  path?: string;
+  children?: {
+      name?: string;
+      path?: string;
+  }[];
+}[];
+
 export function getCareerById(id: string): CareerMapType | undefined {
   return (output as CareerMapType[]).find((careermap) => careermap.id === id);
 }
