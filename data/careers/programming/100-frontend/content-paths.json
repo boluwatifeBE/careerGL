@@ -78,6 +78,12 @@
             "children": []
           },
           {
+            "name": "prettier",
+            "path": "/careers/programming/100-frontend/content/110-build-tools/102-linters-formatters/100-prettier.md",
+            "level": "grand-child",
+            "children": []
+          },
+          {
             "name": "eslint",
             "path": "/careers/programming/100-frontend/content/110-build-tools/102-linters-formatters/101-eslint.md",
             "level": "grand-child",
@@ -102,6 +108,7 @@
             "level": "grand-child",
             "children": []
           },
+
           {
             "name": "esbuild",
             "path": "/careers/programming/100-frontend/content/110-build-tools/101-module-bundlers/101-esbuild.md",

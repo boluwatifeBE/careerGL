@@ -184,6 +184,9 @@ module.exports = {
           },
         },
       }),
+      gridTemplateColumns: {
+        16: 'repeat(auto-fit, minmax(186px, 1fr))',
+      },
     },
   },
   plugins: [

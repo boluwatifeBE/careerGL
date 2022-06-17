@@ -4,7 +4,11 @@ import { Header } from '@/components/Form';
 import { PageSEO } from '@/components/SEO';
 import { InferGetStaticPropsType } from 'next';
 import CareerTree from '@/components/careers/CareerTree';
-import { CareerMapType, CareerTreeType, getAllCareers } from 'config/careers/careerType';
+import {
+  CareerMapType,
+  CareerTreeType,
+  getAllCareers,
+} from 'config/careers/careerType';
 
 type StaticPathItem = {
   params: {
@@ -15,8 +19,13 @@ type StaticPathItem = {
 
 const careermaps = getAllCareers();
 
-const readCareerContentsFilePath = (careermaps: CareerMapType[], pageId: string): CareerTreeType[] => {
-  const careerFilePath = careermaps.find(career => career.id === pageId).contentPathsFilePath;
+const readCareerContentsFilePath = (
+  careermaps: CareerMapType[],
+  pageId: string,
+): CareerTreeType[] => {
+  const careerFilePath = careermaps.find(
+    career => career.id === pageId,
+  ).contentPathsFilePath;
 
   if (!careerFilePath) {
     return null;
@@ -30,11 +39,11 @@ const readCareerContentsFilePath = (careermaps: CareerMapType[], pageId: string)
 };
 
 export async function getStaticPaths() {
-  const paramsList: StaticPathItem[] = careermaps.flatMap((career) => {
+  const paramsList: StaticPathItem[] = careermaps.flatMap(career => {
     return {
       params: {
         careermap: career.parentId,
-        page: career.id
+        page: career.id,
       },
     };
   });
@@ -71,16 +80,20 @@ export default function CareerSingle(
   props: InferGetStaticPropsType<typeof getStaticProps>,
 ): React.ReactElement {
   const { careermap, page, data } = props;
-  
+
   return (
     <>
-      <PageSEO
-        title={page}
-        description={page}
-      />
-      <div className='fade-in divide-y-2 divide-gray-100 dark:divide-gray-800'>
-        <Header title={page} subtitle={careermap} />
-        <CareerTree data={data} />
+      <PageSEO title={page} description={page} />
+      <div className='fade-in  divide-y-2 divide-gray-100 dark:divide-gray-800'>
+        <div className='flex justify-between mb-7 mt-5'>
+          <Header title={page} subtitle={careermap} />
+          <div className=' my-3 origin-bottom -rotate-6 rounded-2xl border-[4px] p-10 '>
+            Recommended box
+          </div>
+        </div>
+        <div className='pt-16'>
+          <CareerTree data={data} />
+        </div>
       </div>
     </>
   );
