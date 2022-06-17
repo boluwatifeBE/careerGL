@@ -1,5 +1,3 @@
-import fs from 'fs';
-import path from 'path';
 import { Header } from '@/components/Form';
 import { PageSEO } from '@/components/SEO';
 import { InferGetStaticPropsType } from 'next';
@@ -9,33 +7,35 @@ import {
   CareerTreeType,
   getAllCareers,
 } from 'config/careers/careerType';
+import { readCareerContentsFilePath } from '@/lib/mdx';
+
+type HeadContentProps = {
+  contents?: CareerMapType[];
+};
+
+const HeaderContent = (props: HeadContentProps) => {
+  const { contents } = props;
+
+  return (
+    <>
+      {
+        contents.map((content: CareerMapType) => (
+          <div key={content.title}>
+            <Header title={content.title} subtitle={content.description} />
+          </div>
+        ))
+      }
+    </>
+  );
+}
+
+const careermaps = getAllCareers();
 
 type StaticPathItem = {
   params: {
     careermap: string;
     page: string;
   };
-};
-
-const careermaps = getAllCareers();
-
-const readCareerContentsFilePath = (
-  careermaps: CareerMapType[],
-  pageId: string,
-): CareerTreeType[] => {
-  const careerFilePath = careermaps.find(
-    career => career.id === pageId,
-  ).contentPathsFilePath;
-
-  if (!careerFilePath) {
-    return null;
-  }
-
-  // Remove trailing slashes
-  const contentsPathsFilePath = careerFilePath.replace(/^\//, '');
-  const filePath = path.join(process.cwd(), 'data', contentsPathsFilePath);
-  const jsonData = fs.readFileSync(filePath, 'utf8');
-  return JSON.parse(jsonData);
 };
 
 export async function getStaticPaths() {
@@ -79,16 +79,22 @@ export async function getStaticProps(context: ContextType) {
 export default function CareerSingle(
   props: InferGetStaticPropsType<typeof getStaticProps>,
 ): React.ReactElement {
-  const { careermap, page, data } = props;
+  const { page, data } = props;
+  const careerContents = careermaps.filter((careermap) => careermap.id === page);
 
   return (
     <>
       <PageSEO title={page} description={page} />
       <div className='fade-in  divide-y-2 divide-gray-100 dark:divide-gray-800'>
         <div className='flex justify-between mb-7 mt-5'>
-          <Header title={page} subtitle={careermap} />
+          <HeaderContent contents={careerContents} />
           <div className=' my-3 origin-bottom -rotate-6 rounded-2xl border-[4px] p-10 '>
-            Recommended box
+            <ul>
+              <li>Personal Recommendation / Opinion</li>
+              <li>I wouldn't recommend</li>
+              <li>Order in roadmap not strict (Learn anytime)</li>
+              <li>Alternative Option - Pick this or purple</li>
+            </ul>
           </div>
         </div>
         <div className='pt-16'>

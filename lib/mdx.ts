@@ -22,6 +22,7 @@ import rehypeKatex from 'rehype-katex';
 import rehypePresetMinify from 'rehype-preset-minify';
 import rehypePrismPlus from 'rehype-prism-plus';
 import rehypeSlug from 'rehype-slug';
+import { CareerMapType, CareerTreeType } from 'config/careers/careerType';
 
 const root = process.cwd();
 
@@ -155,3 +156,27 @@ export async function getAllFilesFrontMatter(folder: 'blog' | 'courses') {
 
   return allFrontMatter.sort((a, b) => dateSortDesc(a.date, b.date));
 }
+
+export function readCareerContentsFilePath(
+  careermaps: CareerMapType[],
+  pageId: string,
+): CareerTreeType[] {
+  const careerFilePath = careermaps.find(
+    career => career.id === pageId,
+  ).contentPathsFilePath;
+
+  if (!careerFilePath) {
+    return null;
+  }
+
+  // Remove trailing slashes
+  const contentsPathsFilePath = careerFilePath.replace(/^\//, '');
+  const filePath = path.join(root, 'data', contentsPathsFilePath);
+
+  try {
+    const jsonData = fs.readFileSync(filePath, 'utf8');
+    return JSON.parse(jsonData);
+  } catch (error) {
+    return null
+  }
+};
