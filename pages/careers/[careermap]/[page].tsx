@@ -1,13 +1,13 @@
 import { Header } from '@/components/Form';
 import { PageSEO } from '@/components/SEO';
 import { InferGetStaticPropsType } from 'next';
-import CareerTree from '@/components/careers/CareerTree';
 import {
   CareerMapType,
   CareerTreeType,
   getAllCareers,
 } from 'config/careers/careerType';
 import { readCareerContentsFilePath } from '@/lib/mdx';
+import { CareerTreeRender } from '@/components/careers/CareerTreeRender';
 
 type HeadContentProps = {
   contents?: CareerMapType[];
@@ -21,6 +21,7 @@ const HeaderContent = (props: HeadContentProps) => {
       {
         contents.map((content: CareerMapType) => (
           <div key={content.title}>
+            <PageSEO title={content.seo.title} description={content.seo.description} />
             <Header title={content.title} subtitle={content.description} />
           </div>
         ))
@@ -84,7 +85,6 @@ export default function CareerSingle(
 
   return (
     <>
-      <PageSEO title={page} description={page} />
       <div className='fade-in  divide-y-2 divide-gray-100 dark:divide-gray-800'>
         <div className='flex justify-between mb-7 mt-5'>
           <HeaderContent contents={careerContents} />
@@ -98,7 +98,7 @@ export default function CareerSingle(
           </div>
         </div>
         <div className='pt-16'>
-          <CareerTree data={data} />
+          <CareerTreeRender data={data} />
         </div>
       </div>
     </>

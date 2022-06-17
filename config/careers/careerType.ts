@@ -40,7 +40,7 @@ export type CareerTreeType = {
       path?: string;
   }[];
   opinion?: string []
-}[];
+};
 
 export function getCareerById(id: string): CareerMapType | undefined {
   return (output as CareerMapType[]).find((careermap) => careermap.id === id);
