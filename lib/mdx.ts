@@ -22,11 +22,22 @@ import rehypeKatex from 'rehype-katex';
 import rehypePresetMinify from 'rehype-preset-minify';
 import rehypePrismPlus from 'rehype-prism-plus';
 import rehypeSlug from 'rehype-slug';
+//  Custom functions & types
 import { CareerMapType, CareerTreeType } from 'config/careers/careerType';
+import { removeFirstIndexFromArray } from '@/components/careers/RenderFunctions';
 
 const root = process.cwd();
 
 export function getFiles(type: 'blog' | 'authors' | 'courses' | 'careers') {
+  const prefixPaths = path.join(root, 'data', type);
+  const files = getAllFilesRecursively(prefixPaths);
+  // Only want to return blog/path and ignore root, replace is needed to work on Windows
+  return files.map(file =>
+    file.slice(prefixPaths.length + 1).replace(/\\/g, '/'),
+  );
+}
+
+export function getFileByPathString(type: string) {
   const prefixPaths = path.join(root, 'data', type);
   const files = getAllFilesRecursively(prefixPaths);
   // Only want to return blog/path and ignore root, replace is needed to work on Windows
@@ -46,7 +57,7 @@ export function dateSortDesc(a: string, b: string) {
 }
 
 export async function getFileBySlug<T>(
-  type: 'authors' | 'blog' | 'courses',
+  type: string,
   slug: string | string[],
 ) {
   const mdxPath = path.join(root, 'data', type, `${slug}.mdx`);
@@ -126,11 +137,9 @@ export async function getFileBySlug<T>(
   };
 }
 
-export async function getAllFilesFrontMatter(folder: 'blog' | 'courses') {
+export async function getAllFilesFrontMatter(folder: string) {
   const prefixPaths = path.join(root, 'data', folder);
-
   const files = getAllFilesRecursively(prefixPaths);
-
   const allFrontMatter: PostFrontMatter[] = [];
 
   files.forEach((file: string) => {
@@ -180,3 +189,43 @@ export function readCareerContentsFilePath(
     return null
   }
 };
+
+export const getContentPathString = (array): string => {
+  let contentStringArray;
+  array.map(path => {
+    const splitString = formatSlug(path).split('/');
+    const removeIndex = splitString.splice(1);
+    const getContentStringArray = removeIndex.slice(0, 4).join('/');
+    contentStringArray = getContentStringArray;
+  })
+  
+  if (contentStringArray === undefined) {
+    return '';
+  }
+  return contentStringArray;
+}
+
+export const getCareerContentByPath = (pathString) => {
+
+  if (!pathString.endsWith('.mdx') || !pathString.endsWith('.md')) return;
+
+  const pathsFilePath = pathString.replace(/^\//, '');
+  const fileContent = fs.readFileSync(
+      path.join(root, 'data', pathsFilePath),
+      'utf8'
+  );
+
+  const { data } = matter(fileContent);
+  return { data };
+};
+
+export const getSlugArray = (array): string => {
+  console.log(array);
+  
+  let arrayValue;
+  array.map(slug => {
+    arrayValue = formatSlug(slug).split('/');
+  })
+
+  return arrayValue;
+}

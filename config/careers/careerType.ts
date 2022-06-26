@@ -38,6 +38,7 @@ export type CareerTreeType = {
   children?: {
       name?: string;
       path?: string;
+      opinion?: string[];
   }[];
   opinion?: string []
 };
