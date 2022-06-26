@@ -1,10 +1,36 @@
-import fs from 'fs';
-import path from 'path';
 import { Header } from '@/components/Form';
 import { PageSEO } from '@/components/SEO';
 import { InferGetStaticPropsType } from 'next';
-import CareerTree from '@/components/careers/CareerTree';
-import { CareerMapType, CareerTreeType, getAllCareers } from 'config/careers/careerType';
+import {
+  CareerMapType,
+  CareerTreeType,
+  getAllCareers,
+} from 'config/careers/careerType';
+import { readCareerContentsFilePath } from '@/lib/mdx';
+import { CareerTreeRender } from '@/components/careers/CareerTreeRender';
+
+type HeadContentProps = {
+  contents?: CareerMapType[];
+};
+
+const HeaderContent = (props: HeadContentProps) => {
+  const { contents } = props;
+
+  return (
+    <>
+      {
+        contents.map((content: CareerMapType) => (
+          <div key={content.title}>
+            <PageSEO title={content.seo.title} description={content.seo.description} />
+            <Header title={content.title} subtitle={content.description} />
+          </div>
+        ))
+      }
+    </>
+  );
+}
+
+const careermaps = getAllCareers();
 
 type StaticPathItem = {
   params: {
@@ -13,28 +39,12 @@ type StaticPathItem = {
   };
 };
 
-const careermaps = getAllCareers();
-
-const readCareerContentsFilePath = (careermaps: CareerMapType[], pageId: string): CareerTreeType[] => {
-  const careerFilePath = careermaps.find(career => career.id === pageId).contentPathsFilePath;
-
-  if (!careerFilePath) {
-    return null;
-  }
-
-  // Remove trailing slashes
-  const contentsPathsFilePath = careerFilePath.replace(/^\//, '');
-  const filePath = path.join(process.cwd(), 'data', contentsPathsFilePath);
-  const jsonData = fs.readFileSync(filePath, 'utf8');
-  return JSON.parse(jsonData);
-};
-
 export async function getStaticPaths() {
-  const paramsList: StaticPathItem[] = careermaps.flatMap((career) => {
+  const paramsList: StaticPathItem[] = careermaps.flatMap(career => {
     return {
       params: {
         careermap: career.parentId,
-        page: career.id
+        page: career.id,
       },
     };
   });
@@ -70,17 +80,26 @@ export async function getStaticProps(context: ContextType) {
 export default function CareerSingle(
   props: InferGetStaticPropsType<typeof getStaticProps>,
 ): React.ReactElement {
-  const { careermap, page, data } = props;
-  
+  const { page, data } = props;
+  const careerContents = careermaps.filter((careermap) => careermap.id === page);
+
   return (
     <>
-      <PageSEO
-        title={page}
-        description={page}
-      />
-      <div className='fade-in divide-y-2 divide-gray-100 dark:divide-gray-800'>
-        <Header title={page} subtitle={careermap} />
-        <CareerTree data={data} />
+      <div className='fade-in  divide-y-2 divide-gray-100 dark:divide-gray-800'>
+        <div className='flex justify-between mb-7 mt-5'>
+          <HeaderContent contents={careerContents} />
+          <div className=' my-3 origin-bottom -rotate-6 rounded-2xl border-[4px] p-10 '>
+            <ul>
+              <li>Personal Recommendation / Opinion</li>
+              <li>I wouldn't recommend</li>
+              <li>Order in roadmap not strict (Learn anytime)</li>
+              <li>Alternative Option - Pick this or purple</li>
+            </ul>
+          </div>
+        </div>
+        <div className='pt-16'>
+          <CareerTreeRender data={data} />
+        </div>
       </div>
     </>
   );

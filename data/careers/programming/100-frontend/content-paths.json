@@ -3,12 +3,21 @@
     "name": "Home",
     "path": "/careers/programming/100-frontend/content/readme.md",
     "level": "parent",
+    "opinion": [
+      "personal",
+      "alternative",
+      "order",
+      "never"
+    ],
     "children": []
   },
   {
     "name": "Internet",
     "path": "/careers/programming/100-frontend/content/100-internet/readme.md",
     "level": "parent",
+    "opinion": [
+      "personal"
+    ],
     "children": [
       {
         "name": "How does the internet work",
@@ -52,16 +61,25 @@
     "name": "Build Tools",
     "path": "/careers/programming/100-frontend/content/110-build-tools/readme.md",
     "level": "parent",
+    "opinion": [
+      "personal"
+    ],
     "children": [
       {
         "name": "Task runners",
         "path": "/careers/programming/100-frontend/content/110-build-tools/100-task-runners/readme.md",
         "level": "child",
+        "opinion": [
+          "personal"
+        ],
         "children": [
           {
             "name": "npm scripts",
             "path": "/careers/programming/100-frontend/content/110-build-tools/100-task-runners/100-npm-scripts.md",
             "level": "grand-child",
+            "opinion": [
+              "personal"
+            ],
             "children": []
           }
         ]
