@@ -1,0 +1,189 @@
+[
+  {
+    "name": "Home",
+    "path": "/careers/programming/frontend/content/000-readme.md",
+    "level": "parent",
+    "parentId": "",
+    "grandParentId": "",
+    "opinion": [
+      "personal",
+      "alternative",
+      "order",
+      "never"
+    ],
+    "children": []
+  },
+  {
+    "name": "100-internet",
+    "path": "/careers/programming/frontend/content/100-internet/000-readme.md",
+    "level": "parent",
+    "parentId": "",
+    "grandParentId": "",
+    "opinion": ["personal"],
+    "children": [
+      {
+        "name": "How does the internet work",
+        "path": "/careers/programming/frontend/content/100-internet/100-how-does-the-internet-work.md",
+        "level": "child",
+        "parentId": "100-internet",
+        "grandParentId": "",
+        "children": []
+      },
+      {
+        "name": "what is http",
+        "path": "/careers/programming/frontend/content/100-internet/101-what-is-http.md",
+        "level": "child",
+        "parentId": "100-internet",
+        "grandParentId": "",
+        "children": []
+      },
+      {
+        "name": "Browsers and how they work",
+        "path": "/careers/programming/frontend/content/100-internet/102-browsers-and-how-they-work.md",
+        "level": "child",
+        "parentId": "100-internet",
+        "grandParentId": "",
+        "children": []
+      },
+      {
+        "name": "DNS and how it works",
+        "path": "/careers/programming/frontend/content/100-internet/103-dns-and-how-it-works.md",
+        "level": "child",
+        "parentId": "100-internet",
+        "grandParentId": "",
+        "children": []
+      },
+      {
+        "name": "What is domain name",
+        "path": "/careers/programming/frontend/content/100-internet/104-what-is-domain-name.md",
+        "level": "child",
+        "parentId": "100-internet",
+        "grandParentId": "",
+        "children": []
+      },
+      {
+        "name": "What is hosting",
+        "path": "/careers/programming/frontend/content/100-internet/105-what-is-hosting.md",
+        "level": "child",
+        "parentId": "100-internet",
+        "grandParentId": "",
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "Build Tools",
+    "path": "/careers/programming/frontend/content/110-build-tools/000-readme.md",
+    "level": "parent",
+    "parentId": "",
+    "grandParentId": "",
+    "opinion": [
+      "personal"
+    ],
+    "children": [
+      {
+        "name": "Task runners",
+        "path": "/careers/programming/frontend/content/110-build-tools/100-task-runners/000-readme.md",
+        "level": "child",
+        "parentId": "110-build-tools",
+        "grandParentId": "",
+        "opinion": [
+          "personal"
+        ],
+        "children": [
+          {
+            "name": "npm scripts",
+            "path": "/careers/programming/frontend/content/110-build-tools/100-task-runners/100-npm-scripts.md",
+            "level": "grand-child",
+            "parentId": "100-task-runners",
+            "grandParentId": "110-build-tools",
+            "opinion": [
+              "personal"
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Linters formatters",
+        "path": "/careers/programming/frontend/content/110-build-tools/102-linters-formatters/000-readme.md",
+        "level": "child",
+        "children": [
+          {
+            "name": "prettier",
+            "path": "/careers/programming/frontend/content/110-build-tools/102-linters-formatters/100-prettier.md",
+            "level": "grand-child",
+            "parentId": "102-linters-formatters",
+            "grandParentId": "110-build-tools",
+            "opinion": [],
+            "children": []
+          },
+          {
+            "name": "eslint",
+            "path": "/careers/programming/frontend/content/110-build-tools/102-linters-formatters/101-eslint.md",
+            "level": "grand-child",
+            "parentId": "102-linters-formatters",
+            "grandParentId": "110-build-tools",
+            "opinion": [],
+            "children": []
+          },
+          {
+            "name": "standardjs",
+            "path": "/careers/programming/frontend/content/110-build-tools/102-linters-formatters/102-standardjs.md",
+            "level": "grand-child",
+            "parentId": "102-linters-formatters",
+            "grandParentId": "110-build-tools",
+            "opinion": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Module Bundlers",
+        "path": "/careers/programming/frontend/content/110-build-tools/101-module-bundlers/000-readme.md",
+        "level": "child",
+        "children": [
+          {
+            "name": "webpack",
+            "path": "/careers/programming/frontend/content/110-build-tools/101-module-bundlers/100-webpack.md",
+            "level": "grand-child",
+            "parentId": "101-module-bundlers",
+            "grandParentId": "110-build-tools",
+            "opinion": [],
+            "children": []
+          },
+          {
+            "name": "esbuild",
+            "path": "/careers/programming/frontend/content/110-build-tools/101-module-bundlers/101-esbuild.md",
+            "level": "grand-child",
+            "parentId": "101-module-bundlers",
+            "grandParentId": "110-build-tools",
+            "opinion": [],
+            "children": []
+          },
+          {
+            "name": "rollup",
+            "path": "/careers/programming/frontend/content/110-build-tools/101-module-bundlers/102-rollup.md",
+            "level": "grand-child",
+            "parentId": "101-module-bundlers",
+            "children": []
+          },
+          {
+            "name": "parcel",
+            "path": "/careers/programming/frontend/content/110-build-tools/101-module-bundlers/103-parcel.md",
+            "level": "grand-child",
+                        "grandParentId": "110-build-tools",
+            "children": []
+          },
+          {
+            "name": "vite",
+            "path": "/careers/programming/frontend/content/110-build-tools/101-module-bundlers/104-vite.md",
+            "level": "grand-child",
+                        "opinion": [],
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]

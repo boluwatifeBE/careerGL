@@ -80,7 +80,7 @@ export async function getStaticProps(context: ContextType) {
 export default function CareerSingle(
   props: InferGetStaticPropsType<typeof getStaticProps>,
 ): React.ReactElement {
-  const { page, data } = props;
+  const { careermap, page, data } = props;
   const careerContents = careermaps.filter((careermap) => careermap.id === page);
 
   return (
@@ -98,7 +98,7 @@ export default function CareerSingle(
           </div>
         </div>
         <div className='pt-16'>
-          <CareerTreeRender data={data} />
+          <CareerTreeRender careermap={careermap} page={page} data={data} />
         </div>
       </div>
     </>

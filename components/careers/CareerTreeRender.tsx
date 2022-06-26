@@ -1,14 +1,16 @@
-import { CareerMapType, CareerTreeType } from 'config/careers/careerType';
-import React from 'react';
-import { ChildCard, ParentCard } from './includes/RenderFunctions';
+import ChildCard from './ChildCard';
+import ParentCard from './ParentCard';
+import { CareerTreeType } from 'config/careers/careerType';
 
 type CareerTreeRenderType = {
-    data: CareerTreeType[]
+    careermap: string,
+    page: string,
+    data: CareerTreeType[],
 }
 
 export const CareerTreeRender = (props: CareerTreeRenderType) => {
-    const { data } = props;
-
+    const { careermap, page, data } = props;
+    
     if (!data) {
         return null
     }
@@ -21,7 +23,7 @@ export const CareerTreeRender = (props: CareerTreeRenderType) => {
                         key={item.name}
                         className='rounded-xl border-[3px] border-gray-800 p-4  dark:border-gray-50'
                     >
-                        <ParentCard {...item} />
+                        <ParentCard careermap={careermap} page={page} {...item} />
                         {item.children.length > 0 && (
                             <div key={item.name} className={`mx-2 mt-3 space-y-5`}>
                                 {item.children.map(child => (
@@ -29,7 +31,7 @@ export const CareerTreeRender = (props: CareerTreeRenderType) => {
                                         key={child.name}
                                         className={`rounded-lg  border-2 border-gray-700 bg-gray-100 p-2 font-bold text-black dark:border-gray-100 dark:bg-gray-800  dark:text-white`}
                                     >
-                                        <ChildCard {...child} />
+                                        <ChildCard careermap={careermap} page={page} {...child} />
                                     </div>
                                 ))}
                             </div>
