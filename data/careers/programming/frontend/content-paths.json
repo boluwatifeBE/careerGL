@@ -1,185 +1,746 @@
 [
   {
-    "name": "Home",
-    "path": "/careers/programming/frontend/content/000-readme.md",
-    "level": "parent",
+    "name": "Frontend",
+    "path": "",
     "parentId": "",
     "grandParentId": "",
-    "opinion": [
-      "personal",
-      "alternative",
-      "order",
-      "never"
-    ],
+    "opinion": [],
     "children": []
   },
   {
-    "name": "100-internet",
-    "path": "/careers/programming/frontend/content/100-internet/000-readme.md",
-    "level": "parent",
-    "parentId": "",
+    "name": "Internet",
+    "path": "/careers/programming/frontend/content/100-internet/000-what-is-internet.md",
+    "parentId": "100-internet",
     "grandParentId": "",
     "opinion": ["personal"],
     "children": [
       {
         "name": "How does the internet work",
-        "path": "/careers/programming/frontend/content/100-internet/100-how-does-the-internet-work.md",
-        "level": "child",
+        "path": "/careers/programming/frontend/content/100-internet/000-what-is-internet.md",
         "parentId": "100-internet",
         "grandParentId": "",
+        "opinion": ["personal"],
         "children": []
       },
       {
         "name": "what is http",
         "path": "/careers/programming/frontend/content/100-internet/101-what-is-http.md",
-        "level": "child",
         "parentId": "100-internet",
         "grandParentId": "",
+        "opinion": ["personal"],
         "children": []
       },
       {
         "name": "Browsers and how they work",
         "path": "/careers/programming/frontend/content/100-internet/102-browsers-and-how-they-work.md",
-        "level": "child",
         "parentId": "100-internet",
         "grandParentId": "",
+        "opinion": ["personal"],
         "children": []
       },
       {
         "name": "DNS and how it works",
         "path": "/careers/programming/frontend/content/100-internet/103-dns-and-how-it-works.md",
-        "level": "child",
         "parentId": "100-internet",
         "grandParentId": "",
+        "opinion": ["personal"],
         "children": []
       },
       {
         "name": "What is domain name",
         "path": "/careers/programming/frontend/content/100-internet/104-what-is-domain-name.md",
-        "level": "child",
         "parentId": "100-internet",
         "grandParentId": "",
+        "opinion": ["personal"],
         "children": []
       },
       {
         "name": "What is hosting",
         "path": "/careers/programming/frontend/content/100-internet/105-what-is-hosting.md",
-        "level": "child",
         "parentId": "100-internet",
         "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "HTML",
+    "path": "/careers/programming/frontend/content/101-html/000-readme.md",
+    "parentId": "101-html",
+    "grandParentId": "",
+    "opinion": [],
+    "children": [
+      {
+        "name": "Learn the basics",
+        "path": "/careers/programming/frontend/content/101-html/100-learn-the-basics.md",
+        "parentId": "101-html",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Writing semantic html",
+        "path": "/careers/programming/frontend/content/101-html/101-writing-semantic-html.md",
+        "parentId": "101-html",
+        "grandParentId": "",
+        "opinion": ["order"],
+        "children": []
+      },
+      {
+        "name": "Forms and validations",
+        "path": "/careers/programming/frontend/content/101-html/102-forms-and-validations.md",
+        "parentId": "101-html",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Conventions and best practices",
+        "path": "/careers/programming/frontend/content/101-html/103-conventions-and-best-practices.md",
+        "parentId": "101-html",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Accessibility",
+        "path": "/careers/programming/frontend/content/101-html/104-accessibility.md",
+        "parentId": "101-html",
+        "grandParentId": "",
+        "opinion": ["order"],
+        "children": []
+      },
+      {
+        "name": "SEO Basics",
+        "path": "/careers/programming/frontend/content/101-html/105-seo-basics.md",
+        "parentId": "101-html",
+        "grandParentId": "",
+        "opinion": ["order"],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "CSS",
+    "path": "/careers/programming/frontend/content/102-css/000-readme.md",
+    "parentId": "102-css",
+    "grandParentId": "",
+    "opinion": [],
+    "children": [
+      {
+        "name": "Learn the basics",
+        "path": "/careers/programming/frontend/content/102-css/100-learn-the-basics.md",
+        "parentId": "102-css",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Making Layouts",
+        "path": "/careers/programming/frontend/content/102-css/101-making-layouts.md",
+        "parentId": "102-css",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Responsive Design",
+        "path": "/careers/programming/frontend/content/102-css/102-responsive-design-and-media-queries.md",
+        "parentId": "102-css",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "JavaScript",
+    "path": "/careers/programming/frontend/content/103-javascript/000-readme.md",
+    "parentId": "103-javascript",
+    "grandParentId": "",
+    "opinion": [],
+    "children": [
+      {
+        "name": "Syntax and Basic Constructs",
+        "path": "/careers/programming/frontend/content/103-javascript/100-syntax-and-basic-constructs.md",
+        "parentId": "103-javascript",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Learn DOM manipulation",
+        "path": "/careers/programming/frontend/content/103-javascript/101-learn-dom-manipulation.md",
+        "parentId": "103-javascript",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Learn Fetch API/Ajax (XHR)",
+        "path": "/careers/programming/frontend/content/103-javascript/102-learn-fetch-api-ajax-xhr.md",
+        "parentId": "103-javascript",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "ES6+ and modular JavaScript",
+        "path": "/careers/programming/frontend/content/103-javascript/103-es6-and-modular-javascript.md",
+        "parentId": "103-javascript",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Understand JavaScript Concepts",
+        "path": "/careers/programming/frontend/content/103-javascript/104-concepts.md",
+        "parentId": "103-javascript",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "Version Control Systems",
+    "path": "/careers/programming/frontend/content/104-version-control-systems/000-readme.md",
+    "parentId": "104-version-control-systems",
+    "grandParentId": "",
+    "opinion": [],
+    "children": [
+      {
+        "name": "Basic usage of Git",
+        "path": "/careers/programming/frontend/content/104-version-control-systems/100-basic-usage-of-git.md",
+        "parentId": "104-version-control-systems",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Repo Hosting Services",
+        "path": "/careers/programming/frontend/content/104-version-control-systems/101-repo-hosting-services/000-readme.md",
+        "parentId": "104-version-control-systems",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "GitHub",
+            "path": "/careers/programming/frontend/content/104-version-control-systems/101-repo-hosting-services/100-github.md",
+            "parentId": "101-repo-hosting-services",
+            "grandParentId": "104-version-control-systems",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "GitLab",
+            "path": "/careers/programming/frontend/content/104-version-control-systems/101-repo-hosting-services/101-gitlab.md",
+            "parentId": "101-repo-hosting-services",
+            "grandParentId": "104-version-control-systems",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Bitbucket",
+            "path": "/careers/programming/frontend/content/104-version-control-systems/101-repo-hosting-services/102-bitbucket.md",
+            "parentId": "101-repo-hosting-services",
+            "grandParentId": "104-version-control-systems",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Web Security",
+    "path": "/careers/programming/frontend/content/105-web-security-knowledge/000-readme.md",
+    "parentId": "105-web-security-knowledge",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "name": "HTTPS",
+        "path": "/careers/programming/frontend/content/105-web-security-knowledge/100-https.md",
+        "parentId": "105-web-security-knowledge",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "Content Security Policy",
+        "path": "/careers/programming/frontend/content/105-web-security-knowledge/101-content-security-policy.md",
+        "parentId": "105-web-security-knowledge",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "CORS",
+        "path": "/careers/programming/frontend/content/105-web-security-knowledge/102-cors.md",
+        "parentId": "105-web-security-knowledge",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "OWASP Security Risks",
+        "path": "/careers/programming/frontend/content/105-web-security-knowledge/103-owasp-security-risks.md",
+        "parentId": "105-web-security-knowledge",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "Package Managers",
+    "path": "/careers/programming/frontend/content/106-package-managers/000-readme.md",
+    "parentId": "106-package-managers",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "name": "NPM",
+        "path": "/careers/programming/frontend/content/106-package-managers/100-npm.md",
+        "parentId": "106-package-managers",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "YARN",
+        "path": "/careers/programming/frontend/content/106-package-managers/101-yarn.md",
+        "parentId": "106-package-managers",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "CSS Architecture",
+    "path": "/careers/programming/frontend/content/107-css-architecture/000-readme.md",
+    "parentId": "107-css-architecture",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "name": "BEM",
+        "path": "/careers/programming/frontend/content/107-css-architecture/100-bem.md",
+        "parentId": "107-css-architecture",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "OOCSS",
+        "path": "/careers/programming/frontend/content/107-css-architecture/101-oocss.md",
+        "parentId": "107-css-architecture",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "SMACSS",
+        "path": "/careers/programming/frontend/content/107-css-architecture/102-smacss.md",
+        "parentId": "107-css-architecture",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "CSS Preprocessors",
+    "path": "/careers/programming/frontend/content/108-css-preprocessors/000-readme.md",
+    "parentId": "108-css-preprocessors",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "name": "Sass",
+        "path": "/careers/programming/frontend/content/108-css-preprocessors/100-sass.md",
+        "parentId": "108-css-preprocessors",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "PostCSS",
+        "path": "/careers/programming/frontend/content/108-css-preprocessors/101-postcss.md",
+        "parentId": "108-css-preprocessors",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "Less",
+        "path": "/careers/programming/frontend/content/108-css-preprocessors/102-less.md",
+        "parentId": "108-css-preprocessors",
+        "grandParentId": "",
+        "opinion": [],
         "children": []
       }
     ]
   },
   {
     "name": "Build Tools",
-    "path": "/careers/programming/frontend/content/110-build-tools/000-readme.md",
-    "level": "parent",
-    "parentId": "",
+    "path": "/careers/programming/frontend/content/109-build-tools/000-readme.md",
+    "parentId": "109-build-tools",
     "grandParentId": "",
-    "opinion": [
-      "personal"
-    ],
+    "opinion": ["personal"],
     "children": [
       {
         "name": "Task runners",
-        "path": "/careers/programming/frontend/content/110-build-tools/100-task-runners/000-readme.md",
-        "level": "child",
-        "parentId": "110-build-tools",
+        "path": "/careers/programming/frontend/content/109-build-tools/100-task-runners/000-readme.md",
+        "parentId": "109-build-tools",
         "grandParentId": "",
-        "opinion": [
-          "personal"
-        ],
+        "opinion": [],
         "children": [
           {
             "name": "npm scripts",
-            "path": "/careers/programming/frontend/content/110-build-tools/100-task-runners/100-npm-scripts.md",
+            "path": "/careers/programming/frontend/content/109-build-tools/100-task-runners/100-npm-scripts.md",
             "level": "grand-child",
             "parentId": "100-task-runners",
-            "grandParentId": "110-build-tools",
-            "opinion": [
-              "personal"
-            ],
+            "grandParentId": "109-build-tools",
+            "opinion": ["personal"],
             "children": []
           }
         ]
       },
       {
         "name": "Linters formatters",
-        "path": "/careers/programming/frontend/content/110-build-tools/102-linters-formatters/000-readme.md",
-        "level": "child",
+        "path": "/careers/programming/frontend/content/109-build-tools/102-linters-formatters/000-readme.md",
+        "parentId": "109-build-tools",
+        "grandParentId": "",
+        "opinion": [],
         "children": [
           {
             "name": "prettier",
-            "path": "/careers/programming/frontend/content/110-build-tools/102-linters-formatters/100-prettier.md",
+            "path": "/careers/programming/frontend/content/109-build-tools/102-linters-formatters/100-prettier.md",
             "level": "grand-child",
             "parentId": "102-linters-formatters",
-            "grandParentId": "110-build-tools",
-            "opinion": [],
+            "grandParentId": "109-build-tools",
+            "opinion": ["order"],
             "children": []
           },
           {
             "name": "eslint",
-            "path": "/careers/programming/frontend/content/110-build-tools/102-linters-formatters/101-eslint.md",
+            "path": "/careers/programming/frontend/content/109-build-tools/102-linters-formatters/101-eslint.md",
             "level": "grand-child",
             "parentId": "102-linters-formatters",
-            "grandParentId": "110-build-tools",
-            "opinion": [],
+            "grandParentId": "109-build-tools",
+            "opinion": ["order"],
             "children": []
           },
           {
             "name": "standardjs",
-            "path": "/careers/programming/frontend/content/110-build-tools/102-linters-formatters/102-standardjs.md",
+            "path": "/careers/programming/frontend/content/109-build-tools/102-linters-formatters/102-standardjs.md",
             "level": "grand-child",
             "parentId": "102-linters-formatters",
-            "grandParentId": "110-build-tools",
-            "opinion": [],
+            "grandParentId": "109-build-tools",
+            "opinion": ["never"],
             "children": []
           }
         ]
       },
       {
         "name": "Module Bundlers",
-        "path": "/careers/programming/frontend/content/110-build-tools/101-module-bundlers/000-readme.md",
-        "level": "child",
+        "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/000-readme.md",
+        "parentId": "109-build-tools",
+        "grandParentId": "",
+        "opinion": [],
         "children": [
           {
             "name": "webpack",
-            "path": "/careers/programming/frontend/content/110-build-tools/101-module-bundlers/100-webpack.md",
+            "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/100-webpack.md",
             "level": "grand-child",
             "parentId": "101-module-bundlers",
-            "grandParentId": "110-build-tools",
-            "opinion": [],
+            "grandParentId": "109-build-tools",
+            "opinion": ["personal"],
             "children": []
           },
           {
             "name": "esbuild",
-            "path": "/careers/programming/frontend/content/110-build-tools/101-module-bundlers/101-esbuild.md",
+            "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/101-esbuild.md",
             "level": "grand-child",
             "parentId": "101-module-bundlers",
-            "grandParentId": "110-build-tools",
-            "opinion": [],
+            "grandParentId": "109-build-tools",
+            "opinion": ["personal"],
             "children": []
           },
           {
             "name": "rollup",
-            "path": "/careers/programming/frontend/content/110-build-tools/101-module-bundlers/102-rollup.md",
+            "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/102-rollup.md",
             "level": "grand-child",
             "parentId": "101-module-bundlers",
+            "grandParentId": "109-build-tools",
+            "opinion": ["alternative"],
             "children": []
           },
           {
             "name": "parcel",
-            "path": "/careers/programming/frontend/content/110-build-tools/101-module-bundlers/103-parcel.md",
+            "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/103-parcel.md",
             "level": "grand-child",
-                        "grandParentId": "110-build-tools",
+            "parentId": "101-module-bundlers",
+            "grandParentId": "109-build-tools",
+            "opinion": ["alternative"],
             "children": []
           },
           {
             "name": "vite",
-            "path": "/careers/programming/frontend/content/110-build-tools/101-module-bundlers/104-vite.md",
+            "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/104-vite.md",
             "level": "grand-child",
-                        "opinion": [],
+            "parentId": "101-module-bundlers",
+            "grandParentId": "109-build-tools",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "JavaScript Framework",
+    "path": "/careers/programming/frontend/content/110-javascript-framework/000-readme.md",
+    "parentId": "110-javascript-framework",
+    "grandParentId": "",
+    "opinion": [],
+    "children": [
+      {
+        "name": "React JS",
+        "path": "/careers/programming/frontend/content/110-javascript-framework/100-react-js/000-readme.md",
+        "parentId": "110-javascript-framework",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": [
+          {
+            "name": "Redux",
+            "path": "/careers/programming/frontend/content/110-javascript-framework/100-react-js/100-redux.md",
+            "level": "grand-child",
+            "parentId": "100-react-js",
+            "grandParentId": "110-javascript-framework",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Mobx",
+            "path": "/careers/programming/frontend/content/110-javascript-framework/100-react-js/101-mobx.md",
+            "level": "grand-child",
+            "parentId": "100-react-js",
+            "grandParentId": "110-javascript-framework",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Recoil",
+            "path": "/careers/programming/frontend/content/110-javascript-framework/100-react-js/102-recoil.md",
+            "level": "grand-child",
+            "parentId": "100-react-js",
+            "grandParentId": "110-javascript-framework",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Angular JS",
+        "path": "/careers/programming/frontend/content/110-javascript-framework/101-angular/000-readme.md",
+        "parentId": "110-javascript-framework",
+        "grandParentId": "",
+        "opinion": ["alternative"],
+        "children": [
+          {
+            "name": "RxJS",
+            "path": "/careers/programming/frontend/content/110-javascript-framework/101-angular/100-rxjs.md",
+            "level": "grand-child",
+            "parentId": "101-angular",
+            "grandParentId": "110-javascript-framework",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "NgRx",
+            "path": "/careers/programming/frontend/content/110-javascript-framework/101-angular/101-ngrx.md",
+            "level": "grand-child",
+            "parentId": "101-angular",
+            "grandParentId": "110-javascript-framework",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Vue JS",
+        "path": "/careers/programming/frontend/content/110-javascript-framework/102-vue-js/000-readme.md",
+        "parentId": "110-javascript-framework",
+        "grandParentId": "",
+        "opinion": ["alternative"],
+        "children": [
+          {
+            "name": "Vuex",
+            "path": "/careers/programming/frontend/content/110-javascript-framework/102-vue-js/100-vuex.md",
+            "level": "grand-child",
+            "parentId": "102-vue-js",
+            "grandParentId": "110-javascript-framework",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Modern CSS",
+    "path": "/careers/programming/frontend/content/111-modern-css/000-readme.md",
+    "parentId": "111-modern-css",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "name": "Styled Components",
+        "path": "/careers/programming/frontend/content/111-modern-css/100-styled-components.md",
+        "parentId": "111-modern-css",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "CSS Modules",
+        "path": "/careers/programming/frontend/content/111-modern-css/101-css-modules.md",
+        "parentId": "111-modern-css",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Styled JSX",
+        "path": "/careers/programming/frontend/content/111-modern-css/102-styled-jsx.md",
+        "parentId": "111-modern-css",
+        "grandParentId": "",
+        "opinion": ["alternative"],
+        "children": []
+      },
+      {
+        "name": "Emotion",
+        "path": "/careers/programming/frontend/content/111-modern-css/103-emotion.md",
+        "parentId": "111-modern-css",
+        "grandParentId": "",
+        "opinion": ["alternative"],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "Web Components",
+    "path": "/careers/programming/frontend/content/112-web-components/000-readme.md",
+    "parentId": "112-web-components",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "name": "HTML Templates",
+        "path": "/careers/programming/frontend/content/112-web-components/100-html-templates.md",
+        "parentId": "112-web-components",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "Custom Elements",
+        "path": "/careers/programming/frontend/content/112-web-components/101-custom-elements.md",
+        "parentId": "112-web-components",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "Shadow DOM",
+        "path": "/careers/programming/frontend/content/112-web-components/102-shadow-dom.md",
+        "parentId": "112-web-components",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "CSS Frameworks",
+    "path": "/careers/programming/frontend/content/113-css-frameworks/000-readme.md",
+    "parentId": "113-css-frameworks",
+    "grandParentId": "",
+    "opinion": [],
+    "children": [
+      {
+        "name": "JS First",
+        "path": "/careers/programming/frontend/content/113-css-frameworks/100-js-first/000-readme.md",
+        "parentId": "113-css-frameworks",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "Tailwind CSS",
+            "path": "/careers/programming/frontend/content/113-css-frameworks/100-js-first/100-tailwind-css.md",
+            "level": "grand-child",
+            "parentId": "100-js-first",
+            "grandParentId": "113-css-frameworks",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Chakra UI",
+            "path": "/careers/programming/frontend/content/113-css-frameworks/100-js-first/101-chakra-ui.md",
+            "level": "grand-child",
+            "parentId": "100-js-first",
+            "grandParentId": "113-css-frameworks",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Material UI",
+            "path": "/careers/programming/frontend/content/113-css-frameworks/100-js-first/102-material-ui.md",
+            "level": "grand-child",
+            "parentId": "100-js-first",
+            "grandParentId": "113-css-frameworks",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Radix UI",
+            "path": "/careers/programming/frontend/content/113-css-frameworks/100-js-first/103-radix-ui.md",
+            "level": "grand-child",
+            "parentId": "100-js-first",
+            "grandParentId": "113-css-frameworks",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "CSS First",
+        "path": "/careers/programming/frontend/content/113-css-frameworks/101-css-first/000-readme.md",
+        "parentId": "113-css-frameworks",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "Bootstrap CSS",
+            "path": "/careers/programming/frontend/content/113-css-frameworks/101-css-first/100-bootstrap.md",
+            "level": "grand-child",
+            "parentId": "101-css-first",
+            "grandParentId": "113-css-frameworks",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Bulma CSS",
+            "path": "/careers/programming/frontend/content/113-css-frameworks/101-css-first/101-bulma.md",
+            "level": "grand-child",
+            "parentId": "101-css-first",
+            "grandParentId": "113-css-frameworks",
+            "opinion": ["alternative"],
             "children": []
           }
         ]

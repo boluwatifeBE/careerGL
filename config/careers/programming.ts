@@ -38,10 +38,6 @@ export const programming: CareerMapType[] =
     description: "Step by step guide to becoming a modern frontend developer in 2022",
     featuredTitle: "Frontend",
     featuredDescription: "Step by step guide to becoming a frontend developer in 2022",
-    author: {
-      name: "Kamran Ahmed",
-      url: "https://twitter.com/kamranahmedse"
-    },
     featured: true,
     imageUrl: "/careers/programming/frontend.png",
     jsonUrl: "/project/frontend.json",
@@ -92,10 +88,6 @@ export const programming: CareerMapType[] =
     imageUrl: "/careers/programming/backend.png",
     jsonUrl: "/project/backend.json",
     resourcesPath: "/careers/programming/backend/resources.md",
-    author: {
-      name: "Kamran Ahmed",
-      url: "https://twitter.com/kamranahmedse"
-    },
     pdfUrl: "https://kamranahmedse.gumroad.com/l/backend-roadmap",
     contentPathsFilePath: "/careers/programming/backend/content-paths.json",
     id: "backend",
