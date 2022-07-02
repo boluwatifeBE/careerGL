@@ -3,10 +3,10 @@ import generateRss from '@/lib/generate-rss';
 import {
   formatSlug,
   getFileBySlug,
-  getFileByPathString,
   getContentPathString,
   getAllFilesFrontMatter,
   readCareerContentsFilePath,
+  getFiles,
 } from '@/lib/mdx';
 import fs from 'fs';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
@@ -38,7 +38,7 @@ export async function getStaticPaths() {
     const nameArray: string[] = recursiveSearch(cleanObject, 'path');
     const uniqueArray = getUniqueStringValueOfArray(nameArray);
     const careerContentFiles = getContentPathString(uniqueArray);
-    const careerSlug = getFileByPathString(careerContentFiles);
+    const careerSlug = getFiles(careerContentFiles);
 
     return (
       careerSlug.map(slug => ({

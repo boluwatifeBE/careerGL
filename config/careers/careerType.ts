@@ -12,10 +12,6 @@ export type CareerMapType = {
     featuredTitle?: string;
     featuredDescription?: string;
     isTextHeavy?: boolean;
-    author?: {
-      name?: string;
-      url?: string;
-    };
     featured?: boolean;
     detailed?: boolean;
     imageUrl?: string;

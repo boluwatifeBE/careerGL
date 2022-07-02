@@ -12,7 +12,7 @@ function ParentCard(item) {
             <h1
                 className={`text-xl font-extrabold leading-9 tracking-tight text-gray-800 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-3xl md:leading-14`}
             >
-                <Link href={`/careers/${item.careermap}/${item.page}/${formatSlugTolink(item.path)}`}>
+                <Link href={`/careers/${item.careermap}/${item.page}/${formatSlugTolink(item.path, item.parentId, item.grandParentId)}`}>
                     {item.name}
                 </Link>
                 {/* <button

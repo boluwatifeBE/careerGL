@@ -24,20 +24,10 @@ import rehypePrismPlus from 'rehype-prism-plus';
 import rehypeSlug from 'rehype-slug';
 //  Custom functions & types
 import { CareerMapType, CareerTreeType } from 'config/careers/careerType';
-import { removeFirstIndexFromArray } from '@/components/careers/RenderFunctions';
 
 const root = process.cwd();
 
-export function getFiles(type: 'blog' | 'authors' | 'courses' | 'careers') {
-  const prefixPaths = path.join(root, 'data', type);
-  const files = getAllFilesRecursively(prefixPaths);
-  // Only want to return blog/path and ignore root, replace is needed to work on Windows
-  return files.map(file =>
-    file.slice(prefixPaths.length + 1).replace(/\\/g, '/'),
-  );
-}
-
-export function getFileByPathString(type: string) {
+export function getFiles(type: string) {
   const prefixPaths = path.join(root, 'data', type);
   const files = getAllFilesRecursively(prefixPaths);
   // Only want to return blog/path and ignore root, replace is needed to work on Windows
@@ -205,27 +195,36 @@ export const getContentPathString = (array): string => {
   return contentStringArray;
 }
 
-export const getCareerContentByPath = (pathString) => {
+// export const getCareerContentByPath = (pathString) => {
 
-  if (!pathString.endsWith('.mdx') || !pathString.endsWith('.md')) return;
+//   if (!pathString.endsWith('.mdx') || !pathString.endsWith('.md')) return;
 
-  const pathsFilePath = pathString.replace(/^\//, '');
-  const fileContent = fs.readFileSync(
-      path.join(root, 'data', pathsFilePath),
-      'utf8'
-  );
+//   const pathsFilePath = pathString.replace(/^\//, '');
+//   const fileContent = fs.readFileSync(
+//       path.join(root, 'data', pathsFilePath),
+//       'utf8'
+//   );
 
-  const { data } = matter(fileContent);
-  return { data };
-};
+//   const { data } = matter(fileContent);
+//   return { data };
+// };
 
-export const getSlugArray = (array): string => {
-  console.log(array);
+// export const getSlugArray = (array): string => {
+//   console.log(array);
   
-  let arrayValue;
-  array.map(slug => {
-    arrayValue = formatSlug(slug).split('/');
-  })
+//   let arrayValue;
+//   array.map(slug => {
+//     arrayValue = formatSlug(slug).split('/');
+//   })
 
-  return arrayValue;
-}
+//   return arrayValue;
+// }
+
+// export function getFileByPathString(type: string) {
+//   const prefixPaths = path.join(root, 'data', type);
+//   const files = getAllFilesRecursively(prefixPaths);
+//   // Only want to return blog/path and ignore root, replace is needed to work on Windows
+//   return files.map(file =>
+//     file.slice(prefixPaths.length + 1).replace(/\\/g, '/'),
+//   );
+// }
