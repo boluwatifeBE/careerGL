@@ -30,8 +30,10 @@ const AppHeader = () => {
   }, []);
 
   return (
-    <header className={`${isScrolled && 'backdrop-blur-md backdrop-filter'}`}>
-      <div className='mx-auto flex  max-w-3xl  items-center justify-between py-10 px-4 sm:px-6 xl:max-w-5xl xl:px-0'>
+    <header className={`${isScrolled && ' shadow-md shadow-yellow-500/50 '}`}>
+      <div
+        className={` mx-auto flex  max-w-3xl  items-center justify-between py-10 px-4 sm:px-6 xl:max-w-5xl xl:px-0`}
+      >
         <div>
           <Link href='/' aria-label={siteMetadata.headerTitle}>
             <div className='flex items-center justify-between'>
