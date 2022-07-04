@@ -23,7 +23,7 @@ function ParentCard(item) {
           {item.name}
         </Link>
         {/* <button
-                    onClick={() => {
+        onClick={() => {
                         setOrUdateLocalStorage('path', item.path);
                         setIsOpen(!isOpen);
                     }}
