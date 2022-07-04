@@ -49,10 +49,22 @@ module.exports = {
           900: '#000000',
         },
       },
-      backgroundImage: {
-        'gradient-to-b':
-          'linear-gradient(to bottom,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);',
+      screens: {
+        tablet: '640px',
+        // => @media (min-width: 640px) { ... }
+
+        laptop: '1024px',
+        // => @media (min-width: 1024px) { ... }
+
+        desktop: '1280px',
+        // => @media (min-width: 1280px) { ... }
+
+        maxphone: { max: '639.5px' },
+
+        maxsm: { max: '767.5px' },
+        // => @media (max-width: 639px) { ... }
       },
+
       typography: theme => ({
         DEFAULT: {
           css: {
