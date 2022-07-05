@@ -594,7 +594,7 @@
       },
       {
         "name": "CSS Modules",
-        "path": "/careers/programming/frontend/content/111-modern-css/101-css-modules.md",
+        "path": "/careers/programming/frontend/content/111-modern-css/100-css-modules.md",
         "parentId": "111-modern-css",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -659,40 +659,24 @@
     "opinion": [],
     "children": [
       {
-        "name": "JS First",
-        "path": "/careers/programming/frontend/content/113-css-frameworks/100-js-first/000-readme.md",
-        "parentId": "100-js-first",
+        "name": "CSS First",
+        "path": "/careers/programming/frontend/content/113-css-frameworks/101-css-first/000-readme.md",
+        "parentId": "100-css-first",
         "grandParentId": "113-css-frameworks",
         "opinion": [],
         "children": [
           {
-            "name": "Tailwind CSS",
-            "path": "/careers/programming/frontend/content/113-css-frameworks/100-js-first/100-tailwind-css.md",
-            "parentId": "100-js-first",
+            "name": "Bootstrap CSS",
+            "path": "/careers/programming/frontend/content/113-css-frameworks/100-css-first/100-bootstrap.md",
+            "parentId": "100-css-first",
             "grandParentId": "113-css-frameworks",
             "opinion": ["alternative"],
             "children": []
           },
           {
-            "name": "Chakra UI",
-            "path": "/careers/programming/frontend/content/113-css-frameworks/100-js-first/101-chakra-ui.md",
-            "parentId": "100-js-first",
-            "grandParentId": "113-css-frameworks",
-            "opinion": ["alternative"],
-            "children": []
-          },
-          {
-            "name": "Material UI",
-            "path": "/careers/programming/frontend/content/113-css-frameworks/100-js-first/102-material-ui.md",
-            "parentId": "100-js-first",
-            "grandParentId": "113-css-frameworks",
-            "opinion": ["alternative"],
-            "children": []
-          },
-          {
-            "name": "Radix UI",
-            "path": "/careers/programming/frontend/content/113-css-frameworks/100-js-first/103-radix-ui.md",
-            "parentId": "100-js-first",
+            "name": "Bulma CSS",
+            "path": "/careers/programming/frontend/content/113-css-frameworks/100-css-first/101-bulma.md",
+            "parentId": "100-css-first",
             "grandParentId": "113-css-frameworks",
             "opinion": ["alternative"],
             "children": []
@@ -700,24 +684,40 @@
         ]
       },
       {
-        "name": "CSS First",
-        "path": "/careers/programming/frontend/content/113-css-frameworks/101-css-first/000-readme.md",
-        "parentId": "101-css-first",
+        "name": "JS First",
+        "path": "/careers/programming/frontend/content/113-css-frameworks/101-js-first/000-readme.md",
+        "parentId": "101-js-first",
         "grandParentId": "113-css-frameworks",
         "opinion": [],
         "children": [
           {
-            "name": "Bootstrap CSS",
-            "path": "/careers/programming/frontend/content/113-css-frameworks/101-css-first/100-bootstrap.md",
-            "parentId": "101-css-first",
+            "name": "Tailwind CSS",
+            "path": "/careers/programming/frontend/content/113-css-frameworks/101-js-first/100-tailwind-css.md",
+            "parentId": "101-js-first",
             "grandParentId": "113-css-frameworks",
             "opinion": ["alternative"],
             "children": []
           },
           {
-            "name": "Bulma CSS",
-            "path": "/careers/programming/frontend/content/113-css-frameworks/101-css-first/101-bulma.md",
-            "parentId": "101-css-first",
+            "name": "Chakra UI",
+            "path": "/careers/programming/frontend/content/113-css-frameworks/101-js-first/101-chakra-ui.md",
+            "parentId": "101-js-first",
+            "grandParentId": "113-css-frameworks",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Material UI",
+            "path": "/careers/programming/frontend/content/113-css-frameworks/101-js-first/102-material-ui.md",
+            "parentId": "101-js-first",
+            "grandParentId": "113-css-frameworks",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Radix UI",
+            "path": "/careers/programming/frontend/content/113-css-frameworks/101-js-first/103-radix-ui.md",
+            "parentId": "101-js-first",
             "grandParentId": "113-css-frameworks",
             "opinion": ["alternative"],
             "children": []
