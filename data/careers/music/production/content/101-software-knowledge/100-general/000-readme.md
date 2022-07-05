@@ -1,0 +1,7 @@
+# Software Knowledge
+
+In this section, you will learn how to produce music directly on your computer/laptop. Of course, its a large "bubble" of this roadmap, so we just added some overview guides to this page in order to help you get better understanding of this path.
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink badgeText='Read' href='https://soundgirls.org/the-best-music-and-audio-software-programs/'>Overview of Music and Audio Software Programs</BadgeLink>
+<BadgeLink badgeText='Read' href='https://www.musical-u.com/learn/the-beginners-guide-to-creating-music-on-your-computer/'>The Beginner’s Guide To Creating Music On Your Computer</BadgeLink>

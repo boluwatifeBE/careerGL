@@ -5,7 +5,6 @@ import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import dynamic from 'next/dynamic';
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
 import config, { POSTS_PER_PAGE } from 'config';
-import Card from '@/components/Card';
 import { ComponentProps, useState } from 'react';
 import CareerGridLayout from '@/layouts/CareerGridLayout';
 

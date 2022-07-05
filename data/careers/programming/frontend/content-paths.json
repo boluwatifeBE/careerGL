@@ -221,8 +221,8 @@
       {
         "name": "Repo Hosting Services",
         "path": "/careers/programming/frontend/content/104-version-control-systems/101-repo-hosting-services/000-readme.md",
-        "parentId": "104-version-control-systems",
-        "grandParentId": "",
+        "parentId": "101-repo-hosting-services",
+        "grandParentId": "104-version-control-systems",
         "opinion": [],
         "children": [
           {
@@ -395,14 +395,13 @@
       {
         "name": "Task runners",
         "path": "/careers/programming/frontend/content/109-build-tools/100-task-runners/000-readme.md",
-        "parentId": "109-build-tools",
-        "grandParentId": "",
+        "parentId": "100-task-runners",
+        "grandParentId": "109-build-tools",
         "opinion": [],
         "children": [
           {
             "name": "npm scripts",
             "path": "/careers/programming/frontend/content/109-build-tools/100-task-runners/100-npm-scripts.md",
-            "level": "grand-child",
             "parentId": "100-task-runners",
             "grandParentId": "109-build-tools",
             "opinion": ["personal"],
@@ -413,14 +412,13 @@
       {
         "name": "Linters formatters",
         "path": "/careers/programming/frontend/content/109-build-tools/102-linters-formatters/000-readme.md",
-        "parentId": "109-build-tools",
-        "grandParentId": "",
+        "parentId": "102-linters-formatters",
+        "grandParentId": "109-build-tools",
         "opinion": [],
         "children": [
           {
             "name": "prettier",
             "path": "/careers/programming/frontend/content/109-build-tools/102-linters-formatters/100-prettier.md",
-            "level": "grand-child",
             "parentId": "102-linters-formatters",
             "grandParentId": "109-build-tools",
             "opinion": ["order"],
@@ -429,7 +427,6 @@
           {
             "name": "eslint",
             "path": "/careers/programming/frontend/content/109-build-tools/102-linters-formatters/101-eslint.md",
-            "level": "grand-child",
             "parentId": "102-linters-formatters",
             "grandParentId": "109-build-tools",
             "opinion": ["order"],
@@ -438,7 +435,6 @@
           {
             "name": "standardjs",
             "path": "/careers/programming/frontend/content/109-build-tools/102-linters-formatters/102-standardjs.md",
-            "level": "grand-child",
             "parentId": "102-linters-formatters",
             "grandParentId": "109-build-tools",
             "opinion": ["never"],
@@ -449,14 +445,13 @@
       {
         "name": "Module Bundlers",
         "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/000-readme.md",
-        "parentId": "109-build-tools",
-        "grandParentId": "",
+        "parentId": "101-module-bundlers",
+        "grandParentId": "109-build-tools",
         "opinion": [],
         "children": [
           {
             "name": "webpack",
             "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/100-webpack.md",
-            "level": "grand-child",
             "parentId": "101-module-bundlers",
             "grandParentId": "109-build-tools",
             "opinion": ["personal"],
@@ -465,7 +460,6 @@
           {
             "name": "esbuild",
             "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/101-esbuild.md",
-            "level": "grand-child",
             "parentId": "101-module-bundlers",
             "grandParentId": "109-build-tools",
             "opinion": ["personal"],
@@ -474,7 +468,6 @@
           {
             "name": "rollup",
             "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/102-rollup.md",
-            "level": "grand-child",
             "parentId": "101-module-bundlers",
             "grandParentId": "109-build-tools",
             "opinion": ["alternative"],
@@ -483,7 +476,6 @@
           {
             "name": "parcel",
             "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/103-parcel.md",
-            "level": "grand-child",
             "parentId": "101-module-bundlers",
             "grandParentId": "109-build-tools",
             "opinion": ["alternative"],
@@ -492,7 +484,6 @@
           {
             "name": "vite",
             "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/104-vite.md",
-            "level": "grand-child",
             "parentId": "101-module-bundlers",
             "grandParentId": "109-build-tools",
             "opinion": ["alternative"],
@@ -512,14 +503,13 @@
       {
         "name": "React JS",
         "path": "/careers/programming/frontend/content/110-javascript-framework/100-react-js/000-readme.md",
-        "parentId": "110-javascript-framework",
-        "grandParentId": "",
+        "parentId": "100-react-js",
+        "grandParentId": "110-javascript-framework",
         "opinion": ["personal"],
         "children": [
           {
             "name": "Redux",
             "path": "/careers/programming/frontend/content/110-javascript-framework/100-react-js/100-redux.md",
-            "level": "grand-child",
             "parentId": "100-react-js",
             "grandParentId": "110-javascript-framework",
             "opinion": ["personal"],
@@ -528,7 +518,6 @@
           {
             "name": "Mobx",
             "path": "/careers/programming/frontend/content/110-javascript-framework/100-react-js/101-mobx.md",
-            "level": "grand-child",
             "parentId": "100-react-js",
             "grandParentId": "110-javascript-framework",
             "opinion": ["alternative"],
@@ -537,7 +526,6 @@
           {
             "name": "Recoil",
             "path": "/careers/programming/frontend/content/110-javascript-framework/100-react-js/102-recoil.md",
-            "level": "grand-child",
             "parentId": "100-react-js",
             "grandParentId": "110-javascript-framework",
             "opinion": ["alternative"],
@@ -548,14 +536,13 @@
       {
         "name": "Angular JS",
         "path": "/careers/programming/frontend/content/110-javascript-framework/101-angular/000-readme.md",
-        "parentId": "110-javascript-framework",
-        "grandParentId": "",
+        "parentId": "101-angular",
+        "grandParentId": "110-javascript-framework",
         "opinion": ["alternative"],
         "children": [
           {
             "name": "RxJS",
             "path": "/careers/programming/frontend/content/110-javascript-framework/101-angular/100-rxjs.md",
-            "level": "grand-child",
             "parentId": "101-angular",
             "grandParentId": "110-javascript-framework",
             "opinion": ["alternative"],
@@ -564,7 +551,6 @@
           {
             "name": "NgRx",
             "path": "/careers/programming/frontend/content/110-javascript-framework/101-angular/101-ngrx.md",
-            "level": "grand-child",
             "parentId": "101-angular",
             "grandParentId": "110-javascript-framework",
             "opinion": ["alternative"],
@@ -575,14 +561,13 @@
       {
         "name": "Vue JS",
         "path": "/careers/programming/frontend/content/110-javascript-framework/102-vue-js/000-readme.md",
-        "parentId": "110-javascript-framework",
-        "grandParentId": "",
+        "parentId": "102-vue-js",
+        "grandParentId": "110-javascript-framework",
         "opinion": ["alternative"],
         "children": [
           {
             "name": "Vuex",
             "path": "/careers/programming/frontend/content/110-javascript-framework/102-vue-js/100-vuex.md",
-            "level": "grand-child",
             "parentId": "102-vue-js",
             "grandParentId": "110-javascript-framework",
             "opinion": ["alternative"],
@@ -676,14 +661,13 @@
       {
         "name": "JS First",
         "path": "/careers/programming/frontend/content/113-css-frameworks/100-js-first/000-readme.md",
-        "parentId": "113-css-frameworks",
-        "grandParentId": "",
+        "parentId": "100-js-first",
+        "grandParentId": "113-css-frameworks",
         "opinion": [],
         "children": [
           {
             "name": "Tailwind CSS",
             "path": "/careers/programming/frontend/content/113-css-frameworks/100-js-first/100-tailwind-css.md",
-            "level": "grand-child",
             "parentId": "100-js-first",
             "grandParentId": "113-css-frameworks",
             "opinion": ["alternative"],
@@ -692,7 +676,6 @@
           {
             "name": "Chakra UI",
             "path": "/careers/programming/frontend/content/113-css-frameworks/100-js-first/101-chakra-ui.md",
-            "level": "grand-child",
             "parentId": "100-js-first",
             "grandParentId": "113-css-frameworks",
             "opinion": ["alternative"],
@@ -701,7 +684,6 @@
           {
             "name": "Material UI",
             "path": "/careers/programming/frontend/content/113-css-frameworks/100-js-first/102-material-ui.md",
-            "level": "grand-child",
             "parentId": "100-js-first",
             "grandParentId": "113-css-frameworks",
             "opinion": ["alternative"],
@@ -710,7 +692,6 @@
           {
             "name": "Radix UI",
             "path": "/careers/programming/frontend/content/113-css-frameworks/100-js-first/103-radix-ui.md",
-            "level": "grand-child",
             "parentId": "100-js-first",
             "grandParentId": "113-css-frameworks",
             "opinion": ["alternative"],
@@ -721,14 +702,13 @@
       {
         "name": "CSS First",
         "path": "/careers/programming/frontend/content/113-css-frameworks/101-css-first/000-readme.md",
-        "parentId": "113-css-frameworks",
-        "grandParentId": "",
+        "parentId": "101-css-first",
+        "grandParentId": "113-css-frameworks",
         "opinion": [],
         "children": [
           {
             "name": "Bootstrap CSS",
             "path": "/careers/programming/frontend/content/113-css-frameworks/101-css-first/100-bootstrap.md",
-            "level": "grand-child",
             "parentId": "101-css-first",
             "grandParentId": "113-css-frameworks",
             "opinion": ["alternative"],
@@ -737,7 +717,6 @@
           {
             "name": "Bulma CSS",
             "path": "/careers/programming/frontend/content/113-css-frameworks/101-css-first/101-bulma.md",
-            "level": "grand-child",
             "parentId": "101-css-first",
             "grandParentId": "113-css-frameworks",
             "opinion": ["alternative"],
