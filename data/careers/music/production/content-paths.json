@@ -1,0 +1,792 @@
+[
+  {
+    "name": "Music Production",
+    "path": "",
+    "parentId": "",
+    "grandParentId": "",
+    "opinion": [],
+    "children": []
+  },
+  {
+    "name": "Music Theory",
+    "path": "/careers/music/production/content/100-music-theory/000-readme.mdx",
+    "parentId": "100-music-theory",
+    "grandParentId": "",
+    "opinion": ["personal"],
+    "children": [
+      {
+        "name": "Basics",
+        "path": "/careers/music/production/content/100-music-theory/100-basics.mdx",
+        "parentId": "100-music-theory",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Phonetics / Physics",
+        "path": "/careers/music/production/content/100-music-theory/101-phonetics-or-physics.mdx",
+        "parentId": "100-music-theory",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Basic Technical Concepts",
+        "path": "/careers/music/production/content/100-music-theory/102-basic-technical-concepts.mdx",
+        "parentId": "100-music-theory",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Technical Knowledge",
+        "path": "/careers/music/production/content/100-music-theory/103-technical-knowledge.mdx",
+        "parentId": "100-music-theory",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Electronic Music Genres",
+        "path": "/careers/music/production/content/100-music-theory/104-electronic-music-genres.mdx",
+        "parentId": "100-music-theory",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Music Structure and Songwriting",
+        "path": "/careers/music/production/content/100-music-theory/105-music-structure-and-songwriting.mdx",
+        "parentId": "100-music-theory",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "Software Knowledge",
+    "path": "/careers/music/production/content/101-software-knowledge/000-readme.mdx",
+    "parentId": "101-software-knowledge",
+    "grandParentId": "",
+    "opinion": [],
+    "children": [
+      {
+        "name": "General",
+        "path": "/careers/music/production/content/101-software-knowledge/100-general/000-readme.mdx",
+        "parentId": "100-general",
+        "grandParentId": "101-software-knowledge",
+        "opinion": [],
+        "children": [
+          {
+            "name": "Audio Effects and Plugins",
+            "path": "/careers/music/production/content/101-software-knowledge/100-general/100-audio-effects-and-plugins.mdx",
+            "parentId": "100-general",
+            "grandParentId": "101-software-knowledge",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Audio Editing and Recording",
+            "path": "/careers/music/production/content/101-software-knowledge/100-general/101-audio-editing-and-recording.mdx",
+            "parentId": "100-general",
+            "grandParentId": "101-software-knowledge",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Software Instruments",
+            "path": "/careers/music/production/content/101-software-knowledge/100-general/102-software-instruments.mdx",
+            "parentId": "100-general",
+            "grandParentId": "101-software-knowledge",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Samples and Libraries",
+            "path": "/careers/music/production/content/101-software-knowledge/100-general/103-samples-and-libraries.mdx",
+            "parentId": "100-general",
+            "grandParentId": "101-software-knowledge",
+            "opinion": ["personal"],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Digital Audio Workstations (DAWs)",
+        "path": "/careers/music/production/content/101-software-knowledge/101-digital-audio-workstation/000-readme.mdx",
+        "parentId": "101-digital-audio-workstation",
+        "grandParentId": "101-software-knowledge",
+        "opinion": [],
+        "children": [
+          {
+            "name": "FL Studio",
+            "path": "/careers/music/production/content/101-software-knowledge/101-digital-audio-workstation/100-fl-studio.mdx",
+            "parentId": "101-digital-audio-workstation",
+            "grandParentId": "101-software-knowledge",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Ableton Live",
+            "path": "/careers/music/production/content/101-software-knowledge/101-digital-audio-workstation/101-ableton-live.mdx",
+            "parentId": "101-digital-audio-workstation",
+            "grandParentId": "101-software-knowledge",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "LogicX",
+            "path": "/careers/music/production/content/101-software-knowledge/101-digital-audio-workstation/102-logic-pro.mdx",
+            "parentId": "101-digital-audio-workstation",
+            "grandParentId": "101-software-knowledge",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Pro Tools",
+            "path": "/careers/music/production/content/101-software-knowledge/101-digital-audio-workstation/103-pro-tools.mdx",
+            "parentId": "101-digital-audio-workstation",
+            "grandParentId": "101-software-knowledge",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Cubase",
+            "path": "/careers/music/production/content/101-software-knowledge/101-digital-audio-workstation/104-cubase.mdx",
+            "parentId": "101-digital-audio-workstation",
+            "grandParentId": "101-software-knowledge",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CSS",
+    "path": "/careers/music/production/content/102-css/000-readme.mdx",
+    "parentId": "102-css",
+    "grandParentId": "",
+    "opinion": [],
+    "children": [
+      {
+        "name": "Learn the basics",
+        "path": "/careers/music/production/content/102-css/100-learn-the-basics.mdx",
+        "parentId": "102-css",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Making Layouts",
+        "path": "/careers/music/production/content/102-css/101-making-layouts.mdx",
+        "parentId": "102-css",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Responsive Design",
+        "path": "/careers/music/production/content/102-css/102-responsive-design-and-media-queries.mdx",
+        "parentId": "102-css",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "JavaScript",
+    "path": "/careers/music/production/content/103-javascript/000-readme.mdx",
+    "parentId": "103-javascript",
+    "grandParentId": "",
+    "opinion": [],
+    "children": [
+      {
+        "name": "Syntax and Basic Constructs",
+        "path": "/careers/music/production/content/103-javascript/100-syntax-and-basic-constructs.mdx",
+        "parentId": "103-javascript",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Learn DOM manipulation",
+        "path": "/careers/music/production/content/103-javascript/101-learn-dom-manipulation.mdx",
+        "parentId": "103-javascript",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Learn Fetch API/Ajax (XHR)",
+        "path": "/careers/music/production/content/103-javascript/102-learn-fetch-api-ajax-xhr.mdx",
+        "parentId": "103-javascript",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "ES6+ and modular JavaScript",
+        "path": "/careers/music/production/content/103-javascript/103-es6-and-modular-javascript.mdx",
+        "parentId": "103-javascript",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Understand JavaScript Concepts",
+        "path": "/careers/music/production/content/103-javascript/104-concepts.mdx",
+        "parentId": "103-javascript",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "Version Control Systems",
+    "path": "/careers/music/production/content/104-version-control-systems/000-readme.mdx",
+    "parentId": "104-version-control-systems",
+    "grandParentId": "",
+    "opinion": [],
+    "children": [
+      {
+        "name": "Basic usage of Git",
+        "path": "/careers/music/production/content/104-version-control-systems/100-basic-usage-of-git.mdx",
+        "parentId": "104-version-control-systems",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Repo Hosting Services",
+        "path": "/careers/music/production/content/104-version-control-systems/101-repo-hosting-services/000-readme.mdx",
+        "parentId": "104-version-control-systems",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "GitHub",
+            "path": "/careers/music/production/content/104-version-control-systems/101-repo-hosting-services/100-github.mdx",
+            "parentId": "101-repo-hosting-services",
+            "grandParentId": "104-version-control-systems",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "GitLab",
+            "path": "/careers/music/production/content/104-version-control-systems/101-repo-hosting-services/101-gitlab.mdx",
+            "parentId": "101-repo-hosting-services",
+            "grandParentId": "104-version-control-systems",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Bitbucket",
+            "path": "/careers/music/production/content/104-version-control-systems/101-repo-hosting-services/102-bitbucket.mdx",
+            "parentId": "101-repo-hosting-services",
+            "grandParentId": "104-version-control-systems",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Web Security",
+    "path": "/careers/music/production/content/105-web-security-knowledge/000-readme.mdx",
+    "parentId": "105-web-security-knowledge",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "name": "HTTPS",
+        "path": "/careers/music/production/content/105-web-security-knowledge/100-https.mdx",
+        "parentId": "105-web-security-knowledge",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "Content Security Policy",
+        "path": "/careers/music/production/content/105-web-security-knowledge/101-content-security-policy.mdx",
+        "parentId": "105-web-security-knowledge",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "CORS",
+        "path": "/careers/music/production/content/105-web-security-knowledge/102-cors.mdx",
+        "parentId": "105-web-security-knowledge",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "OWASP Security Risks",
+        "path": "/careers/music/production/content/105-web-security-knowledge/103-owasp-security-risks.mdx",
+        "parentId": "105-web-security-knowledge",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "Package Managers",
+    "path": "/careers/music/production/content/106-package-managers/000-readme.mdx",
+    "parentId": "106-package-managers",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "name": "NPM",
+        "path": "/careers/music/production/content/106-package-managers/100-npm.mdx",
+        "parentId": "106-package-managers",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "YARN",
+        "path": "/careers/music/production/content/106-package-managers/101-yarn.mdx",
+        "parentId": "106-package-managers",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "CSS Architecture",
+    "path": "/careers/music/production/content/107-css-architecture/000-readme.mdx",
+    "parentId": "107-css-architecture",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "name": "BEM",
+        "path": "/careers/music/production/content/107-css-architecture/100-bem.mdx",
+        "parentId": "107-css-architecture",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "OOCSS",
+        "path": "/careers/music/production/content/107-css-architecture/101-oocss.mdx",
+        "parentId": "107-css-architecture",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "SMACSS",
+        "path": "/careers/music/production/content/107-css-architecture/102-smacss.mdx",
+        "parentId": "107-css-architecture",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "CSS Preprocessors",
+    "path": "/careers/music/production/content/108-css-preprocessors/000-readme.mdx",
+    "parentId": "108-css-preprocessors",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "name": "Sass",
+        "path": "/careers/music/production/content/108-css-preprocessors/100-sass.mdx",
+        "parentId": "108-css-preprocessors",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "PostCSS",
+        "path": "/careers/music/production/content/108-css-preprocessors/101-postcss.mdx",
+        "parentId": "108-css-preprocessors",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "Less",
+        "path": "/careers/music/production/content/108-css-preprocessors/102-less.mdx",
+        "parentId": "108-css-preprocessors",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "Build Tools",
+    "path": "/careers/music/production/content/109-build-tools/000-readme.mdx",
+    "parentId": "109-build-tools",
+    "grandParentId": "",
+    "opinion": ["personal"],
+    "children": [
+      {
+        "name": "Task runners",
+        "path": "/careers/music/production/content/109-build-tools/100-task-runners/000-readme.mdx",
+        "parentId": "109-build-tools",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "npm scripts",
+            "path": "/careers/music/production/content/109-build-tools/100-task-runners/100-npm-scripts.mdx",
+            "level": "grand-child",
+            "parentId": "100-task-runners",
+            "grandParentId": "109-build-tools",
+            "opinion": ["personal"],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Linters formatters",
+        "path": "/careers/music/production/content/109-build-tools/102-linters-formatters/000-readme.mdx",
+        "parentId": "109-build-tools",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "prettier",
+            "path": "/careers/music/production/content/109-build-tools/102-linters-formatters/100-prettier.mdx",
+            "level": "grand-child",
+            "parentId": "102-linters-formatters",
+            "grandParentId": "109-build-tools",
+            "opinion": ["order"],
+            "children": []
+          },
+          {
+            "name": "eslint",
+            "path": "/careers/music/production/content/109-build-tools/102-linters-formatters/101-eslint.mdx",
+            "level": "grand-child",
+            "parentId": "102-linters-formatters",
+            "grandParentId": "109-build-tools",
+            "opinion": ["order"],
+            "children": []
+          },
+          {
+            "name": "standardjs",
+            "path": "/careers/music/production/content/109-build-tools/102-linters-formatters/102-standardjs.mdx",
+            "level": "grand-child",
+            "parentId": "102-linters-formatters",
+            "grandParentId": "109-build-tools",
+            "opinion": ["never"],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Module Bundlers",
+        "path": "/careers/music/production/content/109-build-tools/101-module-bundlers/000-readme.mdx",
+        "parentId": "109-build-tools",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "webpack",
+            "path": "/careers/music/production/content/109-build-tools/101-module-bundlers/100-webpack.mdx",
+            "level": "grand-child",
+            "parentId": "101-module-bundlers",
+            "grandParentId": "109-build-tools",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "esbuild",
+            "path": "/careers/music/production/content/109-build-tools/101-module-bundlers/101-esbuild.mdx",
+            "level": "grand-child",
+            "parentId": "101-module-bundlers",
+            "grandParentId": "109-build-tools",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "rollup",
+            "path": "/careers/music/production/content/109-build-tools/101-module-bundlers/102-rollup.mdx",
+            "level": "grand-child",
+            "parentId": "101-module-bundlers",
+            "grandParentId": "109-build-tools",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "parcel",
+            "path": "/careers/music/production/content/109-build-tools/101-module-bundlers/103-parcel.mdx",
+            "level": "grand-child",
+            "parentId": "101-module-bundlers",
+            "grandParentId": "109-build-tools",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "vite",
+            "path": "/careers/music/production/content/109-build-tools/101-module-bundlers/104-vite.mdx",
+            "level": "grand-child",
+            "parentId": "101-module-bundlers",
+            "grandParentId": "109-build-tools",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "JavaScript Framework",
+    "path": "/careers/music/production/content/110-javascript-framework/000-readme.mdx",
+    "parentId": "110-javascript-framework",
+    "grandParentId": "",
+    "opinion": [],
+    "children": [
+      {
+        "name": "React JS",
+        "path": "/careers/music/production/content/110-javascript-framework/100-react-js/000-readme.mdx",
+        "parentId": "110-javascript-framework",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": [
+          {
+            "name": "Redux",
+            "path": "/careers/music/production/content/110-javascript-framework/100-react-js/100-redux.mdx",
+            "level": "grand-child",
+            "parentId": "100-react-js",
+            "grandParentId": "110-javascript-framework",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Mobx",
+            "path": "/careers/music/production/content/110-javascript-framework/100-react-js/101-mobx.mdx",
+            "level": "grand-child",
+            "parentId": "100-react-js",
+            "grandParentId": "110-javascript-framework",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Recoil",
+            "path": "/careers/music/production/content/110-javascript-framework/100-react-js/102-recoil.mdx",
+            "level": "grand-child",
+            "parentId": "100-react-js",
+            "grandParentId": "110-javascript-framework",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Angular JS",
+        "path": "/careers/music/production/content/110-javascript-framework/101-angular/000-readme.mdx",
+        "parentId": "110-javascript-framework",
+        "grandParentId": "",
+        "opinion": ["alternative"],
+        "children": [
+          {
+            "name": "RxJS",
+            "path": "/careers/music/production/content/110-javascript-framework/101-angular/100-rxjs.mdx",
+            "level": "grand-child",
+            "parentId": "101-angular",
+            "grandParentId": "110-javascript-framework",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "NgRx",
+            "path": "/careers/music/production/content/110-javascript-framework/101-angular/101-ngrx.mdx",
+            "level": "grand-child",
+            "parentId": "101-angular",
+            "grandParentId": "110-javascript-framework",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Vue JS",
+        "path": "/careers/music/production/content/110-javascript-framework/102-vue-js/000-readme.mdx",
+        "parentId": "110-javascript-framework",
+        "grandParentId": "",
+        "opinion": ["alternative"],
+        "children": [
+          {
+            "name": "Vuex",
+            "path": "/careers/music/production/content/110-javascript-framework/102-vue-js/100-vuex.mdx",
+            "level": "grand-child",
+            "parentId": "102-vue-js",
+            "grandParentId": "110-javascript-framework",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Modern CSS",
+    "path": "/careers/music/production/content/111-modern-css/000-readme.mdx",
+    "parentId": "111-modern-css",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "name": "Styled Components",
+        "path": "/careers/music/production/content/111-modern-css/100-styled-components.mdx",
+        "parentId": "111-modern-css",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "CSS Modules",
+        "path": "/careers/music/production/content/111-modern-css/101-css-modules.mdx",
+        "parentId": "111-modern-css",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Styled JSX",
+        "path": "/careers/music/production/content/111-modern-css/102-styled-jsx.mdx",
+        "parentId": "111-modern-css",
+        "grandParentId": "",
+        "opinion": ["alternative"],
+        "children": []
+      },
+      {
+        "name": "Emotion",
+        "path": "/careers/music/production/content/111-modern-css/103-emotion.mdx",
+        "parentId": "111-modern-css",
+        "grandParentId": "",
+        "opinion": ["alternative"],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "Web Components",
+    "path": "/careers/music/production/content/112-web-components/000-readme.mdx",
+    "parentId": "112-web-components",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "name": "HTML Templates",
+        "path": "/careers/music/production/content/112-web-components/100-html-templates.mdx",
+        "parentId": "112-web-components",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "Custom Elements",
+        "path": "/careers/music/production/content/112-web-components/101-custom-elements.mdx",
+        "parentId": "112-web-components",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "Shadow DOM",
+        "path": "/careers/music/production/content/112-web-components/102-shadow-dom.mdx",
+        "parentId": "112-web-components",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "CSS Frameworks",
+    "path": "/careers/music/production/content/113-css-frameworks/000-readme.mdx",
+    "parentId": "113-css-frameworks",
+    "grandParentId": "",
+    "opinion": [],
+    "children": [
+      {
+        "name": "JS First",
+        "path": "/careers/music/production/content/113-css-frameworks/100-js-first/000-readme.mdx",
+        "parentId": "113-css-frameworks",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "Tailwind CSS",
+            "path": "/careers/music/production/content/113-css-frameworks/100-js-first/100-tailwind-css.mdx",
+            "level": "grand-child",
+            "parentId": "100-js-first",
+            "grandParentId": "113-css-frameworks",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Chakra UI",
+            "path": "/careers/music/production/content/113-css-frameworks/100-js-first/101-chakra-ui.mdx",
+            "level": "grand-child",
+            "parentId": "100-js-first",
+            "grandParentId": "113-css-frameworks",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Material UI",
+            "path": "/careers/music/production/content/113-css-frameworks/100-js-first/102-material-ui.mdx",
+            "level": "grand-child",
+            "parentId": "100-js-first",
+            "grandParentId": "113-css-frameworks",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Radix UI",
+            "path": "/careers/music/production/content/113-css-frameworks/100-js-first/103-radix-ui.mdx",
+            "level": "grand-child",
+            "parentId": "100-js-first",
+            "grandParentId": "113-css-frameworks",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "CSS First",
+        "path": "/careers/music/production/content/113-css-frameworks/101-css-first/000-readme.mdx",
+        "parentId": "113-css-frameworks",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "Bootstrap CSS",
+            "path": "/careers/music/production/content/113-css-frameworks/101-css-first/100-bootstrap.mdx",
+            "level": "grand-child",
+            "parentId": "101-css-first",
+            "grandParentId": "113-css-frameworks",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Bulma CSS",
+            "path": "/careers/music/production/content/113-css-frameworks/101-css-first/101-bulma.mdx",
+            "level": "grand-child",
+            "parentId": "101-css-first",
+            "grandParentId": "113-css-frameworks",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]

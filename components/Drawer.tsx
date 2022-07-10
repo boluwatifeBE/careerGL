@@ -1,23 +1,23 @@
-import React, { ReactNode, FC } from 'react'
+import React, { ReactNode } from 'react'
 import { useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import FocusTrap from 'focus-trap-react';
 import cn from 'classnames';
-import { CareerTreeType } from 'config/careers/careerType';
 import useMountTransition from './useMountTransition';
-import { Button, Text } from '@chakra-ui/react';
+import { Box, Button, Text } from '@chakra-ui/react';
 import { CheckIcon, CloseIcon, RepeatIcon } from '@chakra-ui/icons';
-import { convertNameToUrl, queryPathElementsById } from './careers/RenderFunctions';
+import { convertNameToUrl, getFromLocalStorage, queryPathElementsById } from './careers/RenderFunctions';
+import { DrawerTextualContent } from 'pages/careers/DrawerTextualContent';
 
 type ContentDrawerProps = {
-    careermap?: CareerTreeType[];
+    path?: string;
     name?: string;
     onClose?: () => void;
     isOpen?: boolean,
     children?: ReactNode,
     className?: string,
     position?: string,
-    removeWhenClosed?: boolean
+    removeWhenClosed?: boolean,
 };
 
 function createPortalRoot() {
@@ -28,16 +28,16 @@ function createPortalRoot() {
 }
 
 export function Drawer(props: ContentDrawerProps) {
-    const { name, onClose, isOpen, children, className, position, removeWhenClosed } = props;
+    const { onClose, isOpen, children, className, position, removeWhenClosed, path, name } = props;
 
     if (!name) {
         return null;
     }
 
     const nameUrl = convertNameToUrl(name);
+    const isDone = getFromLocalStorage(nameUrl) === 'done';
 
     if (typeof window === 'object') {
-        var isDone = localStorage.getItem(nameUrl) === 'done';
         var bodyRef = useRef(document.querySelector('body'));
         var portalRootRef = useRef(document.getElementById('drawer-root') || createPortalRoot());
     }
@@ -91,82 +91,82 @@ export function Drawer(props: ContentDrawerProps) {
     }
 
     return createPortal(
-
-        <FocusTrap active={isOpen}>
-            <div
-                aria-hidden={isOpen ? "false" : "true"}
-                className={cn("drawer-container", {
-                    open: isOpen,
-                    in: isTransitioning,
-                    className
-                })}
-            >
-                <div className={cn("drawer", position)} role="dialog">
-                    <div className='mt-[20px] justify-between items-center flex z-10'>
-                        {!isDone && (
-                            <Button
-                                onClick={() => {
-                                    localStorage.setItem(nameUrl, 'done');
-                                    queryPathElementsById(nameUrl).forEach((item) =>
-                                        item?.classList?.add('done')
-                                    );
-                                    onClose();
-                                }}
-                                colorScheme="green"
-                                leftIcon={<CheckIcon />}
-                                size="xs"
-                                iconSpacing={0}
-                            >
-                                <Text
-                                    as="span"
-                                    d={['block', 'none', 'none', 'block']}
-                                    ml="10px"
-                                >
-                                    Mark as Done
-                                </Text>
-                            </Button>
-                        )}
-                        {isDone && (
-                            <Button
-                                onClick={() => {
-                                    localStorage.removeItem(nameUrl);
-                                    queryPathElementsById(nameUrl).forEach((item) =>
-                                        item?.classList?.remove('done')
-                                    );
-                                    onClose();
-                                }}
-                                colorScheme="red"
-                                leftIcon={<RepeatIcon />}
-                                size="xs"
-                                iconSpacing={0}
-                            >
-                                <Text
-                                    as="span"
-                                    d={['block', 'none', 'none', 'block']}
-                                    ml="10px"
-                                >
-                                    Mark as Pending
-                                </Text>
-                            </Button>
-                        )}
+        <div
+            aria-hidden={isOpen ? "false" : "true"}
+            className={cn("drawer-container", {
+                open: isOpen,
+                in: isTransitioning,
+                className
+            })}
+        >
+            <div className={cn("drawer", position)} role="dialog">
+                <div className='mt-[20px] justify-between items-center flex z-10'>
+                    {!isDone && (
                         <Button
-                            onClick={onClose}
-                            colorScheme="yellow"
-                            ml="5px"
-                            leftIcon={<CloseIcon width="8px" />}
-                            iconSpacing={0}
+                            onClick={() => {
+                                localStorage.setItem(nameUrl, 'done');
+                                queryPathElementsById(nameUrl).forEach((item) =>
+                                    item?.classList?.add('done')
+                                );
+                                onClose();
+                            }}
+                            colorScheme="green"
+                            leftIcon={<CheckIcon />}
                             size="xs"
+                            iconSpacing={0}
                         >
-                            <Text as="span" d={['none', 'none', 'none', 'block']} ml="10px">
-                                Close
+                            <Text
+                                as="span"
+                                d={['block', 'none', 'none', 'block']}
+                                ml="10px"
+                            >
+                                Mark as Done
                             </Text>
                         </Button>
-                    </div>
-                    {children}
+                    )}
+                    {isDone && (
+                        <Button
+                            onClick={() => {
+                                localStorage.removeItem(nameUrl);
+                                queryPathElementsById(nameUrl).forEach((item) =>
+                                    item?.classList?.remove('done')
+                                );
+                                onClose();
+                            }}
+                            colorScheme="red"
+                            leftIcon={<RepeatIcon />}
+                            size="xs"
+                            iconSpacing={0}
+                        >
+                            <Text
+                                as="span"
+                                d={['block', 'none', 'none', 'block']}
+                                ml="10px"
+                            >
+                                Mark as Pending
+                            </Text>
+                        </Button>
+                    )}
+                    <Button
+                        onClick={onClose}
+                        colorScheme="yellow"
+                        ml="5px"
+                        leftIcon={<CloseIcon width="8px" />}
+                        iconSpacing={0}
+                        size="xs"
+                    >
+                        <Text as="span" d={['none', 'none', 'none', 'block']} ml="10px">
+                            Close
+                        </Text>
+                    </Button>
                 </div>
-                <div className="backdrop" onClick={onClose} />
+                    
+                <DrawerTextualContent path={path} />
+
+                {children}
             </div>
-        </FocusTrap>,
+            <div className="backdrop" onClick={onClose} />
+        </div>,
         portalRootRef.current
     );
 }

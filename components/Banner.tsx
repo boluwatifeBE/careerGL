@@ -25,7 +25,7 @@ function Banner(props: BannerProps): React.ReactElement {
         We also have a{' '}
         <Link
           className='text-md ml-2 mr-2 dark:text-white lg:text-lg'
-          href={siteMetadata.youtube}
+          href={siteMetadata.url.youtube}
         >
           <RoughNotation
             show

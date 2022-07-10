@@ -26,10 +26,10 @@ export const careerConfig: CareerConfig = {
 
 const careerMerge = [
   ...careerConfig.programming, 
+  ...careerConfig.music,
   // ...careerConfig.marketing,
   // ...careerConfig.graphics,
   // ...careerConfig.photography,
-  // ...careerConfig.music,
   // ...careerConfig.teaching,
 ].reduce((previous, current) => {
   previous[current.id] ? [ ...previous[current.id].id, ...current.id ] : previous[current.id] = current;

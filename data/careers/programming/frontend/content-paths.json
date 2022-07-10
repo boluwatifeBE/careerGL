@@ -9,14 +9,14 @@
   },
   {
     "name": "Internet",
-    "path": "/careers/programming/frontend/content/100-internet/000-what-is-internet.md",
+    "path": "/careers/programming/frontend/content/100-internet/000-readme.mdx",
     "parentId": "100-internet",
     "grandParentId": "",
     "opinion": ["personal"],
     "children": [
       {
         "name": "How does the internet work",
-        "path": "/careers/programming/frontend/content/100-internet/000-what-is-internet.md",
+        "path": "/careers/programming/frontend/content/100-internet/100-how-does-the-internet-work.mdx",
         "parentId": "100-internet",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -24,7 +24,7 @@
       },
       {
         "name": "what is http",
-        "path": "/careers/programming/frontend/content/100-internet/101-what-is-http.md",
+        "path": "/careers/programming/frontend/content/100-internet/101-what-is-http.mdx",
         "parentId": "100-internet",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -32,7 +32,7 @@
       },
       {
         "name": "Browsers and how they work",
-        "path": "/careers/programming/frontend/content/100-internet/102-browsers-and-how-they-work.md",
+        "path": "/careers/programming/frontend/content/100-internet/102-browsers-and-how-they-work.mdx",
         "parentId": "100-internet",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -40,7 +40,7 @@
       },
       {
         "name": "DNS and how it works",
-        "path": "/careers/programming/frontend/content/100-internet/103-dns-and-how-it-works.md",
+        "path": "/careers/programming/frontend/content/100-internet/103-dns-and-how-it-works.mdx",
         "parentId": "100-internet",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -48,7 +48,7 @@
       },
       {
         "name": "What is domain name",
-        "path": "/careers/programming/frontend/content/100-internet/104-what-is-domain-name.md",
+        "path": "/careers/programming/frontend/content/100-internet/104-what-is-domain-name.mdx",
         "parentId": "100-internet",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -56,7 +56,7 @@
       },
       {
         "name": "What is hosting",
-        "path": "/careers/programming/frontend/content/100-internet/105-what-is-hosting.md",
+        "path": "/careers/programming/frontend/content/100-internet/105-what-is-hosting.mdx",
         "parentId": "100-internet",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -66,14 +66,14 @@
   },
   {
     "name": "HTML",
-    "path": "/careers/programming/frontend/content/101-html/000-readme.md",
+    "path": "/careers/programming/frontend/content/101-html/000-readme.mdx",
     "parentId": "101-html",
     "grandParentId": "",
     "opinion": [],
     "children": [
       {
         "name": "Learn the basics",
-        "path": "/careers/programming/frontend/content/101-html/100-learn-the-basics.md",
+        "path": "/careers/programming/frontend/content/101-html/100-learn-the-basics.mdx",
         "parentId": "101-html",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -81,7 +81,7 @@
       },
       {
         "name": "Writing semantic html",
-        "path": "/careers/programming/frontend/content/101-html/101-writing-semantic-html.md",
+        "path": "/careers/programming/frontend/content/101-html/101-writing-semantic-html.mdx",
         "parentId": "101-html",
         "grandParentId": "",
         "opinion": ["order"],
@@ -89,7 +89,7 @@
       },
       {
         "name": "Forms and validations",
-        "path": "/careers/programming/frontend/content/101-html/102-forms-and-validations.md",
+        "path": "/careers/programming/frontend/content/101-html/102-forms-and-validations.mdx",
         "parentId": "101-html",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -97,7 +97,7 @@
       },
       {
         "name": "Conventions and best practices",
-        "path": "/careers/programming/frontend/content/101-html/103-conventions-and-best-practices.md",
+        "path": "/careers/programming/frontend/content/101-html/103-conventions-and-best-practices.mdx",
         "parentId": "101-html",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -105,7 +105,7 @@
       },
       {
         "name": "Accessibility",
-        "path": "/careers/programming/frontend/content/101-html/104-accessibility.md",
+        "path": "/careers/programming/frontend/content/101-html/104-accessibility.mdx",
         "parentId": "101-html",
         "grandParentId": "",
         "opinion": ["order"],
@@ -113,7 +113,7 @@
       },
       {
         "name": "SEO Basics",
-        "path": "/careers/programming/frontend/content/101-html/105-seo-basics.md",
+        "path": "/careers/programming/frontend/content/101-html/105-seo-basics.mdx",
         "parentId": "101-html",
         "grandParentId": "",
         "opinion": ["order"],
@@ -123,14 +123,14 @@
   },
   {
     "name": "CSS",
-    "path": "/careers/programming/frontend/content/102-css/000-readme.md",
+    "path": "/careers/programming/frontend/content/102-css/000-readme.mdx",
     "parentId": "102-css",
     "grandParentId": "",
     "opinion": [],
     "children": [
       {
         "name": "Learn the basics",
-        "path": "/careers/programming/frontend/content/102-css/100-learn-the-basics.md",
+        "path": "/careers/programming/frontend/content/102-css/100-learn-the-basics.mdx",
         "parentId": "102-css",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -138,7 +138,7 @@
       },
       {
         "name": "Making Layouts",
-        "path": "/careers/programming/frontend/content/102-css/101-making-layouts.md",
+        "path": "/careers/programming/frontend/content/102-css/101-making-layouts.mdx",
         "parentId": "102-css",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -146,7 +146,7 @@
       },
       {
         "name": "Responsive Design",
-        "path": "/careers/programming/frontend/content/102-css/102-responsive-design-and-media-queries.md",
+        "path": "/careers/programming/frontend/content/102-css/102-responsive-design-and-media-queries.mdx",
         "parentId": "102-css",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -156,14 +156,14 @@
   },
   {
     "name": "JavaScript",
-    "path": "/careers/programming/frontend/content/103-javascript/000-readme.md",
+    "path": "/careers/programming/frontend/content/103-javascript/000-readme.mdx",
     "parentId": "103-javascript",
     "grandParentId": "",
     "opinion": [],
     "children": [
       {
         "name": "Syntax and Basic Constructs",
-        "path": "/careers/programming/frontend/content/103-javascript/100-syntax-and-basic-constructs.md",
+        "path": "/careers/programming/frontend/content/103-javascript/100-syntax-and-basic-constructs.mdx",
         "parentId": "103-javascript",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -171,7 +171,7 @@
       },
       {
         "name": "Learn DOM manipulation",
-        "path": "/careers/programming/frontend/content/103-javascript/101-learn-dom-manipulation.md",
+        "path": "/careers/programming/frontend/content/103-javascript/101-learn-dom-manipulation.mdx",
         "parentId": "103-javascript",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -179,7 +179,7 @@
       },
       {
         "name": "Learn Fetch API/Ajax (XHR)",
-        "path": "/careers/programming/frontend/content/103-javascript/102-learn-fetch-api-ajax-xhr.md",
+        "path": "/careers/programming/frontend/content/103-javascript/102-learn-fetch-api-ajax-xhr.mdx",
         "parentId": "103-javascript",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -187,7 +187,7 @@
       },
       {
         "name": "ES6+ and modular JavaScript",
-        "path": "/careers/programming/frontend/content/103-javascript/103-es6-and-modular-javascript.md",
+        "path": "/careers/programming/frontend/content/103-javascript/103-es6-and-modular-javascript.mdx",
         "parentId": "103-javascript",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -195,7 +195,7 @@
       },
       {
         "name": "Understand JavaScript Concepts",
-        "path": "/careers/programming/frontend/content/103-javascript/104-concepts.md",
+        "path": "/careers/programming/frontend/content/103-javascript/104-concepts.mdx",
         "parentId": "103-javascript",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -205,14 +205,14 @@
   },
   {
     "name": "Version Control Systems",
-    "path": "/careers/programming/frontend/content/104-version-control-systems/000-readme.md",
+    "path": "/careers/programming/frontend/content/104-version-control-systems/000-readme.mdx",
     "parentId": "104-version-control-systems",
     "grandParentId": "",
     "opinion": [],
     "children": [
       {
         "name": "Basic usage of Git",
-        "path": "/careers/programming/frontend/content/104-version-control-systems/100-basic-usage-of-git.md",
+        "path": "/careers/programming/frontend/content/104-version-control-systems/100-basic-usage-of-git.mdx",
         "parentId": "104-version-control-systems",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -220,14 +220,14 @@
       },
       {
         "name": "Repo Hosting Services",
-        "path": "/careers/programming/frontend/content/104-version-control-systems/101-repo-hosting-services/000-readme.md",
-        "parentId": "104-version-control-systems",
-        "grandParentId": "",
+        "path": "/careers/programming/frontend/content/104-version-control-systems/101-repo-hosting-services/000-readme.mdx",
+        "parentId": "101-repo-hosting-services",
+        "grandParentId": "104-version-control-systems",
         "opinion": [],
         "children": [
           {
             "name": "GitHub",
-            "path": "/careers/programming/frontend/content/104-version-control-systems/101-repo-hosting-services/100-github.md",
+            "path": "/careers/programming/frontend/content/104-version-control-systems/101-repo-hosting-services/100-github.mdx",
             "parentId": "101-repo-hosting-services",
             "grandParentId": "104-version-control-systems",
             "opinion": ["personal"],
@@ -235,7 +235,7 @@
           },
           {
             "name": "GitLab",
-            "path": "/careers/programming/frontend/content/104-version-control-systems/101-repo-hosting-services/101-gitlab.md",
+            "path": "/careers/programming/frontend/content/104-version-control-systems/101-repo-hosting-services/101-gitlab.mdx",
             "parentId": "101-repo-hosting-services",
             "grandParentId": "104-version-control-systems",
             "opinion": ["alternative"],
@@ -243,7 +243,7 @@
           },
           {
             "name": "Bitbucket",
-            "path": "/careers/programming/frontend/content/104-version-control-systems/101-repo-hosting-services/102-bitbucket.md",
+            "path": "/careers/programming/frontend/content/104-version-control-systems/101-repo-hosting-services/102-bitbucket.mdx",
             "parentId": "101-repo-hosting-services",
             "grandParentId": "104-version-control-systems",
             "opinion": ["alternative"],
@@ -255,14 +255,14 @@
   },
   {
     "name": "Web Security",
-    "path": "/careers/programming/frontend/content/105-web-security-knowledge/000-readme.md",
+    "path": "/careers/programming/frontend/content/105-web-security-knowledge/000-readme.mdx",
     "parentId": "105-web-security-knowledge",
     "grandParentId": "",
     "opinion": ["order"],
     "children": [
       {
         "name": "HTTPS",
-        "path": "/careers/programming/frontend/content/105-web-security-knowledge/100-https.md",
+        "path": "/careers/programming/frontend/content/105-web-security-knowledge/100-https.mdx",
         "parentId": "105-web-security-knowledge",
         "grandParentId": "",
         "opinion": [],
@@ -270,7 +270,7 @@
       },
       {
         "name": "Content Security Policy",
-        "path": "/careers/programming/frontend/content/105-web-security-knowledge/101-content-security-policy.md",
+        "path": "/careers/programming/frontend/content/105-web-security-knowledge/101-content-security-policy.mdx",
         "parentId": "105-web-security-knowledge",
         "grandParentId": "",
         "opinion": [],
@@ -278,7 +278,7 @@
       },
       {
         "name": "CORS",
-        "path": "/careers/programming/frontend/content/105-web-security-knowledge/102-cors.md",
+        "path": "/careers/programming/frontend/content/105-web-security-knowledge/102-cors.mdx",
         "parentId": "105-web-security-knowledge",
         "grandParentId": "",
         "opinion": [],
@@ -286,7 +286,7 @@
       },
       {
         "name": "OWASP Security Risks",
-        "path": "/careers/programming/frontend/content/105-web-security-knowledge/103-owasp-security-risks.md",
+        "path": "/careers/programming/frontend/content/105-web-security-knowledge/103-owasp-security-risks.mdx",
         "parentId": "105-web-security-knowledge",
         "grandParentId": "",
         "opinion": [],
@@ -296,14 +296,14 @@
   },
   {
     "name": "Package Managers",
-    "path": "/careers/programming/frontend/content/106-package-managers/000-readme.md",
+    "path": "/careers/programming/frontend/content/106-package-managers/000-readme.mdx",
     "parentId": "106-package-managers",
     "grandParentId": "",
     "opinion": ["order"],
     "children": [
       {
         "name": "NPM",
-        "path": "/careers/programming/frontend/content/106-package-managers/100-npm.md",
+        "path": "/careers/programming/frontend/content/106-package-managers/100-npm.mdx",
         "parentId": "106-package-managers",
         "grandParentId": "",
         "opinion": [],
@@ -311,7 +311,7 @@
       },
       {
         "name": "YARN",
-        "path": "/careers/programming/frontend/content/106-package-managers/101-yarn.md",
+        "path": "/careers/programming/frontend/content/106-package-managers/101-yarn.mdx",
         "parentId": "106-package-managers",
         "grandParentId": "",
         "opinion": [],
@@ -321,14 +321,14 @@
   },
   {
     "name": "CSS Architecture",
-    "path": "/careers/programming/frontend/content/107-css-architecture/000-readme.md",
+    "path": "/careers/programming/frontend/content/107-css-architecture/000-readme.mdx",
     "parentId": "107-css-architecture",
     "grandParentId": "",
     "opinion": ["order"],
     "children": [
       {
         "name": "BEM",
-        "path": "/careers/programming/frontend/content/107-css-architecture/100-bem.md",
+        "path": "/careers/programming/frontend/content/107-css-architecture/100-bem.mdx",
         "parentId": "107-css-architecture",
         "grandParentId": "",
         "opinion": [],
@@ -336,7 +336,7 @@
       },
       {
         "name": "OOCSS",
-        "path": "/careers/programming/frontend/content/107-css-architecture/101-oocss.md",
+        "path": "/careers/programming/frontend/content/107-css-architecture/101-oocss.mdx",
         "parentId": "107-css-architecture",
         "grandParentId": "",
         "opinion": [],
@@ -344,7 +344,7 @@
       },
       {
         "name": "SMACSS",
-        "path": "/careers/programming/frontend/content/107-css-architecture/102-smacss.md",
+        "path": "/careers/programming/frontend/content/107-css-architecture/102-smacss.mdx",
         "parentId": "107-css-architecture",
         "grandParentId": "",
         "opinion": [],
@@ -354,14 +354,14 @@
   },
   {
     "name": "CSS Preprocessors",
-    "path": "/careers/programming/frontend/content/108-css-preprocessors/000-readme.md",
+    "path": "/careers/programming/frontend/content/108-css-preprocessors/000-readme.mdx",
     "parentId": "108-css-preprocessors",
     "grandParentId": "",
     "opinion": ["order"],
     "children": [
       {
         "name": "Sass",
-        "path": "/careers/programming/frontend/content/108-css-preprocessors/100-sass.md",
+        "path": "/careers/programming/frontend/content/108-css-preprocessors/100-sass.mdx",
         "parentId": "108-css-preprocessors",
         "grandParentId": "",
         "opinion": [],
@@ -369,7 +369,7 @@
       },
       {
         "name": "PostCSS",
-        "path": "/careers/programming/frontend/content/108-css-preprocessors/101-postcss.md",
+        "path": "/careers/programming/frontend/content/108-css-preprocessors/101-postcss.mdx",
         "parentId": "108-css-preprocessors",
         "grandParentId": "",
         "opinion": [],
@@ -377,7 +377,7 @@
       },
       {
         "name": "Less",
-        "path": "/careers/programming/frontend/content/108-css-preprocessors/102-less.md",
+        "path": "/careers/programming/frontend/content/108-css-preprocessors/102-less.mdx",
         "parentId": "108-css-preprocessors",
         "grandParentId": "",
         "opinion": [],
@@ -387,22 +387,21 @@
   },
   {
     "name": "Build Tools",
-    "path": "/careers/programming/frontend/content/109-build-tools/000-readme.md",
+    "path": "/careers/programming/frontend/content/109-build-tools/000-readme.mdx",
     "parentId": "109-build-tools",
     "grandParentId": "",
     "opinion": ["personal"],
     "children": [
       {
         "name": "Task runners",
-        "path": "/careers/programming/frontend/content/109-build-tools/100-task-runners/000-readme.md",
-        "parentId": "109-build-tools",
-        "grandParentId": "",
+        "path": "/careers/programming/frontend/content/109-build-tools/100-task-runners/000-readme.mdx",
+        "parentId": "100-task-runners",
+        "grandParentId": "109-build-tools",
         "opinion": [],
         "children": [
           {
             "name": "npm scripts",
-            "path": "/careers/programming/frontend/content/109-build-tools/100-task-runners/100-npm-scripts.md",
-            "level": "grand-child",
+            "path": "/careers/programming/frontend/content/109-build-tools/100-task-runners/100-npm-scripts.mdx",
             "parentId": "100-task-runners",
             "grandParentId": "109-build-tools",
             "opinion": ["personal"],
@@ -412,15 +411,14 @@
       },
       {
         "name": "Linters formatters",
-        "path": "/careers/programming/frontend/content/109-build-tools/102-linters-formatters/000-readme.md",
-        "parentId": "109-build-tools",
-        "grandParentId": "",
+        "path": "/careers/programming/frontend/content/109-build-tools/102-linters-formatters/000-readme.mdx",
+        "parentId": "102-linters-formatters",
+        "grandParentId": "109-build-tools",
         "opinion": [],
         "children": [
           {
             "name": "prettier",
-            "path": "/careers/programming/frontend/content/109-build-tools/102-linters-formatters/100-prettier.md",
-            "level": "grand-child",
+            "path": "/careers/programming/frontend/content/109-build-tools/102-linters-formatters/100-prettier.mdx",
             "parentId": "102-linters-formatters",
             "grandParentId": "109-build-tools",
             "opinion": ["order"],
@@ -428,8 +426,7 @@
           },
           {
             "name": "eslint",
-            "path": "/careers/programming/frontend/content/109-build-tools/102-linters-formatters/101-eslint.md",
-            "level": "grand-child",
+            "path": "/careers/programming/frontend/content/109-build-tools/102-linters-formatters/101-eslint.mdx",
             "parentId": "102-linters-formatters",
             "grandParentId": "109-build-tools",
             "opinion": ["order"],
@@ -437,8 +434,7 @@
           },
           {
             "name": "standardjs",
-            "path": "/careers/programming/frontend/content/109-build-tools/102-linters-formatters/102-standardjs.md",
-            "level": "grand-child",
+            "path": "/careers/programming/frontend/content/109-build-tools/102-linters-formatters/102-standardjs.mdx",
             "parentId": "102-linters-formatters",
             "grandParentId": "109-build-tools",
             "opinion": ["never"],
@@ -448,15 +444,14 @@
       },
       {
         "name": "Module Bundlers",
-        "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/000-readme.md",
-        "parentId": "109-build-tools",
-        "grandParentId": "",
+        "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/000-readme.mdx",
+        "parentId": "101-module-bundlers",
+        "grandParentId": "109-build-tools",
         "opinion": [],
         "children": [
           {
             "name": "webpack",
-            "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/100-webpack.md",
-            "level": "grand-child",
+            "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/100-webpack.mdx",
             "parentId": "101-module-bundlers",
             "grandParentId": "109-build-tools",
             "opinion": ["personal"],
@@ -464,8 +459,7 @@
           },
           {
             "name": "esbuild",
-            "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/101-esbuild.md",
-            "level": "grand-child",
+            "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/101-esbuild.mdx",
             "parentId": "101-module-bundlers",
             "grandParentId": "109-build-tools",
             "opinion": ["personal"],
@@ -473,8 +467,7 @@
           },
           {
             "name": "rollup",
-            "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/102-rollup.md",
-            "level": "grand-child",
+            "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/102-rollup.mdx",
             "parentId": "101-module-bundlers",
             "grandParentId": "109-build-tools",
             "opinion": ["alternative"],
@@ -482,8 +475,7 @@
           },
           {
             "name": "parcel",
-            "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/103-parcel.md",
-            "level": "grand-child",
+            "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/103-parcel.mdx",
             "parentId": "101-module-bundlers",
             "grandParentId": "109-build-tools",
             "opinion": ["alternative"],
@@ -491,8 +483,7 @@
           },
           {
             "name": "vite",
-            "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/104-vite.md",
-            "level": "grand-child",
+            "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/104-vite.mdx",
             "parentId": "101-module-bundlers",
             "grandParentId": "109-build-tools",
             "opinion": ["alternative"],
@@ -504,22 +495,21 @@
   },
   {
     "name": "JavaScript Framework",
-    "path": "/careers/programming/frontend/content/110-javascript-framework/000-readme.md",
+    "path": "/careers/programming/frontend/content/110-javascript-framework/000-readme.mdx",
     "parentId": "110-javascript-framework",
     "grandParentId": "",
     "opinion": [],
     "children": [
       {
         "name": "React JS",
-        "path": "/careers/programming/frontend/content/110-javascript-framework/100-react-js/000-readme.md",
-        "parentId": "110-javascript-framework",
-        "grandParentId": "",
+        "path": "/careers/programming/frontend/content/110-javascript-framework/100-react-js/000-readme.mdx",
+        "parentId": "100-react-js",
+        "grandParentId": "110-javascript-framework",
         "opinion": ["personal"],
         "children": [
           {
             "name": "Redux",
-            "path": "/careers/programming/frontend/content/110-javascript-framework/100-react-js/100-redux.md",
-            "level": "grand-child",
+            "path": "/careers/programming/frontend/content/110-javascript-framework/100-react-js/100-redux.mdx",
             "parentId": "100-react-js",
             "grandParentId": "110-javascript-framework",
             "opinion": ["personal"],
@@ -527,8 +517,7 @@
           },
           {
             "name": "Mobx",
-            "path": "/careers/programming/frontend/content/110-javascript-framework/100-react-js/101-mobx.md",
-            "level": "grand-child",
+            "path": "/careers/programming/frontend/content/110-javascript-framework/100-react-js/101-mobx.mdx",
             "parentId": "100-react-js",
             "grandParentId": "110-javascript-framework",
             "opinion": ["alternative"],
@@ -536,8 +525,7 @@
           },
           {
             "name": "Recoil",
-            "path": "/careers/programming/frontend/content/110-javascript-framework/100-react-js/102-recoil.md",
-            "level": "grand-child",
+            "path": "/careers/programming/frontend/content/110-javascript-framework/100-react-js/102-recoil.mdx",
             "parentId": "100-react-js",
             "grandParentId": "110-javascript-framework",
             "opinion": ["alternative"],
@@ -547,15 +535,14 @@
       },
       {
         "name": "Angular JS",
-        "path": "/careers/programming/frontend/content/110-javascript-framework/101-angular/000-readme.md",
-        "parentId": "110-javascript-framework",
-        "grandParentId": "",
+        "path": "/careers/programming/frontend/content/110-javascript-framework/101-angular/000-readme.mdx",
+        "parentId": "101-angular",
+        "grandParentId": "110-javascript-framework",
         "opinion": ["alternative"],
         "children": [
           {
             "name": "RxJS",
-            "path": "/careers/programming/frontend/content/110-javascript-framework/101-angular/100-rxjs.md",
-            "level": "grand-child",
+            "path": "/careers/programming/frontend/content/110-javascript-framework/101-angular/100-rxjs.mdx",
             "parentId": "101-angular",
             "grandParentId": "110-javascript-framework",
             "opinion": ["alternative"],
@@ -563,8 +550,7 @@
           },
           {
             "name": "NgRx",
-            "path": "/careers/programming/frontend/content/110-javascript-framework/101-angular/101-ngrx.md",
-            "level": "grand-child",
+            "path": "/careers/programming/frontend/content/110-javascript-framework/101-angular/101-ngrx.mdx",
             "parentId": "101-angular",
             "grandParentId": "110-javascript-framework",
             "opinion": ["alternative"],
@@ -574,15 +560,14 @@
       },
       {
         "name": "Vue JS",
-        "path": "/careers/programming/frontend/content/110-javascript-framework/102-vue-js/000-readme.md",
-        "parentId": "110-javascript-framework",
-        "grandParentId": "",
+        "path": "/careers/programming/frontend/content/110-javascript-framework/102-vue-js/000-readme.mdx",
+        "parentId": "102-vue-js",
+        "grandParentId": "110-javascript-framework",
         "opinion": ["alternative"],
         "children": [
           {
             "name": "Vuex",
-            "path": "/careers/programming/frontend/content/110-javascript-framework/102-vue-js/100-vuex.md",
-            "level": "grand-child",
+            "path": "/careers/programming/frontend/content/110-javascript-framework/102-vue-js/100-vuex.mdx",
             "parentId": "102-vue-js",
             "grandParentId": "110-javascript-framework",
             "opinion": ["alternative"],
@@ -594,14 +579,14 @@
   },
   {
     "name": "Modern CSS",
-    "path": "/careers/programming/frontend/content/111-modern-css/000-readme.md",
+    "path": "/careers/programming/frontend/content/111-modern-css/000-readme.mdx",
     "parentId": "111-modern-css",
     "grandParentId": "",
     "opinion": ["order"],
     "children": [
       {
         "name": "Styled Components",
-        "path": "/careers/programming/frontend/content/111-modern-css/100-styled-components.md",
+        "path": "/careers/programming/frontend/content/111-modern-css/100-styled-components.mdx",
         "parentId": "111-modern-css",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -609,7 +594,7 @@
       },
       {
         "name": "CSS Modules",
-        "path": "/careers/programming/frontend/content/111-modern-css/101-css-modules.md",
+        "path": "/careers/programming/frontend/content/111-modern-css/100-css-modules.mdx",
         "parentId": "111-modern-css",
         "grandParentId": "",
         "opinion": ["personal"],
@@ -617,7 +602,7 @@
       },
       {
         "name": "Styled JSX",
-        "path": "/careers/programming/frontend/content/111-modern-css/102-styled-jsx.md",
+        "path": "/careers/programming/frontend/content/111-modern-css/102-styled-jsx.mdx",
         "parentId": "111-modern-css",
         "grandParentId": "",
         "opinion": ["alternative"],
@@ -625,7 +610,7 @@
       },
       {
         "name": "Emotion",
-        "path": "/careers/programming/frontend/content/111-modern-css/103-emotion.md",
+        "path": "/careers/programming/frontend/content/111-modern-css/103-emotion.mdx",
         "parentId": "111-modern-css",
         "grandParentId": "",
         "opinion": ["alternative"],
@@ -635,14 +620,14 @@
   },
   {
     "name": "Web Components",
-    "path": "/careers/programming/frontend/content/112-web-components/000-readme.md",
+    "path": "/careers/programming/frontend/content/112-web-components/000-readme.mdx",
     "parentId": "112-web-components",
     "grandParentId": "",
     "opinion": ["order"],
     "children": [
       {
         "name": "HTML Templates",
-        "path": "/careers/programming/frontend/content/112-web-components/100-html-templates.md",
+        "path": "/careers/programming/frontend/content/112-web-components/100-html-templates.mdx",
         "parentId": "112-web-components",
         "grandParentId": "",
         "opinion": [],
@@ -650,7 +635,7 @@
       },
       {
         "name": "Custom Elements",
-        "path": "/careers/programming/frontend/content/112-web-components/101-custom-elements.md",
+        "path": "/careers/programming/frontend/content/112-web-components/101-custom-elements.mdx",
         "parentId": "112-web-components",
         "grandParentId": "",
         "opinion": [],
@@ -658,7 +643,7 @@
       },
       {
         "name": "Shadow DOM",
-        "path": "/careers/programming/frontend/content/112-web-components/102-shadow-dom.md",
+        "path": "/careers/programming/frontend/content/112-web-components/102-shadow-dom.mdx",
         "parentId": "112-web-components",
         "grandParentId": "",
         "opinion": [],
@@ -668,50 +653,30 @@
   },
   {
     "name": "CSS Frameworks",
-    "path": "/careers/programming/frontend/content/113-css-frameworks/000-readme.md",
+    "path": "/careers/programming/frontend/content/113-css-frameworks/000-readme.mdx",
     "parentId": "113-css-frameworks",
     "grandParentId": "",
     "opinion": [],
     "children": [
       {
-        "name": "JS First",
-        "path": "/careers/programming/frontend/content/113-css-frameworks/100-js-first/000-readme.md",
-        "parentId": "113-css-frameworks",
-        "grandParentId": "",
+        "name": "CSS First",
+        "path": "/careers/programming/frontend/content/113-css-frameworks/101-css-first/000-readme.mdx",
+        "parentId": "100-css-first",
+        "grandParentId": "113-css-frameworks",
         "opinion": [],
         "children": [
           {
-            "name": "Tailwind CSS",
-            "path": "/careers/programming/frontend/content/113-css-frameworks/100-js-first/100-tailwind-css.md",
-            "level": "grand-child",
-            "parentId": "100-js-first",
+            "name": "Bootstrap CSS",
+            "path": "/careers/programming/frontend/content/113-css-frameworks/100-css-first/100-bootstrap.mdx",
+            "parentId": "100-css-first",
             "grandParentId": "113-css-frameworks",
             "opinion": ["alternative"],
             "children": []
           },
           {
-            "name": "Chakra UI",
-            "path": "/careers/programming/frontend/content/113-css-frameworks/100-js-first/101-chakra-ui.md",
-            "level": "grand-child",
-            "parentId": "100-js-first",
-            "grandParentId": "113-css-frameworks",
-            "opinion": ["alternative"],
-            "children": []
-          },
-          {
-            "name": "Material UI",
-            "path": "/careers/programming/frontend/content/113-css-frameworks/100-js-first/102-material-ui.md",
-            "level": "grand-child",
-            "parentId": "100-js-first",
-            "grandParentId": "113-css-frameworks",
-            "opinion": ["alternative"],
-            "children": []
-          },
-          {
-            "name": "Radix UI",
-            "path": "/careers/programming/frontend/content/113-css-frameworks/100-js-first/103-radix-ui.md",
-            "level": "grand-child",
-            "parentId": "100-js-first",
+            "name": "Bulma CSS",
+            "path": "/careers/programming/frontend/content/113-css-frameworks/100-css-first/101-bulma.mdx",
+            "parentId": "100-css-first",
             "grandParentId": "113-css-frameworks",
             "opinion": ["alternative"],
             "children": []
@@ -719,26 +684,40 @@
         ]
       },
       {
-        "name": "CSS First",
-        "path": "/careers/programming/frontend/content/113-css-frameworks/101-css-first/000-readme.md",
-        "parentId": "113-css-frameworks",
-        "grandParentId": "",
+        "name": "JS First",
+        "path": "/careers/programming/frontend/content/113-css-frameworks/101-js-first/000-readme.mdx",
+        "parentId": "101-js-first",
+        "grandParentId": "113-css-frameworks",
         "opinion": [],
         "children": [
           {
-            "name": "Bootstrap CSS",
-            "path": "/careers/programming/frontend/content/113-css-frameworks/101-css-first/100-bootstrap.md",
-            "level": "grand-child",
-            "parentId": "101-css-first",
+            "name": "Tailwind CSS",
+            "path": "/careers/programming/frontend/content/113-css-frameworks/101-js-first/100-tailwind-css.mdx",
+            "parentId": "101-js-first",
             "grandParentId": "113-css-frameworks",
             "opinion": ["alternative"],
             "children": []
           },
           {
-            "name": "Bulma CSS",
-            "path": "/careers/programming/frontend/content/113-css-frameworks/101-css-first/101-bulma.md",
-            "level": "grand-child",
-            "parentId": "101-css-first",
+            "name": "Chakra UI",
+            "path": "/careers/programming/frontend/content/113-css-frameworks/101-js-first/101-chakra-ui.mdx",
+            "parentId": "101-js-first",
+            "grandParentId": "113-css-frameworks",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Material UI",
+            "path": "/careers/programming/frontend/content/113-css-frameworks/101-js-first/102-material-ui.mdx",
+            "parentId": "101-js-first",
+            "grandParentId": "113-css-frameworks",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Radix UI",
+            "path": "/careers/programming/frontend/content/113-css-frameworks/101-js-first/103-radix-ui.mdx",
+            "parentId": "101-js-first",
             "grandParentId": "113-css-frameworks",
             "opinion": ["alternative"],
             "children": []
