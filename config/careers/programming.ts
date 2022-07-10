@@ -40,13 +40,11 @@ export const programming: CareerMapType[] =
     featuredDescription: "Step by step guide to becoming a frontend developer in 2022",
     featured: true,
     imageUrl: "/careers/programming/frontend.png",
-    jsonUrl: "/project/frontend.json",
     resourcesPath: "/careers/programming/frontend/resources.md",
     pdfUrl: "https://kamranahmedse.gumroad.com/l/frontend-roadmap",
     contentPathsFilePath: "/careers/programming/frontend/content-paths.json",
     id: "frontend",
     parentId: "programming",
-    metaPath: "/careers/programming/frontend/meta.json",
     isUpcoming: false
   },
   {
@@ -86,13 +84,11 @@ export const programming: CareerMapType[] =
     featuredDescription: "Step by step guide to becoming a backend developer in 2022",
     featured: true,
     imageUrl: "/careers/programming/backend.png",
-    jsonUrl: "/project/backend.json",
     resourcesPath: "/careers/programming/backend/resources.md",
     pdfUrl: "https://kamranahmedse.gumroad.com/l/backend-roadmap",
     contentPathsFilePath: "/careers/programming/backend/content-paths.json",
     id: "backend",
     parentId: "programming",
-    metaPath: "/careers/programming/backend/meta.json",
     isUpcoming: false
   }
 ];

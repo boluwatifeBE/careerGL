@@ -2,34 +2,48 @@ import Link from 'next/link';
 import { Drawer } from '../Drawer';
 import React, { useState } from 'react';
 import {
+  convertNameToUrl,
   formatSlugTolink,
+  getFromLocalStorage,
   OpinionTick,
-  setOrUdateLocalStorage,
 } from './RenderFunctions';
 
 function ParentCard(item) {
   const [isOpen, setIsOpen] = useState(false);
+  const nameUrl = convertNameToUrl(item.name);
+  const isDone = getFromLocalStorage(nameUrl) === 'done';
 
   return (
     <div className='flex items-center'>
       <h1
         className={`text-xl font-extrabold leading-9 tracking-tight text-gray-800 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-3xl md:leading-14`}
       >
-        <Link
+        {/* <Link
           href={`/careers/${item.careermap}/${item.page}/${formatSlugTolink(
             item.path,
+            item.parentId,
+            item.grandParentId,
           )}`}
         >
           {item.name}
-        </Link>
-        {/* <button
-        onClick={() => {
-                        setOrUdateLocalStorage('path', item.path);
-                        setIsOpen(!isOpen);
-                    }}
-                > 
-                    {item.name}
-                </button> */}
+        </Link> 
+        
+        { } | { } */}
+
+        { item.path === '' && item.name }
+
+        { item.path !== '' &&
+          <div suppressHydrationWarning={true} onClick={() => { setIsOpen(!isOpen) }}>
+            {!isDone && (
+              item.name
+            )}
+            {isDone && (
+              <div suppressHydrationWarning={true} className=' bg-appColor-50 text-black dark:border-gray-500'>{item.name} </div>
+            )}
+          </div>
+        }
+
+
       </h1>
       <div className='ml-2 flex space-x-1'>
         {!item.opinion ||
@@ -38,16 +52,14 @@ function ParentCard(item) {
           ))}
       </div>
 
-      {/* <Drawer
-                careermap={item}
-                name={item.name}
-                isOpen={isOpen}
-                onClose={() => setIsOpen(false)}
-                position="right"
-                removeWhenClosed={true}
-            >
-                <CareerContent {...item} />
-            </Drawer> */}
+      <Drawer
+        name={item.name}
+        path={item.path}
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+        position="right"
+        removeWhenClosed={true}
+      />
     </div>
   );
 }

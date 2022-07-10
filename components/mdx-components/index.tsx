@@ -1,6 +1,5 @@
 import { Code } from '@chakra-ui/react';
 import { P } from './p';
-import Headings from './heading';
 import { Pre } from './pre';
 import BlockQuote from './blockquote';
 import { Table } from './table';
@@ -14,7 +13,6 @@ import { ResourceGroupTitle } from './resource-group-title';
 
 const MdxComponents = {
   p: P,
-  ...Headings,
   pre: Pre,
   blockquote: BlockQuote,
   a: EnrichedLink,
