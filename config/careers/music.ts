@@ -4,15 +4,15 @@ export const music: CareerMapType[] =
 [
   {
     seo: {
-      title: "Frontend Developer Roadmap: Learn to become a modern frontend developer",
-      description: "Learn to become a modern frontend developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern frontend development.",
+      title: "Music Production Roadmap: Learn to become a modern music producer",
+      description: "Learn to become a modern music producer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern frontend development.",
       keywords: [
         "javascript roadmap 2022",
         "frontend roadmap 2022",
-        "frontend developer roadmap 2022",
+        "music production roadmap 2022",
         "guide to becoming a developer",
-        "guide to becoming a frontend developer",
-        "frontend developer",
+        "guide to becoming a music production",
+        "music production",
         "frontend engineer",
         "frontend skills",
         "frontend development",
@@ -21,36 +21,28 @@ export const music: CareerMapType[] =
         "frontend development skills test",
         "frontend roadmap",
         "frontend engineer roadmap",
-        "frontend developer roadmap",
-        "become a frontend developer",
-        "frontend developer career path",
+        "music production roadmap",
+        "become a music production",
+        "music production career path",
         "javascript developer",
         "modern javascript developer",
         "node developer",
         "skills for frontend development",
         "learn frontend development",
         "what is frontend development",
-        "frontend developer quiz",
-        "frontend developer interview questions"
+        "music production quiz",
+        "music production interview questions"
       ]
     },
-    title: "Juju",
-    description: "Step by step guide to becoming a modern frontend developer in 2022",
-    featuredTitle: "Frontend",
-    featuredDescription: "Step by step guide to becoming a frontend developer in 2022",
-    author: {
-      name: "Kamran Ahmed",
-      url: "https://twitter.com/kamranahmedse"
-    },
+    title: "Music Production",
+    description: "Step by step guide to becoming a modern music producer in 2022",
+    featuredTitle: "Music Production",
+    featuredDescription: "Step by step guide to becoming a music producer in 2022",
     featured: true,
-    imageUrl: "/careers/frontend.png",
-    jsonUrl: "/project/frontend.json",
-    resourcesPath: "/careers/music/100-frontend/resources.md",
-    pdfUrl: "https://kamranahmedse.gumroad.com/l/frontend-roadmap",
-    contentPathsFilePath: "/careers/music/100-frontend/content-paths.json",
-    id: "juju",
+    resourcesPath: "/careers/music/production/resources.md",
+    contentPathsFilePath: "/careers/music/production/content-paths.json",
+    id: "production",
     parentId: "music",
-    metaPath: "/careers/100-frontend/meta.json",
     isUpcoming: false
   }
 ];

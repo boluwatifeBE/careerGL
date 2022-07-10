@@ -5,34 +5,33 @@ import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import dynamic from 'next/dynamic';
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
 import config, { POSTS_PER_PAGE } from 'config';
-import Card from '@/components/Card';
-import CareerLayout from '@/layouts/CareerLayout';
 import { ComponentProps, useState } from 'react';
+import CareerGridLayout from '@/layouts/CareerGridLayout';
 
 // @ts-ignore
 export const getStaticProps: GetStaticProps<{
   author: AuthorFrontMatter;
-  posts: ComponentProps<typeof CareerLayout>['posts'];
-  initialDisplayPosts: ComponentProps<
-    typeof CareerLayout
-  >['initialDisplayPosts'];
-  // pagination: ComponentProps<typeof CareerLayout>['pagination'];
+  careers: ComponentProps<typeof CareerGridLayout>['careers'];
+  initialDisplayCareers: ComponentProps<
+    typeof CareerGridLayout
+  >['initialDisplayCareers'];
+  // pagination: ComponentProps<typeof CareerGridLayout>['pagination'];
 }> = async () => {
   const authorDetails = await getFileBySlug<AuthorFrontMatter>('authors', [
     'default',
   ]);
-  const posts = await config.careers;
+  const careers = await config.careers;
 
   const { frontMatter: author } = authorDetails;
 
-  return { props: { author, posts } };
+  return { props: { author, careers } };
 };
 
 const Banner = dynamic(import('@/components/Banner'));
 
 export default function Home({
-  posts,
-  initialDisplayPosts,
+  careers,
+  initialDisplayCareers,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
@@ -43,12 +42,11 @@ export default function Home({
         }
       />
       <div className='divide-y divide-gray-200 dark:divide-gray-700'>
-        <CareerLayout
-          posts={posts}
+        <CareerGridLayout
+          careers={careers}
           title={'Career'}
-          initialDisplayPosts={initialDisplayPosts}
+          initialDisplayCareers={initialDisplayCareers}
         />
-        {/* <Banner frontMatter={author} /> */}
       </div>
     </>
   );

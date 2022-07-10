@@ -1,0 +1,7 @@
+# Cubase
+
+Cubase is a digital audio workstation (DAW) developed by Steinberg for music and MIDI recording, arranging and editing. The first version, which was originally only a MIDI sequencer and ran on the Atari ST computer, was released in 1989.[3] Cut-down versions of Cubase are included with almost all Yamaha audio and MIDI hardware, as well as hardware from other manufacturers. These versions can be upgraded to a more advanced version at a discount.
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://en.wikipedia.org/wiki/Steinberg_Cubase'>Wikipedia: Cubase</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=WdMhXUi5zC4'>The Essential Cubase User Interface overview for beginners!</BadgeLink>

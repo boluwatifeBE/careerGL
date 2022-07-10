@@ -91,6 +91,12 @@ export const setOrUdateLocalStorage = (key?: string, value?: any) => {
   localStorage.setItem(key, value);
 };
 
+export const getFromLocalStorage = (key?: string) => {
+  if (typeof window === 'object') {
+    return localStorage.getItem(key);
+  }
+};
+
 export const removeNull = (array): any[] => {
   return [array].filter(item => item !== null);
 };
