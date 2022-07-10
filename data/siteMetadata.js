@@ -2,8 +2,7 @@ const siteMetadata = {
   title: 'Careermap',
   author: 'Careermap',
   headerTitle: 'careermap.io',
-  description:
-    'careermap.io is a community effort to create roadmaps, guides and other educational content to help guide the developers in picking up the path and guide their learnings. ',
+  description: 'careermap.io is a community effort to create career paths, guides and other educational content to help guide the individuals not to be confuse about what to learn next. ',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteLogo: '/static/images/logo.png',
@@ -11,7 +10,10 @@ const siteMetadata = {
   socialBanner: '/static/images/twitter-card.png',
   email: 'info@careermap.com',
   url: {
-    web: "https://careermap.sh",
+    web: "https://careermap.io",
+    webDomain: "@careermap.io",
+    twitterUsername: '@ife_adewunmi',
+    calendly: "https://calendly.com/",
     twitter: 'https://twitter.com/Twitter',
     facebook: 'https://facebook.com',
     youtube: 'https://youtube.com',

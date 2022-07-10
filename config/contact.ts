@@ -1,10 +1,12 @@
+import siteMetadata from '@/data/siteMetadata';
+
 export enum ContactType {
   github = 'github',
   linkedin = 'linkedin',
   twitter = 'twitter',
   youtube = 'youtube',
   email = 'email',
-  buymeacoffee = 'buymeacoffee',
+  // buymeacoffee = 'buymeacoffee',
 }
 
 export interface Contact {
@@ -15,15 +17,15 @@ export interface Contact {
 }
 
 export const contact: Contact = {
-  twitter: '@karan_6864',
-  site: 'karanpratapsingh.com',
-  calendly: 'https://calendly.com/karanpratapsingh',
+  twitter: siteMetadata.url.twitterUsername,
+  site: siteMetadata.url.webDomain,
+  calendly: siteMetadata.url.calendly,
   links: {
-    github: 'https://github.com/karanpratapsingh',
-    linkedin: 'https://linkedin.com/in/karan99',
-    twitter: 'https://twitter.com/karan_6864',
-    youtube: 'https://www.youtube.com/c/KaranPratapSingh',
-    email: 'mailto:contact@karanpratapsingh.com',
-    buymeacoffee: 'https://www.buymeacoffee.com/karanps',
+    github: siteMetadata.url.youtube,
+    linkedin: siteMetadata.url.linkedin,
+    twitter: siteMetadata.url.twitter,
+    youtube: siteMetadata.url.youtube,
+    email: `mailto:contact${siteMetadata.url.webDomain}`,
+    // buymeacoffee: 'https://www.buymeacoffee.com/karanps'
   },
 };
