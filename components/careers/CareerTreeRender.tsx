@@ -20,7 +20,7 @@ export const CareerTreeRender = (props: CareerTreeRenderType) => {
       {data.map(item => (
         <div
           key={item.name}
-          className='rounded-xl border-2 border-gray-800 p-4  dark:border-gray-50'
+          className='rounded-xl border-2 border-gray-800 bg-white p-4 dark:border-gray-50 dark:bg-gray-900'
         >
           <ParentCard careermap={careermap} page={page} {...item} />
           {item.children.length > 0 && (
@@ -28,7 +28,7 @@ export const CareerTreeRender = (props: CareerTreeRenderType) => {
               {item.children.map(child => (
                 <div
                   key={child.name}
-                  className={`rounded-lg  border-2 border-gray-700 bg-gray-100 p-2 font-bold text-black dark:border-gray-100 dark:bg-gray-800  dark:text-white`}
+                  className={`rounded-lg  border-2 border-gray-700 bg-gray-100 p-2 font-semibold text-black dark:border-gray-100 dark:bg-gray-800  dark:text-white`}
                 >
                   <ChildCard careermap={careermap} page={page} {...child} />
                 </div>

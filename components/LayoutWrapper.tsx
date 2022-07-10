@@ -20,7 +20,7 @@ const LayoutWrapper = ({ children }: Props) => {
     <>
       <AppHeader />
       <SectionContainer>
-        <div className='flex h-screen flex-col justify-between'>
+        <div className='flex h-screen flex-col justify-between pt-20'>
           <main className='mb-auto'>{children}</main>
 
           <Footer />
