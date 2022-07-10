@@ -6,10 +6,10 @@ export const OpinionTick = opinionValue => {
   return (
     <>
       {opinionHas(opinionValue, 'personal') && (
-        <div className='z-10 h-4 w-4 rounded-full  bg-green-600  '></div>
+        <div className='z-10 h-4 w-4 rounded-full  bg-[#a3875f]  '></div>
       )}
       {opinionHas(opinionValue, 'alternative') && (
-        <div className='z-10 h-4 w-4 rounded-full bg-yellow-600'></div>
+        <div className='z-10 h-4 w-4 rounded-full bg-green-700'></div>
       )}
       {opinionHas(opinionValue, 'order') && (
         <div className='z-10 h-4 w-4 rounded-full bg-red-600'></div>

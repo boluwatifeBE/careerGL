@@ -46,7 +46,7 @@ function ChildCard(item) {
           {item.children.map(child => (
             <div
               key={child.name}
-              className={`${child.level} mx-[3px] mt-[6px] box-border w-full flex-grow justify-between space-x-1 rounded-lg border-2 border-gray-800 bg-appColor-50 px-3 py-1 font-semibold text-black dark:border-gray-500 md:w-[40%] `}
+              className={`${child.level} mx-[3px] mt-[6px] box-border w-full flex-grow justify-between space-x-1 rounded-lg border-2 border-gray-800 bg-appColor-50 px-3 py-1 font-medium text-black dark:border-gray-500 md:w-[40%] `}
             >
               <ChildCard
                 careermap={item.careermap}

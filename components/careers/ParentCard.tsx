@@ -11,9 +11,9 @@ function ParentCard(item) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='flex items-center'>
-      <h1
-        className={`text-xl font-extrabold leading-9 tracking-tight text-gray-800 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-3xl md:leading-14`}
+    <div className='flex items-center '>
+      <div
+        className={`text-lg font-semibold   leading-9 tracking-tight text-gray-800 dark:text-gray-100 sm:text-xl sm:leading-10 md:text-2xl md:leading-12`}
       >
         <Link
           href={`/careers/${item.careermap}/${item.page}/${formatSlugTolink(
@@ -30,7 +30,7 @@ function ParentCard(item) {
                 > 
                     {item.name}
                 </button> */}
-      </h1>
+      </div>
       <div className='ml-2 flex space-x-1'>
         {!item.opinion ||
           (Object.values(item.opinion).length != 0 && (
