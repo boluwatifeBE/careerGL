@@ -103,17 +103,17 @@ export default function PostLayout({
                 />
               )}
               <div className='flex flex-col'>
-                <div className='xl:grid xl:grid-cols-4 xl:gap-x-6'>
+                {/* <div className='xl:grid xl:grid-cols-4 xl:gap-x-6'> */}
                   <div className='prose max-w-none !border-t-0 pt-6 pb-8 dark:prose-dark xl:col-span-3'>
-                    <div className='xl:hidden'>
+                    <div className=''>
                       <TOCInline toc={toc} asDisclosure />
                     </div>
                     {children}
                   </div>
-                  <div className='sticky top-4 hidden  xl:top-8 xl:block '>
+                  {/* <div className='sticky top-4 hidden  xl:top-8 xl:block '>
                     <TOCInline toc={toc} asDisclosure />
-                  </div>
-                </div>
+                  </div> */}
+                {/* </div> */}
                 <div className=' pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300'>
                   <div className=''>
                     <dt className='sr-only'>Authors</dt>

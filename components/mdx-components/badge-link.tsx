@@ -1,8 +1,9 @@
 import React from 'react';
-import { Link, Text, Badge } from '@chakra-ui/react';
+import { Badge } from '@chakra-ui/react';
+import Link from '@/components/Link';
 
 type BadgeLinkType = {
-  target: string;
+  // target: string;
   badgeText: string;
   href: string;
   colorScheme?: string;
@@ -11,7 +12,7 @@ type BadgeLinkType = {
 
 export function BadgeLink(props: BadgeLinkType) {
   const {
-    target = '_blank',
+    // target = '_blank',
     colorScheme = 'purple',
     badgeText,
     href,
@@ -20,7 +21,7 @@ export function BadgeLink(props: BadgeLinkType) {
 
   // Is external URL or is a media URL
   const isExternalUrl = /(^http(s)?:\/\/)|(\.(png|svg|jpeg|jpg)$)/.test(
-    props.href
+    props.href,
   );
 
   const linkProps: Record<string, string> = {
@@ -32,22 +33,17 @@ export function BadgeLink(props: BadgeLinkType) {
   };
 
   return (
-    <Text mb={'0px'}>
+    <div className=''>
       <Link
-        fontSize="14px"
-        color="blue.700"
-        fontWeight={500}
-        textDecoration="none"
         href={href}
-        target={target}
-        _hover={{ textDecoration: 'none', color: 'purple.400' }}
         {...linkProps}
+        className='  cursor-pointer  py-[10px] text-center text-sm !font-medium !text-slate-700 !no-underline hover:!text-slate-500 dark:hover:!text-slate-100 dark:!text-slate-300  '
       >
-        <Badge fontSize="11px" mr="7px" colorScheme={colorScheme}>
+        <Badge fontSize='11px' mr='7px' colorScheme={colorScheme}>
           {badgeText}
         </Badge>
         {children}
       </Link>
-    </Text>
+    </div>
   );
 }

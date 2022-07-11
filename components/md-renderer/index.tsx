@@ -5,12 +5,12 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { careermapTheme } from '../../styles/theme';
 import MdxComponents from '../mdx-components';
 
-export default function MdRenderer({children}) {
+export default function MdRenderer({ children }) {
   return (
     <ChakraProvider theme={careermapTheme} resetCSS>
-      <MDXProvider components={MdxComponents}>
-        {children}
-      </MDXProvider>
+      <article className='prose dark:prose-dark  '>
+        <MDXProvider components={MdxComponents}>{children}</MDXProvider>
+      </article>
     </ChakraProvider>
   );
-};
+}

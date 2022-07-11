@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Button, Divider, Link, Text } from '@chakra-ui/react';
+
+import Link from '@/components/Link';
 
 type EditContentPageLinkProps = {
   href: string;
@@ -9,31 +10,20 @@ export function EditContentPageLink(props: EditContentPageLinkProps) {
   const { href } = props;
 
   return (
-    <Box my='30px'>
-      <Divider mb="15px" orientation="horizontal" />
-      <Text
-        lineHeight="23px"
-        fontWeight={500}
-        fontSize="14px"
-        color="gray.500"
-        mb="10px"
-      >
-        This page is a work in progress. Help us by writing a small
-        introduction to the topic and suggesting a few links to read more
-        about this topic.
-      </Text>
-      <Button
-        size="sm"
-        py="20px"
-        as={Link}
-        href={href}
-        target="_blank"
-        isFullWidth
-        colorScheme={'gray'}
-        _hover={{ textDecoration: 'none', bg: 'gray.200' }}
-      >
-        Edit this Page
-      </Button>
-    </Box>
+    <div className='mt-5 space-y-5 divide-y-2 divide-gray-100 border-t border-gray-100 dark:divide-gray-700 dark:border-gray-700'>
+      <p className='text-sm font-medium  text-slate-500 dark:text-slate-400  '>
+        This page is a work in progress. Help us by writing a small introduction
+        to the topic and suggesting a few links to read more about this topic.
+      </p>
+      <div className='flex  py-6'>
+        <Link
+          href={href}
+          className=' w-full  cursor-pointer rounded-lg bg-slate-200 px-6 py-[10px] text-center text-sm !font-semibold !text-slate-700 !no-underline hover:bg-slate-300  '
+        >
+          Edit this Page
+        </Link>
+      </div>
+     
+    </div>
   );
 }

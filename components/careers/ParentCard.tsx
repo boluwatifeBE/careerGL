@@ -1,9 +1,8 @@
-import Link from 'next/link';
 import { Drawer } from '../Drawer';
 import React, { useState } from 'react';
 import {
   convertNameToUrl,
-  formatSlugTolink,
+  // formatSlugTolink,
   getFromLocalStorage,
   OpinionTick,
 } from './RenderFunctions';
@@ -14,8 +13,8 @@ function ParentCard(item) {
   const isDone = getFromLocalStorage(nameUrl) === 'done';
 
   return (
-    <div className='flex items-center '>
-      <div
+    <div className='flex items-center  '>
+      <h1
         className={`text-lg font-semibold   leading-9 tracking-tight text-gray-800 dark:text-gray-100 sm:text-xl sm:leading-10 md:text-2xl md:leading-12`}
       >
         {/* <Link
@@ -31,20 +30,27 @@ function ParentCard(item) {
         
         { } | { } */}
 
-        { item.path === '' && item.name }
+        {item.path === '' && item.name}
 
-        { item.path !== '' &&
-          <div suppressHydrationWarning={true} onClick={() => { setIsOpen(!isOpen) }}>
-            {!isDone && (
-              item.name
-            )}
+        {item.path !== '' && (
+          <div
+            suppressHydrationWarning={true}
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+            className='cursor-pointer'
+          >
+            {!isDone && item.name}
             {isDone && (
-              <div suppressHydrationWarning={true} className=' bg-appColor-50 text-black dark:border-gray-500'>{item.name} </div>
+              <div
+                suppressHydrationWarning={true}
+                className=' text-gray-500 line-through'
+              >
+                {item.name}{' '}
+              </div>
             )}
           </div>
-        }
-
-
+        )}
       </h1>
 
       <div className='ml-2 flex space-x-1'>
@@ -59,7 +65,7 @@ function ParentCard(item) {
         path={item.path}
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
-        position="right"
+        position='right'
         removeWhenClosed={true}
       />
     </div>
