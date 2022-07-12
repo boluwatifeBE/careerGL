@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Link from 'next/link';
+
 import { Drawer } from '../Drawer';
 import {
   convertNameToUrl,
-  formatSlugTolink,
+  // formatSlugTolink,
   getFromLocalStorage,
   OpinionTick,
 } from './RenderFunctions';
@@ -16,7 +16,6 @@ function ChildCard(item) {
   return (
     <>
       <div key={item.name} className={'flex items-center'}>
-        
         {/* <Link
           href={`/careers/${item.careermap}/${item.page}/${formatSlugTolink(
             item.path,
@@ -29,17 +28,26 @@ function ChildCard(item) {
 
         { } | { } */}
 
-        { item.path === '' && item.name }
-        { item.path !== '' &&
-          <div suppressHydrationWarning={true} onClick={() => { setIsOpen(!isOpen) }}>
-            {!isDone && (
-              item.name
-            )}
+        {item.path === '' && item.name}
+        {item.path !== '' && (
+          <div
+            suppressHydrationWarning={true}
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+            className='cursor-pointer'
+          >
+            {!isDone && item.name}
             {isDone && (
-              <div suppressHydrationWarning={true} className=' bg-appColor-50 text-black dark:border-gray-500'>{item.name} </div>
+              <div
+                suppressHydrationWarning={true}
+                className=' text-gray-500 line-through '
+              >
+                {item.name}{' '}
+              </div>
             )}
           </div>
-        }
+        )}
 
         <div className='ml-2 flex space-x-1'>
           {!item.opinion ||
@@ -57,9 +65,7 @@ function ChildCard(item) {
           {item.children.map(child => (
             <div
               key={child.name}
-
-              className={`mx-[3px] mt-[6px] box-border w-full flex-grow justify-between space-x-1 rounded-lg border-2 border-gray-800 bg-appColor-50 px-3 py-1 font-semibold text-black dark:border-gray-500 md:w-[40%] `}
-
+              className={`mx-[3px] mt-[6px] box-border w-full flex-grow justify-between space-x-1 rounded-lg border-2 border-gray-800 bg-[rgb(255,229,153)] px-3 py-1 font-semibold text-black dark:border-gray-500 md:w-[40%] `}
             >
               <ChildCard
                 careermap={item.careermap}
@@ -76,7 +82,7 @@ function ChildCard(item) {
         path={item.path}
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
-        position="right"
+        position='right'
         removeWhenClosed={true}
       />
     </>

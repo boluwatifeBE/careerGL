@@ -6,7 +6,6 @@ import CustomLink from './Link';
 import TOCInline from './TOCInline';
 import Pre from './Pre';
 import { BlogNewsletterForm } from './NewsletterForm';
-import { Code } from '@chakra-ui/react';
 import PremiumBlock from './mdx-components/premium-block';
 import { BadgeLink } from './mdx-components/badge-link';
 import { ResourceGroupTitle } from './mdx-components/resource-group-title';
@@ -20,18 +19,16 @@ const Wrapper: React.ComponentType<{ layout: string }> = ({
 };
 
 export const MDXComponents: ComponentMap = {
-  Image,
   //@ts-ignore
-  TOCInline,
-  a: CustomLink,
+  PremiumBlock: PremiumBlock,
   pre: Pre,
   wrapper: Wrapper,
-  //@ts-ignore
   BlogNewsletterForm,
-  code: Code,
+  a: CustomLink,
+  Image,
+  TOCInline,
   BadgeLink: BadgeLink,
   ResourceGroupTitle: ResourceGroupTitle,
-  PremiumBlock: PremiumBlock,
 };
 
 interface Props {

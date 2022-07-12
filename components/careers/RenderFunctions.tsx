@@ -1,3 +1,6 @@
+import { FaCheckCircle, FaDotCircle, FaMinusCircle } from 'react-icons/fa';
+
+
 export const opinionHas = (values, string: string): boolean => {
   return Object.values(values).includes(string);
 };
@@ -6,16 +9,16 @@ export const OpinionTick = opinionValue => {
   return (
     <>
       {opinionHas(opinionValue, 'personal') && (
-        <div className='z-10 h-4 w-4 rounded-full  bg-[#a3875f]  '></div>
+        <FaCheckCircle color={'darkgoldenrod'} size={15} />
       )}
       {opinionHas(opinionValue, 'alternative') && (
-        <div className='z-10 h-4 w-4 rounded-full bg-green-700'></div>
+        <FaCheckCircle color={'rebeccapurple'} size={15} />
       )}
       {opinionHas(opinionValue, 'order') && (
-        <div className='z-10 h-4 w-4 rounded-full bg-red-600'></div>
+        <FaDotCircle color={'lightslategray'} size={15} />
       )}
       {opinionHas(opinionValue, 'never') && (
-        <div className='z-10 h-4 w-4 rounded-full bg-gray-600'></div>
+        <FaMinusCircle color={'sienna'} size={15} />
       )}
     </>
   );

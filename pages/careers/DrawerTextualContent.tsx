@@ -1,5 +1,4 @@
 import MdRenderer from '@/components/md-renderer';
-import { Box } from '@chakra-ui/react';
 import { EditContentPageLink } from '@/components/careers/edit-content-page-link';
 import siteMetadata from '@/data/siteMetadata';
 
@@ -21,13 +20,13 @@ export function DrawerTextualContent(props: ContentProps) {
   if (!contentsPathsFilePath.endsWith('.mdx')) return;
 
   return (
-    <Box>
+    <div className=''>
       <MdRenderer>
         <Content />
         <EditContentPageLink
           href={`${siteMetadata.url.repoData}/${contentsPathsFilePath}`}
         />
       </MdRenderer>
-    </Box>
+    </div>
   );
 }
