@@ -60,9 +60,9 @@ function resolveIcon(entry: Tuple<string>): React.ReactNode {
       icon = <MailIcon {...props} />;
       break;
 
-    case ContactType.buymeacoffee:
-      icon = <BuymeacoffeeIcon {...props} />;
-      break;
+    // case ContactType.buymeacoffee:
+    //   icon = <BuymeacoffeeIcon {...props} />;
+    //   break;
     default:
       break;
   }
