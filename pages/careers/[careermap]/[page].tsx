@@ -2,6 +2,7 @@ import { Header } from '@/components/Form';
 import { PageSEO } from '@/components/SEO';
 import { InferGetStaticPropsType } from 'next';
 import { FaCheckCircle, FaDotCircle, FaMinusCircle } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 import {
   CareerMapType,
   CareerTreeType,
@@ -9,7 +10,9 @@ import {
 } from 'config/careers/careerType';
 import { readCareerContentsFilePath } from '@/lib/mdx';
 import { CareerTreeRender } from '@/components/careers/CareerTreeRender';
-
+import React from 'react';
+import ScrollTopAndComment from '@/components/ScrollTopAndComment';
+import { OnScrollProgressbar } from '@/components/OnScrollProgressbar';
 
 type HeadContentProps = {
   contents?: CareerMapType[];
@@ -87,33 +90,44 @@ export default function CareerSingle(
   const careerContents = careermaps.filter(careermap => careermap.id === page);
 
   return (
-    <>
+    <div>
+      <OnScrollProgressbar />
+      <ScrollTopAndComment hide={false} />
       <div className='fade-in  divide-y-2 divide-gray-100 dark:divide-gray-800'>
         <div className='mb-7 mt-5 flex flex-col items-center sm:flex-row md:justify-between md:space-x-2'>
           <div className='sm:w-[70%]'>
             <HeaderContent contents={careerContents} />
           </div>
           <div className='sm:w-[30%]'>
-            <div className='  h-28 w-40 origin-bottom  -rotate-6 border-[2px] border-gray-800 bg-gray-100 p-3  text-xs font-normal text-gray-800 dark:border-gray-50 dark:bg-gray-800 dark:text-gray-200 '>
-              <div className=' space-y-1'>
-                <div className='flex items-center'>
-                  <FaCheckCircle color={'darkgoldenrod'} size={13} />
-                  <span className='ml-1'>Personal opinion</span>
-                </div>
-                <div className='flex items-center'>
-                  <FaCheckCircle color={'rebeccapurple'} size={13} />
-                  <span className='ml-1'>Alternative option</span>
-                </div>
-                <div className='flex items-center'>
-                  <FaDotCircle color={'lightslategray'} size={13} />
-                  <span className='ml-1'>Learn anytime</span>
-                </div>
-                <div className='flex items-center'>
-                  <FaMinusCircle color={'sienna'} size={13} />
-                  <span className='ml-1'>Not recommend</span>
+            <motion.div
+              animate={{ rotate: -6 }}
+              transition={{
+                duration: 1,
+                repeat: Infinity,
+                repeatType: 'reverse',
+              }}
+            >
+              <div className='  h-28 w-40 origin-bottom -rotate-3  border-[2px] border-gray-800 bg-gray-100 p-3  text-xs font-normal text-gray-800 dark:border-gray-50 dark:bg-gray-800 dark:text-gray-200 '>
+                <div className=' space-y-1'>
+                  <div className='flex items-center'>
+                    <FaCheckCircle color={'darkgoldenrod'} size={13} />
+                    <span className='ml-1'>Personal opinion</span>
+                  </div>
+                  <div className='flex items-center'>
+                    <FaCheckCircle color={'rebeccapurple'} size={13} />
+                    <span className='ml-1'>Alternative option</span>
+                  </div>
+                  <div className='flex items-center'>
+                    <FaDotCircle color={'lightslategray'} size={13} />
+                    <span className='ml-1'>Learn anytime</span>
+                  </div>
+                  <div className='flex items-center'>
+                    <FaMinusCircle color={'sienna'} size={13} />
+                    <span className='ml-1'>Not recommend</span>
+                  </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className='relative'>
@@ -122,6 +136,6 @@ export default function CareerSingle(
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
