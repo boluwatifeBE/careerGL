@@ -4,7 +4,7 @@ import Link from './Link';
 import MobileNav from './MobileNav';
 import ThemeSwitch from './ThemeSwitch';
 import Image from 'next/image';
-import { memo, ReactNode, useEffect, useState } from 'react';
+import { memo, ReactNode, useEffect, useState, useRef } from 'react';
 
 interface Props {
   children: ReactNode;
@@ -43,12 +43,12 @@ const AppHeader = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <MobileNav show={navShow} toggle={onToggleNav} />
       <header
         className={`${
-          isScrolled && ' shadow-md shadow-yellow-500/50 '
-        }   fixed  top-0 z-40 w-full overflow-x-hidden bg-white/50 py-3  backdrop-blur-lg transition-all  dark:bg-gray-900/50  `}
+          isScrolled && ' shadow shadow-yellow-500/50 '
+        }   fixed  top-0 z-30 w-full overflow-x-hidden bg-white/50 py-3  backdrop-blur-lg transition-all  dark:bg-gray-900/50  `}
       >
         <div className='mx-auto flex max-w-3xl items-center justify-between px-3 xl:max-w-5xl xl:px-0'>
           <div>
@@ -108,7 +108,7 @@ const AppHeader = () => {
           </div>
         </div>
       </header>
-    </>
+    </div>
   );
 };
 
