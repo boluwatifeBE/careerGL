@@ -174,8 +174,6 @@ export function Drawer(props: ContentDrawerProps) {
 }
 
 type BtnProps = {
-  //   icon?: ReactNode;
-  //   name?: string;
   onClick?: () => void;
   className?: string;
   children?: ReactNode;

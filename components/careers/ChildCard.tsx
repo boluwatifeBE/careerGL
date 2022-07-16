@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-
 import { Drawer } from '../Drawer';
 import {
   convertNameToUrl,
-  // formatSlugTolink,
   getFromLocalStorage,
   OpinionTick,
 } from './RenderFunctions';
@@ -16,18 +14,6 @@ function ChildCard(item) {
   return (
     <>
       <div key={item.name} className={'flex items-center'}>
-        {/* <Link
-          href={`/careers/${item.careermap}/${item.page}/${formatSlugTolink(
-            item.path,
-            item.parentId,
-            item.grandParentId,
-          )}`}
-        >
-          {item.name}
-        </Link>
-
-        { } | { } */}
-
         {item.path === '' && item.name}
         {item.path !== '' && (
           <div
