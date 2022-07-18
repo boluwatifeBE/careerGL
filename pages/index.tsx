@@ -35,7 +35,7 @@ export default function Home({
         title={siteMetadata.title}
         description={siteMetadata.description}
       />
-      <ScrollTopAndComment />
+      <ScrollTopAndComment hide={false} />
       <div className='divide-y divide-gray-200 dark:divide-gray-700'>
         <Banner frontMatter={author} />
         <div className='container py-12'>

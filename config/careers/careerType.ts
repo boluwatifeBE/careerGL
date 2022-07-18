@@ -11,29 +11,27 @@ export type CareerMapType = {
     description?: string;
     featuredTitle?: string;
     featuredDescription?: string;
-    isTextHeavy?: boolean;
     featured?: boolean;
-    detailed?: boolean;
-    imageUrl?: string;
-    jsonUrl?: string;
-    landingPath?: string;
-    resourcesPath?: string;
-    versions?: string[];
     contentPathsFilePath?: string;
-    metaPath?: string;
-    isCommunity?: boolean;
-    isUpcoming?: boolean;
+    pdfUrl?: string;
     id?: string;
     parentId?: string;
-    pdfUrl?: string;
+    isCommunity?: boolean;
+    isUpcoming?: boolean;
 };
 
 export type CareerTreeType = {
+  id?: string;
   name?: string;
   path?: string;
+  parentId?: string;
+  grandParentId?: string;
   children?: {
+      id?: string;
       name?: string;
       path?: string;
+      parentId?: string;
+      grandParentId?: string;
       opinion?: string[];
   }[];
   opinion?: string []

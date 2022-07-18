@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-
 import { Drawer } from '../Drawer';
 import {
   convertNameToUrl,
-  // formatSlugTolink,
   getFromLocalStorage,
   OpinionTick,
 } from './RenderFunctions';

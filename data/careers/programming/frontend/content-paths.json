@@ -2,7 +2,7 @@
   {
     "name": "Frontend",
     "path": "",
-    "parentId": "",
+    "parentId": "frontend",
     "grandParentId": "",
     "opinion": [],
     "children": []
@@ -15,52 +15,72 @@
     "opinion": ["personal"],
     "children": [
       {
-        "name": "How does the internet work",
-        "path": "/careers/programming/frontend/content/100-internet/100-how-does-the-internet-work.mdx",
-        "parentId": "100-internet",
+        "id": "000-internet",
+        "name": "",
+        "path": "",
+        "parentId": "",
         "grandParentId": "",
-        "opinion": ["personal"],
-        "children": []
+        "opinion": [],
+        "children": [
+          {
+            "name": "How does the internet work",
+            "path": "/careers/programming/frontend/content/100-internet/100-how-does-the-internet-work.mdx",
+            "parentId": "100-internet",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "what is http",
+            "path": "/careers/programming/frontend/content/100-internet/101-what-is-http.mdx",
+            "parentId": "100-internet",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Browsers and how they work",
+            "path": "/careers/programming/frontend/content/100-internet/102-browsers-and-how-they-work.mdx",
+            "parentId": "100-internet",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          }
+        ]
       },
       {
-        "name": "what is http",
-        "path": "/careers/programming/frontend/content/100-internet/101-what-is-http.mdx",
-        "parentId": "100-internet",
+        "id": "001-internet",
+        "name": "",
+        "path": "",
+        "parentId": "",
         "grandParentId": "",
-        "opinion": ["personal"],
-        "children": []
-      },
-      {
-        "name": "Browsers and how they work",
-        "path": "/careers/programming/frontend/content/100-internet/102-browsers-and-how-they-work.mdx",
-        "parentId": "100-internet",
-        "grandParentId": "",
-        "opinion": ["personal"],
-        "children": []
-      },
-      {
-        "name": "DNS and how it works",
-        "path": "/careers/programming/frontend/content/100-internet/103-dns-and-how-it-works.mdx",
-        "parentId": "100-internet",
-        "grandParentId": "",
-        "opinion": ["personal"],
-        "children": []
-      },
-      {
-        "name": "What is domain name",
-        "path": "/careers/programming/frontend/content/100-internet/104-what-is-domain-name.mdx",
-        "parentId": "100-internet",
-        "grandParentId": "",
-        "opinion": ["personal"],
-        "children": []
-      },
-      {
-        "name": "What is hosting",
-        "path": "/careers/programming/frontend/content/100-internet/105-what-is-hosting.mdx",
-        "parentId": "100-internet",
-        "grandParentId": "",
-        "opinion": ["personal"],
-        "children": []
+        "opinion": [],
+        "children": [
+          {
+            "name": "DNS and how it works",
+            "path": "/careers/programming/frontend/content/100-internet/103-dns-and-how-it-works.mdx",
+            "parentId": "100-internet",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "What is domain name",
+            "path": "/careers/programming/frontend/content/100-internet/104-what-is-domain-name.mdx",
+            "parentId": "100-internet",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "What is hosting",
+            "path": "/careers/programming/frontend/content/100-internet/105-what-is-hosting.mdx",
+            "parentId": "100-internet",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -72,52 +92,72 @@
     "opinion": [],
     "children": [
       {
-        "name": "Learn the basics",
-        "path": "/careers/programming/frontend/content/101-html/100-learn-the-basics.mdx",
-        "parentId": "101-html",
+        "id": "000-html",
+        "name": "",
+        "path": "",
+        "parentId": "",
         "grandParentId": "",
-        "opinion": ["personal"],
-        "children": []
+        "opinion": [],
+        "children": [
+          {
+            "name": "Learn the basics",
+            "path": "/careers/programming/frontend/content/101-html/100-learn-the-basics.mdx",
+            "parentId": "101-html",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Semantic html",
+            "path": "/careers/programming/frontend/content/101-html/101-writing-semantic-html.mdx",
+            "parentId": "101-html",
+            "grandParentId": "",
+            "opinion": ["order"],
+            "children": []
+          },
+          {
+            "name": "Forms & validations",
+            "path": "/careers/programming/frontend/content/101-html/102-forms-and-validations.mdx",
+            "parentId": "101-html",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Best Practices",
+            "path": "/careers/programming/frontend/content/101-html/103-conventions-and-best-practices.mdx",
+            "parentId": "101-html",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          }
+        ]
       },
       {
-        "name": "Writing semantic html",
-        "path": "/careers/programming/frontend/content/101-html/101-writing-semantic-html.mdx",
-        "parentId": "101-html",
+        "id": "001-html",
+        "name": "",
+        "path": "001-html",
+        "parentId": "",
         "grandParentId": "",
-        "opinion": ["order"],
-        "children": []
-      },
-      {
-        "name": "Forms and validations",
-        "path": "/careers/programming/frontend/content/101-html/102-forms-and-validations.mdx",
-        "parentId": "101-html",
-        "grandParentId": "",
-        "opinion": ["personal"],
-        "children": []
-      },
-      {
-        "name": "Conventions and best practices",
-        "path": "/careers/programming/frontend/content/101-html/103-conventions-and-best-practices.mdx",
-        "parentId": "101-html",
-        "grandParentId": "",
-        "opinion": ["personal"],
-        "children": []
-      },
-      {
-        "name": "Accessibility",
-        "path": "/careers/programming/frontend/content/101-html/104-accessibility.mdx",
-        "parentId": "101-html",
-        "grandParentId": "",
-        "opinion": ["order"],
-        "children": []
-      },
-      {
-        "name": "SEO Basics",
-        "path": "/careers/programming/frontend/content/101-html/105-seo-basics.mdx",
-        "parentId": "101-html",
-        "grandParentId": "",
-        "opinion": ["order"],
-        "children": []
+        "opinion": [],
+        "children": [
+          {
+            "name": "Accessibility",
+            "path": "/careers/programming/frontend/content/101-html/104-accessibility.mdx",
+            "parentId": "101-html",
+            "grandParentId": "",
+            "opinion": ["order"],
+            "children": []
+          },
+          {
+            "name": "SEO Basics",
+            "path": "/careers/programming/frontend/content/101-html/105-seo-basics.mdx",
+            "parentId": "101-html",
+            "grandParentId": "",
+            "opinion": ["order"],
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -261,36 +301,46 @@
     "opinion": ["order"],
     "children": [
       {
-        "name": "HTTPS",
-        "path": "/careers/programming/frontend/content/105-web-security-knowledge/100-https.mdx",
-        "parentId": "105-web-security-knowledge",
+        "id": "000-web-security-knowledge",
+        "name": "Get at least a basic knowledge of all of these",
+        "path": "",
+        "parentId": "",
         "grandParentId": "",
         "opinion": [],
-        "children": []
-      },
-      {
-        "name": "Content Security Policy",
-        "path": "/careers/programming/frontend/content/105-web-security-knowledge/101-content-security-policy.mdx",
-        "parentId": "105-web-security-knowledge",
-        "grandParentId": "",
-        "opinion": [],
-        "children": []
-      },
-      {
-        "name": "CORS",
-        "path": "/careers/programming/frontend/content/105-web-security-knowledge/102-cors.mdx",
-        "parentId": "105-web-security-knowledge",
-        "grandParentId": "",
-        "opinion": [],
-        "children": []
-      },
-      {
-        "name": "OWASP Security Risks",
-        "path": "/careers/programming/frontend/content/105-web-security-knowledge/103-owasp-security-risks.mdx",
-        "parentId": "105-web-security-knowledge",
-        "grandParentId": "",
-        "opinion": [],
-        "children": []
+        "children": [
+          {
+            "name": "HTTPS",
+            "path": "/careers/programming/frontend/content/105-web-security-knowledge/100-https.mdx",
+            "parentId": "105-web-security-knowledge",
+            "grandParentId": "",
+            "opinion": [],
+            "children": []
+          },
+          {
+            "name": "Content Security Policy",
+            "path": "/careers/programming/frontend/content/105-web-security-knowledge/101-content-security-policy.mdx",
+            "parentId": "105-web-security-knowledge",
+            "grandParentId": "",
+            "opinion": [],
+            "children": []
+          },
+          {
+            "name": "CORS",
+            "path": "/careers/programming/frontend/content/105-web-security-knowledge/102-cors.mdx",
+            "parentId": "105-web-security-knowledge",
+            "grandParentId": "",
+            "opinion": [],
+            "children": []
+          },
+          {
+            "name": "OWASP Security Risks",
+            "path": "/careers/programming/frontend/content/105-web-security-knowledge/103-owasp-security-risks.mdx",
+            "parentId": "105-web-security-knowledge",
+            "grandParentId": "",
+            "opinion": [],
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -302,20 +352,30 @@
     "opinion": ["order"],
     "children": [
       {
-        "name": "NPM",
-        "path": "/careers/programming/frontend/content/106-package-managers/100-npm.mdx",
-        "parentId": "106-package-managers",
+        "id": "000-package-managers",
+        "name": "You could learn either or both npm and yarn, there is not much difference",
+        "path": "",
+        "parentId": "",
         "grandParentId": "",
         "opinion": [],
-        "children": []
-      },
-      {
-        "name": "YARN",
-        "path": "/careers/programming/frontend/content/106-package-managers/101-yarn.mdx",
-        "parentId": "106-package-managers",
-        "grandParentId": "",
-        "opinion": [],
-        "children": []
+        "children": [
+          {
+            "name": "NPM",
+            "path": "/careers/programming/frontend/content/106-package-managers/100-npm.mdx",
+            "parentId": "106-package-managers",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "YARN",
+            "path": "/careers/programming/frontend/content/106-package-managers/101-yarn.mdx",
+            "parentId": "106-package-managers",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -335,20 +395,30 @@
         "children": []
       },
       {
-        "name": "OOCSS",
-        "path": "/careers/programming/frontend/content/107-css-architecture/101-oocss.mdx",
-        "parentId": "107-css-architecture",
+        "id": "000-css-architecture",
+        "name": "",
+        "path": "",
+        "parentId": "",
         "grandParentId": "",
         "opinion": [],
-        "children": []
-      },
-      {
-        "name": "SMACSS",
-        "path": "/careers/programming/frontend/content/107-css-architecture/102-smacss.mdx",
-        "parentId": "107-css-architecture",
-        "grandParentId": "",
-        "opinion": [],
-        "children": []
+        "children": [
+          {
+            "name": "OOCSS",
+            "path": "/careers/programming/frontend/content/107-css-architecture/101-oocss.mdx",
+            "parentId": "107-css-architecture",
+            "grandParentId": "",
+            "opinion": ["never"],
+            "children": []
+          },
+          {
+            "name": "SMACSS",
+            "path": "/careers/programming/frontend/content/107-css-architecture/102-smacss.mdx",
+            "parentId": "107-css-architecture",
+            "grandParentId": "",
+            "opinion": ["never"],
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -357,30 +427,40 @@
     "path": "/careers/programming/frontend/content/108-css-preprocessors/000-readme.mdx",
     "parentId": "108-css-preprocessors",
     "grandParentId": "",
-    "opinion": ["order"],
+    "opinion": [],
     "children": [
       {
-        "name": "Sass",
-        "path": "/careers/programming/frontend/content/108-css-preprocessors/100-sass.mdx",
-        "parentId": "108-css-preprocessors",
+        "id": "000-css-preprocessors",
+        "name": "",
+        "path": "",
+        "parentId": "",
         "grandParentId": "",
         "opinion": [],
-        "children": []
-      },
-      {
-        "name": "PostCSS",
-        "path": "/careers/programming/frontend/content/108-css-preprocessors/101-postcss.mdx",
-        "parentId": "108-css-preprocessors",
-        "grandParentId": "",
-        "opinion": [],
-        "children": []
+        "children": [
+          {
+            "name": "Sass",
+            "path": "/careers/programming/frontend/content/108-css-preprocessors/100-sass.mdx",
+            "parentId": "108-css-preprocessors",
+            "grandParentId": "",
+            "opinion": ["order"],
+            "children": []
+          },
+          {
+            "name": "PostCSS",
+            "path": "/careers/programming/frontend/content/108-css-preprocessors/101-postcss.mdx",
+            "parentId": "108-css-preprocessors",
+            "grandParentId": "",
+            "opinion": ["order"],
+            "children": []
+          }
+        ]
       },
       {
         "name": "Less",
         "path": "/careers/programming/frontend/content/108-css-preprocessors/102-less.mdx",
         "parentId": "108-css-preprocessors",
         "grandParentId": "",
-        "opinion": [],
+        "opinion": ["never"],
         "children": []
       }
     ]
@@ -585,36 +665,56 @@
     "opinion": ["order"],
     "children": [
       {
-        "name": "Styled Components",
-        "path": "/careers/programming/frontend/content/111-modern-css/100-styled-components.mdx",
-        "parentId": "111-modern-css",
+        "id": "000-modern-css",
+        "name": "",
+        "path": "",
+        "parentId": "",
         "grandParentId": "",
-        "opinion": ["personal"],
-        "children": []
+        "opinion": [],
+        "children": [
+          {
+            "name": "Styled Components",
+            "path": "/careers/programming/frontend/content/111-modern-css/100-styled-components.mdx",
+            "parentId": "111-modern-css",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "CSS Modules",
+            "path": "/careers/programming/frontend/content/111-modern-css/100-css-modules.mdx",
+            "parentId": "111-modern-css",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          }
+        ]
       },
       {
-        "name": "CSS Modules",
-        "path": "/careers/programming/frontend/content/111-modern-css/100-css-modules.mdx",
-        "parentId": "111-modern-css",
+        "id": "001-modern-css",
+        "name": "",
+        "path": "",
+        "parentId": "",
         "grandParentId": "",
-        "opinion": ["personal"],
-        "children": []
-      },
-      {
-        "name": "Styled JSX",
-        "path": "/careers/programming/frontend/content/111-modern-css/102-styled-jsx.mdx",
-        "parentId": "111-modern-css",
-        "grandParentId": "",
-        "opinion": ["alternative"],
-        "children": []
-      },
-      {
-        "name": "Emotion",
-        "path": "/careers/programming/frontend/content/111-modern-css/103-emotion.mdx",
-        "parentId": "111-modern-css",
-        "grandParentId": "",
-        "opinion": ["alternative"],
-        "children": []
+        "opinion": [],
+        "children": [
+          {
+            "name": "Styled JSX",
+            "path": "/careers/programming/frontend/content/111-modern-css/102-styled-jsx.mdx",
+            "parentId": "111-modern-css",
+            "grandParentId": "",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Emotion",
+            "path": "/careers/programming/frontend/content/111-modern-css/103-emotion.mdx",
+            "parentId": "111-modern-css",
+            "grandParentId": "",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -659,8 +759,9 @@
     "opinion": [],
     "children": [
       {
-        "name": "CSS First",
-        "path": "/careers/programming/frontend/content/113-css-frameworks/101-css-first/000-readme.mdx",
+        "id": "000-css-frameworks",
+        "name": "CSS first frameworks do not come with JavaScript framework components by default.",
+        "path": "",
         "parentId": "100-css-first",
         "grandParentId": "113-css-frameworks",
         "opinion": [],
@@ -684,8 +785,9 @@
         ]
       },
       {
-        "name": "JS First",
-        "path": "/careers/programming/frontend/content/113-css-frameworks/101-js-first/000-readme.mdx",
+        "id": "001-css-frameworks",
+        "name": "JS first frameworks works well with your JavaScript framework",
+        "path": "",
         "parentId": "101-js-first",
         "grandParentId": "113-css-frameworks",
         "opinion": [],
@@ -725,5 +827,445 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Testing Apps",
+    "path": "/careers/programming/frontend/content/114-testing-apps/000-readme.mdx",
+    "parentId": "114-testing-apps",
+    "grandParentId": "",
+    "opinion": [],
+    "children": [
+      {
+        "id": "000-testing-apps",
+        "name": "All your testing needs can be filled with these.",
+        "path": "",
+        "parentId": "",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "Jest",
+            "path": "/careers/programming/frontend/content/114-testing-apps/100-jest.mdx",
+            "parentId": "114-testing-apps",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "React Testing Library",
+            "path": "/careers/programming/frontend/content/114-testing-apps/101-react-testing-library.mdx",
+            "parentId": "114-testing-apps",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Cypress",
+            "path": "/careers/programming/frontend/content/114-testing-apps/100-css-first/102-cypress.mdx",
+            "parentId": "114-testing-apps",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Enzyme",
+            "path": "/careers/programming/frontend/content/114-testing-apps/103-enzyme.mdx",
+            "parentId": "114-testing-apps",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "001-testing-apps",
+        "name": "",
+        "path": "",
+        "parentId": "",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "Mocha",
+            "path": "/careers/programming/frontend/content/114-testing-apps/104-mocha.mdx",
+            "parentId": "114-other-options",
+            "grandParentId": "114-testing-apps",
+            "opinion": ["never"],
+            "children": []
+          },
+          {
+            "name": "Chai",
+            "path": "/careers/programming/frontend/content/114-testing-apps/105-chai.mdx",
+            "parentId": "114-other-options",
+            "grandParentId": "114-testing-apps",
+            "opinion": ["never"],
+            "children": []
+          },
+          {
+            "name": "Ava",
+            "path": "/careers/programming/frontend/content/114-testing-apps/106-ava.mdx",
+            "parentId": "114-other-options",
+            "grandParentId": "114-testing-apps",
+            "opinion": ["never"],
+            "children": []
+          },
+          {
+            "name": "Jasmine",
+            "path": "/careers/programming/frontend/content/114-testing-apps/107-jasmine.mdx",
+            "parentId": "114-other-options",
+            "grandParentId": "114-testing-apps",
+            "opinion": ["never"],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Type Checkers",
+    "path": "/careers/programming/frontend/content/115-type-checkers/000-readme.mdx",
+    "parentId": "115-type-checkers",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "name": "Typescript",
+        "path": "/careers/programming/frontend/content/115-type-checkers/100-typescript.mdx",
+        "parentId": "115-type-checkers",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Flow",
+        "path": "/careers/programming/frontend/content/115-type-checkers/101-flow.mdx",
+        "parentId": "115-type-checkers",
+        "grandParentId": "",
+        "opinion": ["never"],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "Progressive Web Apps (PWA)",
+    "path": "/careers/programming/frontend/content/116-progressive-web-apps/000-readme.mdx",
+    "parentId": "116-progressive-web-apps",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "name": "PWA APIS",
+        "path": "/careers/programming/frontend/content/116-progressive-web-apps/100-apis.mdx",
+        "parentId": "116-progressive-web-apps",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "PWA Performance",
+        "path": "/careers/programming/frontend/content/116-progressive-web-apps/101-performance.mdx",
+        "parentId": "116-progressive-web-apps",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "Server Side Rendering (SSR)",
+    "path": "/careers/programming/frontend/content/117-server-side-rendering/000-readme.mdx",
+    "parentId": "117-server-side-rendering",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "name": "React JS",
+        "path": "/careers/programming/frontend/content/117-server-side-rendering/100-react-js/000-readme.mdx",
+        "parentId": "100-react-js",
+        "grandParentId": "117-server-side-rendering",
+        "opinion": ["personal"],
+        "children": [
+          {
+            "name": "Next.js",
+            "path": "/careers/programming/frontend/content/117-server-side-rendering/100-react-js/100-next-js.mdx",
+            "parentId": "100-react-js",
+            "grandParentId": "117-server-side-rendering",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "After.js",
+            "path": "/careers/programming/frontend/content/117-server-side-rendering/100-react-js/101-after-js.mdx",
+            "parentId": "100-react-js",
+            "grandParentId": "117-server-side-rendering",
+            "opinion": ["never"],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Angular JS",
+        "path": "/careers/programming/frontend/content/117-server-side-rendering/101-angular/000-readme.mdx",
+        "parentId": "101-angular",
+        "grandParentId": "117-server-side-rendering",
+        "opinion": ["alternative"],
+        "children": [
+          {
+            "name": "Universal",
+            "path": "/careers/programming/frontend/content/117-server-side-rendering/101-angular/100-universal.mdx",
+            "parentId": "101-angular",
+            "grandParentId": "117-server-side-rendering",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Vue JS",
+        "path": "/careers/programming/frontend/content/117-server-side-rendering/102-vue-js/000-readme.mdx",
+        "parentId": "102-vue-js",
+        "grandParentId": "117-server-side-rendering",
+        "opinion": ["alternative"],
+        "children": [
+          {
+            "name": "Nuxt.js",
+            "path": "/careers/programming/frontend/content/117-server-side-rendering/102-vue-js/100-nuxt-js.mdx",
+            "parentId": "102-vue-js",
+            "grandParentId": "117-server-side-rendering",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Static Site Generators",
+    "path": "/careers/programming/frontend/content/118-static-site-generators/000-readme.mdx",
+    "parentId": "118-static-site-generators",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "id": "000-static-site-generators",
+        "name": "",
+        "path": "",
+        "parentId": "",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "Next.js",
+            "path": "/careers/programming/frontend/content/118-static-site-generators/100-next-js.mdx",
+            "parentId": "118-static-site-generators",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Gatsby Js",
+            "path": "/careers/programming/frontend/content/118-static-site-generators/101-gatsby-js.mdx",
+            "parentId": "118-static-site-generators",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "001-static-site-generators",
+        "name": "",
+        "path": "",
+        "parentId": "",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "Nuxt.js",
+            "path": "/careers/programming/frontend/content/118-static-site-generators/102-nuxt-js.mdx",
+            "parentId": "118-static-site-generators",
+            "grandParentId": "",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Vuepress",
+            "path": "/careers/programming/frontend/content/118-static-site-generators/103-vuepress.mdx",
+            "parentId": "118-static-site-generators",
+            "grandParentId": "",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Jekyll",
+            "path": "/careers/programming/frontend/content/118-static-site-generators/104-jekyll.mdx",
+            "parentId": "118-static-site-generators",
+            "grandParentId": "",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Hugo",
+            "path": "/careers/programming/frontend/content/118-static-site-generators/105-hugo.mdx",
+            "parentId": "118-static-site-generators",
+            "grandParentId": "",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Gridsome",
+            "path": "/careers/programming/frontend/content/118-static-site-generators/106-gridsome.mdx",
+            "parentId": "118-static-site-generators",
+            "grandParentId": "",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Eleventy",
+            "path": "/careers/programming/frontend/content/118-static-site-generators/107-eleventy.mdx",
+            "parentId": "118-static-site-generators",
+            "grandParentId": "",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GraphQl",
+    "path": "/careers/programming/frontend/content/119-graphql/000-readme.mdx",
+    "parentId": "119-graphql",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "name": "Apollo",
+        "path": "/careers/programming/frontend/content/119-graphql/100-apollo.mdx",
+        "parentId": "119-graphql",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "name": "Relay Modern",
+        "path": "/careers/programming/frontend/content/119-graphql/101-relay-modern.mdx",
+        "parentId": "119-graphql",
+        "grandParentId": "",
+        "opinion": ["alternative"],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "Mobile Applications",
+    "path": "/careers/programming/frontend/content/120-mobile-applications/000-readme.mdx",
+    "parentId": "120-mobile-applications",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "name": "React Native",
+        "path": "/careers/programming/frontend/content/120-mobile-applications/100-react-native.mdx",
+        "parentId": "120-mobile-applications",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "id": "000-mobile-applications",
+        "name": "",
+        "path": "",
+        "parentId": "",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "NativeScript",
+            "path": "/careers/programming/frontend/content/120-mobile-applications/101-nativescript.mdx",
+            "parentId": "120-mobile-applications",
+            "grandParentId": "",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Flutter",
+            "path": "/careers/programming/frontend/content/120-mobile-applications/102-flutter.mdx",
+            "parentId": "120-mobile-applications",
+            "grandParentId": "",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Ionic",
+            "path": "/careers/programming/frontend/content/120-mobile-applications/103-ionic.mdx",
+            "parentId": "120-mobile-applications",
+            "grandParentId": "",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Desktop Applications",
+    "path": "/careers/programming/frontend/content/121-desktop-applications/000-readme.mdx",
+    "parentId": "121-desktop-applications",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "name": "Electron",
+        "path": "/careers/programming/frontend/content/121-desktop-applications/100-electron.mdx",
+        "parentId": "121-desktop-applications",
+        "grandParentId": "",
+        "opinion": ["personal"],
+        "children": []
+      },
+      {
+        "id": "000-desktop-applications",
+        "name": "",
+        "path": "",
+        "parentId": "121-desktop-applications",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "Carlo",
+            "path": "/careers/programming/frontend/content/121-desktop-applications/101-carlo.mdx",
+            "parentId": "121-desktop-applications",
+            "grandParentId": "",
+            "opinion": ["never"],
+            "children": []
+          },
+          {
+            "name": "Proton Native",
+            "path": "/careers/programming/frontend/content/121-desktop-applications/102-proton-native.mdx",
+            "parentId": "121-desktop-applications",
+            "grandParentId": "",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "web-assembly",
+    "path": "/careers/programming/frontend/content/122-web-assembly.mdx",
+    "parentId": "",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": []
+  },
+  {
+    "id": "000-keep-learning",
+    "name": "Keep Learning",
+    "path": "/careers/keep-learning.mdx",
+    "parentId": "",
+    "grandParentId": "",
+    "opinion": [],
+    "children": []
   }
 ]

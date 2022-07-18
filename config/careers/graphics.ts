@@ -34,73 +34,32 @@ export const graphics: CareerMapType[] =
         "frontend developer interview questions"
       ]
     },
-    title: "Frontend Developer",
+    title: "Photoshop",
     description: "Step by step guide to becoming a modern frontend developer in 2022",
-    featuredTitle: "Frontend",
+    featuredTitle: "Photoshop",
     featuredDescription: "Step by step guide to becoming a frontend developer in 2022",
-    author: {
-      name: "Kamran Ahmed",
-      url: "https://twitter.com/kamranahmedse"
-    },
     featured: true,
-    imageUrl: "/careers/frontend.png",
-    jsonUrl: "/project/frontend.json",
-    resourcesPath: "/careers/100-frontend/resources.md",
-    pdfUrl: "https://kamranahmedse.gumroad.com/l/frontend-roadmap",
+    pdfUrl: "",
     contentPathsFilePath: "/careers/graphics/100-frontend/content-paths.json",
-    id: "frontend2",
+    id: "photoshop",
     parentId: "graphics",
-    metaPath: "/careers/100-frontend/meta.json",
-    isUpcoming: false
+    isUpcoming: true
   },
   {
     seo: {
       title: "Backend Developer Roadmap: Learn to become a modern backend developer",
       description: "Learn to become a modern backend developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern backend development.",
-      keywords: [
-        "backend roadmap 2022",
-        "backend developer roadmap 2022",
-        "guide to becoming a developer",
-        "guide to becoming a backend developer",
-        "backend roadmap",
-        "backend developer",
-        "backend engineer",
-        "backend skills",
-        "backend development",
-        "javascript developer",
-        "backend development skills",
-        "backend development skills test",
-        "backend engineer roadmap",
-        "backend developer roadmap",
-        "become a backend developer",
-        "backend developer career path",
-        "javascript developer",
-        "modern javascript developer",
-        "node developer",
-        "skills for backend development",
-        "learn backend development",
-        "what is backend development",
-        "backend developer quiz",
-        "backend developer interview questions"
-      ]
+      keywords: []
     },
-    title: "Backend Developer",
+    title: "Adobe Ilustrator",
     description: "Step by step guide to becoming a modern backend developer in 2022",
-    featuredTitle: "Backend",
+    featuredTitle: "Adobe Ilustrator",
     featuredDescription: "Step by step guide to becoming a backend developer in 2022",
     featured: true,
-    imageUrl: "/careers/backend.png",
-    jsonUrl: "/project/backend.json",
-    resourcesPath: "/careers/101-backend/resources.md",
-    author: {
-      name: "Kamran Ahmed",
-      url: "https://twitter.com/kamranahmedse"
-    },
-    pdfUrl: "https://kamranahmedse.gumroad.com/l/backend-roadmap",
+    pdfUrl: "",
     contentPathsFilePath: "/careers/graphics/101-backend/content-paths.json",
-    id: "backend2",
+    id: "ai",
     parentId: "graphics",
-    metaPath: "/careers/101-backend/meta.json",
-    isUpcoming: false
+    isUpcoming: true
   },
 ];
