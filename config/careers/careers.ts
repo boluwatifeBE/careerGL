@@ -13,27 +13,27 @@ export const careers: Career[] = [
     description:
       'Master the fundamentals and advanced features of the programming languages',
   },
-  // {
-  //   title: 'Marketing',
-  //   slug: 'marketing',
-  //   banner: '',
-  //   description:
-  //     'Master the fundamentals and advanced features of the Marketing career',
-  // },
-  // {
-  //   title: 'Graphics',
-  //   slug: 'graphics',
-  //   banner: '',
-  //   description:
-  //     'Master the fundamentals and advanced features of the graphics',
-  // },
-  // {
-  //   title: 'Teaching',
-  //   slug: 'teaching',
-  //   banner: '',
-  //   description:
-  //     'Master the fundamentals and advanced features of the teaching career',
-  // },
+  {
+    title: 'Marketing',
+    slug: 'marketing',
+    banner: '',
+    description:
+      'Master the fundamentals and advanced techniques of the Marketing career',
+  },
+  {
+    title: 'Graphics',
+    slug: 'graphics',
+    banner: '',
+    description:
+      'Master the fundamentals and advanced features of the graphics',
+  },
+  {
+    title: 'Photography',
+    slug: 'photography',
+    banner: '',
+    description:
+      'Master the fundamentals and advanced features of the photography career',
+  },
   {
     title: 'Music',
     slug: 'music',
@@ -41,10 +41,10 @@ export const careers: Career[] = [
     description: 'Master the fundamentals and advanced features of the music',
   },
   // {
-  //   title: 'Photography',
-  //   slug: 'photography',
+  //   title: 'Teaching',
+  //   slug: 'teaching',
   //   banner: '',
   //   description:
-  //     'Master the fundamentals and advanced features of the photography career',
-  // },
+  //     'Master the fundamentals and advanced features of the teaching career',
+  // }
 ];

@@ -2,7 +2,7 @@
   {
     "name": "Frontend",
     "path": "",
-    "parentId": "",
+    "parentId": "frontend",
     "grandParentId": "",
     "opinion": [],
     "children": []
@@ -12,11 +12,10 @@
     "path": "/careers/programming/frontend/content/100-internet/000-readme.mdx",
     "parentId": "100-internet",
     "grandParentId": "",
-    "opinion": [
-      "personal"
-    ],
+    "opinion": ["personal"],
     "children": [
       {
+        "id": "000-internet",
         "name": "",
         "path": "",
         "parentId": "",
@@ -28,9 +27,7 @@
             "path": "/careers/programming/frontend/content/100-internet/100-how-does-the-internet-work.mdx",
             "parentId": "100-internet",
             "grandParentId": "",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           },
           {
@@ -38,9 +35,7 @@
             "path": "/careers/programming/frontend/content/100-internet/101-what-is-http.mdx",
             "parentId": "100-internet",
             "grandParentId": "",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           },
           {
@@ -48,14 +43,13 @@
             "path": "/careers/programming/frontend/content/100-internet/102-browsers-and-how-they-work.mdx",
             "parentId": "100-internet",
             "grandParentId": "",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           }
         ]
       },
       {
+        "id": "001-internet",
         "name": "",
         "path": "",
         "parentId": "",
@@ -67,9 +61,7 @@
             "path": "/careers/programming/frontend/content/100-internet/103-dns-and-how-it-works.mdx",
             "parentId": "100-internet",
             "grandParentId": "",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           },
           {
@@ -77,9 +69,7 @@
             "path": "/careers/programming/frontend/content/100-internet/104-what-is-domain-name.mdx",
             "parentId": "100-internet",
             "grandParentId": "",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           },
           {
@@ -87,9 +77,7 @@
             "path": "/careers/programming/frontend/content/100-internet/105-what-is-hosting.mdx",
             "parentId": "100-internet",
             "grandParentId": "",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           }
         ]
@@ -104,6 +92,7 @@
     "opinion": [],
     "children": [
       {
+        "id": "000-html",
         "name": "",
         "path": "",
         "parentId": "",
@@ -115,9 +104,7 @@
             "path": "/careers/programming/frontend/content/101-html/100-learn-the-basics.mdx",
             "parentId": "101-html",
             "grandParentId": "",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           },
           {
@@ -125,9 +112,7 @@
             "path": "/careers/programming/frontend/content/101-html/101-writing-semantic-html.mdx",
             "parentId": "101-html",
             "grandParentId": "",
-            "opinion": [
-              "order"
-            ],
+            "opinion": ["order"],
             "children": []
           },
           {
@@ -135,9 +120,7 @@
             "path": "/careers/programming/frontend/content/101-html/102-forms-and-validations.mdx",
             "parentId": "101-html",
             "grandParentId": "",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           },
           {
@@ -145,16 +128,15 @@
             "path": "/careers/programming/frontend/content/101-html/103-conventions-and-best-practices.mdx",
             "parentId": "101-html",
             "grandParentId": "",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           }
         ]
       },
       {
+        "id": "001-html",
         "name": "",
-        "path": "",
+        "path": "001-html",
         "parentId": "",
         "grandParentId": "",
         "opinion": [],
@@ -164,9 +146,7 @@
             "path": "/careers/programming/frontend/content/101-html/104-accessibility.mdx",
             "parentId": "101-html",
             "grandParentId": "",
-            "opinion": [
-              "order"
-            ],
+            "opinion": ["order"],
             "children": []
           },
           {
@@ -174,9 +154,7 @@
             "path": "/careers/programming/frontend/content/101-html/105-seo-basics.mdx",
             "parentId": "101-html",
             "grandParentId": "",
-            "opinion": [
-              "order"
-            ],
+            "opinion": ["order"],
             "children": []
           }
         ]
@@ -195,9 +173,7 @@
         "path": "/careers/programming/frontend/content/102-css/100-learn-the-basics.mdx",
         "parentId": "102-css",
         "grandParentId": "",
-        "opinion": [
-          "personal"
-        ],
+        "opinion": ["personal"],
         "children": []
       },
       {
@@ -205,9 +181,7 @@
         "path": "/careers/programming/frontend/content/102-css/101-making-layouts.mdx",
         "parentId": "102-css",
         "grandParentId": "",
-        "opinion": [
-          "personal"
-        ],
+        "opinion": ["personal"],
         "children": []
       },
       {
@@ -215,9 +189,7 @@
         "path": "/careers/programming/frontend/content/102-css/102-responsive-design-and-media-queries.mdx",
         "parentId": "102-css",
         "grandParentId": "",
-        "opinion": [
-          "personal"
-        ],
+        "opinion": ["personal"],
         "children": []
       }
     ]
@@ -234,9 +206,7 @@
         "path": "/careers/programming/frontend/content/103-javascript/100-syntax-and-basic-constructs.mdx",
         "parentId": "103-javascript",
         "grandParentId": "",
-        "opinion": [
-          "personal"
-        ],
+        "opinion": ["personal"],
         "children": []
       },
       {
@@ -244,9 +214,7 @@
         "path": "/careers/programming/frontend/content/103-javascript/101-learn-dom-manipulation.mdx",
         "parentId": "103-javascript",
         "grandParentId": "",
-        "opinion": [
-          "personal"
-        ],
+        "opinion": ["personal"],
         "children": []
       },
       {
@@ -254,9 +222,7 @@
         "path": "/careers/programming/frontend/content/103-javascript/102-learn-fetch-api-ajax-xhr.mdx",
         "parentId": "103-javascript",
         "grandParentId": "",
-        "opinion": [
-          "personal"
-        ],
+        "opinion": ["personal"],
         "children": []
       },
       {
@@ -264,9 +230,7 @@
         "path": "/careers/programming/frontend/content/103-javascript/103-es6-and-modular-javascript.mdx",
         "parentId": "103-javascript",
         "grandParentId": "",
-        "opinion": [
-          "personal"
-        ],
+        "opinion": ["personal"],
         "children": []
       },
       {
@@ -274,9 +238,7 @@
         "path": "/careers/programming/frontend/content/103-javascript/104-concepts.mdx",
         "parentId": "103-javascript",
         "grandParentId": "",
-        "opinion": [
-          "personal"
-        ],
+        "opinion": ["personal"],
         "children": []
       }
     ]
@@ -293,9 +255,7 @@
         "path": "/careers/programming/frontend/content/104-version-control-systems/100-basic-usage-of-git.mdx",
         "parentId": "104-version-control-systems",
         "grandParentId": "",
-        "opinion": [
-          "personal"
-        ],
+        "opinion": ["personal"],
         "children": []
       },
       {
@@ -310,9 +270,7 @@
             "path": "/careers/programming/frontend/content/104-version-control-systems/101-repo-hosting-services/100-github.mdx",
             "parentId": "101-repo-hosting-services",
             "grandParentId": "104-version-control-systems",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           },
           {
@@ -320,9 +278,7 @@
             "path": "/careers/programming/frontend/content/104-version-control-systems/101-repo-hosting-services/101-gitlab.mdx",
             "parentId": "101-repo-hosting-services",
             "grandParentId": "104-version-control-systems",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           },
           {
@@ -330,9 +286,7 @@
             "path": "/careers/programming/frontend/content/104-version-control-systems/101-repo-hosting-services/102-bitbucket.mdx",
             "parentId": "101-repo-hosting-services",
             "grandParentId": "104-version-control-systems",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           }
         ]
@@ -344,11 +298,10 @@
     "path": "/careers/programming/frontend/content/105-web-security-knowledge/000-readme.mdx",
     "parentId": "105-web-security-knowledge",
     "grandParentId": "",
-    "opinion": [
-      "order"
-    ],
+    "opinion": ["order"],
     "children": [
       {
+        "id": "000-web-security-knowledge",
         "name": "Get at least a basic knowledge of all of these",
         "path": "",
         "parentId": "",
@@ -396,11 +349,10 @@
     "path": "/careers/programming/frontend/content/106-package-managers/000-readme.mdx",
     "parentId": "106-package-managers",
     "grandParentId": "",
-    "opinion": [
-      "order"
-    ],
+    "opinion": ["order"],
     "children": [
       {
+        "id": "000-package-managers",
         "name": "You could learn either or both npm and yarn, there is not much difference",
         "path": "",
         "parentId": "",
@@ -432,9 +384,7 @@
     "path": "/careers/programming/frontend/content/107-css-architecture/000-readme.mdx",
     "parentId": "107-css-architecture",
     "grandParentId": "",
-    "opinion": [
-      "order"
-    ],
+    "opinion": ["order"],
     "children": [
       {
         "name": "BEM",
@@ -445,6 +395,7 @@
         "children": []
       },
       {
+        "id": "000-css-architecture",
         "name": "",
         "path": "",
         "parentId": "",
@@ -479,6 +430,7 @@
     "opinion": [],
     "children": [
       {
+        "id": "000-css-preprocessors",
         "name": "",
         "path": "",
         "parentId": "",
@@ -518,9 +470,7 @@
     "path": "/careers/programming/frontend/content/109-build-tools/000-readme.mdx",
     "parentId": "109-build-tools",
     "grandParentId": "",
-    "opinion": [
-      "personal"
-    ],
+    "opinion": ["personal"],
     "children": [
       {
         "name": "Task runners",
@@ -534,9 +484,7 @@
             "path": "/careers/programming/frontend/content/109-build-tools/100-task-runners/100-npm-scripts.mdx",
             "parentId": "100-task-runners",
             "grandParentId": "109-build-tools",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           }
         ]
@@ -553,9 +501,7 @@
             "path": "/careers/programming/frontend/content/109-build-tools/102-linters-formatters/100-prettier.mdx",
             "parentId": "102-linters-formatters",
             "grandParentId": "109-build-tools",
-            "opinion": [
-              "order"
-            ],
+            "opinion": ["order"],
             "children": []
           },
           {
@@ -563,9 +509,7 @@
             "path": "/careers/programming/frontend/content/109-build-tools/102-linters-formatters/101-eslint.mdx",
             "parentId": "102-linters-formatters",
             "grandParentId": "109-build-tools",
-            "opinion": [
-              "order"
-            ],
+            "opinion": ["order"],
             "children": []
           },
           {
@@ -573,9 +517,7 @@
             "path": "/careers/programming/frontend/content/109-build-tools/102-linters-formatters/102-standardjs.mdx",
             "parentId": "102-linters-formatters",
             "grandParentId": "109-build-tools",
-            "opinion": [
-              "never"
-            ],
+            "opinion": ["never"],
             "children": []
           }
         ]
@@ -592,9 +534,7 @@
             "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/100-webpack.mdx",
             "parentId": "101-module-bundlers",
             "grandParentId": "109-build-tools",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           },
           {
@@ -602,9 +542,7 @@
             "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/101-esbuild.mdx",
             "parentId": "101-module-bundlers",
             "grandParentId": "109-build-tools",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           },
           {
@@ -612,9 +550,7 @@
             "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/102-rollup.mdx",
             "parentId": "101-module-bundlers",
             "grandParentId": "109-build-tools",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           },
           {
@@ -622,9 +558,7 @@
             "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/103-parcel.mdx",
             "parentId": "101-module-bundlers",
             "grandParentId": "109-build-tools",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           },
           {
@@ -632,9 +566,7 @@
             "path": "/careers/programming/frontend/content/109-build-tools/101-module-bundlers/104-vite.mdx",
             "parentId": "101-module-bundlers",
             "grandParentId": "109-build-tools",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           }
         ]
@@ -653,18 +585,14 @@
         "path": "/careers/programming/frontend/content/110-javascript-framework/100-react-js/000-readme.mdx",
         "parentId": "100-react-js",
         "grandParentId": "110-javascript-framework",
-        "opinion": [
-          "personal"
-        ],
+        "opinion": ["personal"],
         "children": [
           {
             "name": "Redux",
             "path": "/careers/programming/frontend/content/110-javascript-framework/100-react-js/100-redux.mdx",
             "parentId": "100-react-js",
             "grandParentId": "110-javascript-framework",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           },
           {
@@ -672,9 +600,7 @@
             "path": "/careers/programming/frontend/content/110-javascript-framework/100-react-js/101-mobx.mdx",
             "parentId": "100-react-js",
             "grandParentId": "110-javascript-framework",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           },
           {
@@ -682,9 +608,7 @@
             "path": "/careers/programming/frontend/content/110-javascript-framework/100-react-js/102-recoil.mdx",
             "parentId": "100-react-js",
             "grandParentId": "110-javascript-framework",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           }
         ]
@@ -694,18 +618,14 @@
         "path": "/careers/programming/frontend/content/110-javascript-framework/101-angular/000-readme.mdx",
         "parentId": "101-angular",
         "grandParentId": "110-javascript-framework",
-        "opinion": [
-          "alternative"
-        ],
+        "opinion": ["alternative"],
         "children": [
           {
             "name": "RxJS",
             "path": "/careers/programming/frontend/content/110-javascript-framework/101-angular/100-rxjs.mdx",
             "parentId": "101-angular",
             "grandParentId": "110-javascript-framework",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           },
           {
@@ -713,9 +633,7 @@
             "path": "/careers/programming/frontend/content/110-javascript-framework/101-angular/101-ngrx.mdx",
             "parentId": "101-angular",
             "grandParentId": "110-javascript-framework",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           }
         ]
@@ -725,18 +643,14 @@
         "path": "/careers/programming/frontend/content/110-javascript-framework/102-vue-js/000-readme.mdx",
         "parentId": "102-vue-js",
         "grandParentId": "110-javascript-framework",
-        "opinion": [
-          "alternative"
-        ],
+        "opinion": ["alternative"],
         "children": [
           {
             "name": "Vuex",
             "path": "/careers/programming/frontend/content/110-javascript-framework/102-vue-js/100-vuex.mdx",
             "parentId": "102-vue-js",
             "grandParentId": "110-javascript-framework",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           }
         ]
@@ -748,11 +662,10 @@
     "path": "/careers/programming/frontend/content/111-modern-css/000-readme.mdx",
     "parentId": "111-modern-css",
     "grandParentId": "",
-    "opinion": [
-      "order"
-    ],
+    "opinion": ["order"],
     "children": [
       {
+        "id": "000-modern-css",
         "name": "",
         "path": "",
         "parentId": "",
@@ -764,9 +677,7 @@
             "path": "/careers/programming/frontend/content/111-modern-css/100-styled-components.mdx",
             "parentId": "111-modern-css",
             "grandParentId": "",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           },
           {
@@ -774,14 +685,13 @@
             "path": "/careers/programming/frontend/content/111-modern-css/100-css-modules.mdx",
             "parentId": "111-modern-css",
             "grandParentId": "",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           }
         ]
       },
       {
+        "id": "001-modern-css",
         "name": "",
         "path": "",
         "parentId": "",
@@ -793,9 +703,7 @@
             "path": "/careers/programming/frontend/content/111-modern-css/102-styled-jsx.mdx",
             "parentId": "111-modern-css",
             "grandParentId": "",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           },
           {
@@ -803,9 +711,7 @@
             "path": "/careers/programming/frontend/content/111-modern-css/103-emotion.mdx",
             "parentId": "111-modern-css",
             "grandParentId": "",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           }
         ]
@@ -817,9 +723,7 @@
     "path": "/careers/programming/frontend/content/112-web-components/000-readme.mdx",
     "parentId": "112-web-components",
     "grandParentId": "",
-    "opinion": [
-      "order"
-    ],
+    "opinion": ["order"],
     "children": [
       {
         "name": "HTML Templates",
@@ -855,6 +759,7 @@
     "opinion": [],
     "children": [
       {
+        "id": "000-css-frameworks",
         "name": "CSS first frameworks do not come with JavaScript framework components by default.",
         "path": "",
         "parentId": "100-css-first",
@@ -866,9 +771,7 @@
             "path": "/careers/programming/frontend/content/113-css-frameworks/100-css-first/100-bootstrap.mdx",
             "parentId": "100-css-first",
             "grandParentId": "113-css-frameworks",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           },
           {
@@ -876,14 +779,13 @@
             "path": "/careers/programming/frontend/content/113-css-frameworks/100-css-first/101-bulma.mdx",
             "parentId": "100-css-first",
             "grandParentId": "113-css-frameworks",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           }
         ]
       },
       {
+        "id": "001-css-frameworks",
         "name": "JS first frameworks works well with your JavaScript framework",
         "path": "",
         "parentId": "101-js-first",
@@ -895,9 +797,7 @@
             "path": "/careers/programming/frontend/content/113-css-frameworks/101-js-first/100-tailwind-css.mdx",
             "parentId": "101-js-first",
             "grandParentId": "113-css-frameworks",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           },
           {
@@ -905,9 +805,7 @@
             "path": "/careers/programming/frontend/content/113-css-frameworks/101-js-first/101-chakra-ui.mdx",
             "parentId": "101-js-first",
             "grandParentId": "113-css-frameworks",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           },
           {
@@ -915,9 +813,7 @@
             "path": "/careers/programming/frontend/content/113-css-frameworks/101-js-first/102-material-ui.mdx",
             "parentId": "101-js-first",
             "grandParentId": "113-css-frameworks",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           },
           {
@@ -925,9 +821,7 @@
             "path": "/careers/programming/frontend/content/113-css-frameworks/101-js-first/103-radix-ui.mdx",
             "parentId": "101-js-first",
             "grandParentId": "113-css-frameworks",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           }
         ]
@@ -942,6 +836,7 @@
     "opinion": [],
     "children": [
       {
+        "id": "000-testing-apps",
         "name": "All your testing needs can be filled with these.",
         "path": "",
         "parentId": "",
@@ -953,9 +848,7 @@
             "path": "/careers/programming/frontend/content/114-testing-apps/100-jest.mdx",
             "parentId": "114-testing-apps",
             "grandParentId": "",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           },
           {
@@ -963,9 +856,7 @@
             "path": "/careers/programming/frontend/content/114-testing-apps/101-react-testing-library.mdx",
             "parentId": "114-testing-apps",
             "grandParentId": "",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           },
           {
@@ -973,9 +864,7 @@
             "path": "/careers/programming/frontend/content/114-testing-apps/100-css-first/102-cypress.mdx",
             "parentId": "114-testing-apps",
             "grandParentId": "",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           },
           {
@@ -983,14 +872,13 @@
             "path": "/careers/programming/frontend/content/114-testing-apps/103-enzyme.mdx",
             "parentId": "114-testing-apps",
             "grandParentId": "",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           }
         ]
       },
       {
+        "id": "001-testing-apps",
         "name": "",
         "path": "",
         "parentId": "",
@@ -1002,9 +890,7 @@
             "path": "/careers/programming/frontend/content/114-testing-apps/104-mocha.mdx",
             "parentId": "114-other-options",
             "grandParentId": "114-testing-apps",
-            "opinion": [
-              "never"
-            ],
+            "opinion": ["never"],
             "children": []
           },
           {
@@ -1012,9 +898,7 @@
             "path": "/careers/programming/frontend/content/114-testing-apps/105-chai.mdx",
             "parentId": "114-other-options",
             "grandParentId": "114-testing-apps",
-            "opinion": [
-              "never"
-            ],
+            "opinion": ["never"],
             "children": []
           },
           {
@@ -1022,9 +906,7 @@
             "path": "/careers/programming/frontend/content/114-testing-apps/106-ava.mdx",
             "parentId": "114-other-options",
             "grandParentId": "114-testing-apps",
-            "opinion": [
-              "never"
-            ],
+            "opinion": ["never"],
             "children": []
           },
           {
@@ -1032,9 +914,7 @@
             "path": "/careers/programming/frontend/content/114-testing-apps/107-jasmine.mdx",
             "parentId": "114-other-options",
             "grandParentId": "114-testing-apps",
-            "opinion": [
-              "never"
-            ],
+            "opinion": ["never"],
             "children": []
           }
         ]
@@ -1046,18 +926,14 @@
     "path": "/careers/programming/frontend/content/115-type-checkers/000-readme.mdx",
     "parentId": "115-type-checkers",
     "grandParentId": "",
-    "opinion": [
-      "order"
-    ],
+    "opinion": ["order"],
     "children": [
       {
         "name": "Typescript",
         "path": "/careers/programming/frontend/content/115-type-checkers/100-typescript.mdx",
         "parentId": "115-type-checkers",
         "grandParentId": "",
-        "opinion": [
-          "personal"
-        ],
+        "opinion": ["personal"],
         "children": []
       },
       {
@@ -1065,9 +941,7 @@
         "path": "/careers/programming/frontend/content/115-type-checkers/101-flow.mdx",
         "parentId": "115-type-checkers",
         "grandParentId": "",
-        "opinion": [
-          "never"
-        ],
+        "opinion": ["never"],
         "children": []
       }
     ]
@@ -1077,9 +951,7 @@
     "path": "/careers/programming/frontend/content/116-progressive-web-apps/000-readme.mdx",
     "parentId": "116-progressive-web-apps",
     "grandParentId": "",
-    "opinion": [
-      "order"
-    ],
+    "opinion": ["order"],
     "children": [
       {
         "name": "PWA APIS",
@@ -1104,27 +976,21 @@
     "path": "/careers/programming/frontend/content/117-server-side-rendering/000-readme.mdx",
     "parentId": "117-server-side-rendering",
     "grandParentId": "",
-    "opinion": [
-      "order"
-    ],
+    "opinion": ["order"],
     "children": [
       {
         "name": "React JS",
         "path": "/careers/programming/frontend/content/117-server-side-rendering/100-react-js/000-readme.mdx",
         "parentId": "100-react-js",
         "grandParentId": "117-server-side-rendering",
-        "opinion": [
-          "personal"
-        ],
+        "opinion": ["personal"],
         "children": [
           {
             "name": "Next.js",
             "path": "/careers/programming/frontend/content/117-server-side-rendering/100-react-js/100-next-js.mdx",
             "parentId": "100-react-js",
             "grandParentId": "117-server-side-rendering",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           },
           {
@@ -1132,9 +998,7 @@
             "path": "/careers/programming/frontend/content/117-server-side-rendering/100-react-js/101-after-js.mdx",
             "parentId": "100-react-js",
             "grandParentId": "117-server-side-rendering",
-            "opinion": [
-              "never"
-            ],
+            "opinion": ["never"],
             "children": []
           }
         ]
@@ -1144,18 +1008,14 @@
         "path": "/careers/programming/frontend/content/117-server-side-rendering/101-angular/000-readme.mdx",
         "parentId": "101-angular",
         "grandParentId": "117-server-side-rendering",
-        "opinion": [
-          "alternative"
-        ],
+        "opinion": ["alternative"],
         "children": [
           {
             "name": "Universal",
             "path": "/careers/programming/frontend/content/117-server-side-rendering/101-angular/100-universal.mdx",
             "parentId": "101-angular",
             "grandParentId": "117-server-side-rendering",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           }
         ]
@@ -1165,18 +1025,14 @@
         "path": "/careers/programming/frontend/content/117-server-side-rendering/102-vue-js/000-readme.mdx",
         "parentId": "102-vue-js",
         "grandParentId": "117-server-side-rendering",
-        "opinion": [
-          "alternative"
-        ],
+        "opinion": ["alternative"],
         "children": [
           {
             "name": "Nuxt.js",
             "path": "/careers/programming/frontend/content/117-server-side-rendering/102-vue-js/100-nuxt-js.mdx",
             "parentId": "102-vue-js",
             "grandParentId": "117-server-side-rendering",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           }
         ]
@@ -1188,11 +1044,10 @@
     "path": "/careers/programming/frontend/content/118-static-site-generators/000-readme.mdx",
     "parentId": "118-static-site-generators",
     "grandParentId": "",
-    "opinion": [
-      "order"
-    ],
+    "opinion": ["order"],
     "children": [
       {
+        "id": "000-static-site-generators",
         "name": "",
         "path": "",
         "parentId": "",
@@ -1204,9 +1059,7 @@
             "path": "/careers/programming/frontend/content/118-static-site-generators/100-next-js.mdx",
             "parentId": "118-static-site-generators",
             "grandParentId": "",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           },
           {
@@ -1214,14 +1067,13 @@
             "path": "/careers/programming/frontend/content/118-static-site-generators/101-gatsby-js.mdx",
             "parentId": "118-static-site-generators",
             "grandParentId": "",
-            "opinion": [
-              "personal"
-            ],
+            "opinion": ["personal"],
             "children": []
           }
         ]
       },
       {
+        "id": "001-static-site-generators",
         "name": "",
         "path": "",
         "parentId": "",
@@ -1233,9 +1085,7 @@
             "path": "/careers/programming/frontend/content/118-static-site-generators/102-nuxt-js.mdx",
             "parentId": "118-static-site-generators",
             "grandParentId": "",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           },
           {
@@ -1243,9 +1093,7 @@
             "path": "/careers/programming/frontend/content/118-static-site-generators/103-vuepress.mdx",
             "parentId": "118-static-site-generators",
             "grandParentId": "",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           },
           {
@@ -1253,9 +1101,7 @@
             "path": "/careers/programming/frontend/content/118-static-site-generators/104-jekyll.mdx",
             "parentId": "118-static-site-generators",
             "grandParentId": "",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           },
           {
@@ -1263,9 +1109,7 @@
             "path": "/careers/programming/frontend/content/118-static-site-generators/105-hugo.mdx",
             "parentId": "118-static-site-generators",
             "grandParentId": "",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           },
           {
@@ -1273,9 +1117,7 @@
             "path": "/careers/programming/frontend/content/118-static-site-generators/106-gridsome.mdx",
             "parentId": "118-static-site-generators",
             "grandParentId": "",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           },
           {
@@ -1283,9 +1125,7 @@
             "path": "/careers/programming/frontend/content/118-static-site-generators/107-eleventy.mdx",
             "parentId": "118-static-site-generators",
             "grandParentId": "",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           }
         ]
@@ -1297,18 +1137,14 @@
     "path": "/careers/programming/frontend/content/119-graphql/000-readme.mdx",
     "parentId": "119-graphql",
     "grandParentId": "",
-    "opinion": [
-      "order"
-    ],
+    "opinion": ["order"],
     "children": [
       {
         "name": "Apollo",
         "path": "/careers/programming/frontend/content/119-graphql/100-apollo.mdx",
         "parentId": "119-graphql",
         "grandParentId": "",
-        "opinion": [
-          "personal"
-        ],
+        "opinion": ["personal"],
         "children": []
       },
       {
@@ -1316,9 +1152,7 @@
         "path": "/careers/programming/frontend/content/119-graphql/101-relay-modern.mdx",
         "parentId": "119-graphql",
         "grandParentId": "",
-        "opinion": [
-          "alternative"
-        ],
+        "opinion": ["alternative"],
         "children": []
       }
     ]
@@ -1328,21 +1162,18 @@
     "path": "/careers/programming/frontend/content/120-mobile-applications/000-readme.mdx",
     "parentId": "120-mobile-applications",
     "grandParentId": "",
-    "opinion": [
-      "order"
-    ],
+    "opinion": ["order"],
     "children": [
       {
         "name": "React Native",
         "path": "/careers/programming/frontend/content/120-mobile-applications/100-react-native.mdx",
         "parentId": "120-mobile-applications",
         "grandParentId": "",
-        "opinion": [
-          "personal"
-        ],
+        "opinion": ["personal"],
         "children": []
       },
       {
+        "id": "000-mobile-applications",
         "name": "",
         "path": "",
         "parentId": "",
@@ -1354,9 +1185,7 @@
             "path": "/careers/programming/frontend/content/120-mobile-applications/101-nativescript.mdx",
             "parentId": "120-mobile-applications",
             "grandParentId": "",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           },
           {
@@ -1364,9 +1193,7 @@
             "path": "/careers/programming/frontend/content/120-mobile-applications/102-flutter.mdx",
             "parentId": "120-mobile-applications",
             "grandParentId": "",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           },
           {
@@ -1374,9 +1201,7 @@
             "path": "/careers/programming/frontend/content/120-mobile-applications/103-ionic.mdx",
             "parentId": "120-mobile-applications",
             "grandParentId": "",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           }
         ]
@@ -1388,24 +1213,21 @@
     "path": "/careers/programming/frontend/content/121-desktop-applications/000-readme.mdx",
     "parentId": "121-desktop-applications",
     "grandParentId": "",
-    "opinion": [
-      "order"
-    ],
+    "opinion": ["order"],
     "children": [
       {
         "name": "Electron",
         "path": "/careers/programming/frontend/content/121-desktop-applications/100-electron.mdx",
         "parentId": "121-desktop-applications",
         "grandParentId": "",
-        "opinion": [
-          "personal"
-        ],
+        "opinion": ["personal"],
         "children": []
       },
       {
+        "id": "000-desktop-applications",
         "name": "",
         "path": "",
-        "parentId": "",
+        "parentId": "121-desktop-applications",
         "grandParentId": "",
         "opinion": [],
         "children": [
@@ -1414,9 +1236,7 @@
             "path": "/careers/programming/frontend/content/121-desktop-applications/101-carlo.mdx",
             "parentId": "121-desktop-applications",
             "grandParentId": "",
-            "opinion": [
-              "never"
-            ],
+            "opinion": ["never"],
             "children": []
           },
           {
@@ -1424,9 +1244,7 @@
             "path": "/careers/programming/frontend/content/121-desktop-applications/102-proton-native.mdx",
             "parentId": "121-desktop-applications",
             "grandParentId": "",
-            "opinion": [
-              "alternative"
-            ],
+            "opinion": ["alternative"],
             "children": []
           }
         ]
@@ -1438,12 +1256,11 @@
     "path": "/careers/programming/frontend/content/122-web-assembly.mdx",
     "parentId": "",
     "grandParentId": "",
-    "opinion": [
-      "order"
-    ],
+    "opinion": ["order"],
     "children": []
   },
   {
+    "id": "000-keep-learning",
     "name": "Keep Learning",
     "path": "/careers/keep-learning.mdx",
     "parentId": "",
