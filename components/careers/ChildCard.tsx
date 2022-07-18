@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+
 import { Drawer } from '../Drawer';
 import {
   convertNameToUrl,
+  // formatSlugTolink,
   getFromLocalStorage,
   OpinionTick,
 } from './RenderFunctions';
@@ -13,10 +15,7 @@ function ChildCard(item) {
 
   return (
     <>
-      <div
-        key={item.name}
-        className={'relative flex items-center justify-between'}
-      >
+      <div key={item.name} className={'relative'}>
         {item.path === '' && item.name}
         {item.path !== '' && (
           <div
@@ -24,7 +23,7 @@ function ChildCard(item) {
             onClick={() => {
               setIsOpen(!isOpen);
             }}
-            className=' w-full cursor-pointer '
+            className=' flex w-full cursor-pointer items-center justify-between'
           >
             {!isDone && item.name}
             {isDone && (
@@ -35,14 +34,14 @@ function ChildCard(item) {
                 {item.name}
               </div>
             )}
+            <div className=''>
+              {!item.opinion ||
+                (Object.values(item.opinion).length != 0 && (
+                  <OpinionTick {...item.opinion} />
+                ))}
+            </div>
           </div>
         )}
-        <div className=''>
-          {!item.opinion ||
-            (Object.values(item.opinion).length != 0 && (
-              <OpinionTick {...item.opinion} />
-            ))}
-        </div>
       </div>
       {item.children.length > 0 && (
         <div className='mx-2 mt-2 box-border flex flex-wrap'>

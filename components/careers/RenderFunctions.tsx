@@ -17,7 +17,7 @@ export const OpinionTick = opinionValue => {
         <FaDotCircle color={'lightslategray'} size={15} />
       )}
       {opinionHas(opinionValue, 'never') && (
-        <div className='absolute inset-0 h-full w-full bg-gray-400  mix-blend-darken'/>
+        <div className='absolute right-0 top-0 left-0 h-full w-full rounded-sm border-2 border-dashed  border-gray-400 bg-gray-400/30  mix-blend-darken' />
       )}
     </>
   );
