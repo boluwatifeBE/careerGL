@@ -38,19 +38,11 @@ export const teaching: CareerMapType[] =
     description: "Step by step guide to becoming a modern frontend developer in 2022",
     featuredTitle: "Frontend",
     featuredDescription: "Step by step guide to becoming a frontend developer in 2022",
-    author: {
-      name: "Kamran Ahmed",
-      url: "https://twitter.com/kamranahmedse"
-    },
     featured: true,
-    imageUrl: "/careers/frontend.png",
-    jsonUrl: "/project/frontend.json",
-    resourcesPath: "/careers/100-frontend/resources.md",
     pdfUrl: "https://kamranahmedse.gumroad.com/l/frontend-roadmap",
     contentPathsFilePath: "/careers/teaching/100-frontend/content-paths.json",
     id: "Mathematics",
     parentId: "teaching",
-    metaPath: "/careers/100-frontend/meta.json",
     isUpcoming: false
   }
 ];
