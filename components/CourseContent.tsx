@@ -1,8 +1,16 @@
 import Conditional from '@/components/Conditional';
 import Link from '@/components/Link';
-import { Collapse } from '@geist-ui/core';
 import type { Course, CourseContent } from 'config/courses';
 import React from 'react';
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+  Box,
+  Text,
+} from '@chakra-ui/react';
 
 interface CourseContentProps {
   course: Course;
@@ -27,30 +35,36 @@ export default function CourseContent(
     );
 
     return (
-      <Collapse
-        key={name}
-        className='!border-0'
-        title={title}
-        subtitle={description}
-      >
-        <Conditional condition={!!content}>
-          {content?.map(({ name, slug }) => (
-            <Link key={name} href={getSlug(course.slug, slug)}>
-              <h3 className='my-2 text-lg text-gray-400 dark:text-gray-400'>
-                {name}
-              </h3>
-            </Link>
-          ))}
-        </Conditional>
-      </Collapse>
+      <AccordionItem key={name}>
+        <h2>
+          <AccordionButton>
+            <Box flex='1' textAlign='left'>
+              {title}
+              <Text>{description}</Text>
+            </Box>
+            <AccordionIcon />
+          </AccordionButton>
+        </h2>
+        <AccordionPanel pb={4}>
+          <Conditional condition={!!content}>
+            {content?.map(({ name, slug }) => (
+              <Link key={name} href={getSlug(course.slug, slug)}>
+                <h3 className='my-2 text-lg text-gray-400 dark:text-gray-400'>
+                  {name}
+                </h3>
+              </Link>
+            ))}
+          </Conditional>
+        </AccordionPanel>
+      </AccordionItem>
     );
   }
 
   return (
     <div className='pt-4 md:pt-8 xl:pt-12'>
-      <Collapse.Group>
+      <Accordion allowMultiple>
         {React.Children.toArray(content.map(renderCourseList))}
-      </Collapse.Group>
+      </Accordion>
     </div>
   );
 }

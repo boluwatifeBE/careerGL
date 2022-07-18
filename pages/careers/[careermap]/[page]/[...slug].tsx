@@ -20,7 +20,7 @@ import {
   getUniqueStringValueOfArray, 
 } from '@/components/careers/RenderFunctions';
 
-const DEFAULT_LAYOUT = 'CareerLayout';
+// const DEFAULT_LAYOUT = 'CareerLayout';
 const careermaps = getAllCareers();
 
 type StaticPathItem = {
@@ -103,7 +103,7 @@ export default function CareerContentPage({
   return (
     <>
       <MDXLayoutRenderer
-        layout={frontMatter.layout || DEFAULT_LAYOUT}
+        layout={frontMatter.layout}
         toc={toc}
         mdxSource={mdxSource}
         frontMatter={frontMatter}

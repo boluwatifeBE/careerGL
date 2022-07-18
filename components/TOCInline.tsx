@@ -1,5 +1,12 @@
-import { Collapse } from '@geist-ui/core';
 import { Toc } from 'types/Toc';
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+  Box,
+} from '@chakra-ui/react';
 
 interface TOCInlineProps {
   toc: Toc;
@@ -68,9 +75,19 @@ const TOCInline = ({
   return (
     <>
       {asDisclosure && renderTOC ? (
-        <Collapse className='!border-0 !pt-0' title={title}>
-          <div className='ml-4 !-mt-4'>{tocList}</div>
-        </Collapse>
+        <Accordion allowMultiple>
+          <AccordionItem>
+            <h2>
+              <AccordionButton>
+                <Box flex='1' textAlign='left'>
+                  {title}
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel pb={4}>{tocList}</AccordionPanel>
+          </AccordionItem>
+        </Accordion>
       ) : (
         tocList
       )}

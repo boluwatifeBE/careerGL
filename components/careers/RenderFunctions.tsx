@@ -1,5 +1,4 @@
-import { FaCheckCircle, FaDotCircle, FaMinusCircle } from 'react-icons/fa';
-
+import { FaCheckCircle, FaDotCircle } from 'react-icons/fa';
 
 export const opinionHas = (values, string: string): boolean => {
   return Object.values(values).includes(string);
@@ -18,7 +17,7 @@ export const OpinionTick = opinionValue => {
         <FaDotCircle color={'lightslategray'} size={15} />
       )}
       {opinionHas(opinionValue, 'never') && (
-        <FaMinusCircle color={'sienna'} size={15} />
+        <div className='absolute inset-0 h-full w-full bg-gray-400  mix-blend-darken'/>
       )}
     </>
   );

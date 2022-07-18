@@ -1,25 +1,32 @@
-import { useEffect, useState } from 'react';
-import { motion, useViewportScroll, useSpring, useScroll } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
+
 
 export const OnScrollProgressbar = () => {
-  const { scrollYProgress } = useViewportScroll();
+  const [scrollBar, setScrollBar] = useState(0);
 
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
+  useEffect(() => {
+    let progressBarHandler = () => {
+      const totalScroll = document.documentElement.scrollTop;
+      const windowHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      const scroll = totalScroll / windowHeight;
+
+      setScrollBar(scroll);
+    };
+
+    window.addEventListener('scroll', progressBarHandler);
+
+    return () => window.removeEventListener('scroll', progressBarHandler);
   });
 
   return (
-    <>
-      <div className=''>
-        <motion.div
-          className='fixed top-[65px] left-0 right-0 z-40 h-[3px] origin-[0%] bg-appColor-100'
-          style={{ scaleX }}
-        />
-      </div>
-    </>
+    <div className='fixed top-[65px] left-0 z-40 h-1 w-full '>
+      <div
+        className='h-[3px] origin-top-left scale-0   bg-appColor-100 transition-transform duration-300 ease-linear '
+        style={{ transform: `scale(${scrollBar}, 1)` }}
+      />
+    </div>
   );
 };
 
-// export default OnScrollProgressbar;
