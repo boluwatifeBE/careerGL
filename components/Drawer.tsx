@@ -155,7 +155,6 @@ export function Drawer(props: ContentDrawerProps) {
           )}
           <IconButton
             onClick={onClose}
-            // className='sm:bg-transparent bg-green-700 flex cursor-pointer items-center space-x-1 rounded-lg px-2 py-1'
             className=' flex cursor-pointer items-center space-x-1 '
           >
             <CloseIcon size={20} className='' />

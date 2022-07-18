@@ -9,7 +9,7 @@ import Card from '@/components/Card';
 import Link from '@/components/Link';
 import ScrollTopAndComment from '@/components/ScrollTopAndComment';
 
-const MAX_DISPLAY = 3;
+const MAX_DISPLAY = 6;
 
 // @ts-ignore
 export const getStaticProps: GetStaticProps<{
@@ -35,7 +35,7 @@ export default function Home({
         title={siteMetadata.title}
         description={siteMetadata.description}
       />
-      <ScrollTopAndComment />
+      <ScrollTopAndComment hide={false} />
       <div className='divide-y divide-gray-200 dark:divide-gray-700'>
         <Banner frontMatter={author} />
         <div className='container py-12'>

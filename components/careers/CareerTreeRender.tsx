@@ -8,8 +8,18 @@ type CareerTreeRenderType = {
   data: CareerTreeType[];
 };
 
+function generateRandomString(stringLength: number, stringChars: string) {
+  let string = '';
+  for (var i = stringLength; i > 0; i--) {
+    string +=
+      stringChars[Math.floor(Math.random() * stringChars.length)];
+  }
+  return string;
+}
+
 export const CareerTreeRender = (props: CareerTreeRenderType) => {
   const { careermap, page, data } = props;
+  const id = generateRandomString(8, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
 
   if (!data) {
     return null;
@@ -27,7 +37,7 @@ export const CareerTreeRender = (props: CareerTreeRenderType) => {
             <div key={item.name} className={`mx-2 mt-3  space-y-5`}>
               {item.children.map(child => (
                 <div
-                  key={child.name}
+                  key={`${child.id}-${child.name}-${id}`}
                   className={`rounded-lg  border-2 border-gray-700 bg-gray-100 p-2 font-semibold text-black dark:border-gray-100 dark:bg-gray-800  dark:text-white`}
                 >
                   <ChildCard careermap={careermap} page={page} {...child} />

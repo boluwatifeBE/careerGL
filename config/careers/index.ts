@@ -8,11 +8,11 @@ import { teaching } from './teaching';
 
 interface CareerConfig {
   programming: CareerMapType[];
+  marketing: CareerMapType[];
   graphics: CareerMapType[];
   photography: CareerMapType[];
   music: CareerMapType[];
   teaching: CareerMapType[];
-  marketing: CareerMapType[];
 }
 
 export const careerConfig: CareerConfig = {
@@ -26,10 +26,10 @@ export const careerConfig: CareerConfig = {
 
 const careerMerge = [
   ...careerConfig.programming, 
+  ...careerConfig.marketing,
+  ...careerConfig.graphics,
+  ...careerConfig.photography,
   ...careerConfig.music,
-  // ...careerConfig.marketing,
-  // ...careerConfig.graphics,
-  // ...careerConfig.photography,
   // ...careerConfig.teaching,
 ].reduce((previous, current) => {
   previous[current.id] ? [ ...previous[current.id].id, ...current.id ] : previous[current.id] = current;

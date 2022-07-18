@@ -36,21 +36,13 @@ export const photography: CareerMapType[] =
     },
     title: "Still Image",
     description: "Step by step guide to becoming a modern frontend developer in 2022",
-    featuredTitle: "Frontend",
+    featuredTitle: "Still Image",
     featuredDescription: "Step by step guide to becoming a frontend developer in 2022",
-    author: {
-      name: "Kamran Ahmed",
-      url: "https://twitter.com/kamranahmedse"
-    },
     featured: true,
-    imageUrl: "/careers/photography/frontend.png",
-    jsonUrl: "/project/frontend.json",
-    resourcesPath: "/careers/photography/100-frontend/resources.md",
-    pdfUrl: "https://kamranahmedse.gumroad.com/l/frontend-roadmap",
+    pdfUrl: "",
     contentPathsFilePath: "/careers/photography/100-frontend/content-paths.json",
     id: "still-image",
     parentId: "photography",
-    metaPath: "/careers/photography/100-frontend/meta.json",
-    isUpcoming: false
+    isUpcoming: true
   },
 ];
