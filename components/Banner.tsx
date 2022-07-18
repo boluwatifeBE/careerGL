@@ -6,7 +6,7 @@ import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
 import siteMetadata from '@/data/siteMetadata';
 
 interface BannerProps {
-  frontMatter: AuthorFrontMatter;
+  frontMatter?: AuthorFrontMatter;
 }
 
 function Banner(props: BannerProps): React.ReactElement {

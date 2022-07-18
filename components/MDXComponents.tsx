@@ -3,7 +3,7 @@ import React, { useMemo } from 'react';
 import { ComponentMap, getMDXComponent } from 'mdx-bundler/client';
 import Image from 'next/image';
 import CustomLink from './Link';
-import TOCInline from './TOCInline';
+// import TOCInline from './TOCInline';
 import Pre from './Pre';
 import { BlogNewsletterForm } from './NewsletterForm';
 import PremiumBlock from './mdx-components/premium-block';
@@ -26,7 +26,7 @@ export const MDXComponents: ComponentMap = {
   BlogNewsletterForm,
   a: CustomLink,
   Image,
-  TOCInline,
+  // TOCInline,
   BadgeLink: BadgeLink,
   ResourceGroupTitle: ResourceGroupTitle,
 };

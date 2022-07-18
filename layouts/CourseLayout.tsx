@@ -6,6 +6,7 @@ import SectionContainer from '@/components/SectionContainer';
 import { BlogSEO } from '@/components/SEO';
 import Share from '@/components/Share';
 import TOCInline from '@/components/TOCInline';
+// import TOCInline from '@/components/TOCInline';
 import siteMetadata from '@/data/siteMetadata';
 import Image from 'next/image';
 import { ReactNode } from 'react';

@@ -12,9 +12,9 @@ function ParentCard(item) {
   const isDone = getFromLocalStorage(nameUrl) === 'done';
 
   return (
-    <div className='flex items-center  '>
-      <h1
-        className={`text-lg font-semibold   leading-9 tracking-tight text-gray-800 dark:text-gray-100 sm:text-xl sm:leading-10 md:text-2xl md:leading-12`}
+    <div className=' '>
+      <div
+        className={`relative flex items-center text-lg font-semibold  leading-9 tracking-tight text-gray-800 dark:text-gray-100 sm:text-xl sm:leading-10 md:text-2xl md:leading-12`}
       >
         {item.path === '' && item.name}
         {item.path !== '' && (
@@ -23,7 +23,7 @@ function ParentCard(item) {
             onClick={() => {
               setIsOpen(!isOpen);
             }}
-            className='cursor-pointer'
+            className=' w-full cursor-pointer '
           >
             {!isDone && item.name}
             {isDone && (
@@ -36,13 +36,12 @@ function ParentCard(item) {
             )}
           </div>
         )}
-      </h1>
-
-      <div className='ml-2 flex space-x-1'>
-        {!item.opinion ||
-          (Object.values(item.opinion).length != 0 && (
-            <OpinionTick {...item.opinion} />
-          ))}
+        <div className=''>
+          {!item.opinion ||
+            (Object.values(item.opinion).length != 0 && (
+              <OpinionTick {...item.opinion} />
+            ))}
+        </div>
       </div>
 
       <Drawer

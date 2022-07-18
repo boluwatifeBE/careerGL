@@ -39,16 +39,15 @@ export default function Home({
       <div className='divide-y divide-gray-200 dark:divide-gray-700'>
         <Banner frontMatter={author} />
         <div className='container py-12'>
-          <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3'>
+          <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3'>
             {!config.careers.length && 'No careers found.'}
             {config.careers
               .slice(0, MAX_DISPLAY)
-              .map(({ slug, title, description, banner }) => (
+              .map(({ slug, title, description }) => (
                 <Card
                   key={slug}
                   title={title}
                   description={description}
-                  banner={banner}
                   href={`/careers/${slug}`}
                 />
               ))}

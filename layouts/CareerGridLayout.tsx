@@ -3,10 +3,6 @@ import { useState } from 'react';
 import { Career } from 'config/careers/careers';
 import Card from '@/components/Card';
 import SearchInput from '@/components/SearchInput';
-import config from 'config';
-import Pagination from '@/components/Pagination';
-import Link from '@/components/Link';
-import { BsFilterLeft as FilterIcon } from 'react-icons/bs';
 
 interface Props {
   title: string;
@@ -21,7 +17,7 @@ function CareerGridLayout({
   careers,
   initialDisplayCareers = [],
 }: // pagination,
-  Props) {
+Props) {
   const [searchValue, setSearchValue] = useState('');
   const [visible, setVisible] = useState(3);
 
@@ -60,14 +56,13 @@ function CareerGridLayout({
             <p className='mt-8 text-center'>No careers found</p>
           )}
 
-          {displayCareers.slice(0, visible).map((careerTitle, index) => {
-            const { slug, title, description, banner } = careerTitle;
+          {displayCareers.slice(0, visible).map((careerTitle) => {
+            const { slug, title, description } = careerTitle;
             return (
               <Card
                 key={slug}
                 title={title}
                 description={description}
-                banner={banner}
                 href={`/careers/${slug}`}
               />
             );

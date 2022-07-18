@@ -13,7 +13,10 @@ function ChildCard(item) {
 
   return (
     <>
-      <div key={item.name} className={'flex items-center'}>
+      <div
+        key={item.name}
+        className={'relative flex items-center justify-between'}
+      >
         {item.path === '' && item.name}
         {item.path !== '' && (
           <div
@@ -21,7 +24,7 @@ function ChildCard(item) {
             onClick={() => {
               setIsOpen(!isOpen);
             }}
-            className='cursor-pointer'
+            className=' w-full cursor-pointer '
           >
             {!isDone && item.name}
             {isDone && (
@@ -29,13 +32,12 @@ function ChildCard(item) {
                 suppressHydrationWarning={true}
                 className=' text-gray-500 line-through '
               >
-                {item.name}{' '}
+                {item.name}
               </div>
             )}
           </div>
         )}
-
-        <div className='ml-2 flex space-x-1'>
+        <div className=''>
           {!item.opinion ||
             (Object.values(item.opinion).length != 0 && (
               <OpinionTick {...item.opinion} />

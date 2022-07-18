@@ -1,6 +1,5 @@
 import Comments from '@/components/comments';
 import Link from '@/components/Link';
-import { OnScrollProgressbar } from '@/components/OnScrollProgressbar';
 import PageTitle from '@/components/PageTitle';
 import ScrollTopAndComment from '@/components/ScrollTopAndComment';
 import SectionContainer from '@/components/SectionContainer';
@@ -14,6 +13,7 @@ import { ReactNode } from 'react';
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
 import { PostFrontMatter } from 'types/PostFrontMatter';
 import { Toc } from 'types/Toc';
+import { OnScrollProgressbar } from '@/components/OnScrollProgressbar';
 
 const editUrl = fileName =>
   `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`;
@@ -55,10 +55,9 @@ export default function PostLayout({
 
   return (
     <>
-      <OnScrollProgressbar />
       <SectionContainer>
         <BlogSEO url={url} authorDetails={authorDetails} {...frontMatter} />
-
+        <OnScrollProgressbar />
         <ScrollTopAndComment />
         <article className='fade-in'>
           <div className=' xl:divide-y xl:divide-gray-100 xl:dark:divide-gray-800'>
