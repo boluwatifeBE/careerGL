@@ -2,6 +2,7 @@ import { Drawer } from '../Drawer';
 import React, { useState } from 'react';
 import {
   convertNameToUrl,
+  // formatSlugTolink,
   getFromLocalStorage,
   OpinionTick,
 } from './RenderFunctions';
@@ -12,11 +13,12 @@ function ParentCard(item) {
   const isDone = getFromLocalStorage(nameUrl) === 'done';
 
   return (
-    <div className=' '>
+    <div className='relative'>
       <div
-        className={`relative flex items-center text-lg font-semibold  leading-9 tracking-tight text-gray-800 dark:text-gray-100 sm:text-xl sm:leading-10 md:text-2xl md:leading-12`}
+        className={` flex items-center text-lg font-semibold  leading-9 tracking-tight text-gray-800 dark:text-gray-100 sm:text-xl sm:leading-10 md:text-2xl md:leading-12`}
       >
         {item.path === '' && item.name}
+
         {item.path !== '' && (
           <div
             suppressHydrationWarning={true}
