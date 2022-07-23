@@ -15,7 +15,6 @@ export const getStaticProps: GetStaticProps<{
   initialDisplayCareers: ComponentProps<
     typeof CareerGridLayout
   >['initialDisplayCareers'];
-  // pagination: ComponentProps<typeof CareerGridLayout>['pagination'];
 }> = async () => {
   const authorDetails = await getFileBySlug<AuthorFrontMatter>('authors', [
     'default',

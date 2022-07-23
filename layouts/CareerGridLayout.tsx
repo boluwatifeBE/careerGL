@@ -8,16 +8,13 @@ interface Props {
   title: string;
   careers: Career[];
   initialDisplayCareers?: Career[];
-  // pagination?: ComponentProps<typeof Pagination>;
-  // value: number;
 }
 
 function CareerGridLayout({
   title,
   careers,
   initialDisplayCareers = [],
-}: // pagination,
-Props) {
+}: Props) {
   const [searchValue, setSearchValue] = useState('');
   const [visible, setVisible] = useState(3);
 
@@ -32,8 +29,6 @@ Props) {
     initialDisplayCareers.length > 0 && !searchValue
       ? initialDisplayCareers
       : filteredCareerCards;
-
-  // const showLoadMoreBtn = visible < displayCareers.length
 
   const handleOnChange = ({ target }) => setSearchValue(target.value);
   const showMoreItems = () => {
@@ -51,7 +46,7 @@ Props) {
       </Header>
 
       <div className='container py-12'>
-        <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3'>
+        <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3'>
           {!filteredCareerCards.length && (
             <p className='mt-8 text-center'>No careers found</p>
           )}
