@@ -1,4 +1,4 @@
-import Card from '@/components/Card';
+import CardWithBanner from '@/components/CardWithBanner';
 import { Header } from '@/components/Form';
 import { PageSEO } from '@/components/SEO';
 import siteMetadata from '@/data/siteMetadata';
@@ -14,9 +14,9 @@ export default function Projects() {
       <div className='fade-in divide-y-2 divide-gray-100 dark:divide-gray-800'>
         <Header title='Projects' />
         <div className='container py-12'>
-          <div className='-m-4 flex flex-wrap'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3'>
             {config.projects.map(({ slug, title, description, banner }) => (
-              <Card
+              <CardWithBanner
                 key={slug}
                 title={title}
                 description={description}

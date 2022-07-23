@@ -1,6 +1,4 @@
-import Card from '@/components/Card';
-import CourseContent from '@/components/CourseContent';
-import { Header } from '@/components/Form';
+import CardWithBanner from '@/components/CardWithBanner';
 import { PageSEO } from '@/components/SEO';
 import config from 'config';
 import { InferGetStaticPropsType } from 'next';
@@ -33,7 +31,7 @@ export default function Go(
         <div className='container py-12'>
           <div className='-m-4 flex flex-wrap'>
             {config.courses.map(({ slug, title, description, banner }) => (
-              <Card
+              <CardWithBanner
                 key={slug}
                 title={title}
                 description={description}

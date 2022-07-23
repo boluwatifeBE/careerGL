@@ -91,6 +91,18 @@ module.exports = withBundleAnalyzer({
       use: ['@svgr/webpack'],
     });
 
+    config.module.rules.push({
+      test: /\.(md|mdx)?$/,
+      use: [
+        {
+          loader: '@mdx-js/loader',
+          options: {
+            providerImportSource: '@mdx-js/react',
+          },
+        },
+      ],
+    });
+
     if (!dev && !isServer) {
       // Replace React with Preact only in client production build
       Object.assign(config.resolve.alias, {

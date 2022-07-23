@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Home",
+    "path": "/careers/programming/backend/content/000-readme.md",
+    "parentId": "",
+    "grandParentId": "",
+    "opinion": [],
+    "children": []
+  },
+  {
+    "name": "Internet",
+    "path": "/careers/programming/backend/content/100-internet/000-readme.md",
+    "parentId": "",
+    "grandParentId": "",
+    "opinion": [],
+    "children": [
+      {
+        "name": "How does the backend work",
+        "path": "/careers/programming/backend/content/100-internet/100-how-does-the-internet-work.md",
+        "parentId": "100-internet",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "name": "What is http",
+        "path": "/careers/programming/backend/content/100-internet/101-what-is-http.md",
+        "parentId": "100-internet",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      }
+    ]
+  }
+]

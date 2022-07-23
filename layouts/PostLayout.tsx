@@ -13,6 +13,7 @@ import { ReactNode } from 'react';
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
 import { PostFrontMatter } from 'types/PostFrontMatter';
 import { Toc } from 'types/Toc';
+import { OnScrollProgressbar } from '@/components/OnScrollProgressbar';
 
 const editUrl = fileName =>
   `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`;
@@ -22,7 +23,7 @@ const discussUrl = slug =>
   )}`;
 
 const postDateTemplate: Intl.DateTimeFormatOptions = {
-  weekday: 'long',
+  // weekday: 'long',
   year: 'numeric',
   month: 'long',
   day: 'numeric',
@@ -53,154 +54,177 @@ export default function PostLayout({
   const url = `${siteMetadata.siteUrl}/blog/${slug}`;
 
   return (
-    <SectionContainer>
-      <BlogSEO url={url} authorDetails={authorDetails} {...frontMatter} />
-      <ScrollTopAndComment />
-      <article className='fade-in'>
-        <div className='xl:divide-y xl:divide-gray-100 xl:dark:divide-gray-800'>
-          <header className='pt-6 xl:pb-6'>
-            <div className='space-y-1 text-center'>
-              <dl className='space-y-10'>
-                <div>
-                  <dt className='sr-only'>Published on</dt>
-                  <dd className='text-base font-medium leading-6 text-gray-500 dark:text-gray-400'>
-                    <time dateTime={date}>
-                      {new Date(date).toLocaleDateString(
-                        siteMetadata.locale,
-                        postDateTemplate,
-                      )}
-                    </time>
-                  </dd>
+    <>
+      <SectionContainer>
+        <BlogSEO url={url} authorDetails={authorDetails} {...frontMatter} />
+        <OnScrollProgressbar />
+        <ScrollTopAndComment />
+        <article className='fade-in'>
+          <div className=' xl:divide-y xl:divide-gray-100 xl:dark:divide-gray-800'>
+            <header className=' pt-20 pb-10'>
+              <div className='space-y-3 '>
+                <div className='flex flex-wrap items-center justify-between space-x-2 space-y-3 sm:space-x-5 sm:space-y-0 '>
+                  <div className='flex flex-wrap'>
+                    {tags.map(tag => (
+                      <Tag key={tag} text={tag} />
+                    ))}
+                  </div>
+                  <div className='flex items-center justify-center space-x-2'>
+                    <dt className='sr-only'>Published on</dt>
+                    <div className='text-sm font-normal text-gray-500 dark:text-gray-400 '>
+                      <time dateTime={date}>
+                        {new Date(date).toLocaleDateString(
+                          siteMetadata.locale,
+                          postDateTemplate,
+                        )}
+                      </time>
+                    </div>
+                    <div className='text-base font-light text-gray-500 dark:text-gray-400'>
+                      •
+                    </div>
+                    <p className=' text-sm font-normal leading-6 text-gray-500 dark:text-gray-400'>
+                      {readingTime?.text}
+                    </p>
+                  </div>
                 </div>
-              </dl>
-              <div>
-                <PageTitle>{title}</PageTitle>
+                <div>
+                  <PageTitle>{title}</PageTitle>
+                </div>
+
+                <div className=''>
+                  <Share title={title} url={url} />
+                </div>
               </div>
-              <p className='text-base leading-6 text-gray-500 dark:text-gray-400'>
-                {readingTime?.text}
-              </p>
-              <Share title={title} url={url} />
-            </div>
-          </header>
-          <div
-            className='divide-y divide-gray-100 pb-8 dark:divide-gray-800 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0'
-            style={{ gridTemplateRows: 'auto 1fr' }}
-          >
-            <dl className='pt-6 pb-10 xl:border-b xl:border-gray-100 xl:pt-11 xl:dark:border-gray-800'>
-              <dt className='sr-only'>Authors</dt>
-              <dd>
-                <ul className='flex justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8'>
-                  {authorDetails.map(author => (
-                    <li
-                      className='flex items-center space-x-2'
-                      key={author.name}
-                    >
-                      {author.avatar && (
-                        <Image
-                          src={author.avatar}
-                          width='38px'
-                          height='38px'
-                          alt='avatar'
-                          className='h-10 w-10 rounded-full'
-                        />
-                      )}
-                      <dl className='whitespace-nowrap text-sm font-medium leading-5'>
-                        <dt className='sr-only'>Name</dt>
-                        <dd className='text-gray-900 dark:text-gray-100'>
-                          {author.name}
-                        </dd>
-                        <dt className='sr-only'>Twitter</dt>
-                        <dd>
-                          {author.twitter && (
-                            <Link
-                              href={author.twitter}
-                              className='text-primary-500 hover:text-primary-600 dark:hover:text-primary-400'
+            </header>
+            <div className='divide-y divide-gray-100 pb-8 dark:divide-gray-800 '>
+              <div className='divide-y-2 divide-gray-100 dark:divide-gray-800 xl:col-span-3 xl:row-span-2 xl:pb-0'>
+                {banner && (
+                  <img
+                    src={banner}
+                    className='rounded-lg object-cover object-center'
+                    alt='banner'
+                  />
+                )}
+                <div className='flex flex-col'>
+                  {/* <div className='xl:grid xl:grid-cols-4 xl:gap-x-6'> */}
+                  <div className='prose max-w-none !border-t-0 pt-6 pb-8 dark:prose-dark xl:col-span-3'>
+                    <div className=''>
+                      <TOCInline toc={toc} asDisclosure />
+                    </div>
+                    {children}
+                  </div>
+                  {/* <div className='sticky top-4 hidden  xl:top-8 xl:block '>
+                    <TOCInline toc={toc} asDisclosure />
+                  </div> */}
+                  {/* </div> */}
+                  <div className=' pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300'>
+                    <div className=''>
+                      <dt className='sr-only'>Authors</dt>
+                      <dd>
+                        <ul>
+                          {authorDetails.map(author => (
+                            <li
+                              className='flex items-start space-x-3'
+                              key={author.name}
                             >
-                              {author.twitter.replace(
-                                'https://twitter.com/',
-                                '@',
-                              )}
-                            </Link>
-                          )}
-                        </dd>
-                      </dl>
-                    </li>
-                  ))}
-                </ul>
-              </dd>
-            </dl>
-            <div className='divide-y-2 divide-gray-100 dark:divide-gray-800 xl:col-span-3 xl:row-span-2 xl:pb-0'>
-              {banner && (
-                <img
-                  src={banner}
-                  className='object-cover object-center'
-                  alt='banner'
-                />
-              )}
-              <div className='prose max-w-none !border-t-0 pt-6 pb-8 dark:prose-dark'>
-                <TOCInline toc={toc} asDisclosure />
-                {children}
-              </div>
-              <div className='pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300'>
-                <Link href={discussUrl(slug)} rel='nofollow'>
-                  {'Discuss on Twitter'}
-                </Link>
-                {` • `}
-                <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
-              </div>
-              <Comments frontMatter={frontMatter} />
-            </div>
-            <footer>
-              <div className='divide-gray-100 text-sm font-medium leading-5 dark:divide-gray-800 xl:col-start-1 xl:row-start-2 xl:divide-y'>
-                {tags && (
-                  <div className='py-4 xl:py-8'>
-                    <h2 className='text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400'>
-                      Tags
-                    </h2>
-                    <div className='flex flex-wrap'>
-                      {tags.map(tag => (
-                        <Tag key={tag} text={tag} />
-                      ))}
+                              <div>
+                                {author.avatar && (
+                                  <Image
+                                    src={author.avatar}
+                                    width='50px'
+                                    height='50px'
+                                    alt='avatar'
+                                    className='h-10 w-[20%] rounded-full'
+                                  />
+                                )}
+                              </div>
+                              <dl className='w-[90%] whitespace-normal text-sm font-medium leading-5'>
+                                <div>
+                                  <dt className='sr-only'>Name</dt>
+                                  <dd className='text-xl font-semibold'>
+                                    {author.twitter && (
+                                      <Link
+                                        href={author.twitter}
+                                        className='text-gray-700 hover:underline dark:text-gray-300 '
+                                      >
+                                        {author.name}
+                                      </Link>
+                                    )}
+                                  </dd>
+                                </div>
+                                <div>
+                                  <dt className='sr-only'>Description</dt>
+                                  <p className='break-words'>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Earum sed enim, magnam
+                                    incidunt voluptate voluptatum impedit animi.
+                                    Nostrum ducimus, sapiente ipsum natus
+                                    possimus vel, repudiandae eius ea
+                                    consequatur, culpa voluptatem.
+                                  </p>
+                                  {/* <p className=''>{author.bio}</p> */}
+                                </div>
+                              </dl>
+                            </li>
+                          ))}
+                        </ul>
+                      </dd>
+                    </div>
+                    <div className='mt-6 text-right'>
+                      <Link href={discussUrl(slug)} rel='nofollow'>
+                        {'Discuss on Twitter'}
+                      </Link>
+                      {` • `}
+                      <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
                     </div>
                   </div>
-                )}
-                {(next || prev) && (
-                  <div className='flex justify-between py-4 xl:block xl:space-y-8 xl:py-8'>
-                    {prev && (
-                      <div>
-                        <h2 className='text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400'>
-                          Previous Article
-                        </h2>
-                        <div className='text-primary-500 hover:text-primary-600 dark:hover:text-primary-400'>
-                          <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
-                        </div>
-                      </div>
-                    )}
-                    {next && (
-                      <div>
-                        <h2 className='text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400'>
-                          Next Article
-                        </h2>
-                        <div className='text-primary-500 hover:text-primary-600 dark:hover:text-primary-400'>
-                          <Link href={`/blog/${next.slug}`}>{next.title}</Link>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                )}
+
+                  <Comments frontMatter={frontMatter} />
+                </div>
               </div>
-              <div className='pt-4 xl:pt-8'>
+
+              <footer>
+                <div className=' divide-gray-100  text-sm font-medium leading-5 dark:divide-gray-800  '>
+                  {(next || prev) && (
+                    <div className='flex items-center justify-between py-4  xl:py-8'>
+                      <div>
+                        {prev && (
+                          <div>
+                            <div className='text-appColor-200 hover:text-appColor-50 dark:hover:text-appColor-50'>
+                              <Link href={`/blog/${prev.slug}`}>
+                                ← {prev.title}
+                              </Link>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                      <div>
+                        {next && (
+                          <div>
+                            <div className='text-appColor-200 hover:text-appColor-50 dark:hover:text-appColor-50'>
+                              <Link href={`/blog/${next.slug}`}>
+                                {next.title} →
+                              </Link>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  )}
+                </div>
+                {/* <div className='pt-4 xl:pt-8'>
                 <Link
                   href='/blog'
                   className='text-primary-500 hover:text-primary-600 dark:hover:text-primary-400'
                 >
                   &larr; Back to the blog
                 </Link>
-              </div>
-            </footer>
+              </div> */}
+              </footer>
+            </div>
           </div>
-        </div>
-      </article>
-    </SectionContainer>
+        </article>
+      </SectionContainer>
+    </>
   );
 }

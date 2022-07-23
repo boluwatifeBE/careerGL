@@ -3,9 +3,12 @@ import React, { useMemo } from 'react';
 import { ComponentMap, getMDXComponent } from 'mdx-bundler/client';
 import Image from 'next/image';
 import CustomLink from './Link';
-import TOCInline from './TOCInline';
+// import TOCInline from './TOCInline';
 import Pre from './Pre';
 import { BlogNewsletterForm } from './NewsletterForm';
+import PremiumBlock from './mdx-components/premium-block';
+import { BadgeLink } from './mdx-components/badge-link';
+import { ResourceGroupTitle } from './mdx-components/resource-group-title';
 
 const Wrapper: React.ComponentType<{ layout: string }> = ({
   layout,
@@ -16,14 +19,16 @@ const Wrapper: React.ComponentType<{ layout: string }> = ({
 };
 
 export const MDXComponents: ComponentMap = {
-  Image,
   //@ts-ignore
-  TOCInline,
-  a: CustomLink,
+  PremiumBlock: PremiumBlock,
   pre: Pre,
   wrapper: Wrapper,
-  //@ts-ignore
   BlogNewsletterForm,
+  a: CustomLink,
+  Image,
+  // TOCInline,
+  BadgeLink: BadgeLink,
+  ResourceGroupTitle: ResourceGroupTitle,
 };
 
 interface Props {
