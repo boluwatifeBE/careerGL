@@ -10,7 +10,7 @@ type CareerTreeRenderType = {
 
 function generateRandomString(stringLength: number, stringChars: string) {
   let string = '';
-  for (var i = stringLength; i > 0; i--) {
+  for (let i = stringLength; i > 0; i--) {
     string +=
       stringChars[Math.floor(Math.random() * stringChars.length)];
   }

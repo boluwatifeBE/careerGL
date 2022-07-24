@@ -1,10 +1,10 @@
 import headerNavLinks from '@/data/headerNavLinks';
-import { useState } from 'react';
+import { MouseEventHandler } from 'react';
 import Link from './Link';
 
 type INav = {
-  show: any;
-  toggle: any;
+  show: boolean;
+  toggle: MouseEventHandler;
 };
 
 const MobileNav = (props: INav) => {

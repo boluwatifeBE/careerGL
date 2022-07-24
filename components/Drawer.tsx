@@ -1,7 +1,6 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import { useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import FocusTrap from 'focus-trap-react';
 import cn from 'classnames';
 import useMountTransition from './useMountTransition';
 
@@ -12,28 +11,23 @@ import {
 } from 'react-icons/hi';
 import {
   convertNameToUrl,
+  getBodyRef,
   getFromLocalStorage,
+  getPortalRootRef,
   queryPathElementsById,
 } from './careers/RenderFunctions';
-import { DrawerTextualContent } from 'pages/careers/DrawerTextualContent';
+import DrawerTextualContent from 'pages/careers/DrawerTextualContent';
 
 type ContentDrawerProps = {
   path?: string;
   name?: string;
   onClose?: () => void;
   isOpen?: boolean;
-  children?: ReactNode;
+  children?: React.ReactNode;
   className?: string;
   position?: string;
   removeWhenClosed?: boolean;
 };
-
-function createPortalRoot() {
-  var drawerRoot = document.createElement('div');
-  drawerRoot.setAttribute('id', 'drawer-root');
-
-  return drawerRoot;
-}
 
 export function Drawer(props: ContentDrawerProps) {
   const {
@@ -47,19 +41,26 @@ export function Drawer(props: ContentDrawerProps) {
     name,
   } = props;
 
-  if (!name) {
-    return null;
-  }
+  const bodyRef = useRef(getBodyRef());
+  const portalRootRef = useRef(getPortalRootRef());
+
+  // const bodyRef = useRef(document.querySelector('body'));
+  // const portalRootRef = useRef(
+  //   document.getElementById('drawer-root') || createPortalRoot(),
+  // );
 
   const nameUrl = convertNameToUrl(name);
   const isDone = getFromLocalStorage(nameUrl) === 'done';
 
-  if (typeof window === 'object') {
-    var bodyRef = useRef(document.querySelector('body'));
-    var portalRootRef = useRef(
-      document.getElementById('drawer-root') || createPortalRoot(),
-    );
-  }
+  // let bodyRef: MutableRefObject<HTMLElement>;
+  // let portalRootRef: MutableRefObject<HTMLElement>;
+
+  // if (typeof window === 'object') {
+    // const bodyRef = (typeof window === 'object') && useRef(document.querySelector('body'));
+    // const portalRootRef = (typeof window === 'object') && useRef(
+    //   document.getElementById('drawer-root') || createPortalRoot(),
+    // );
+  // }
 
   const isTransitioning = useMountTransition(isOpen, 300);
 
@@ -67,12 +68,12 @@ export function Drawer(props: ContentDrawerProps) {
   useEffect(() => {
     bodyRef.current.appendChild(portalRootRef.current);
     const portal = portalRootRef.current;
-    const bodyEl = bodyRef.current;
+    const bodyElement = bodyRef.current;
     return () => {
       // Clean up the portal when drawer component unmounts
       portal.remove();
       // Ensure scroll overflow is removed
-      bodyEl.style.overflow = '';
+      bodyElement.style.overflow = '';
     };
   }, []);
 
@@ -106,6 +107,10 @@ export function Drawer(props: ContentDrawerProps) {
   }, [isOpen, onClose]);
 
   if (!isTransitioning && removeWhenClosed && !isOpen) {
+    return null;
+  }
+
+  if (!name) {
     return null;
   }
 
@@ -166,7 +171,7 @@ export function Drawer(props: ContentDrawerProps) {
 
         {children}
       </div>
-      <div className='backdrop' onClick={onClose} />
+      <div aria-hidden className='backdrop' onClick={onClose} />
     </div>,
     portalRootRef.current,
   );
@@ -175,13 +180,13 @@ export function Drawer(props: ContentDrawerProps) {
 type BtnProps = {
   onClick?: () => void;
   className?: string;
-  children?: ReactNode;
+  children?: React.ReactNode;
 };
 
 export const IconButton = (props: BtnProps) => {
   const { onClick, children, className } = props;
   return (
-    <div onClick={onClick} className={className}>
+    <div aria-hidden onClick={onClick} className={className}>
       {children}
     </div>
   );

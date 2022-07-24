@@ -19,6 +19,7 @@ function ChildCard(item) {
         {item.path === '' && item.name}
         {item.path !== '' && (
           <div
+            aria-hidden
             suppressHydrationWarning={true}
             onClick={() => {
               setIsOpen(!isOpen);
