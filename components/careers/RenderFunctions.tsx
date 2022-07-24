@@ -26,7 +26,7 @@ export const OpinionTick = opinionValue => {
 export const queryPathElementsById = (pathId: string) => {
   const elements = document.querySelectorAll(
     `[data-group-id$="-${pathId}"]`,
-  ) as any;
+  ) as NodeListOf<Element>;
   const matchingElements: HTMLElement[] = [];
 
   elements.forEach((element: HTMLElement) => {
@@ -86,7 +86,7 @@ export const formatSlugTolink = (
   return url;
 };
 
-export const setOrUdateLocalStorage = (key?: string, value?: any) => {
+export const setOrUdateLocalStorage = (key?: string, value?: string) => {
   if (localStorage.getItem(key) !== null) {
     localStorage.removeItem(key);
   }
@@ -99,7 +99,7 @@ export const getFromLocalStorage = (key?: string) => {
   }
 };
 
-export const removeNull = (array): any[] => {
+export const removeNull = (array): string[] => {
   return [array].filter(item => item !== null);
 };
 
@@ -127,3 +127,22 @@ export const recursiveSearch = (obj, searchKey: string, results = []) => {
 
   return resultArray;
 };
+
+function createPortalRoot() {
+  const drawerRoot = document.createElement('div');
+  drawerRoot.setAttribute('id', 'drawer-root');
+
+  return drawerRoot;
+}
+
+export function getBodyRef() {
+  if (typeof window === 'object') {
+    return document.querySelector('body');
+  }
+}
+
+export function getPortalRootRef() {
+  if (typeof window === 'object') {
+    return document.getElementById('drawer-root') || createPortalRoot();
+  }
+}

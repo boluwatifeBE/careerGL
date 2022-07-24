@@ -2,15 +2,9 @@ import Link from '@/components/Link';
 import { useRandomColorPair } from '@/lib/hooks/useRandomColorPair';
 import { memo } from 'react';
 import { RoughNotation } from 'react-rough-notation';
-import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
 import siteMetadata from '@/data/siteMetadata';
 
-interface BannerProps {
-  frontMatter?: AuthorFrontMatter;
-}
-
-function Banner(props: BannerProps): React.ReactElement {
-  const { frontMatter } = props;
+function Banner(): React.ReactElement {
   const [aboutColor] = useRandomColorPair();
 
   return (

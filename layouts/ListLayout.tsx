@@ -5,7 +5,6 @@ import SearchInput from '@/components/SearchInput';
 import Tag from '@/components/Tag';
 import formatDate from '@/lib/utils/formatDate';
 import { ComponentProps, useState } from 'react';
-import { BsFilterLeft as FilterIcon } from 'react-icons/bs';
 import { PostFrontMatter } from 'types/PostFrontMatter';
 
 interface Props {
