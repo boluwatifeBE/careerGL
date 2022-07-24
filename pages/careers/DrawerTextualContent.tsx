@@ -7,7 +7,7 @@ type ContentProps = {
 };
 
 //@ts-ignore
-export function DrawerTextualContent(props: ContentProps) {
+function DrawerTextualContent(props: ContentProps) {
   const { path } = props;
 
   if (!path) {
@@ -30,3 +30,5 @@ export function DrawerTextualContent(props: ContentProps) {
     </div>
   );
 }
+
+export default DrawerTextualContent

@@ -80,7 +80,7 @@ export async function getFileBySlug<T>(
     source,
     // mdx imports can be automatically source from the components directory
     cwd: path.join(root, 'components'),
-    xdmOptions(options, frontmatter) {
+    xdmOptions(options) {
       // this is the recommended way to add custom remark/rehype plugins:
       // The syntax might look weird, but it protects you in case we add/remove
       // plugins in the future.
@@ -178,7 +178,7 @@ export function readCareerContentsFilePath(
   } catch (error) {
     return null
   }
-};
+}
 
 export const getContentPathString = (array): string => {
   let contentStringArray;

@@ -13,8 +13,8 @@ export function CareermapItem(props: CareermapGridItemProps) {
   const {
     title,
     subtitle,
-    isCommunity,
-    colorIndex = 0,
+    // isCommunity,
+    // colorIndex = 0,
     url,
     isUpcoming,
   } = props;

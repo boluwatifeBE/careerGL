@@ -1,9 +1,9 @@
 import { PageSEO } from '@/components/SEO';
 import siteMetadata from '@/data/siteMetadata';
-import { getFileBySlug } from '@/lib/mdx';
-import { GetStaticProps, InferGetStaticPropsType } from 'next';
+// import { getFileBySlug } from '@/lib/mdx';
+// import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import dynamic from 'next/dynamic';
-import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
+// import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
 import config from 'config';
 import Card from '@/components/Card';
 import Link from '@/components/Link';
@@ -12,23 +12,21 @@ import ScrollTopAndComment from '@/components/ScrollTopAndComment';
 const MAX_DISPLAY = 6;
 
 // @ts-ignore
-export const getStaticProps: GetStaticProps<{
-  author: AuthorFrontMatter;
-}> = async () => {
-  const authorDetails = await getFileBySlug<AuthorFrontMatter>('authors', [
-    'default',
-  ]);
+// export const getStaticProps: GetStaticProps<{
+//   author: AuthorFrontMatter;
+// }> = async () => {
+//   const authorDetails = await getFileBySlug<AuthorFrontMatter>('authors', [
+//     'default',
+//   ]);
 
-  const { frontMatter: author } = authorDetails;
+//   const { frontMatter: author } = authorDetails;
 
-  return { props: { author } };
-};
+//   return { props: { author } };
+// };
 
 const Banner = dynamic(import('@/components/Banner'));
 
-export default function Home({
-  author,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function Home() {
   return (
     <>
       <PageSEO
@@ -37,7 +35,7 @@ export default function Home({
       />
       <ScrollTopAndComment hide={false} />
       <div className='divide-y divide-gray-200 dark:divide-gray-700'>
-        <Banner frontMatter={author} />
+        <Banner />
         <div className='container py-12'>
           <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3'>
             {!config.careers.length && 'No careers found.'}

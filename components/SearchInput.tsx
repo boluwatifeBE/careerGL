@@ -1,5 +1,5 @@
 import Link from '@/components/Link';
-import { ChangeEventHandler, useState } from 'react';
+import { ChangeEventHandler } from 'react';
 import { BsFilterLeft as FilterIcon } from 'react-icons/bs';
 
 interface Props {

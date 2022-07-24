@@ -1,7 +1,7 @@
 import Conditional from '@/components/Conditional';
 import Link from '@/components/Link';
 import type { Course, CourseContent } from 'config/courses';
-import React from 'react';
+import React, { ReactNode } from 'react';
 import {
   Accordion,
   AccordionItem,
@@ -30,7 +30,7 @@ export default function CourseContent(
     const { name, description, content } = item;
 
     // As title does not support React.ReactNode
-    const title: any = (
+    const title: ReactNode = (
       <span className='font-bold dark:text-white'>{name}</span>
     );
 
