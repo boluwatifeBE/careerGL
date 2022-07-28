@@ -7,6 +7,7 @@ import {
   AccordionIcon,
   Box,
 } from '@chakra-ui/react';
+import { ReactNode } from 'react';
 
 interface TOCInlineProps {
   toc: Toc;
@@ -66,7 +67,7 @@ const TOCInline = ({
     </ul>
   );
 
-  const title: any = (
+  const title: ReactNode = (
     <span className='font-bold dark:text-white'>Table of Contents</span>
   );
 

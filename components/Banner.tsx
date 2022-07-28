@@ -1,15 +1,10 @@
 import Link from '@/components/Link';
 import { useRandomColorPair } from '@/lib/hooks/useRandomColorPair';
 import { memo } from 'react';
-import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
+import { RoughNotation } from 'react-rough-notation';
 import siteMetadata from '@/data/siteMetadata';
 
-interface BannerProps {
-  frontMatter?: AuthorFrontMatter;
-}
-
-function Banner(props: BannerProps): React.ReactElement {
-  const { frontMatter } = props;
+function Banner(): React.ReactElement {
 
   return (
     <div className='fade-in  flex  flex-col justify-center px-4 py-10 dark:text-white '>

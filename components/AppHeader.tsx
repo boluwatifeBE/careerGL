@@ -4,11 +4,11 @@ import Link from './Link';
 import MobileNav from './MobileNav';
 import ThemeSwitch from './ThemeSwitch';
 import Image from 'next/image';
-import { memo, ReactNode, useEffect, useState, useRef } from 'react';
+import { memo, useEffect, useState } from 'react';
 
-interface Props {
-  children: ReactNode;
-}
+// interface Props {
+//   children: ReactNode;
+// }
 
 const AppHeader = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,7 +60,7 @@ const AppHeader = () => {
                     width={35}
                     height={35}
                     layout='fixed'
-                    // objectFit='contain'
+                    alt='logo'
                   />
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (

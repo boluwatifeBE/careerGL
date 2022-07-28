@@ -5,7 +5,7 @@ export const OnScrollProgressbar = () => {
   const [scrollBar, setScrollBar] = useState(0);
 
   useEffect(() => {
-    let progressBarHandler = () => {
+    const progressBarHandler = () => {
       const totalScroll = document.documentElement.scrollTop;
       const windowHeight =
         document.documentElement.scrollHeight -

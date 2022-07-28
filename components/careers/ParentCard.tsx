@@ -21,6 +21,7 @@ function ParentCard(item) {
 
         {item.path !== '' && (
           <div
+            aria-hidden
             suppressHydrationWarning={true}
             onClick={() => {
               setIsOpen(!isOpen);

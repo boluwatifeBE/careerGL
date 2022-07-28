@@ -1,4 +1,3 @@
-import { Colors } from 'config/colors';
 import {
   FaFacebook as FacebookIcon,
   FaLinkedinIn as LinkedinIcon,

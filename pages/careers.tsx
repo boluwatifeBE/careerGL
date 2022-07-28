@@ -2,10 +2,9 @@ import { PageSEO } from '@/components/SEO';
 import siteMetadata from '@/data/siteMetadata';
 import { getFileBySlug } from '@/lib/mdx';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
-import dynamic from 'next/dynamic';
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
-import config, { POSTS_PER_PAGE } from 'config';
-import { ComponentProps, useState } from 'react';
+import config from 'config';
+import { ComponentProps } from 'react';
 import CareerGridLayout from '@/layouts/CareerGridLayout';
 
 // @ts-ignore
@@ -15,7 +14,6 @@ export const getStaticProps: GetStaticProps<{
   initialDisplayCareers: ComponentProps<
     typeof CareerGridLayout
   >['initialDisplayCareers'];
-  // pagination: ComponentProps<typeof CareerGridLayout>['pagination'];
 }> = async () => {
   const authorDetails = await getFileBySlug<AuthorFrontMatter>('authors', [
     'default',
@@ -26,8 +24,6 @@ export const getStaticProps: GetStaticProps<{
 
   return { props: { author, careers } };
 };
-
-const Banner = dynamic(import('@/components/Banner'));
 
 export default function Home({
   careers,
