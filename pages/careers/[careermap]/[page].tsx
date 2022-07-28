@@ -92,8 +92,8 @@ export default function CareerSingle(
   return (
     <div>
       <ScrollTopAndComment hide={false} />
-      <div className='fade-in  divide-y-2 divide-gray-100 dark:divide-gray-800'>
-        <div className='mb-7 mt-5 flex flex-col items-center sm:flex-row md:justify-between md:space-x-2'>
+      <div className='fade-in '>
+        <div className='mt-5 flex flex-col items-center border-b-2 border-b-gray-200 pb-10  dark:border-b-gray-700 sm:flex-row md:justify-between md:space-x-2'>
           <OnScrollProgressbar />
           <div className='sm:w-[70%]'>
             <HeaderContent contents={careerContents} />
@@ -122,8 +122,7 @@ export default function CareerSingle(
                     <span className='ml-1'>Learn anytime</span>
                   </div>
                   <div className='flex items-center'>
-                    {/* <FaMinusCircle color={"sienna"} size={13} /> */}
-                    <div className='h-3 w-3 rounded-sm border-2 border-dashed  border-gray-400 bg-gray-400/30  mix-blend-darken' />
+                    <div className='h-3 w-3 rounded-sm border-2 border-dashed  border-gray-400 bg-gray-400/20' />
                     <span className='ml-1'>Not recommend</span>
                   </div>
                 </div>
@@ -131,8 +130,14 @@ export default function CareerSingle(
             </motion.div>
           </div>
         </div>
+        <div className=' mx-auto -mt-4 flex max-w-sm items-center justify-center border-2 border-gray-200 bg-green-200 py-1  text-center  dark:border-gray-700'>
+          <span className='ml-1 text-sm font-semibold text-black sm:text-base'>
+            Click any nodes to see useful reasources ☝️ 🖱️
+          </span>
+        </div>
+
         <div className='relative'>
-          <div className='before:border-3 relative z-50 py-32 before:absolute before:left-0  before:right-0 before:top-0 before:bottom-0 before:-z-10 before:m-auto before:w-3 before:bg-gray-400 dark:before:bg-gray-700'>
+          <div className='before:border-3 relative  border-b-2 border-b-gray-200 py-32 before:absolute before:left-0 before:right-0  before:top-0 before:bottom-0 before:-z-10 before:m-auto before:w-3 before:bg-gray-400 dark:border-b-gray-700 dark:before:bg-gray-700'>
             <CareerTreeRender careermap={careermap} page={page} data={data} />
           </div>
         </div>
