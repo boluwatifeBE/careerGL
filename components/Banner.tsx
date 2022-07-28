@@ -1,7 +1,6 @@
 import Link from '@/components/Link';
 import { useRandomColorPair } from '@/lib/hooks/useRandomColorPair';
 import { memo } from 'react';
-import { RoughNotation } from 'react-rough-notation';
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
 import siteMetadata from '@/data/siteMetadata';
 
@@ -11,7 +10,6 @@ interface BannerProps {
 
 function Banner(props: BannerProps): React.ReactElement {
   const { frontMatter } = props;
-  const [aboutColor] = useRandomColorPair();
 
   return (
     <div className='fade-in  flex  flex-col justify-center px-4 py-10 dark:text-white '>
@@ -21,22 +19,14 @@ function Banner(props: BannerProps): React.ReactElement {
       <p className='text-md my-2 lg:my-4 lg:text-lg'>
         {siteMetadata.description}
       </p>
-      <p className='text-md font-light lg:text-lg'>
-        We also have a{' '}
+      <p className='text-sm font-light lg:text-base'>
+        We also have a
         <Link
-          className='text-md ml-2 mr-2 dark:text-white lg:text-lg'
+          className=' ml-2 mr-2 px-1 font-normal text-gray-800 underline decoration-red-600 decoration-2 underline-offset-[3px] dark:text-gray-300 lg:text-lg'
           href={siteMetadata.url.youtube}
         >
-          <RoughNotation
-            show
-            type='underline'
-            animationDelay={250}
-            animationDuration={2000}
-            color={aboutColor}
-          >
-            YouTube channel
-          </RoughNotation>
-        </Link>{' '}
+          YouTube channel
+        </Link>
         which we hope you are going to love.
       </p>
     </div>
