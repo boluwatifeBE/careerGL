@@ -4,12 +4,14 @@ export const writing: CareerMapType[] =
 [
   {
     seo: {
-      title: "copywriting Roadmap: Learn to become a modern copywriting expert",
+      title: "copywriting Tread: Learn to become a modern copywriting expert",
       description: "Learn to become a modern copy writer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern copywriting.",
       keywords: [
         "copy writer roadmap 2022",
         "copywriting roadmap 2022",
-        "guide to becoming a developer",
+        "copywriting path 2022",
+        "copywriting tread 2022",
+        "guide to becoming a writer",
         "guide to becoming a copywriting",
         "copywriting",
         "copy writer",
