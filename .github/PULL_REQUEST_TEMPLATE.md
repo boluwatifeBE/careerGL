@@ -2,7 +2,7 @@
 
 - [ ] Programming
 - [ ] Music
-- [ ] All skillguide
+- [ ] All
 - [ ] Code Change
 - [ ] Blogs
 
