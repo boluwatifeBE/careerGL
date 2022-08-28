@@ -26,14 +26,13 @@ jobs:
           restore-keys: | 
             ${{ runner.os }}-node-
             
-      - name: yarn install
-        run: yarn
-          
-      - name: typecheck
-        run: yarn typecheck
-        
-      - name: lint
-        run: yarn lint
+      - name: yarn install, build and test
+        run: |
+          yarn
+          yarn build:libs
+          yarn workspace type-check
+          yarn workspace lint
         
       - name: Check commits messages
         uses: wagoid/commitlint-github-action@v5
+      
