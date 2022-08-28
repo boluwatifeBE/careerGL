@@ -11,7 +11,7 @@ questions below by checking the box that best explains the issue(s) before reope
 
 - [ ] Programming
 - [ ] Music
-- [ ] All skillguide
+- [ ] All
 
 #### What is this issue about?
 
