@@ -4,7 +4,7 @@ on: [pull_request]
 
 jobs:
   run-ci:
-    name: Run Type Check & Linters
+    name: TypeCheck & Linters
     runs-on: ubuntu-latest
 
     steps:
@@ -29,7 +29,6 @@ jobs:
       - name: yarn install, build and test
         run: |
           yarn
-          yarn build:libs
           yarn workspace type-check
           yarn workspace lint
         
