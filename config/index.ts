@@ -1,6 +1,6 @@
 import { contact, Contact } from './contact';
 import { Course, courses } from './courses';
-import { Career, careers } from './careers';
+import { Career, careers } from './careers/careers';
 import { Project, projects } from './projects';
 
 interface Config {
@@ -17,6 +17,6 @@ const config: Config = {
   careers,
 };
 
-export const POSTS_PER_PAGE = 8;
+export const POSTS_PER_PAGE = 3;
 
 export default config;

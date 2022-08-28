@@ -36,17 +36,45 @@ module.exports = {
         gray: colors.neutral,
         'placeholder-light': '#F0F0F0',
         'placeholder-dark': '#252525',
+        appColor: {
+          50: '#e5db01',
+          100: '#cbc201',
+          200: '#b2aa01',
+          300: '#989201',
+          400: '#7f7a01',
+          500: '#666100',
+          600: '#4c4900',
+          700: '#333100',
+          800: '#191800',
+          900: '#000000',
+        },
       },
+      screens: {
+        tablet: '640px',
+        // => @media (min-width: 640px) { ... }
+
+        laptop: '1024px',
+        // => @media (min-width: 1024px) { ... }
+
+        desktop: '1280px',
+        // => @media (min-width: 1280px) { ... }
+
+        maxphone: { max: '639.5px' },
+
+        maxsm: { max: '767.5px' },
+        // => @media (max-width: 639px) { ... }
+      },
+
       typography: theme => ({
         DEFAULT: {
           css: {
             color: theme('colors.gray.700'),
             a: {
-              color: theme('colors.primary.500'),
+              color: theme('colors.gray.900'),
               '&:hover': {
-                color: `${theme('colors.primary.600')} !important`,
+                color: `${theme('colors.appColor.100')} !important`,
               },
-              code: { color: theme('colors.primary.400') },
+              code: { color: theme('colors.appColor.200') },
             },
             h1: {
               fontWeight: '700',
@@ -110,11 +138,11 @@ module.exports = {
           css: {
             color: theme('colors.gray.300'),
             a: {
-              color: theme('colors.primary.500'),
+              color: theme('colors.appColor.200'),
               '&:hover': {
-                color: `${theme('colors.primary.400')} !important`,
+                color: `${theme('colors.appColor.50')} !important`,
               },
-              code: { color: theme('colors.primary.400') },
+              code: { color: theme('colors.appColor.400') },
             },
             h1: {
               fontWeight: '700',
@@ -168,6 +196,9 @@ module.exports = {
           },
         },
       }),
+      gridTemplateColumns: {
+        16: 'repeat(auto-fit, minmax(186px, 1fr))',
+      },
     },
   },
   plugins: [

@@ -1,4 +1,3 @@
-import { Colors } from 'config/colors';
 import {
   FaFacebook as FacebookIcon,
   FaLinkedinIn as LinkedinIcon,
@@ -22,22 +21,33 @@ export default function Share(props: ShareProps): React.ReactElement {
   const { title, url } = props;
 
   return (
-    <div className='flex items-center justify-center pt-2'>
+    <div className='flex items-center justify-start pt-2'>
       <div className='flex w-44 items-center justify-between'>
         <TwitterShareButton title={title} url={url}>
-          <TwitterIcon size={22} color={Colors.twitter} />
+          <div className={`opacity-50 hover:opacity-70`}>
+            <TwitterIcon size={22} />
+          </div>
         </TwitterShareButton>
+
         <RedditShareButton title={title} url={url}>
-          <RedditIcon size={22} color={Colors.reddit} />
+          <div className={`opacity-50 hover:opacity-70`}>
+            <RedditIcon size={22} />
+          </div>
         </RedditShareButton>
         <FacebookShareButton title={title} url={url}>
-          <FacebookIcon size={22} color={Colors.facebook} />
+          <div className={`opacity-50 hover:opacity-70`}>
+            <FacebookIcon size={22} />
+          </div>
         </FacebookShareButton>
         <LinkedinShareButton title={title} url={url}>
-          <LinkedinIcon size={22} color={Colors.linkedin} />
+          <div className={`opacity-50 hover:opacity-70`}>
+            <LinkedinIcon size={22} />
+          </div>
         </LinkedinShareButton>
         <EmailShareButton title={title} url={url}>
-          <EmailIcon size={22} color={Colors.email} />
+          <div className={`opacity-50 hover:opacity-70`}>
+            <EmailIcon size={22} />
+          </div>
         </EmailShareButton>
       </div>
     </div>

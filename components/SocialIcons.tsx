@@ -9,7 +9,7 @@ import {
   IoLogoTwitter as TwitterIcon,
 } from 'react-icons/io';
 import {
-  SiBuymeacoffee as BuymeacoffeeIcon,
+  // SiBuymeacoffee as BuymeacoffeeIcon,
   SiGmail as MailIcon,
   SiYoutube as YoutubeIcon,
 } from 'react-icons/si';
@@ -60,9 +60,9 @@ function resolveIcon(entry: Tuple<string>): React.ReactNode {
       icon = <MailIcon {...props} />;
       break;
 
-    case ContactType.buymeacoffee:
-      icon = <BuymeacoffeeIcon {...props} />;
-      break;
+    // case ContactType.buymeacoffee:
+    //   icon = <BuymeacoffeeIcon {...props} />;
+    //   break;
     default:
       break;
   }

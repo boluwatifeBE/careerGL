@@ -1,0 +1,393 @@
+[
+  {
+    "name": "Music Production",
+    "path": "",
+    "parentId": "",
+    "grandParentId": "",
+    "opinion": [],
+    "children": []
+  },
+  {
+    "name": "Music Theory",
+    "path": "/careers/music/production/content/100-music-theory/000-readme.mdx",
+    "parentId": "100-music-theory",
+    "grandParentId": "",
+    "opinion": ["personal"],
+    "children": [
+      {
+        "id": "000-music-theory",
+        "name": "",
+        "path": "",
+        "parentId": "",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "Basics",
+            "path": "/careers/music/production/content/100-music-theory/100-basics.mdx",
+            "parentId": "100-music-theory",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Phonetics / Physics",
+            "path": "/careers/music/production/content/100-music-theory/101-phonetics-or-physics.mdx",
+            "parentId": "100-music-theory",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Basic Technical Concepts",
+            "path": "/careers/music/production/content/100-music-theory/102-basic-technical-concepts.mdx",
+            "parentId": "100-music-theory",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "001-music-theory",
+        "name": "",
+        "path": "",
+        "parentId": "",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "Technical Knowledge",
+            "path": "/careers/music/production/content/100-music-theory/103-technical-knowledge.mdx",
+            "parentId": "100-music-theory",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Electronic Music Genres",
+            "path": "/careers/music/production/content/100-music-theory/104-electronic-music-genres.mdx",
+            "parentId": "100-music-theory",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Music Structure and Songwriting",
+            "path": "/careers/music/production/content/100-music-theory/105-music-structure-and-songwriting.mdx",
+            "parentId": "100-music-theory",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Software Knowledge",
+    "path": "/careers/music/production/content/101-software-knowledge/000-readme.mdx",
+    "parentId": "101-software-knowledge",
+    "grandParentId": "",
+    "opinion": [],
+    "children": [
+      {
+        "name": "General",
+        "path": "/careers/music/production/content/101-software-knowledge/100-general/000-readme.mdx",
+        "parentId": "100-general",
+        "grandParentId": "101-software-knowledge",
+        "opinion": [],
+        "children": [
+          {
+            "name": "Audio Effects and Plugins",
+            "path": "/careers/music/production/content/101-software-knowledge/100-general/100-audio-effects-and-plugins.mdx",
+            "parentId": "100-general",
+            "grandParentId": "101-software-knowledge",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Audio Editing and Recording",
+            "path": "/careers/music/production/content/101-software-knowledge/100-general/101-audio-editing-and-recording.mdx",
+            "parentId": "100-general",
+            "grandParentId": "101-software-knowledge",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Software Instruments",
+            "path": "/careers/music/production/content/101-software-knowledge/100-general/102-software-instruments.mdx",
+            "parentId": "100-general",
+            "grandParentId": "101-software-knowledge",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Samples and Libraries",
+            "path": "/careers/music/production/content/101-software-knowledge/100-general/103-samples-and-libraries.mdx",
+            "parentId": "100-general",
+            "grandParentId": "101-software-knowledge",
+            "opinion": ["personal"],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Digital Audio Workstations (DAWs)",
+        "path": "/careers/music/production/content/101-software-knowledge/101-digital-audio-workstation/000-readme.mdx",
+        "parentId": "101-digital-audio-workstation",
+        "grandParentId": "101-software-knowledge",
+        "opinion": [],
+        "children": [
+          {
+            "name": "FL Studio",
+            "path": "/careers/music/production/content/101-software-knowledge/101-digital-audio-workstation/100-fl-studio.mdx",
+            "parentId": "101-digital-audio-workstation",
+            "grandParentId": "101-software-knowledge",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Ableton Live",
+            "path": "/careers/music/production/content/101-software-knowledge/101-digital-audio-workstation/101-ableton-live.mdx",
+            "parentId": "101-digital-audio-workstation",
+            "grandParentId": "101-software-knowledge",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "LogicX",
+            "path": "/careers/music/production/content/101-software-knowledge/101-digital-audio-workstation/102-logic-pro.mdx",
+            "parentId": "101-digital-audio-workstation",
+            "grandParentId": "101-software-knowledge",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Pro Tools",
+            "path": "/careers/music/production/content/101-software-knowledge/101-digital-audio-workstation/103-pro-tools.mdx",
+            "parentId": "101-digital-audio-workstation",
+            "grandParentId": "101-software-knowledge",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Cubase",
+            "path": "/careers/music/production/content/101-software-knowledge/101-digital-audio-workstation/104-cubase.mdx",
+            "parentId": "101-digital-audio-workstation",
+            "grandParentId": "101-software-knowledge",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sound Design",
+    "path": "/careers/music/production/content/102-sound-design/000-readme.mdx",
+    "parentId": "102-sound-design",
+    "grandParentId": "",
+    "opinion": [],
+    "children": []
+  },
+  {
+    "name": "Instrumentation",
+    "path": "/careers/music/production/content/103-instrumentation/000-readme.mdx",
+    "parentId": "103-instrumentation",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "name": "Instrumental Knowledge",
+        "path": "/careers/music/production/content/103-instrumentation/100-instrumental-knowledge.mdx",
+        "parentId": "103-instrumentation",
+        "grandParentId": "",
+        "opinion": [],
+        "children": []
+      },
+      {
+        "id": "000-instrumentation",
+        "name": "",
+        "path": "",
+        "parentId": "103-instrumentation",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "Synthesis",
+            "path": "/careers/music/production/content/103-instrumentation/101-synthesis.mdx",
+            "parentId": "103-instrumentation",
+            "grandParentId": "",
+            "opinion": [],
+            "children": []
+          },
+          {
+            "name": "Sounds & Tones",
+            "path": "/careers/music/production/content/103-instrumentation/102-sounds-and-tones.mdx",
+            "parentId": "103-instrumentation",
+            "grandParentId": "",
+            "opinion": [],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mixing & Mastering",
+    "path": "/careers/music/production/content/104-mixing-and-mastering/000-readme.mdx",
+    "parentId": "104-mixing-and-mastering",
+    "grandParentId": "",
+    "opinion": ["order"],
+    "children": [
+      {
+        "id": "000-mixing-and-mastering",
+        "name": "",
+        "path": "",
+        "parentId": "104-mixing-and-mastering",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "Mixing Strategy",
+            "path": "/careers/music/production/content/104-mixing-and-mastering/100-mixing-strategy-eq.mdx",
+            "parentId": "104-mixing-and-mastering",
+            "grandParentId": "",
+            "opinion": [],
+            "children": []
+          },
+          {
+            "name": "Dynamics Effects",
+            "path": "/careers/music/production/content/104-mixing-and-mastering/101-dynamics-effects.mdx",
+            "parentId": "104-mixing-and-mastering",
+            "grandParentId": "",
+            "opinion": [],
+            "children": []
+          },
+          {
+            "name": "Other Effects",
+            "path": "/careers/music/production/content/104-mixing-and-mastering/102-other-effects.mdx",
+            "parentId": "104-mixing-and-mastering",
+            "grandParentId": "",
+            "opinion": [],
+            "children": []
+          }
+        ]
+      },
+
+      {
+        "id": "001-mixing-and-mastering",
+        "name": "",
+        "path": "",
+        "parentId": "104-mixing-and-mastering",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "Recording",
+            "path": "/careers/music/production/content/104-mixing-and-mastering/103-recording.mdx",
+            "parentId": "104-mixing-and-mastering",
+            "grandParentId": "",
+            "opinion": [],
+            "children": []
+          },
+          {
+            "name": "Preamp",
+            "path": "/careers/music/production/content/104-mixing-and-mastering/104-preamp.mdx",
+            "parentId": "104-mixing-and-mastering",
+            "grandParentId": "",
+            "opinion": [],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Business",
+    "path": "/careers/music/production/content/105-business/000-readme.mdx",
+    "parentId": "105-business",
+    "grandParentId": "",
+    "opinion": [],
+    "children": [
+      {
+        "id": "000-business",
+        "name": "",
+        "path": "",
+        "parentId": "105-business",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "Labels",
+            "path": "/careers/music/production/content/105-business/100-labels.mdx",
+            "parentId": "105-business",
+            "grandParentId": "",
+            "opinion": ["personal"],
+            "children": []
+          },
+          {
+            "name": "Platforms",
+            "path": "/careers/music/production/content/105-business/101-platforms.mdx",
+            "parentId": "105-business",
+            "grandParentId": "",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Royalties",
+            "path": "/careers/music/production/content/105-business/102-royalties.mdx",
+            "parentId": "105-business",
+            "grandParentId": "",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "001-music-theory",
+        "name": "",
+        "path": "",
+        "parentId": "",
+        "grandParentId": "",
+        "opinion": [],
+        "children": [
+          {
+            "name": "Social Media",
+            "path": "/careers/music/production/content/105-business/103-social-media.mdx",
+            "parentId": "105-business",
+            "grandParentId": "",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Brand Building",
+            "path": "/careers/music/production/content/105-business/104-brand-building.mdx",
+            "parentId": "105-business",
+            "grandParentId": "",
+            "opinion": ["alternative"],
+            "children": []
+          },
+          {
+            "name": "Concerts",
+            "path": "/careers/music/production/content/105-business/105-concerts.mdx",
+            "parentId": "105-business",
+            "grandParentId": "",
+            "opinion": ["alternative"],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "000-keep-learning",
+    "name": "Keep Learning",
+    "path": "/careers/keep-learning.mdx",
+    "parentId": "",
+    "grandParentId": "",
+    "opinion": [],
+    "children": []
+  }
+]

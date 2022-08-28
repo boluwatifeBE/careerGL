@@ -11,6 +11,7 @@ const siteMetadata = require('../data/siteMetadata');
     'pages/*.tsx',
     'data/blog/**/*.mdx',
     'data/blog/**/*.md',
+    'data/careers/*/*/*.json',
     'public/tags/**/*.xml',
     '!pages/_*.js',
     '!pages/_*.tsx',
@@ -36,6 +37,8 @@ const siteMetadata = require('../data/siteMetadata');
                 const path = page
                   .replace('pages/', '/')
                   .replace('data/blog', '/blog')
+                  .replace('data/careers', '/careers')
+                  .replace('/content-paths.json', '')
                   .replace('public/', '/')
                   .replace('.js', '')
                   .replace('.tsx', '')
@@ -51,7 +54,7 @@ const siteMetadata = require('../data/siteMetadata');
                 }
                 return `
                         <url>
-                            <loc>${siteMetadata.siteUrl}${route}</loc>
+                            <loc>${siteMetadata.url.web}${route}</loc>
                         </url>
                     `;
               })

@@ -22,10 +22,12 @@ import rehypeKatex from 'rehype-katex';
 import rehypePresetMinify from 'rehype-preset-minify';
 import rehypePrismPlus from 'rehype-prism-plus';
 import rehypeSlug from 'rehype-slug';
+//  Custom functions & types
+import { CareerMapType, CareerTreeType } from 'config/careers/careerType';
 
 const root = process.cwd();
 
-export function getFiles(type: 'blog' | 'authors' | 'courses') {
+export function getFiles(type: string) {
   const prefixPaths = path.join(root, 'data', type);
   const files = getAllFilesRecursively(prefixPaths);
   // Only want to return blog/path and ignore root, replace is needed to work on Windows
@@ -35,7 +37,7 @@ export function getFiles(type: 'blog' | 'authors' | 'courses') {
 }
 
 export function formatSlug(slug: string) {
-  return slug.replace(/\.(mdx|md)/, '');
+  return slug.replace(/\.(mdx|md|json)/, '');
 }
 
 export function dateSortDesc(a: string, b: string) {
@@ -45,7 +47,7 @@ export function dateSortDesc(a: string, b: string) {
 }
 
 export async function getFileBySlug<T>(
-  type: 'authors' | 'blog' | 'courses',
+  type: string,
   slug: string | string[],
 ) {
   const mdxPath = path.join(root, 'data', type, `${slug}.mdx`);
@@ -78,7 +80,7 @@ export async function getFileBySlug<T>(
     source,
     // mdx imports can be automatically source from the components directory
     cwd: path.join(root, 'components'),
-    xdmOptions(options, frontmatter) {
+    xdmOptions(options) {
       // this is the recommended way to add custom remark/rehype plugins:
       // The syntax might look weird, but it protects you in case we add/remove
       // plugins in the future.
@@ -125,11 +127,9 @@ export async function getFileBySlug<T>(
   };
 }
 
-export async function getAllFilesFrontMatter(folder: 'blog' | 'courses') {
+export async function getAllFilesFrontMatter(folder: string) {
   const prefixPaths = path.join(root, 'data', folder);
-
   const files = getAllFilesRecursively(prefixPaths);
-
   const allFrontMatter: PostFrontMatter[] = [];
 
   files.forEach((file: string) => {
@@ -154,4 +154,43 @@ export async function getAllFilesFrontMatter(folder: 'blog' | 'courses') {
   });
 
   return allFrontMatter.sort((a, b) => dateSortDesc(a.date, b.date));
+}
+
+export function readCareerContentsFilePath(
+  careermaps: CareerMapType[],
+  pageId: string,
+): CareerTreeType[] {
+  const careerFilePath = careermaps.find(
+    career => career.id === pageId,
+  ).contentPathsFilePath;
+
+  if (!careerFilePath) {
+    return null;
+  }
+
+  // Remove trailing slashes
+  const contentsPathsFilePath = careerFilePath.replace(/^\//, '');
+  const filePath = path.join(root, 'data', contentsPathsFilePath);
+
+  try {
+    const jsonData = fs.readFileSync(filePath, 'utf8');
+    return JSON.parse(jsonData);
+  } catch (error) {
+    return null
+  }
+}
+
+export const getContentPathString = (array): string => {
+  let contentStringArray;
+  array.map(path => {
+    const splitString = formatSlug(path).split('/');
+    const removeIndex = splitString.splice(1);
+    const getContentStringArray = removeIndex.slice(0, 4).join('/');
+    contentStringArray = getContentStringArray;
+  })
+  
+  if (contentStringArray === undefined) {
+    return '';
+  }
+  return contentStringArray;
 }

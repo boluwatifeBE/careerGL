@@ -1,28 +1,38 @@
 const siteMetadata = {
-  title: 'Careermap',
-  author: 'Careermap',
-  headerTitle: 'careermap.io',
-  description:
-    'careermap.io is a community effort to create roadmaps, guides and other educational content to help guide the developers in picking up the path and guide their learnings. ',
+  title: 'Skilltread',
+  author: 'Skilltread',
+  headerTitle: 'skilltread',
+  description: 'skilltread is a community effort to create career paths, guides and other educational content to help guide the individuals not to be confuse about what to learn next. ',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  email: 'info@skillguide.com',
+  url: {
+    web: "https://skillguide.vercel.app",
+    webDomain: "@skillguide.vercel.app",
+    twitterUsername: '@ife_adewunmi',
+    calendly: "https://calendly.com/",
+    twitter: 'https://twitter.com/Twitter',
+    facebook: 'https://facebook.com',
+    youtube: 'https://youtube.com',
+    linkedin: 'https://www.linkedin.com',
+    repo: "https://github.com/boluwatifeBE/career-map",
+    sponsor: "https://github.com/sponsors/boluwatifeBE",
+    repoData: "https://github.com/boluwatifeBE/career-map/tree/develop/data",
+    addGuide: "https://github.com/boluwatifeBE/career-map/tree/develop/contributing/guide.md",
+    addRoadmap: "https://github.com/boluwatifeBE/career-map/tree/develop/contributing/roadmap.md",
+    addResources: "https://github.com/boluwatifeBE/career-map/tree/develop/contributing/resources.md",
+    contribute: "https://github.com/boluwatifeBE/career-map/tree/develop/contributing",
+    issue: "https://github.com/boluwatifeBE/career-map/issues/new"
+  },
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
     // supports plausible, simpleAnalytics, umami or googleAnalytics
-    plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
+    plausibleDataDomain: '', // e.g. Skillguide.vercel.app
     simpleAnalytics: false, // true or false
     umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
     googleAnalyticsId: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID, // e.g. UA-000000-2 or G-XXXXXXX
