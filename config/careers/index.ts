@@ -4,6 +4,7 @@ import { marketing } from './marketing';
 import { graphics } from './graphics';
 import { photography } from './photography';
 import { music } from './music';
+import { writing } from './writing';
 import { teaching } from './teaching';
 
 interface CareerConfig {
@@ -12,6 +13,7 @@ interface CareerConfig {
   graphics: CareerMapType[];
   photography: CareerMapType[];
   music: CareerMapType[];
+  writing: CareerMapType[];
   teaching: CareerMapType[];
 }
 
@@ -21,6 +23,7 @@ export const careerConfig: CareerConfig = {
   graphics,
   photography,
   music,
+  writing,
   teaching,
 };
 
@@ -30,12 +33,10 @@ const careerMerge = [
   ...careerConfig.graphics,
   ...careerConfig.photography,
   ...careerConfig.music,
-  // ...careerConfig.teaching,
+  ...careerConfig.writing,
 ].reduce((previous, current) => {
   previous[current.id] ? [ ...previous[current.id].id, ...current.id ] : previous[current.id] = current;
   return previous;
 }, {});
 
 export const output = Object.values(careerMerge);
-
-// export default careerConfig;

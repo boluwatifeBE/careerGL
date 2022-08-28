@@ -1,8 +1,8 @@
 const siteMetadata = {
-  title: 'Skillguide',
-  author: 'Skillguide',
-  headerTitle: 'skillguide.io',
-  description: 'skillguide.io is a community effort to create career paths, guides and other educational content to help guide the individuals not to be confuse about what to learn next. ',
+  title: 'Skilltread',
+  author: 'Skilltread',
+  headerTitle: 'skilltread',
+  description: 'skilltread is a community effort to create career paths, guides and other educational content to help guide the individuals not to be confuse about what to learn next. ',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteLogo: '/static/images/logo.png',
@@ -10,8 +10,8 @@ const siteMetadata = {
   socialBanner: '/static/images/twitter-card.png',
   email: 'info@skillguide.com',
   url: {
-    web: "https://skillguide.io",
-    webDomain: "@skillguide.io",
+    web: "https://skillguide.vercel.app",
+    webDomain: "@skillguide.vercel.app",
     twitterUsername: '@ife_adewunmi',
     calendly: "https://calendly.com/",
     twitter: 'https://twitter.com/Twitter',
@@ -19,7 +19,7 @@ const siteMetadata = {
     youtube: 'https://youtube.com',
     linkedin: 'https://www.linkedin.com',
     repo: "https://github.com/boluwatifeBE/career-map",
-    sponsor: "https://github.com/sponsors/kamranahmedse",
+    sponsor: "https://github.com/sponsors/boluwatifeBE",
     repoData: "https://github.com/boluwatifeBE/career-map/tree/develop/data",
     addGuide: "https://github.com/boluwatifeBE/career-map/tree/develop/contributing/guide.md",
     addRoadmap: "https://github.com/boluwatifeBE/career-map/tree/develop/contributing/roadmap.md",

@@ -40,11 +40,11 @@ export const careers: Career[] = [
     banner: '',
     description: 'Master the fundamentals and advanced features of the music',
   },
-  // {
-  //   title: 'Teaching',
-  //   slug: 'teaching',
-  //   banner: '',
-  //   description:
-  //     'Master the fundamentals and advanced features of the teaching career',
-  // }
+  {
+    title: 'Writing',
+    slug: 'writing',
+    banner: '',
+    description:
+      'Master the fundamentals and advanced features of the teaching career',
+  }
 ];

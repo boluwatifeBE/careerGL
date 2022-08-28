@@ -21,7 +21,7 @@ export const contact: Contact = {
   site: siteMetadata.url.webDomain,
   calendly: siteMetadata.url.calendly,
   links: {
-    github: siteMetadata.url.youtube,
+    github: siteMetadata.url.repo,
     linkedin: siteMetadata.url.linkedin,
     twitter: siteMetadata.url.twitter,
     youtube: siteMetadata.url.youtube,
