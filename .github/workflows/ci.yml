@@ -1,0 +1,63 @@
+name: Check PR
+
+on: [pull_request]
+
+# jobs:
+#   run-ci:
+#     env:
+#       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+#     name: Run Type Check & Linters
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v3
+#         with:
+#           fetch-depth: 0
+
+#       - name: Install pnpm
+#         uses: pnpm/action-setup@v2.2.2
+#         with:
+#           version: 7
+
+#       - name: Set up Node
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: lts/*
+#           cache: 'pnpm'
+
+#       - name: Install dependencies
+#         run: pnpm install
+
+#       - name: Check types
+#         run: pnpm type-check
+
+#       - name: Check linting
+#         run: pnpm lint
+
+#       - name: Check commits messages
+#         uses: wagoid/commitlint-github-action@v5
+
+jobs:
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '16.x'
+    - name: Cache node modules
+      uses: actions/cache@v1
+      with:
+        path: ~/.cache/yarn
+        key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+    - name: yarn install
+      run: yarn
+    - name: typecheck
+      run: yarn typecheck
+    - name: lint
+      run: yarn lint
