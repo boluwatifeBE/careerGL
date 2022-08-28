@@ -11,26 +11,26 @@ export default defineConfig({
     supportFile: "./e2e/support/e2e.ts",
     setupNodeEvents(on, config) {
       // e2e testing node events setup code
-      on("task", {
-        log(message) {
-          console.log(message);
-          return null;
-        },
-        all({ baseUrl, urls }) {
-          const promises = urls.map((url) =>
-            axios
-              .get(`${baseUrl}${url}`)
-              .then(function (response) {
-                const { status, data } = response;
-                return { status, url, data };
-              })
-              .catch(({ response: { status }, message }) => {
-                return { status, url, data: message };
-              })
-          );
-          return Promise.all(promises);
-        },
-      });
+      // on("task", {
+      //   log(message) {
+      //     console.log(message);
+      //     return null;
+      //   },
+      //   all({ baseUrl, urls }) {
+      //     const promises = urls.map((url) =>
+      //       axios
+      //         .get(`${baseUrl}${url}`)
+      //         .then(function (response) {
+      //           const { status, data } = response;
+      //           return { status, url, data };
+      //         })
+      //         .catch(({ response: { status }, message }) => {
+      //           return { status, url, data: message };
+      //         })
+      //     );
+      //     return Promise.all(promises);
+      //   },
+      // });
       on(
         "file:preprocessor",
         webpackPreprocessor({
@@ -41,5 +41,3 @@ export default defineConfig({
     },
   },
 });
-
-
