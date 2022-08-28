@@ -25,13 +25,18 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
           restore-keys: | 
             ${{ runner.os }}-node-
-            
-      - name: yarn install, build, type-check and lint
-        run: |
-          yarn
-          yarn build
-          yarn type-check
-          yarn lint
+        
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build app
+        run: yarn build
+
+      - name: Check types
+        run: yarn type-check
+
+      - name: Check linting
+        run: yarn lint
         
       - name: Check commits messages
         uses: wagoid/commitlint-github-action@v5
