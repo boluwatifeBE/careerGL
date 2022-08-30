@@ -23,7 +23,7 @@
     "@fontsource/fira-code": "^4.5.8",
     "@fontsource/open-sans": "4.5.8",
     "@geist-ui/core": "2.3.8",
-    "@mailchimp/mailchimp_marketing": "^3.0.58",
+    "@mailchimp/mailchimp_marketing": "3.0.78",
     "@mdx-js/loader": "2.1.2",
     "@mdx-js/react": "2.1.2",
     "@next/mdx": "12.2.2",
