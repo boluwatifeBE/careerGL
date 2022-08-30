@@ -7,7 +7,7 @@ however, if your opened issue is closed, make sure you answer the
 questions below by checking the box that best explains the issue(s) before reopening.
 -->
 
-#### What category of skillguide is this issue about?
+#### What category of careerGL is this issue about?
 
 - [ ] Programming
 - [ ] Music
