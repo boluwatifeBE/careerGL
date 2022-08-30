@@ -1,4 +1,4 @@
-#### What category of careerGL this PR targets?
+#### What category of careerGL does this PR targets?
 
 - [ ] Programming
 - [ ] Music
