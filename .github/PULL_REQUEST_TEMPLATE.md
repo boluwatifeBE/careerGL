@@ -1,4 +1,4 @@
-#### What category of skillguide this PR targets?
+#### What category of careerGL this PR targets?
 
 - [ ] Programming
 - [ ] Music
