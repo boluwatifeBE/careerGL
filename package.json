@@ -74,7 +74,7 @@
     "cypress": "10.6.0",
     "@next/bundle-analyzer": "12.2.5",
     "@svgr/webpack": "^6.1.2",
-    "@types/react": "18.0.17",
+    "@types/react": "18.0.18",
     "@types/react-dom": "18.0.6",
     "@types/tailwindcss": "2.2.4",
     "@typescript-eslint/eslint-plugin": "4.33.0",
