@@ -11,7 +11,7 @@ questions below by checking the box that best explains the issue(s) before reope
 
 - [ ] Programming
 - [ ] Music
-- [ ] All
+- [x] All
 
 #### What is this issue about?
 
@@ -19,13 +19,13 @@ questions below by checking the box that best explains the issue(s) before reope
 - [ ] Sharing an Idea
 - [ ] Website Functionality
 - [ ] Discussion for a pull request I would want to open.
-- [ ] Something else
+- [x] Something else
 
 #### Please acknowledge the below listed
 
-- [ ] This is not a duplicate issue. I have searched and there is no existing issue for this.
-- [ ] I understand that these skillguides are highly opinionated. The purpose is to not to include everything out there in these skillguides but to have everything that is most relevant today comparing to the other options listed.
-- [ ] I have read the [contribution docs](../contributing) before opening this issue.
+- [x] This is not a duplicate issue. I have searched and there is no existing issue for this.
+- [x] I understand that these career guidelines are highly opinionated. The purpose is not to include everything out there in these guidelines but to have everything that is most relevant today compared to the other options listed.
+- [x] I have read the [contribution docs](../contributing) before opening this issue.
 
 
 #### Enter the details about the issue here
