@@ -88,7 +88,7 @@
     "file-loader": "6.2.0",
     "globby": "11.1.0",
     "husky": "8.0.1",
-    "inquirer": "8.2.4",
+    "inquirer": "9.1.0",
     "lint-staged": "11.2.6",
     "next-remote-watch": "1.0.0",
     "prettier": "2.7.1",
