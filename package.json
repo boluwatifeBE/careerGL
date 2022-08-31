@@ -16,8 +16,8 @@
     "e2e-local": "cypress run --env environment=\"local\" --config baseUrl=\"http://localhost:3000\""
   },
   "dependencies": {
-    "@chakra-ui/icons": "1.1.7",
-    "@chakra-ui/react": "1.8.8",
+    "@chakra-ui/icons": "2.0.9",
+    "@chakra-ui/react": "2.3.1",
     "@emotion/react": "11.10.4",
     "@emotion/styled": "11.10.4",
     "@fontsource/fira-code": "4.5.11",
