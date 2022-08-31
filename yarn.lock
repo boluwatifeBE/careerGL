@@ -1964,15 +1964,15 @@
   resolved "https://registry.yarnpkg.com/@fal-works/esbuild-plugin-global-externals/-/esbuild-plugin-global-externals-2.1.2.tgz#c05ed35ad82df8e6ac616c68b92c2282bd083ba4"
   integrity sha512-cEee/Z+I12mZcFJshKcCqC8tuX5hG3s+d+9nZ3LabqKF1vKdF41B92pJVCBggjAGORAeOzyyDDKrZwIkLffeOQ==
 
-"@fontsource/fira-code@4.5.10":
-  version "4.5.10"
-  resolved "https://registry.yarnpkg.com/@fontsource/fira-code/-/fira-code-4.5.10.tgz#e1060a60d08cba1669e1ff2025350aaab7c0e6bc"
-  integrity sha512-CF6cBJZcpuW+qxtr7JZt3kPwEHj0xWYgsRr7q3tGhkIqEmxdJ6Omvw61LEFQuRXeAwOnXBGZr42qTrO+vCzvAQ==
+"@fontsource/fira-code@4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/fira-code/-/fira-code-4.5.11.tgz#5908672a5811c9df0f4d9d54524dd1d3d4036964"
+  integrity sha512-/o5QVmfPfkjlCGoWtrB66y4CtqeDPt9n8Ltz4VmFkLoO9Ov8L1thsbPbEQqKePUMJBVShnh9G448X36PCWlOYw==
 
-"@fontsource/open-sans@4.5.8":
-  version "4.5.8"
-  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.5.8.tgz#31f727353e89ce886e1076bd58536834e0778fda"
-  integrity sha512-3b94XDdRLqL7OlE7OjWg/4pgG825Juw8PLVEDm6h5pio0gMU89ICxfatGxHsBxMGfqad+wnvdmUweZWlELDFpQ==
+"@fontsource/open-sans@4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.5.11.tgz#1e9f4346599bdc7752b741d17ee30ef4ebbc15e6"
+  integrity sha512-nG0gmbx4pSr8wltdG/ZdlS6OrsMK40Wt6iyuLTKHEf0TQfzKRMlWaskZHdeuWCwS6WUgqHKMf9KSwGdxPfapOg==
 
 "@geist-ui/core@2.3.8":
   version "2.3.8"
