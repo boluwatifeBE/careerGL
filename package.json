@@ -73,7 +73,7 @@
     "babel-loader": "8.2.5",
     "cypress": "10.6.0",
     "@next/bundle-analyzer": "12.2.5",
-    "@svgr/webpack": "^6.1.2",
+    "@svgr/webpack": "6.3.1",
     "@types/react": "18.0.18",
     "@types/react-dom": "18.0.6",
     "@types/tailwindcss": "2.2.4",
