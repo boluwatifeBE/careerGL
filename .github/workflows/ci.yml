@@ -19,7 +19,7 @@ jobs:
           node-version: lts/*
             
       - name: Cache node modules
-        uses: actions/cache@v1
+        uses: actions/cache@v3
         with:
           path: ~/.cache/yarn
           key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
