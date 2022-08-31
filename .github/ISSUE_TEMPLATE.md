@@ -24,7 +24,7 @@ questions below by checking the box that best explains the issue(s) before reope
 #### Please acknowledge the below listed
 
 - [ ] This is not a duplicate issue. I have searched and there is no existing issue for this.
-- [ ] I understand that these skillguides are highly opinionated. The purpose is to not to include everything out there in these skillguides but to have everything that is most relevant today comparing to the other options listed.
+- [ ] I understand that these career guidelines are highly opinionated. The purpose is not to include everything out there in these guidelines but to have everything that is most relevant today compared to the other options listed.
 - [ ] I have read the [contribution docs](../contributing) before opening this issue.
 
 
