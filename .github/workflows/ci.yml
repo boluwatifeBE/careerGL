@@ -37,3 +37,12 @@ jobs:
 
       - name: Check linting
         run: yarn lint
+
+      - name: Run Cypress Automation
+        image: cypress/base:16.5.0
+        caches:
+          - yarn
+          - cypress
+          - node
+        script:
+          - ./node_modules/cypress/bin/cypress run --config baseUrl="https://careergl.vercel.app/"
