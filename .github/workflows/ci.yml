@@ -39,4 +39,4 @@ jobs:
         run: yarn lint
 
       - name: Run Cypress Automation
-        run: ./node_modules/cypress/bin/cypress run --config baseUrl="https://careergl.vercel.app/"
+        run: ./node_modules/cypress/bin/cypress run --config baseUrl="http://localhost:3000"
