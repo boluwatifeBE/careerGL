@@ -45,4 +45,4 @@ jobs:
           - cypress
           - node
         script:
-          - ./node_modules/cypress/bin/cypress run --config baseUrl="httpshttps://careergl.vercel.app/"
+          - ./node_modules/cypress/bin/cypress run --config baseUrl="https://careergl.vercel.app/"
