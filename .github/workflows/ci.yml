@@ -37,6 +37,3 @@ jobs:
 
       - name: Check linting
         run: yarn lint
-
-      - name: Run Cypress Automation
-        run: ./node_modules/cypress/bin/cypress run --config baseUrl="http://localhost:3000"
