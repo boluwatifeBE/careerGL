@@ -9,7 +9,7 @@ Finally, These are *highly opinionated* and *curated*. Your opinion on any resou
 ## Contributing
 
 * [Submitting guidelines](./guideline.md)
-* [Adding resources](./adding-content.md)
+* [Adding resources](./adding.md)
 
 ## Steps
 
