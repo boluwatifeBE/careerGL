@@ -1,17 +1,17 @@
 const siteMetadata = {
-  title: 'Skilltread',
-  author: 'Skilltread',
-  headerTitle: 'skilltread',
-  description: 'skilltread is a community effort to create career paths, guides and other educational content to help guide the individuals not to be confuse about what to learn next. ',
+  title: 'CareerGL',
+  author: 'default',
+  headerTitle: 'CareerGL',
+  description: 'Career GuideLine is a hub of curated career roadmaps, guides and other educational content to help guide an individual not to be confuse about what to learn next.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'info@skillguide.com',
+  email: 'info@careergl.com',
   url: {
-    web: "https://skillguide.vercel.app",
-    webDomain: "@skillguide.vercel.app",
+    web: "https://careergl.vercel.app",
+    webDomain: "@careergl.vercel.app",
     twitterUsername: '@ife_adewunmi',
     calendly: "https://calendly.com/",
     twitter: 'https://twitter.com/Twitter',
@@ -32,7 +32,7 @@ const siteMetadata = {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
     // supports plausible, simpleAnalytics, umami or googleAnalytics
-    plausibleDataDomain: '', // e.g. Skillguide.vercel.app
+    plausibleDataDomain: '', // e.g. careergl.vercel.app
     simpleAnalytics: false, // true or false
     umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
     googleAnalyticsId: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID, // e.g. UA-000000-2 or G-XXXXXXX
