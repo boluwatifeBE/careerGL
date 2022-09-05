@@ -1,0 +1,75 @@
+name: Bug report
+description: Found a bug on CareerGL? Here is where to go.
+labels: ['type:bug', 'status:requirements', 'priority-5-triage']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before you begin to fill out the form, make sure you have actually found a bug.
+        If you're not sure then create a [discussion](https://github.com/boluwatifeBE/careerGL/discussions) first.
+        If you have questions or want help with CareerGL, then also create a [discussion](https://github.com/boluwatifeBE/careerGL/discussions).
+
+  - type: dropdown
+    id: device-select
+    attributes:
+      label: On which device are you running CareerGL?
+      options:
+        - 'Mobile'
+        - 'Desktop'
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os-select
+    attributes:
+      label: Select which operating system you are running on.
+      options:
+        - 'Andriod'
+        - 'IOS'
+        - 'Linux'
+        - 'Mac'
+        - 'Windows'
+    validations:
+      required: true
+ 
+  - type: dropdown
+    id: browser-select
+    attributes:
+      label: Select which browser you are using to view CareerGL.
+      options:
+        - 'Chrome'
+        - 'Edge'
+        - 'Mozilla Firefox'
+        - 'Safari'
+    validations:
+      required: true
+
+  - type: dropdown
+    id: regression-error
+    attributes:
+      label: Was this something which used to work for you, and then stopped?
+      options:
+        - 'It used to work, and then stopped'
+        - 'I never saw this working'
+    validations:
+      required: true
+
+  - type: textarea
+    id: describe-bug
+    attributes:
+      label: Describe the bug
+      description: 'Do not report any security concerns here. Email [security@careergl.com](mailto:security@careergl.com) instead.'
+    validations:
+      required: true
+
+  # - type: dropdown
+  #   id: minimal-reproduction-repository
+  #   attributes:
+  #     label: Have you created a minimal reproduction repository?
+  #     description: Please read the [minimal reproductions documentation](https://github.com/CareerGLbot/CareerGL/blob/main/docs/development/minimal-reproductions.md) to learn how to make a good minimal reproduction repository.
+  #     options:
+  #       - 'I have linked to a minimal reproduction repository in the bug description'
+  #       - 'No reproduction, but I have linked to a public repo where it occurs'
+  #       - 'No reproduction repository'
+  #   validations:
+  #     required: true

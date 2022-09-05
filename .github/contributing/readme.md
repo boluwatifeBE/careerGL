@@ -1,13 +1,15 @@
-## The Objectives
+## Thank You
 
-* New Guideline: Thank you for showing an interest to contribute to CareerGL (Career Guideline), we strongly recommend that you an issue to discuss your ideas before adding new Career Guidelines.
-* Existing Guideline: Kindly have in mind that our aim is not to have the most extensive list of items but to have the list of guides most relevant today.
-* Guideline Resources: These are *highly opinionated* and *curated*. Your opinion on any resource may not match the view of the curator.
+We appreciate you for showing an interest to contribute to CareerGL (Career Guideline), we strongly recommend that you raise an issue to discuss your ideas before adding new Career Guidelines.
+
+Furthermore, Kindly have in mind that our aim is not to have the most extensive list of items but to have the list of guides most relevant today.
+
+Finally, These are *highly opinionated* and *curated*. Your opinion on any resource may not match the view of the curator.
 
 ## Contributing
 
 * [Submitting guidelines](./guideline.md)
-* [Adding resources](./adding-content.md)
+* [Adding resources](./adding.md)
 
 ## Steps
 

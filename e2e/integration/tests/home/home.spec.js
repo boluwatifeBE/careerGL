@@ -1,4 +1,4 @@
-import { Home } from "@functions/home/Home";
+import { Home } from "../../functions/home/home";
 
 describe("GIVEN the Home Page", () => {
   const home = new Home();
