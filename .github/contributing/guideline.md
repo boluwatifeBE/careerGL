@@ -10,12 +10,17 @@ To contribute a new guideline for any career field, please provide a rough textu
 
 **Note:** All guidelines shouldn't be more than 3 depth of indentation levels, i.e Parent - Grandchild level as shown in the sample guideline structure below:
 
-**Textual version of the JavaScript guideline**
+## Indentation Level Description
+
+**New Career Guideline Title**
 
 - **Parent**
   - Children
     - Grand children
-    
+
+## Textual Version Sample
+
+**JavaScript guideline**
 
 - **Introduction to JavaScript**
   - What is JavaScript?
