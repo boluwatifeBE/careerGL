@@ -17,9 +17,10 @@ yarn install
 yarn dev
 ```
 
-## Contribution
+## Contributing
 
-> Checkout [contribution docs](./contributing) on how to update any of the guidelines
+If you want to contribute to CareerGL, please read the instructions in [.github/contributing.md](.github/contributing).
+To get started look at the [list of good first issues](https://github.com/boluwatifeBE/careerGL/contribute).
 
 - Tell people about this project
 - Suggest changes to existing guidelines
