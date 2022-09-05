@@ -2,7 +2,7 @@
 
 To contribute a new guideline for any career field, please provide a rough textual guideline with what you have in mind by following these steps:
 
-* Start by creating a [new issue](https://github.com/boluwatifeBE/careerGL/issues/new)
+* Start by creating a [new issue](https://github.com/boluwatifeBE/careerGL/issues/new/choose)
 * On the issue page, click on Submit a new Career Guideline.
 * Create a Discussion under the **New Career Guideline** category.
 * The title field to contain the Career Guideline title you are about to submit _e.x Social Media Marketing Guideline_, and the body should follow the sample guideline provided below.
