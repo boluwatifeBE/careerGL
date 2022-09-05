@@ -1,0 +1,15 @@
+name: Refactor (internal)
+description: For internal use only.
+labels: ['type:refactor', 'status:requirements', 'priority-5-triage']
+body:
+  - type: markdown
+    attributes:
+      value: '# This form is for CareerGL maintainers only.'
+
+  - type: textarea
+    id: describe-proposed-changes
+    attributes:
+      label: Describe the proposed change(s).
+      description: 'Do not report any security concerns here. Email security@careergl.com instead.'
+    validations:
+      required: true

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Submit a new Career Guideline
+    url: https://github.com/boluwatifeBE/careerGL/discussions/new
+    about: If you have an idea of a new career guideline and you are sure that it does not exist, please click here to create a Discussion under the New Career Guideline category instead of an Issue.
