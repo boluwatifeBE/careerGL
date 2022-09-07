@@ -1,15 +1,13 @@
 ---
-name: SkillGuide
-shortname: SkillGuide
+name: CareerGL
+shortname: CareerGL
 avatar: /static/images/logo.png
 occupation: Career Builder
-company: Career company
+company: Career Experts company
 resume: 
 email: 
 twitter: https://twitter.com/
 linkedin: https://www.linkedin.com/
 github: https://github.com/
+bio: Roadmaps and advices hub for an internet accessible careers
 ---
-
-A software engineer who values learning and growing with people, teams, and technologies. Experienced at writing code in a high-paced environment.
-

@@ -155,14 +155,8 @@ export default function PostLayout({
                                 <div>
                                   <dt className='sr-only'>Description</dt>
                                   <p className='break-words'>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Earum sed enim, magnam
-                                    incidunt voluptate voluptatum impedit animi.
-                                    Nostrum ducimus, sapiente ipsum natus
-                                    possimus vel, repudiandae eius ea
-                                    consequatur, culpa voluptatem.
+                                    {author.bio}
                                   </p>
-                                  {/* <p className=''>{author.bio}</p> */}
                                 </div>
                               </dl>
                             </li>
