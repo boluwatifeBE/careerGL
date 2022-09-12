@@ -1,7 +1,5 @@
 import Link from '@/components/Link';
-import { useRandomColorPair } from '@/lib/hooks/useRandomColorPair';
 import { memo } from 'react';
-import { RoughNotation } from 'react-rough-notation';
 import siteMetadata from '@/data/siteMetadata';
 
 function Banner(): React.ReactElement {

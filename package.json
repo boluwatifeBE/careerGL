@@ -105,5 +105,12 @@
     "*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
       "prettier --write"
     ]
-  }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint",
+     "pre-push": "git diff HEAD --quiet && npm test",
+     "…": "…"
+    }
+   }
 }
