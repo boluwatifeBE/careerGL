@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'CareerGL',
   author: 'default',
   headerTitle: 'CareerGL',
-  description: 'Career GuideLine is a hub of curated career roadmaps, guides and other educational content to help guide an individual not to be confuse about what to learn next.',
+  description: 'Career GuideLine is a hub of curated career roadmaps, guides and other educational content to help guide an individual not to be confused about what to learn next.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteLogo: '/static/images/logo.png',
