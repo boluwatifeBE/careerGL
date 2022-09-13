@@ -12,12 +12,13 @@
     "lint": "prettier --write .",
     "prepare": "husky install",
     "preview": "npm run build && npm run serve",
-    "cypress:open": "cypress open",
-    "e2e-local": "cypress run --env environment=\"local\" --config baseUrl=\"http://localhost:3000\""
+    "test-e2e": "cd e2e && yarn install --no-lockfile --ignore-optional && yarn e2e-prod"
   },
   "dependencies": {
     "@chakra-ui/icons": "2.0.9",
     "@chakra-ui/react": "2.3.2",
+    "@chakra-ui/styled-system": "2.3.1",
+    "@chakra-ui/system": "2.2.9",
     "@emotion/react": "11.10.4",
     "@emotion/styled": "11.10.4",
     "@fontsource/fira-code": "4.5.11",
@@ -33,7 +34,7 @@
     "autoprefixer": "10.4.8",
     "classnames": "2.3.1",
     "clsx": "1.2.1",
-    "esbuild": "0.15.7",
+    "esbuild": "0.14.x",
     "framer-motion": "6.5.1",
     "github-slugger": "1.4.0",
     "gray-matter": "4.0.3",
@@ -44,7 +45,7 @@
     "postcss": "8.4.16",
     "preact": "10.10.6",
     "react": "18.2.0",
-    "react-calendly": "2.2.3",
+    "react-calendly": "4.1.0",
     "react-dom": "18.2.0",
     "react-icons": "4.4.0",
     "react-indiana-drag-scroll": "2.2.0",
@@ -67,11 +68,7 @@
     "unist-util-visit": "4.1.1"
   },
   "devDependencies": {
-    "@babel/core": "7.18.13",
-    "@babel/preset-env": "7.18.10",
-    "@cypress/webpack-preprocessor": "5.12.2",
-    "babel-loader": "8.2.5",
-    "cypress": "10.7.0",
+    "@babel/core": "7.19.0",
     "@next/bundle-analyzer": "12.2.5",
     "@svgr/webpack": "6.3.1",
     "@types/react": "18.0.18",
@@ -105,5 +102,12 @@
     "*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
       "prettier --write"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint",
+      "pre-push": "git diff HEAD --quiet && npm test",
+      "…": "…"
+    }
   }
 }

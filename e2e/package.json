@@ -1,0 +1,31 @@
+{
+  "name": "careergl-automation",
+  "version": "1.0.0",
+  "description": "CareerGL Automation",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "e2e-local": "cypress run --config baseUrl=\"http://localhost:3000\"",
+    "e2e-prod": "cypress run --config baseUrl=\"https://careergl.vercel.app\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boluwatifeBE/careerGL.git"
+  },
+  "bugs": {
+    "url": "https://github.com/boluwatifeBE/careerGL/issues/new?assignees=&labels=type%3Abug%2Cstatus%3Arequirements%2Cpriority-5-triage&template=bug_report.yml"
+  },
+  "homepage": "https://github.com/boluwatifeBE/careerGL#readme",
+  "devDependencies": {
+    "@babel/core": "7.18.13",
+    "@babel/preset-env": "7.18.10",
+    "@cypress/webpack-preprocessor": "5.12.2",
+    "babel-loader": "8.2.5",
+    "cypress": "10.7.0",
+    "typescript": "4.8.3",
+    "webpack": "5.74.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.3"
+  }
+}
