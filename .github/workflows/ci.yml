@@ -25,6 +25,18 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
           restore-keys: | 
             ${{ runner.os }}-node-
+      
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
+
+      - uses: actions/cache@v3
+        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
         
       - name: Install dependencies
         run: yarn install
@@ -38,5 +50,5 @@ jobs:
       - name: Check linting
         run: yarn lint
 
-      - name: Run Cypress Automation
-        run: ./node_modules/cypress/bin/cypress run --config baseUrl="https://careergl.vercel.app/"
+      - name: E2E Test
+        run: yarn test-e2e
