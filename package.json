@@ -12,7 +12,7 @@
     "lint": "prettier --write .",
     "prepare": "husky install",
     "preview": "npm run build && npm run serve",
-    "test-e2e": "cd e2e && yarn install --no-lockfile --ignore-optional && yarn e2e-local"
+    "test-e2e": "cd e2e && yarn install --no-lockfile --ignore-optional && yarn e2e-prod"
   },
   "dependencies": {
     "@chakra-ui/icons": "2.0.9",
