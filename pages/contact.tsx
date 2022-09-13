@@ -15,9 +15,9 @@ function Contact(): React.ReactElement {
       return;
     }
 
-    const config = {
-      url: contact.calendly,
-    };
+    // const config = {
+    //   url: contact.calendly,
+    // };
 
     // openPopupWidget(config);
   }
