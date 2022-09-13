@@ -1,2 +1,2 @@
-# career-automation
+# careergl-automation
 CareerGL Automation
