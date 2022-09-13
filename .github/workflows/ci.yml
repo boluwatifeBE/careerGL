@@ -38,5 +38,5 @@ jobs:
       - name: Check linting
         run: yarn lint
 
-      - name: Run Cypress Automation
-        run: ./node_modules/cypress/bin/cypress run --config baseUrl="https://careergl.vercel.app/"
+      - name: E2E Test
+        run: yarn test-e2e

@@ -11,7 +11,8 @@
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "prettier --write .",
     "prepare": "husky install",
-    "preview": "npm run build && npm run serve"
+    "preview": "npm run build && npm run serve",
+    "test-e2e": "yarn pack && cd e2e && yarn install --no-lockfile --ignore-optional --prod && yarn e2e-prod"
   },
   "dependencies": {
     "@chakra-ui/icons": "2.0.9",
