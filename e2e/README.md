@@ -1,2 +1,2 @@
-# titanic-automation
-Titanic Automation
+# career-automation
+CareerGL Automation
