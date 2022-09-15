@@ -1,13 +1,13 @@
 import { Header } from '@/components/Form';
 import { PageSEO } from '@/components/SEO';
 import siteMetadata from '@/data/siteMetadata';
-import { useRandomColorPair } from '@/lib/hooks/useRandomColorPair';
+// import { useRandomColorPair } from '@/lib/hooks/useRandomColorPair';
 import { contact } from 'config/contact';
 // import { openPopupWidget } from 'react-calendly';
-import { RoughNotation } from 'react-rough-notation';
+// import { RoughNotation } from 'react-rough-notation';
 
 function Contact(): React.ReactElement {
-  const [randomColor] = useRandomColorPair();
+  // const [randomColor] = useRandomColorPair();
 
   function onScheduleMeeting(): void {
     if (!contact.calendly) {
@@ -40,16 +40,16 @@ function Contact(): React.ReactElement {
               role='button'
               tabIndex={0}
             >
-              <RoughNotation
+              {/* <RoughNotation
                 show
                 type='underline'
                 strokeWidth={2}
                 animationDelay={250}
                 animationDuration={2000}
                 color={randomColor}
-              >
+              > */}
                 schedule a meeting
-              </RoughNotation>
+              {/* </RoughNotation> */}
             </span>
           </p>
         </div>
