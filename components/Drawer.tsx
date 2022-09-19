@@ -3,7 +3,6 @@ import { useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import cn from 'classnames';
 import useMountTransition from './useMountTransition';
-
 import {
   HiCheck as CheckIcon,
   HiRefresh as RepeatIcon,
@@ -44,23 +43,8 @@ export function Drawer(props: ContentDrawerProps) {
   const bodyRef = useRef(getBodyRef());
   const portalRootRef = useRef(getPortalRootRef());
 
-  // const bodyRef = useRef(document.querySelector('body'));
-  // const portalRootRef = useRef(
-  //   document.getElementById('drawer-root') || createPortalRoot(),
-  // );
-
   const nameUrl = convertNameToUrl(name);
   const isDone = getFromLocalStorage(nameUrl) === 'done';
-
-  // let bodyRef: MutableRefObject<HTMLElement>;
-  // let portalRootRef: MutableRefObject<HTMLElement>;
-
-  // if (typeof window === 'object') {
-    // const bodyRef = (typeof window === 'object') && useRef(document.querySelector('body'));
-    // const portalRootRef = (typeof window === 'object') && useRef(
-    //   document.getElementById('drawer-root') || createPortalRoot(),
-    // );
-  // }
 
   const isTransitioning = useMountTransition(isOpen, 300);
 
