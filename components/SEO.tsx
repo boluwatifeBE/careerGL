@@ -1,8 +1,9 @@
-import Head from 'next/head';
-import { useRouter } from 'next/router';
-import siteMetadata from '@/data/siteMetadata';
-import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
-import { PostFrontMatter } from 'types/PostFrontMatter';
+import Head from "next/head";
+import { useRouter } from "next/router";
+import siteMetadata from "@/data/siteMetadata";
+import { AuthorFrontMatter } from "types/AuthorFrontMatter";
+import { PostFrontMatter } from "types/PostFrontMatter";
+import config from "config";
 
 interface CommonSEOProps {
   title: string;
@@ -11,7 +12,7 @@ interface CommonSEOProps {
   ogImage:
     | string
     | {
-        '@type': string;
+        "@type": string;
         url: string;
       }[];
   twImage: string;
@@ -30,30 +31,30 @@ const CommonSEO = ({
   return (
     <Head>
       <title>{title}</title>
-      <meta name='robots' content='follow, index' />
-      <meta name='description' content={description} />
+      <meta name="robots" content="follow, index" />
+      <meta name="description" content={description} />
       <meta
-        property='og:url'
+        property="og:url"
         content={`${siteMetadata.siteUrl}${router.asPath}`}
       />
-      <meta property='og:type' content={ogType} />
-      <meta property='og:site_name' content={siteMetadata.title} />
-      <meta property='og:description' content={description} />
-      <meta property='og:title' content={title} />
+      <meta property="og:type" content={ogType} />
+      <meta property="og:site_name" content={siteMetadata.title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:title" content={title} />
       {Array.isArray(ogImage) ? (
         ogImage.map(({ url }) => (
-          <meta property='og:image' content={url} key={url} />
+          <meta property="og:image" content={url} key={url} />
         ))
       ) : (
-        <meta property='og:image' content={ogImage} key={ogImage} />
+        <meta property="og:image" content={ogImage} key={ogImage} />
       )}
-      <meta name='twitter:card' content='summary_large_image' />
-      <meta name='twitter:site' content={siteMetadata.twitter} />
-      <meta name='twitter:title' content={title} />
-      <meta name='twitter:description' content={description} />
-      <meta name='twitter:image' content={twImage} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content={siteMetadata.twitter} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={twImage} />
       <link
-        rel='canonical'
+        rel="canonical"
         href={
           canonicalUrl
             ? canonicalUrl
@@ -80,7 +81,7 @@ export const PageSEO = ({ title, description, imageUrl }: PageSEOProps) => {
     <CommonSEO
       title={title}
       description={description}
-      ogType='website'
+      ogType="website"
       ogImage={ogImageUrl}
       twImage={twImageUrl}
     />
@@ -96,14 +97,14 @@ export const TagSEO = ({ title, description }: PageSEOProps) => {
       <CommonSEO
         title={title}
         description={description}
-        ogType='website'
+        ogType="website"
         ogImage={ogImageUrl}
         twImage={twImageUrl}
       />
       <Head>
         <link
-          rel='alternate'
-          type='application/rss+xml'
+          rel="alternate"
+          type="application/rss+xml"
           title={`${description} - RSS feed`}
           href={`${siteMetadata.siteUrl}${router.asPath}/feed.xml`}
         />
@@ -132,38 +133,38 @@ export const BlogSEO = ({
   const imagesArr =
     images.length === 0
       ? [siteMetadata.socialBanner]
-      : typeof images === 'string'
+      : typeof images === "string"
       ? [images]
       : images;
 
-  const featuredImages = imagesArr.map(img => {
+  const featuredImages = imagesArr.map((img) => {
     return {
-      '@type': 'ImageObject',
+      "@type": "ImageObject",
       url: `${siteMetadata.siteUrl}${img}`,
     };
   });
 
   let authorList;
   if (authorDetails) {
-    authorList = authorDetails.map(author => {
+    authorList = authorDetails.map((author) => {
       return {
-        '@type': 'Person',
+        "@type": "Person",
         name: author.name,
       };
     });
   } else {
     authorList = {
-      '@type': 'Person',
+      "@type": "Person",
       name: siteMetadata.author,
     };
   }
 
   const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
+    "@context": "https://schema.org",
+    "@type": "Article",
     mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': url,
+      "@type": "WebPage",
+      "@id": url,
     },
     headline: title,
     image: featuredImages,
@@ -171,10 +172,10 @@ export const BlogSEO = ({
     dateModified: modifiedAt,
     author: authorList,
     publisher: {
-      '@type': 'Organization',
+      "@type": "Organization",
       name: siteMetadata.author,
       logo: {
-        '@type': 'ImageObject',
+        "@type": "ImageObject",
         url: `${siteMetadata.siteUrl}${siteMetadata.siteLogo}`,
       },
     },
@@ -188,25 +189,40 @@ export const BlogSEO = ({
       <CommonSEO
         title={title}
         description={summary}
-        ogType='article'
+        ogType="article"
         ogImage={featuredImages}
         twImage={twImageUrl}
         canonicalUrl={canonicalUrl}
       />
       <Head>
         {date && (
-          <meta property='article:published_time' content={publishedAt} />
+          <meta property="article:published_time" content={publishedAt} />
         )}
         {lastmod && (
-          <meta property='article:modified_time' content={modifiedAt} />
+          <meta property="article:modified_time" content={modifiedAt} />
         )}
         <script
-          type='application/ld+json'
+          type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(structuredData, null, 2),
           }}
         />
       </Head>
     </>
+  );
+};
+
+interface BasePageSEOProps {
+  slug: string;
+}
+export const GlobalPageSEO = ({ slug }: BasePageSEOProps) => {
+  const heading = config.seocontent.find((heading) => heading.slug === slug);
+
+  return (
+    <PageSEO
+      title={`${heading.title} | ${siteMetadata.title}`}
+      description={heading.description}
+      imageUrl={heading.banner}
+    />
   );
 };
