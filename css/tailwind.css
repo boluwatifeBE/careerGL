@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  /* body{
-    @apply dark:bg-gradient-to-r from-gray-900 to-gray-800
-  } */
   /* body {
     @apply bg-[#141414] text-white !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-red-600;
   } */
@@ -27,8 +24,11 @@
   @apply my-5;
 }
 
-/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.carousel {
+  @apply flex snap-x snap-mandatory gap-6 overflow-x-hidden;
 }
