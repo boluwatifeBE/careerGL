@@ -16,10 +16,10 @@ function SearchInput({ onChange, placeholder, filterIcon = false }: Props) {
         type='text'
         onChange={onChange}
         placeholder={placeholder}
-        className='block w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-appColor-50 focus:ring-appColor-50 dark:border-gray-900 dark:bg-gray-800 dark:text-gray-100'
+        className='block w-full rounded-md border border-slate-300 bg-white px-4 py-2 text-slate-900 focus:border-useGL-acent focus:ring-useGL-acent dark:border-slate-900 dark:bg-slate-800 dark:text-slate-100'
       />
       <svg
-        className='absolute right-3 top-3 h-5 w-5 text-gray-400 dark:text-gray-300'
+        className='absolute right-3 top-3 h-5 w-5 text-slate-400 dark:text-slate-300'
         xmlns='http://www.w3.org/2000/svg'
         fill='none'
         viewBox='0 0 24 24'
@@ -35,7 +35,7 @@ function SearchInput({ onChange, placeholder, filterIcon = false }: Props) {
       {filterIcon ? (
         <Link
           href='/tags'
-          className='absolute right-10 top-2 text-gray-400 dark:text-gray-300'
+          className='absolute right-10 top-2 text-slate-400 dark:text-slate-300'
         >
           <FilterIcon size={30} />
         </Link>
