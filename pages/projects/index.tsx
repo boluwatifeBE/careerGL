@@ -1,3 +1,4 @@
+import BlogSingleCard from '@/components/BlogSingleCard';
 import CardWithBanner from '@/components/CardWithBanner';
 import { Header } from '@/components/Form';
 import { PageSEO } from '@/components/SEO';
