@@ -48,7 +48,7 @@ const AppHeader = () => {
       <header
         className={`${
           isScrolled && ' shadow shadow-useGL-main/50 '
-        }   fixed  top-0 z-30 w-full overflow-x-hidden bg-white/50 py-3  backdrop-blur-lg transition-all  dark:bg-gray-900/50  `}
+        }   fixed  top-0 z-30 w-full overflow-x-hidden bg-slate-100/50 py-3  backdrop-blur-lg transition-all  dark:bg-slate-900/50  `}
       >
         <div className=' mx-auto flex items-center justify-between px-5 md:max-w-full md:px-12 lg:max-w-screen-2xl lg:px-20 2xl:px-10'>
           <div>
