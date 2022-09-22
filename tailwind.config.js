@@ -22,7 +22,10 @@ module.exports = {
       spacing: {
         '9/16': '56.25%',
       },
-      backgroundImage: { 'hero-banner': "url('/static/banner.png')" },
+      backgroundImage: {
+        'light-banner': "url('/static/banner.png')",
+        'dark-banner': "url('/static/darkBanner.png')",
+      },
       lineHeight: {
         11: '2.75rem',
         12: '3rem',

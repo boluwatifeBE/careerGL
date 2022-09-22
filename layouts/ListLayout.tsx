@@ -6,6 +6,7 @@ import Tag from '@/components/Tag';
 import formatDate from '@/lib/utils/formatDate';
 import { ComponentProps, useState } from 'react';
 import { PostFrontMatter } from 'types/PostFrontMatter';
+import BlogSingleCard from '@/components/BlogSingleCard';
 
 interface Props {
   posts: PostFrontMatter[];
@@ -37,7 +38,7 @@ export default function ListLayout({
 
   return (
     <>
-      <div className='fade-in divide-y-2 divide-gray-100 dark:divide-gray-800'>
+      <div className='fade-in divide-y-2 divide-slate-200 dark:divide-slate-800'>
         <Header title={title}>
           <SearchInput
             onChange={handleOnChange}
@@ -45,6 +46,24 @@ export default function ListLayout({
             filterIcon={true}
           />
         </Header>
+        <div>
+          {displayPosts.map(frontMatter => {
+            const { slug, date, title, summary, tags } = frontMatter;
+            return (
+              <BlogSingleCard
+                key={slug}
+                title={title}
+                summary={summary}
+                banner={undefined}
+                href={`/projects/${slug}`}
+                tags={tags}
+                authorPicture={'/static/blogs/careerGL-post.png'}
+                authorName={'CareerGL official'}
+                date={formatDate(date)}
+              />
+            );
+          })}
+        </div>
 
         <ul>
           {!filteredBlogPosts.length && (
@@ -57,7 +76,7 @@ export default function ListLayout({
                 <article className='space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0'>
                   <dl>
                     <dt className='sr-only'>Published on</dt>
-                    <dd className='text-base font-medium leading-6 text-gray-500 dark:text-gray-400'>
+                    <dd className='text-base font-medium leading-6 text-slate-500 dark:text-slate-400'>
                       <time dateTime={date}>{formatDate(date)}</time>
                     </dd>
                   </dl>
@@ -66,7 +85,7 @@ export default function ListLayout({
                       <h3 className='text-2xl font-bold leading-8 tracking-tight'>
                         <Link
                           href={`/blog/${slug}`}
-                          className='text-gray-900 dark:text-gray-100'
+                          className='text-slate-900 dark:text-slate-100'
                         >
                           {title}
                         </Link>
@@ -77,7 +96,7 @@ export default function ListLayout({
                         ))}
                       </div>
                     </div>
-                    <div className='prose max-w-none text-gray-500 dark:text-gray-400'>
+                    <div className='prose max-w-none text-slate-500 dark:text-slate-400'>
                       {summary}
                     </div>
                   </div>

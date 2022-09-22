@@ -1,23 +1,29 @@
 import Image from 'next/image';
 import Link from './Link';
 
-function CardWithBanner({ title, description, banner, href }): React.ReactElement {
+function CardWithBanner({
+  title,
+  description,
+  banner,
+  href,
+}): React.ReactElement {
   const image = (
     <Image
       alt={title}
       src={banner}
-      className='object-cover object-center md:h-36 lg:h-48'
+      className='object-cover object-center md:h-36 lg:h-48 '
       width={544}
       height={306}
+      style={{ borderTopLeftRadius: '0.5rem', borderTopRightRadius: '0.5rem' }}
     />
   );
 
   return (
-    <div className='md p-3   ' style={{ maxWidth: '544px' }}>
+    <div className='md p-3' style={{ maxWidth: '544px' }}>
       <div
         className={`${
           banner && 'h-full'
-        }  overflow-hidden rounded-md border-2 border-gray-100 border-opacity-60 bg-gray-100 hover:bg-gray-50 dark:border-gray-800 dark:bg-gray-800 dark:hover:bg-gray-700 `}
+        }  overflow-hidden rounded-lg  border-slate-100 border-opacity-60 bg-slate-100 hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-800 dark:hover:bg-slate-700 `}
       >
         {banner &&
           (href ? (
@@ -25,10 +31,10 @@ function CardWithBanner({ title, description, banner, href }): React.ReactElemen
               {image}
             </Link>
           ) : (
-            image
+            { image }
           ))}
         <div className='p-6'>
-          <h2 className='mb-3 text-[21px] font-bold leading-8 tracking-tight text-gray-800 dark:text-gray-200'>
+          <h2 className='mb-3 text-[21px] font-bold leading-8 tracking-tight text-slate-800 dark:text-slate-200'>
             {href ? (
               <Link href={href} aria-label={`Link to ${title}`}>
                 {title}
@@ -37,7 +43,7 @@ function CardWithBanner({ title, description, banner, href }): React.ReactElemen
               title
             )}
           </h2>
-          <p className='prose mb-3 max-w-none text-[14px] text-gray-500 line-clamp-2 dark:text-gray-400'>
+          <p className='prose mb-3 max-w-none text-[14px] text-slate-500 line-clamp-2 dark:text-slate-400'>
             {description}
           </p>
           {href && (

@@ -29,6 +29,12 @@ To get started look at the [list of good first issues](https://github.com/boluwa
 - Write tests
 - Create issues to discuss ideas 
 
+## Thanks to all contributors ❤
+
+ <a href = "https://github.com/boluwatifeBE/careerGL/graphs/contributors">
+   <img src = "https://contrib.rocks/image?repo=boluwatifeBE/careerGL"/>
+ </a>
+
 ## License
 
 Coming Soon

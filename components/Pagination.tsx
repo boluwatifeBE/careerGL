@@ -16,7 +16,7 @@ export default function Pagination({ totalPages, currentPage, type }: Props) {
       <nav className='flex justify-between'>
         {!prevPage && (
           <button
-            className='cursor-auto disabled:opacity-50'
+            className='cursor-auto disabled:opacity-20'
             disabled={!prevPage}
           >
             Previous
@@ -38,7 +38,7 @@ export default function Pagination({ totalPages, currentPage, type }: Props) {
         </span>
         {!nextPage && (
           <button
-            className='cursor-auto disabled:opacity-50'
+            className='cursor-auto disabled:opacity-20'
             disabled={!nextPage}
           >
             Next
