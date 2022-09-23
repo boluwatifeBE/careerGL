@@ -1,9 +1,9 @@
 ---
-name: Careermap 2
-shortname: Careermap 2
+name: John Doe
+shortname: John Doe
 avatar: /static/images/logo.png
 occupation: Careermap occupation
-company: Careermap company
+company: John Doe
 resume: https://drive.google.com/file/d/1Ao4cpA1ZXAU-63amqmWIsfB3IA1k6Ldz/view?usp=sharing
 email: 
 twitter: https://twitter.com/

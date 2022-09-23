@@ -9,5 +9,6 @@ email:
 twitter: https://twitter.com/
 linkedin: https://www.linkedin.com/
 github: https://github.com/
-bio: Roadmaps and advices hub for an internet accessible careers
 ---
+
+Roadmaps and advices hub for an internet accessible careers

@@ -152,25 +152,25 @@ export default function PostLayout({
                                     )}
                                   </dd>
                                 </div>
-                                <div>
+                                {/* <div>
                                   <dt className='sr-only'>Description</dt>
                                   <p className='break-words'>
                                     {author.bio}
                                   </p>
-                                </div>
+                                </div> */}
                               </dl>
                             </li>
                           ))}
                         </ul>
                       </dd>
                     </div>
-                    <div className='mt-6 text-right'>
+                    {/* <div className='mt-6 text-right'>
                       <Link href={discussUrl(slug)} rel='nofollow'>
                         {'Discuss on Twitter'}
                       </Link>
                       {` • `}
                       <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
-                    </div>
+                    </div> */}
                   </div>
 
                   <Comments frontMatter={frontMatter} />
