@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "@/components/Link";
 import Tag from "@/components/Tag";
-import AuthorDetailsCard from "./AuthorDetailsCard";
 import formatDate from "@/lib/utils/formatDate";
 
 type BlogGridCardProps = {
@@ -11,7 +10,6 @@ type BlogGridCardProps = {
   summary?: string;
   href: string,
   slug: string,
-  authors?: string[],
   date?: string;
 };
 
@@ -23,7 +21,6 @@ function BlogGridCard(props: BlogGridCardProps): React.ReactElement {
     summary,
     href,
     slug,
-    authors,
     date,
   } = props;
   const image = banner?.[0];
@@ -72,7 +69,6 @@ function BlogGridCard(props: BlogGridCardProps): React.ReactElement {
           <p className="mb-10 max-w-none text-sm text-slate-500 line-clamp-2 dark:text-slate-400">
             {summary}
           </p>
-          {/* <AuthorDetailsCard slug={slug} author={authors} /> */}
           <div className="ml-2 flex flex-wrap items-center text-[0.63rem] text-slate-400 lg:text-[0.75rem]">
             <time className="ml-2" dateTime={date}>
               {formatDate(date)}

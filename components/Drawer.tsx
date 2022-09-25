@@ -1,25 +1,17 @@
-import React from 'react';
-import { useRef, useEffect } from 'react';
-import { createPortal } from 'react-dom';
-import cn from 'classnames';
-import useMountTransition from './useMountTransition';
+import React from "react";
+import { useRef, useEffect } from "react";
+import { createPortal } from "react-dom";
+import cn from "classnames";
+import useMountTransition from "./useMountTransition";
 import {
-  HiCheck as CheckIcon,
-  HiRefresh as RepeatIcon,
   HiX as CloseIcon,
-} from 'react-icons/hi';
+} from "react-icons/hi";
 import {
-  convertNameToUrl,
   getBodyRef,
-  getFromLocalStorage,
   getPortalRootRef,
-  queryPathElementsById,
-} from './careers/RenderFunctions';
-import DrawerTextualContent from 'pages/careers/DrawerTextualContent';
+} from "./careers/RenderFunctions";
 
 type ContentDrawerProps = {
-  path?: string;
-  name?: string;
   onClose?: () => void;
   isOpen?: boolean;
   children?: React.ReactNode;
@@ -36,15 +28,10 @@ export function Drawer(props: ContentDrawerProps) {
     className,
     position,
     removeWhenClosed,
-    path,
-    name,
   } = props;
 
   const bodyRef = useRef(getBodyRef());
   const portalRootRef = useRef(getPortalRootRef());
-
-  const nameUrl = convertNameToUrl(name);
-  const isDone = getFromLocalStorage(nameUrl) === 'done';
 
   const isTransitioning = useMountTransition(isOpen, 300);
 
@@ -57,7 +44,7 @@ export function Drawer(props: ContentDrawerProps) {
       // Clean up the portal when drawer component unmounts
       portal.remove();
       // Ensure scroll overflow is removed
-      bodyElement.style.overflow = '';
+      bodyElement.style.overflow = "";
     };
   }, []);
 
@@ -65,9 +52,9 @@ export function Drawer(props: ContentDrawerProps) {
   useEffect(() => {
     const updatePageScroll = () => {
       if (isOpen) {
-        bodyRef.current.style.overflow = 'hidden';
+        bodyRef.current.style.overflow = "hidden";
       } else {
-        bodyRef.current.style.overflow = '';
+        bodyRef.current.style.overflow = "";
       }
     };
     updatePageScroll();
@@ -75,18 +62,18 @@ export function Drawer(props: ContentDrawerProps) {
 
   // Allow Escape key to dismiss the drawer
   useEffect(() => {
-    const onKeyPress = event => {
-      if (event.key === 'Escape') {
+    const onKeyPress = (event) => {
+      if (event.key === "Escape") {
         onClose();
       }
     };
 
     if (isOpen) {
-      window.addEventListener('keyup', onKeyPress);
+      window.addEventListener("keyup", onKeyPress);
     }
 
     return () => {
-      window.removeEventListener('keyup', onKeyPress);
+      window.removeEventListener("keyup", onKeyPress);
     };
   }, [isOpen, onClose]);
 
@@ -94,70 +81,34 @@ export function Drawer(props: ContentDrawerProps) {
     return null;
   }
 
-  if (!name) {
-    return null;
-  }
-
   return createPortal(
     <div
-      aria-hidden={isOpen ? 'false' : 'true'}
-      className={cn('drawer-container', {
+      aria-hidden={isOpen ? "false" : "true"}
+      className={cn("drawer-container", {
         open: isOpen,
         in: isTransitioning,
         className,
       })}
     >
       <div
-        className={cn('drawer px-6 dark:bg-gray-800 sm:w-[600px]', position)}
-        role='dialog'
+        className={cn("drawer px-6 dark:bg-gray-800 sm:w-[600px]", position)}
+        role="dialog"
       >
-        <div className='z-10 mt-[20px] mb-10 flex items-center justify-between'>
-          {!isDone && (
-            <IconButton
-              onClick={() => {
-                localStorage.setItem(nameUrl, 'done');
-                queryPathElementsById(nameUrl).forEach(item =>
-                  item?.classList?.add('done'),
-                );
-                onClose();
-              }}
-              className='flex cursor-pointer items-center space-x-1 rounded  bg-green-700 px-2 py-1'
-            >
-              <CheckIcon size={18} color='white' />
-              <span className='text-sm text-white'>Mark as Done</span>
-            </IconButton>
-          )}
-          {isDone && (
-            <IconButton
-              onClick={() => {
-                localStorage.removeItem(nameUrl);
-                queryPathElementsById(nameUrl).forEach(item =>
-                  item?.classList?.remove('done'),
-                );
-                onClose();
-              }}
-              className='flex cursor-pointer items-center space-x-1 rounded  bg-red-700 px-2 py-1'
-            >
-              <RepeatIcon size={18} color='white' />
-              <span className='text-sm text-white'>Mark as Pending</span>
-            </IconButton>
-          )}
+        <div className="z-10 mt-[20px] mb-10 flex items-center justify-between">
           <IconButton
             onClick={onClose}
-            className=' flex cursor-pointer items-center space-x-1 '
+            className=" flex cursor-pointer items-center space-x-1 "
           >
-            <CloseIcon size={20} className='' />
-            <span className='hidden sm:block'>Close</span>
+            <CloseIcon size={20} className="" />
+            <span className="hidden sm:block">Close</span>
           </IconButton>
         </div>
-
-        <DrawerTextualContent path={path} />
-
+        
         {children}
       </div>
-      <div aria-hidden className='backdrop' onClick={onClose} />
+      <div aria-hidden className="backdrop" onClick={onClose} />
     </div>,
-    portalRootRef.current,
+    portalRootRef.current
   );
 }
 

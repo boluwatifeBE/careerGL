@@ -1,85 +1,56 @@
-import Image from "next/image";
-import Link from "./Link";
+import { useState } from "react";
+import { Drawer } from "@/components/Drawer";
 import { AuthorFrontMatter } from "types/AuthorFrontMatter";
-import { formatSlug, getAllFilesFrontMatter, getFileBySlug } from "@/lib/mdx";
-import { PostFrontMatter } from "types/PostFrontMatter";
-import { GetStaticProps, InferGetStaticPropsType } from "next";
+import { Header } from "@/components/Form";
+import Image from "next/image";
 
 type AuthorDetailsCardProps = {
-  author?: string[];
-  slug?: string;
+  data: AuthorFrontMatter;
 };
 
-// export const getStaticProps: GetStaticProps<{
-//   authorDetails: Promise<any[]>;
-//   // initialDisplayPosts: ComponentProps<typeof ListLayout>['initialDisplayPosts'];
-//   // pagination: ComponentProps<typeof ListLayout>['pagination'];
-// }> = async () => {
-//   const posts = await getAllFilesFrontMatter("blog");
-//   const postIndex = allPosts.findIndex(post => formatSlug(post.slug) === slug);
-//   const post = getFileBySlug<PostFrontMatter>("blog", slug);
-//   // @ts-ignore
-//   const authorList = post.frontMatter.authors || ["default"];
-//   const authorPromise = authorList.map(async (author) => {
-//     const authorResults = getFileBySlug<AuthorFrontMatter>("authors", [author]);
-//     const authorResults = await getFileBySlug<AuthorFrontMatter>("authors", [
-//       author,
-//     ]);
-//     return authorResults.frontMatter;
-//   });
-//   const authorDetails = Promise.all(authorPromise);
+export default function AuthorDetailsCard(props: AuthorDetailsCardProps) {
+  const [isOpen, setIsOpen] = useState(false);
+  const { data } = props;
 
-//   return { props: { posts, authorDetails } };
-// };
-
-export default function AuthorDetailsCard({
-  author,
-  slug,
-}: AuthorDetailsCardProps): React.ReactElement {
-  // export default async function AuthorDetailsCard({
-  //   authorDetails
-  // }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <div className="md p-3" style={{ maxWidth: "544px" }}>
+    <>
       <div
-        className={`overflow-hidden rounded-lg  border-slate-100 border-opacity-60 bg-slate-100 hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-800 dark:hover:bg-slate-700 `}
+        aria-hidden
+        onClick={() => {
+          setIsOpen(!isOpen);
+        }}
+        className=" flex w-full cursor-pointer items-center justify-between"
       >
-        <div className="px-4 pt-2 pb-4">
-          {author.map((author) => (
-            {author}
-            // <li className="flex items-start space-x-3" key={author.name}>
-            //   <div>
-            //     {author.avatar && (
-            //       <Image
-            //         src={author.avatar}
-            //         width="50px"
-            //         height="50px"
-            //         alt="avatar"
-            //         className="h-10 w-[20%] rounded-full"
-            //       />
-            //     )}
-            //   </div>
-            //   <dl className="w-[90%] whitespace-normal text-sm font-medium leading-5">
-            //     <div>
-            //       <dt className="sr-only">Name</dt>
-            //       <dd className="text-xl font-semibold">
-            //         {author.twitter && (
-            //           <Link
-            //             href={author.twitter}
-            //             className="text-gray-700 hover:underline dark:text-gray-300 "
-            //           >
-            //             {author.name}
-            //           </Link>
-            //         )}
-            //       </dd>
-            //     </div>
-            //   </dl>
-            // </li>
-          ))}
-        </div>
+        {data.name}
       </div>
-    </div>
+
+      <Drawer
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+        position="right"
+        removeWhenClosed={true}
+      >
+        <div className="fade-in divide-y-2 divide-gray-100 dark:divide-gray-800">
+          <Header title="About" />
+          <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
+            <div className="flex flex-col items-center space-x-2 pt-8">
+              <Image
+                src={data.avatar}
+                alt="avatar"
+                width="192px"
+                height="192px"
+                className="h-48 w-48 rounded-full"
+              />
+              <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
+                {data.name}
+              </h3>
+              <div className="font-medium text-gray-500 dark:text-gray-400">
+                {data.occupation}
+              </div>
+            </div>
+          </div>
+        </div>
+      </Drawer>
+    </>
   );
 }
-
-// export default AuthorDetailsCard;

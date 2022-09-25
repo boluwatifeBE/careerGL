@@ -14,7 +14,7 @@ export default function BlogGrid({ posts }: Props) {
 
       {posts
         .slice(0, MAX_DISPLAY)
-        .map(({ title, summary, slug, tags, images, date, authors }) => (
+        .map(({ title, summary, slug, tags, images, date }) => (
           <>
             <BlogGridCard
               key={slug}
@@ -24,7 +24,6 @@ export default function BlogGrid({ posts }: Props) {
               summary={summary}
               href={`/projects/${slug}`}
               slug={slug}
-              authors={authors}
               date={date}
             />
           </>
