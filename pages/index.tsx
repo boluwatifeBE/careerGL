@@ -1,22 +1,30 @@
-import { PageSEO } from '@/components/SEO';
-import siteMetadata from '@/data/siteMetadata';
-import ScrollTopAndComment from '@/components/ScrollTopAndComment';
+import { GlobalPageSEO } from "@/components/SEO";
+import ScrollTopAndComment from "@/components/ScrollTopAndComment";
+import { BannerSection } from "@/components/homepage-section/BannerSection";
+import { FeaturedBlogAndAdsSection } from "@/components/homepage-section/FeaturedBlogAndAdsSection";
+import { GetStaticProps, InferGetStaticPropsType } from "next";
+import { ComponentProps } from "react";
+import { getAllFilesFrontMatter } from "@/lib/mdx";
+import BlogGrid from "@/components/blogs/BlogGrid";
+import { BlogGridWrapper } from "@/components/blogs/BlogGridWrapper";
 
-import { BannerSection } from '@/components/homepage-section/BannerSection';
-import { FeaturedBlogAndAdsSection } from '@/components/homepage-section/FeaturedBlogAndAdsSection';
+const SLUG = "home";
 
-import config from 'config';
-import BlogSingleCard from '@/components/BlogSingleCard';
+export const getStaticProps: GetStaticProps<{
+  posts: ComponentProps<typeof BlogGrid>["posts"];
+}> = async () => {
+  const posts = await getAllFilesFrontMatter("blog");
+  return { props: { posts } };
+};
 
-export default function Home() {
+export default function Home({
+  posts,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
-      <PageSEO
-        title={siteMetadata.title}
-        description={siteMetadata.description}
-      />
+      <GlobalPageSEO slug={SLUG} />
       <ScrollTopAndComment hide={false} />
-      <section className='divide-y-2 divide-slate-200 dark:divide-slate-800'>
+      <section className="divide-y-2 divide-slate-200 dark:divide-slate-800">
         {/* Hero Banner */}
         <BannerSection />
 
@@ -24,23 +32,10 @@ export default function Home() {
         <FeaturedBlogAndAdsSection />
 
         {/* All blogs */}
-        <section className='mt-20 pt-20'>
-          <h3 className='ml-3 py-16 text-5xl font-bold'>Latest Articles</h3>
-          <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3'>
-            {config.projects.map(({ slug, title, description, banner }) => (
-              <BlogSingleCard
-                key={slug}
-                title={title}
-                summary={description}
-                banner={banner}
-                href={`/projects/${slug}`}
-                tags={'Marketing'}
-                authorPicture={'/static/blogs/careerGL-post.png'}
-                authorName={'CareerGL official'}
-                date={'15 hours ago'}
-              />
-            ))}
-          </div>
+        <section className="mt-20 pt-20">
+          <BlogGridWrapper title={"Latest Articles"}>
+            <BlogGrid posts={posts} />
+          </BlogGridWrapper>
         </section>
       </section>
     </>

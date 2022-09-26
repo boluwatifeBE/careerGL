@@ -14,6 +14,13 @@ export interface SeoHeading {
 
 export const seocontent: SeoHeading[] = [
   {
+    title: "Home",
+    slug: "home",
+    banner: "",
+    description: 'Career GuideLine is a hub of curated career roadmaps, guides, advices to help you choose a career path, and grow in your career',
+    content: [],
+  },
+  {
     title: "Career Paths",
     slug: "careers",
     banner: "/static/tags/banner.png",
@@ -34,13 +41,6 @@ export const seocontent: SeoHeading[] = [
         description: "Internet",
       },
     ],
-  },
-  {
-    title: "Advice",
-    slug: "advice",
-    banner: "/static/tags/advice-banner.png",
-    description: "Expand your knowledge.",
-    content: [],
   },
   {
     title: "Articles",

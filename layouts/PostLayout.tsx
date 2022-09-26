@@ -14,13 +14,14 @@ import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
 import { PostFrontMatter } from 'types/PostFrontMatter';
 import { Toc } from 'types/Toc';
 import { OnScrollProgressbar } from '@/components/OnScrollProgressbar';
+import AuthorDetailsCard from '@/components/blogs/AuthorDetailsCard';
 
-const editUrl = fileName =>
-  `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`;
-const discussUrl = slug =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `${siteMetadata.siteUrl}/blog/${slug}`,
-  )}`;
+// const editUrl = fileName =>
+//   `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`;
+// const discussUrl = slug =>
+//   `https://mobile.twitter.com/search?q=${encodeURIComponent(
+//     `${siteMetadata.siteUrl}/blog/${slug}`,
+//   )}`;
 
 const postDateTemplate: Intl.DateTimeFormatOptions = {
   // weekday: 'long',
@@ -51,7 +52,7 @@ export default function PostLayout({
 
   const banner = images?.[0];
 
-  const url = `${siteMetadata.siteUrl}/blog/${slug}`;
+  const url = `${siteMetadata.url.web}/blog/${slug}`;
 
   return (
     <>
@@ -122,15 +123,15 @@ export default function PostLayout({
                       <dt className='sr-only'>Authors</dt>
                       <dd>
                         <ul>
-                          {authorDetails.map(author => (
+                          {authorDetails.map(authorData => (
                             <li
                               className='flex items-start space-x-3'
-                              key={author.name}
+                              key={authorData.name}
                             >
                               <div>
-                                {author.avatar && (
+                                {authorData.avatar && (
                                   <Image
-                                    src={author.avatar}
+                                    src={authorData.avatar}
                                     width='50px'
                                     height='50px'
                                     alt='avatar'
@@ -142,35 +143,36 @@ export default function PostLayout({
                                 <div>
                                   <dt className='sr-only'>Name</dt>
                                   <dd className='text-xl font-semibold'>
-                                    {author.twitter && (
+                                    {/* {authorData.twitter && (
                                       <Link
-                                        href={author.twitter}
+                                        href={authorData.twitter}
                                         className='text-gray-700 hover:underline dark:text-gray-300 '
                                       >
-                                        {author.name}
-                                      </Link>
-                                    )}
+                                        {authorData.name}
+                                        </Link>
+                                      )} */}
+                                    <AuthorDetailsCard data={authorData} />
                                   </dd>
                                 </div>
-                                <div>
+                                {/* <div>
                                   <dt className='sr-only'>Description</dt>
                                   <p className='break-words'>
-                                    {author.bio}
+                                    {authorData.bio}
                                   </p>
-                                </div>
+                                </div> */}
                               </dl>
                             </li>
                           ))}
                         </ul>
                       </dd>
                     </div>
-                    <div className='mt-6 text-right'>
+                    {/* <div className='mt-6 text-right'>
                       <Link href={discussUrl(slug)} rel='nofollow'>
                         {'Discuss on Twitter'}
                       </Link>
                       {` • `}
                       <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
-                    </div>
+                    </div> */}
                   </div>
 
                   <Comments frontMatter={frontMatter} />

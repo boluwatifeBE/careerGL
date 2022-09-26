@@ -137,7 +137,7 @@ export async function getAllFilesFrontMatter(folder: string) {
     const fileName = file.slice(prefixPaths.length + 1).replace(/\\/g, '/');
     // Remove Unexpected File
     if (path.extname(fileName) !== '.md' && path.extname(fileName) !== '.mdx') {
-      return;
+      return null;
     }
     const source = fs.readFileSync(file, 'utf8');
     const matterFile = matter(source);

@@ -2,10 +2,10 @@ import { Drawer } from '../Drawer';
 import React, { useState } from 'react';
 import {
   convertNameToUrl,
-  // formatSlugTolink,
   getFromLocalStorage,
   OpinionTick,
 } from './RenderFunctions';
+import { CareerDrawer } from './CareerDrawer';
 
 function ParentCard(item) {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,13 +48,13 @@ function ParentCard(item) {
       </div>
 
       <Drawer
-        name={item.name}
-        path={item.path}
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
         position='right'
         removeWhenClosed={true}
-      />
+      >
+        <CareerDrawer name={item.name} path={item.path} onClose={() => setIsOpen(false)} />
+      </Drawer>
     </div>
   );
 }

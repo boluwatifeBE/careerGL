@@ -2,11 +2,9 @@ import { GlobalHeader } from "@/components/Form";
 import Link from "@/components/Link";
 import { GlobalPageSEO } from "@/components/SEO";
 import Tag from "@/components/Tag";
-import config from "config";
 import { getAllTags } from "@/lib/tags";
 import kebabCase from "@/lib/utils/kebabCase";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
-import CardWithBanner from "@/components/CardWithBanner";
 
 const SLUG = 'topics';
 
@@ -45,19 +43,6 @@ export default function Tags({
             );
           })}
         </div>
-        {/* <div className='container py-12'>
-          <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3'>
-            {sortedTags.map((tag) => (
-              <CardWithBanner
-                key={kebabCase(tag)}
-                title={tag}
-                description={tagDetails.description}
-                banner={heading.banner}
-                href={`${heading.slug}/${kebabCase(tag)}`}
-              />
-            ))}
-          </div>
-        </div> */}
       </div>
     </>
   );
