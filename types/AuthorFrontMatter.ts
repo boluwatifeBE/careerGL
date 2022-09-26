@@ -1,14 +1,16 @@
 export type AuthorFrontMatter = {
   layout?: string;
   name: string;
+  bio?: string;
   shortname: string;
   avatar?: string;
   occupation: string;
   company: string;
   resume?: string;
-  email?: string;
-  twitter?: string;
-  linkedin?: string;
-  github?: string;
-  path?: string;
+  url?: {
+    email?: string;
+    twitter?: string;
+    linkedin?: string;
+    github?: string;
+  }
 };

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Drawer } from "@/components/Drawer";
 import { AuthorFrontMatter } from "types/AuthorFrontMatter";
-import { Header } from "@/components/Form";
 import Image from "next/image";
 
 type AuthorDetailsCardProps = {
@@ -31,7 +30,6 @@ export default function AuthorDetailsCard(props: AuthorDetailsCardProps) {
         removeWhenClosed={true}
       >
         <div className="fade-in divide-y-2 divide-gray-100 dark:divide-gray-800">
-          <Header title="About" />
           <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
             <div className="flex flex-col items-center space-x-2 pt-8">
               <Image
@@ -45,7 +43,10 @@ export default function AuthorDetailsCard(props: AuthorDetailsCardProps) {
                 {data.name}
               </h3>
               <div className="font-medium text-gray-500 dark:text-gray-400">
-                {data.occupation}
+                {data.bio}
+              </div>
+              <div className="font-medium text-gray-500 dark:text-gray-400">
+                Social Link
               </div>
             </div>
           </div>
