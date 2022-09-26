@@ -90,12 +90,12 @@ export default function CourseLayout({
                         </dd>
                         <dt className='sr-only'>Twitter</dt>
                         <dd>
-                          {author.twitter && (
+                          {author.url.twitter && (
                             <Link
-                              href={author.twitter}
+                              href={author.url.twitter}
                               className='text-primary-500 hover:text-primary-600 dark:hover:text-primary-400'
                             >
-                              {author.twitter.replace(
+                              {author.url.twitter.replace(
                                 'https://twitter.com/',
                                 '@',
                               )}
