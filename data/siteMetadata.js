@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'CareerGL',
   author: 'default',
   headerTitle: 'CareerGL',
-  description: 'Career GuideLine is a hub of curated career roadmaps, guides and other educational content to help guide an individual not to be confused about what to learn next.',
+  description: 'Career GuideLine is a hub of curated career roadmaps, guides, advices to help you choose a career path, and grow in your career',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteLogo: '/static/images/logo.png',
@@ -68,6 +68,7 @@ const siteMetadata = {
       // please provide a link below to your custom theme css file.
       // example: https://giscus.app/themes/custom_example.css
       themeURL: '',
+      loading: "lazy"
     },
     utterancesConfig: {
       // Visit the link below, and follow the steps in the 'configuration' section

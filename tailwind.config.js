@@ -22,6 +22,10 @@ module.exports = {
       spacing: {
         '9/16': '56.25%',
       },
+      backgroundImage: {
+        'light-banner': "url('/static/banner.png')",
+        'dark-banner': "url('/static/darkBanner.png')",
+      },
       lineHeight: {
         11: '2.75rem',
         12: '3rem',
@@ -47,6 +51,14 @@ module.exports = {
           700: '#333100',
           800: '#191800',
           900: '#000000',
+        },
+        useGL: {
+          main: '#008550',
+          acent: '#047684',
+          secondary: '#29347C',
+          darkMain: '#66b696',
+          darkAcent: '#4f9fa9',
+          darkSecondary: '#6971a3',
         },
       },
       screens: {

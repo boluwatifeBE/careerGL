@@ -1,11 +1,13 @@
-import { Header } from '@/components/Form';
-import Link from '@/components/Link';
-import Pagination from '@/components/Pagination';
-import SearchInput from '@/components/SearchInput';
-import Tag from '@/components/Tag';
-import formatDate from '@/lib/utils/formatDate';
-import { ComponentProps, useState } from 'react';
-import { PostFrontMatter } from 'types/PostFrontMatter';
+import { Header } from "@/components/Form";
+import Link from "@/components/Link";
+import Pagination from "@/components/Pagination";
+import SearchInput from "@/components/SearchInput";
+import Tag from "@/components/Tag";
+import formatDate from "@/lib/utils/formatDate";
+import { ComponentProps, useState } from "react";
+import { PostFrontMatter } from "types/PostFrontMatter";
+import BlogGrid from "@/components/blogs/BlogGrid";
+import { BlogGridWrapper } from "@/components/blogs/BlogGridWrapper";
 
 interface Props {
   posts: PostFrontMatter[];
@@ -20,10 +22,10 @@ export default function ListLayout({
   initialDisplayPosts = [],
   pagination,
 }: Props) {
-  const [searchValue, setSearchValue] = useState('');
-  const filteredBlogPosts = posts.filter(frontMatter => {
+  const [searchValue, setSearchValue] = useState("");
+  const filteredBlogPosts = posts.filter((frontMatter) => {
     const searchContent =
-      frontMatter.title + frontMatter.summary + frontMatter.tags.join(' ');
+      frontMatter.title + frontMatter.summary + frontMatter.tags.join(" ");
     return searchContent.toLowerCase().includes(searchValue.toLowerCase());
   });
 
@@ -37,47 +39,52 @@ export default function ListLayout({
 
   return (
     <>
-      <div className='fade-in divide-y-2 divide-gray-100 dark:divide-gray-800'>
+      <div className="fade-in divide-y-2 divide-slate-200 dark:divide-slate-800">
         <Header title={title}>
           <SearchInput
             onChange={handleOnChange}
-            placeholder={'Search Career'}
+            placeholder={"Search Career"}
             filterIcon={true}
           />
         </Header>
+        <div>
+          <BlogGridWrapper>
+            <BlogGrid posts={posts} />
+          </BlogGridWrapper>
+        </div>
 
         <ul>
           {!filteredBlogPosts.length && (
-            <p className='mt-8 text-center'>No posts found</p>
+            <p className="mt-8 text-center">No posts found</p>
           )}
-          {displayPosts.map(frontMatter => {
+          {displayPosts.map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter;
             return (
-              <li key={slug} className='py-4'>
-                <article className='space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0'>
+              <li key={slug} className="py-4">
+                <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                   <dl>
-                    <dt className='sr-only'>Published on</dt>
-                    <dd className='text-base font-medium leading-6 text-gray-500 dark:text-gray-400'>
+                    <dt className="sr-only">Published on</dt>
+                    <dd className="text-base font-medium leading-6 text-slate-500 dark:text-slate-400">
                       <time dateTime={date}>{formatDate(date)}</time>
                     </dd>
                   </dl>
-                  <div className='space-y-3 xl:col-span-3'>
+                  <div className="space-y-3 xl:col-span-3">
                     <div>
-                      <h3 className='text-2xl font-bold leading-8 tracking-tight'>
+                      <h3 className="text-2xl font-bold leading-8 tracking-tight">
                         <Link
                           href={`/blog/${slug}`}
-                          className='text-gray-900 dark:text-gray-100'
+                          className="text-slate-900 dark:text-slate-100"
                         >
                           {title}
                         </Link>
                       </h3>
-                      <div className='flex flex-wrap'>
-                        {tags.map(tag => (
+                      <div className="flex flex-wrap">
+                        {tags.map((tag) => (
                           <Tag key={tag} text={tag} />
                         ))}
                       </div>
                     </div>
-                    <div className='prose max-w-none text-gray-500 dark:text-gray-400'>
+                    <div className="prose max-w-none text-slate-500 dark:text-slate-400">
                       {summary}
                     </div>
                   </div>
@@ -91,7 +98,7 @@ export default function ListLayout({
         <Pagination
           currentPage={pagination.currentPage}
           totalPages={pagination.totalPages}
-          type={'blog'}
+          type={"blog"}
         />
       )}
     </>

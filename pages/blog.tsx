@@ -1,10 +1,11 @@
 import { getAllFilesFrontMatter } from '@/lib/mdx';
-import siteMetadata from '@/data/siteMetadata';
 import ListLayout from '@/layouts/ListLayout';
-import { PageSEO } from '@/components/SEO';
+import { GlobalPageSEO } from '@/components/SEO';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { ComponentProps } from 'react';
 import { POSTS_PER_PAGE } from 'config';
+
+const SLUG = 'blog';
 
 export const getStaticProps: GetStaticProps<{
   posts: ComponentProps<typeof ListLayout>['posts'];
@@ -28,10 +29,7 @@ export default function Blog({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
-      <PageSEO
-        title={`Blog - ${siteMetadata.author}`}
-        description={siteMetadata.description}
-      />
+      <GlobalPageSEO slug={SLUG} />
       <ListLayout
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
