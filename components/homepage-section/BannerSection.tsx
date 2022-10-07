@@ -9,7 +9,7 @@ const MAX_DISPLAY = 4;
 export const BannerSection = () => {
   return (
     <section className='relative flex  w-full flex-col  py-10 lg:flex-row lg:space-x-0'>
-      <div className='lg-px-0 flex h-[18rem] py-4 pl-10 pr-6 sm:h-[25rem] md:h-[28rem] lg:h-[25rem] lg:w-2/4 xl:h-[35rem]'>
+      <div className='lg-px-0 flex h-[18rem] py-4 pl-6 pr-6 sm:h-[25rem] md:h-[28rem] lg:h-[25rem] lg:w-2/4 xl:h-[35rem]'>
         <div className=' w-full rounded-2xl bg-light-banner  bg-cover bg-no-repeat object-cover shadow-[-8px_8px_0_rgba(15,23,42)] duration-200 ease-linear dark:bg-dark-banner dark:shadow-[-8px_8px_0_rgba(241,245,249)] md:shadow-[-13px_13px_0_rgba(15,23,42)] md:dark:shadow-[-13px_13px_0_rgba(241,245,249)]' />
       </div>
 
@@ -65,6 +65,7 @@ export const BannerSection = () => {
                   title={title}
                   description={description}
                   href={`/careers/${slug}`}
+                  className={'h-36 w-[265px] '}
                 />
               ))}
           </div>
@@ -83,6 +84,7 @@ export const BannerSection = () => {
                   title={title}
                   description={description}
                   href={`/careers/${slug}`}
+                  className={'h-36 w-[265px] '}
                 />
               ))}
           </ScrollContainer>

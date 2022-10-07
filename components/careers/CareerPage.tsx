@@ -9,8 +9,8 @@ export default function CareerPage(props: CareerProps) {
   const { slug, careermaps } = props;
 
   return (
-    <div className='container py-12'>
-      <div className='grid grid-cols-1 gap-4 sm:grid-cols-3 xl:grid-cols-4'>
+    <div className=' py-12'>
+      <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4'>
         {careermaps.map((careermap: CareerMapType) => (
           <CareermapItem
             isUpcoming={careermap.isUpcoming}
