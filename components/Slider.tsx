@@ -53,7 +53,7 @@ const Slider = ({ limit, slides }: sliderProps) => {
       type='button'
       onClick={isLeft ? previousImage : nextImage}
       className={`${arrowStyle} ${isLeft ? '-left-10  ' : '-right-10 '}`}
-      style={{ top: '40%' }}
+      style={{ top: '30%' }}
     >
       <span role='img' aria-label={`Arrow ${isLeft ? 'left' : 'right'}`}>
         {isLeft ? (
@@ -67,8 +67,8 @@ const Slider = ({ limit, slides }: sliderProps) => {
 
   return (
     <div className='flex w-full items-center justify-center  '>
-      <div className='relative w-full'>
-        <div className='carousel'>
+      <div className='relative w-full '>
+        <div className='carousel pl-2 pb-6'>
           {currentSlide === 0 ? sliderControl(false) : sliderControl(true)}
 
           {slides.slice(0, slideLength).map((slide, index) => (

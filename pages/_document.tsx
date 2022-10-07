@@ -41,7 +41,7 @@ class MyDocument extends Document {
           />
           <link rel='alternate' type='application/rss+xml' href='/feed.xml' />
         </Head>
-        <body className='bg-slate-100 text-slate-900 antialiased dark:bg-slate-900 dark:text-slate-50'>
+        <body className='bg-slate-200 text-slate-900 antialiased dark:bg-slate-900 dark:text-slate-50'>
           <Main />
           <NextScript />
         </body>
