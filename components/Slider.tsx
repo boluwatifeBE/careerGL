@@ -78,6 +78,7 @@ const Slider = ({ limit, slides }: sliderProps) => {
                 title={slide.title}
                 description={slide.description}
                 href={`/careers/${slide.slug}`}
+                className={'h-36 w-[265px] '}
               />
             </div>
           ))}
