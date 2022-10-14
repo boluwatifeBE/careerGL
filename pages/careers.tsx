@@ -1,5 +1,4 @@
-import { PageSEO } from '@/components/SEO';
-import siteMetadata from '@/data/siteMetadata';
+import { GlobalPageSEO } from '@/components/SEO';
 import { getFileBySlug } from '@/lib/mdx';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
@@ -31,12 +30,7 @@ export default function Home({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
-      <PageSEO
-        title={`Careers - ${siteMetadata.author}`}
-        description={
-          'Step by step guides and paths to learn different tools or technologies'
-        }
-      />
+      <GlobalPageSEO slug={'careers'} />
       <div className='divide-y divide-gray-200 dark:divide-gray-700'>
         <CareerGridLayout
           careers={careers}

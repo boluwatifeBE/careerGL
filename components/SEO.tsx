@@ -4,10 +4,19 @@ import siteMetadata from "@/data/siteMetadata";
 import { AuthorFrontMatter } from "types/AuthorFrontMatter";
 import { PostFrontMatter } from "types/PostFrontMatter";
 import config from "config";
+import { SeoHeadingContent } from "config/seo";
 
-interface CommonSEOProps {
-  title: string;
-  description: string;
+interface BasePageSEOProps {
+  slug?: string;
+}
+interface PageSEOProps extends BasePageSEOProps {
+  title?: string;
+  description?: string;
+  keywords?: string[];
+  imageUrl?: string;
+}
+
+interface CommonSEOProps extends PageSEOProps {
   ogType: string;
   ogImage:
     | string
@@ -22,6 +31,7 @@ interface CommonSEOProps {
 const CommonSEO = ({
   title,
   description,
+  keywords,
   ogType,
   ogImage,
   twImage,
@@ -33,9 +43,10 @@ const CommonSEO = ({
       <title>{title}</title>
       <meta name="robots" content="follow, index" />
       <meta name="description" content={description} />
+      <meta name="keywords" content={keywords ? keywords?.toString() : title} />
       <meta
         property="og:url"
-        content={`${siteMetadata.siteUrl}${router.asPath}`}
+        content={`${siteMetadata.url.web}${router.asPath}`}
       />
       <meta property="og:type" content={ogType} />
       <meta property="og:site_name" content={siteMetadata.title} />
@@ -58,29 +69,29 @@ const CommonSEO = ({
         href={
           canonicalUrl
             ? canonicalUrl
-            : `${siteMetadata.siteUrl}${router.asPath}`
+            : `${siteMetadata.url.web}${router.asPath}`
         }
       />
     </Head>
   );
 };
 
-interface PageSEOProps {
-  title: string;
-  description: string;
-  imageUrl?: string;
-}
-
-export const PageSEO = ({ title, description, imageUrl }: PageSEOProps) => {
+export const PageSEO = ({
+  title,
+  description,
+  imageUrl,
+  keywords,
+}: PageSEOProps) => {
   const ogImageUrl =
-    siteMetadata.siteUrl + (imageUrl ?? siteMetadata.socialBanner);
+    siteMetadata.url.web + (imageUrl ?? siteMetadata.socialBanner);
   const twImageUrl =
-    siteMetadata.siteUrl + (imageUrl ?? siteMetadata.socialBanner);
+    siteMetadata.url.web + (imageUrl ?? siteMetadata.socialBanner);
 
   return (
     <CommonSEO
       title={title}
       description={description}
+      keywords={keywords}
       ogType="website"
       ogImage={ogImageUrl}
       twImage={twImageUrl}
@@ -88,15 +99,20 @@ export const PageSEO = ({ title, description, imageUrl }: PageSEOProps) => {
   );
 };
 
-export const TagSEO = ({ title, description }: PageSEOProps) => {
-  const ogImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner;
-  const twImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner;
+export const TagSEO = ({ title, description, slug }: PageSEOProps) => {
+  const seoTitle = TagSeoDetails(slug)?.slug;
+  const capitalizeSeoTitle = ufirstletter(seoTitle);
+  const seoDescription = TagSeoDetails(slug)?.description;
+  const ogImageUrl = siteMetadata.url.web + siteMetadata.socialBanner;
+  const twImageUrl = siteMetadata.url.web + siteMetadata.socialBanner;
   const router = useRouter();
   return (
     <>
       <CommonSEO
-        title={title}
-        description={description}
+        title={`${capitalizeSeoTitle ? capitalizeSeoTitle : title} | ${
+          siteMetadata.title
+        }`}
+        description={seoDescription ? seoDescription : description}
         ogType="website"
         ogImage={ogImageUrl}
         twImage={twImageUrl}
@@ -105,8 +121,8 @@ export const TagSEO = ({ title, description }: PageSEOProps) => {
         <link
           rel="alternate"
           type="application/rss+xml"
-          title={`${description} - RSS feed`}
-          href={`${siteMetadata.siteUrl}${router.asPath}/feed.xml`}
+          title={`${seoDescription ? seoDescription : description} - RSS feed`}
+          href={`${siteMetadata.url.web}${router.asPath}/feed.xml`}
         />
       </Head>
     </>
@@ -140,7 +156,7 @@ export const BlogSEO = ({
   const featuredImages = imagesArr.map((img) => {
     return {
       "@type": "ImageObject",
-      url: `${siteMetadata.siteUrl}${img}`,
+      url: `${siteMetadata.url.web}${img}`,
     };
   });
 
@@ -176,7 +192,7 @@ export const BlogSEO = ({
       name: siteMetadata.author,
       logo: {
         "@type": "ImageObject",
-        url: `${siteMetadata.siteUrl}${siteMetadata.siteLogo}`,
+        url: `${siteMetadata.url.web}${siteMetadata.siteLogo}`,
       },
     },
     description: summary,
@@ -212,9 +228,6 @@ export const BlogSEO = ({
   );
 };
 
-interface BasePageSEOProps {
-  slug: string;
-}
 export const GlobalPageSEO = ({ slug }: BasePageSEOProps) => {
   const heading = config.seocontent.find((heading) => heading.slug === slug);
 
@@ -225,4 +238,15 @@ export const GlobalPageSEO = ({ slug }: BasePageSEOProps) => {
       imageUrl={heading.banner}
     />
   );
+};
+
+export const TagSeoDetails = (tag: string): SeoHeadingContent => {
+  const seoTopics = config.seocontent.find((seo) => seo.slug === "topics");
+  const seoTopicContent = seoTopics.content.find((seo) => seo.slug === tag);
+
+  return seoTopicContent;
+};
+
+export const ufirstletter = (data: string): string => {
+  return data?.charAt(0).toUpperCase() + data?.slice(1);
 };

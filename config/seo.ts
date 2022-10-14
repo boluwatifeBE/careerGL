@@ -1,5 +1,4 @@
 export type SeoHeadingContent = {
-  title: string;
   slug?: string;
   description?: string;
 };
@@ -7,7 +6,7 @@ export type SeoHeadingContent = {
 export interface SeoHeading {
   title: string;
   slug: string;
-  banner: string;
+  banner?: string;
   description: string;
   content?: SeoHeadingContent[];
 }
@@ -17,7 +16,8 @@ export const seocontent: SeoHeading[] = [
     title: "Home",
     slug: "home",
     banner: "",
-    description: 'Career GuideLine is a hub of curated career roadmaps, guides, advices to help you choose a career path, and grow in your career',
+    description:
+      "Career GuideLine is a hub of curated career roadmaps, guides, advices to help you choose a career path, and grow in your career",
     content: [],
   },
   {
@@ -36,9 +36,12 @@ export const seocontent: SeoHeading[] = [
       "Expand your knowledge. Whether you’re a beginner looking to define an industry term or an expert seeking strategic advice, there’s an article for everyone.",
     content: [
       {
-        title: "Advice",
         slug: "advice",
-        description: "Internet",
+        description: "Advice",
+      },
+      {
+        slug: "story",
+        description: "Story",
       },
     ],
   },

@@ -34,7 +34,7 @@ function SearchInput({ onChange, placeholder, filterIcon = false }: Props) {
       </svg>
       {filterIcon ? (
         <Link
-          href='/tags'
+          href='/topics'
           className='absolute right-10 top-2 text-slate-400 dark:text-slate-300'
         >
           <FilterIcon size={30} />

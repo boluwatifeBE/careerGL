@@ -28,6 +28,7 @@ const HeaderContent = (props: ContentProps) => {
           <PageSEO
             title={content.seo.title}
             description={content.seo.description}
+            keywords={content.seo.keywords}
           />
           <Header title={content.title} subtitle={content.description} />
         </div>

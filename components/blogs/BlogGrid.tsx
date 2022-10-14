@@ -5,15 +5,16 @@ const MAX_DISPLAY = 3;
 
 interface Props {
   posts: PostFrontMatter[];
+  maxDisplay?: number;
 }
 
-export default function BlogGrid({ posts }: Props) {
+export default function BlogGrid({ posts, maxDisplay }: Props) {
   return (
     <>
       {!posts.length && <p className="mt-8 text-center">No posts found</p>}
 
       {posts
-        .slice(0, MAX_DISPLAY)
+        .slice(0, maxDisplay)
         .map(({ title, summary, slug, tags, images, date }) => (
           <>
             <BlogGridCard
@@ -22,8 +23,7 @@ export default function BlogGrid({ posts }: Props) {
               title={title}
               tags={tags}
               summary={summary}
-              href={`/projects/${slug}`}
-              slug={slug}
+              hrefSlug={`/blog/${slug}`}
               date={date}
             />
           </>

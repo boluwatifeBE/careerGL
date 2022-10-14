@@ -6,8 +6,8 @@ const siteMetadata = {
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.png',
-  socialBanner: '/static/images/twitter-card.png',
+  image: '/static/images/logo.png',
+  socialBanner: '/static/images/logo.png',
   email: 'info@careergl.com',
   url: {
     web: "https://careergl.vercel.app",
