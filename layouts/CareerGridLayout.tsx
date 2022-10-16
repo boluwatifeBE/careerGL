@@ -16,7 +16,7 @@ function CareerGridLayout({
   initialDisplayCareers = [],
 }: Props) {
   const [searchValue, setSearchValue] = useState('');
-  const [visible, setVisible] = useState(3);
+  const [visible, setVisible] = useState(5);
 
   const filteredCareerCards = careers.filter(careerTitle => {
     const searchContent = careerTitle.title;
@@ -45,13 +45,13 @@ function CareerGridLayout({
         />
       </Header>
 
-      <div className='container py-12'>
-        <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3'>
+      <div className=' py-12'>
+        <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4'>
           {!filteredCareerCards.length && (
             <p className='mt-8 text-center'>No careers found</p>
           )}
 
-          {displayCareers.slice(0, visible).map((careerTitle) => {
+          {displayCareers.slice(0, visible).map(careerTitle => {
             const { slug, title, description } = careerTitle;
             return (
               <Card
@@ -66,8 +66,8 @@ function CareerGridLayout({
         <div className=' item-center flex content-center justify-center  pt-8	'>
           {visible < displayCareers.length && (
             <button
-              className=' content-between rounded-md border border-gray-200 bg-transparent py-2 px-4 font-semibold text-gray-900 hover:border-transparent 
-              hover:bg-appColor-50 dark:border-gray-700 dark:text-gray-50 dark:hover:text-gray-900'
+              className=' content-between rounded-md border border-gray-200 bg-transparent py-2 px-4 font-semibold  text-useGL-main 
+              hover:border-transparent  hover:bg-useGL-secondary/20 dark:border-gray-700  dark:text-useGL-darkMain dark:hover:bg-useGL-darkSecondary/20 '
               onClick={showMoreItems}
             >
               Load More

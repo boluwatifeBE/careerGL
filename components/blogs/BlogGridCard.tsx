@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Link from "@/components/Link";
-import Tag from "@/components/Tag";
-import formatDate from "@/lib/utils/formatDate";
+import Image from 'next/image';
+import Link from '@/components/Link';
+import Tag from '@/components/Tag';
+import formatDate from '@/lib/utils/formatDate';
 
 type BlogGridCardProps = {
   banner?: string[];
@@ -27,19 +27,19 @@ function BlogGridCard(props: BlogGridCardProps): React.ReactElement {
     <Image
       alt={title}
       src={image}
-      className="object-cover object-center md:h-36 lg:h-48 "
+      className='object-cover object-center md:h-36 lg:h-48 '
       width={544}
       height={306}
-      style={{ borderTopLeftRadius: "0.5rem", borderTopRightRadius: "0.5rem" }}
+      style={{ borderTopLeftRadius: '0.5rem', borderTopRightRadius: '0.5rem' }}
     />
   );
 
   return (
-    <div className="md p-3" style={{ maxWidth: "544px" }}>
+    <div className=' ' style={{ maxWidth: '544px' }}>
       <div
         className={`${
-          banner && "h-full"
-        }  overflow-hidden rounded-lg  border-slate-100 border-opacity-60 bg-slate-100 hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-800 dark:hover:bg-slate-700 `}
+          banner && 'h-full'
+        }  onHover overflow-hidden  rounded-lg border-slate-100 border-opacity-60  bg-slate-50 dark:border-slate-800 dark:bg-slate-700`}
       >
         {banner &&
           (hrefSlug ? (
@@ -49,10 +49,10 @@ function BlogGridCard(props: BlogGridCardProps): React.ReactElement {
           ) : (
             { bannerImage }
           ))}
-        <div className="px-4 pt-2 pb-4">
-          <p className="mb-3 cursor-pointer text-[0.58rem] font-semibold uppercase tracking-widest text-useGL-main md:text-[0.80rem]">
+        <div className='px-3 pt-2 pb-4'>
+          <p className='mb-3 cursor-pointer text-[0.58rem] font-semibold uppercase tracking-widest text-useGL-main md:text-[0.80rem]'>
             <Link href={`/topics/${tags}`} aria-label={`Link to ${tags}`}>
-              {tags.map((tag) => (
+              {tags.map(tag => (
                 <Tag key={tag} text={tag} />
               ))}
             </Link>
@@ -64,13 +64,11 @@ function BlogGridCard(props: BlogGridCardProps): React.ReactElement {
               </Link>
             )}
           </h2>
-          <p className="mb-10 max-w-none text-sm text-slate-500 line-clamp-2 dark:text-slate-400">
+          <p className='mb-10 max-w-none text-sm text-slate-500 line-clamp-2 dark:text-slate-400'>
             {summary}
           </p>
-          <div className="ml-2 flex flex-wrap items-center text-[0.63rem] text-slate-400 lg:text-[0.75rem]">
-            <time className="ml-2" dateTime={date}>
-              {formatDate(date)}
-            </time>
+          <div className='text-[0.63rem] text-slate-400 lg:text-[0.75rem]'>
+            <time dateTime={date}>{formatDate(date)}</time>
           </div>
         </div>
       </div>

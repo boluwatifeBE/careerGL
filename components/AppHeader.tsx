@@ -48,9 +48,9 @@ const AppHeader = () => {
       <header
         className={`${
           isScrolled && ' shadow shadow-useGL-main/50 '
-        }   fixed  top-0 z-30 w-full overflow-x-hidden bg-slate-100/50 py-3  backdrop-blur-lg transition-all  dark:bg-slate-900/50  `}
+        }   fixed  top-0 z-30 w-full overflow-x-hidden bg-slate-200/50 py-3  backdrop-blur-lg transition-all  dark:bg-slate-900/50  `}
       >
-        <div className=' mx-auto flex items-center justify-between px-5 md:max-w-full md:px-12 lg:max-w-screen-2xl lg:px-20 2xl:px-10'>
+        <div className=' mx-auto flex items-center justify-between px-5 md:max-w-full md:px-12 lg:max-w-screen-2xl lg:px-14 2xl:px-10'>
           <div>
             <Link href='/' aria-label={siteMetadata.headerTitle}>
               <div className='flex items-center justify-between'>
@@ -73,12 +73,12 @@ const AppHeader = () => {
               </div>
             </Link>
           </div>
-          <div className='hidden space-x-2 sm:block'>
+          <div className='hidden space-x-2  sm:block '>
             {headerNavLinks.map(link => (
               <Link
                 key={link.title}
                 href={link.href}
-                className='rounded py-1 px-2 font-medium text-gray-900 dark:text-gray-100 sm:py-2 sm:px-3 '
+                className='rounded py-1 px-2 font-medium text-gray-900  hover:bg-useGL-secondary/20 dark:text-gray-100 dark:hover:bg-useGL-darkSecondary/20 sm:py-2 sm:px-3 '
               >
                 {link.title}
               </Link>
