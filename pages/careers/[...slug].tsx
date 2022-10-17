@@ -55,7 +55,7 @@ export default function CareerSlug(
       <PageSEO
         title={title}
         description={description}
-        imageUrl={`/static/careers/${slug}/banner.png`}
+        imageUrl={`/static/careers/banner.png`}
       />
       <div className='fade-in divide-y-2 divide-gray-100 dark:divide-gray-800'>
         <Header title={title} subtitle={description} />

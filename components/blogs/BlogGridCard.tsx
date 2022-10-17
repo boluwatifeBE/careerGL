@@ -8,13 +8,19 @@ type BlogGridCardProps = {
   tags?: string[];
   title: string;
   summary?: string;
-  href: string;
-  slug: string;
+  hrefSlug?: string,
   date?: string;
 };
 
 function BlogGridCard(props: BlogGridCardProps): React.ReactElement {
-  const { banner, tags, title, summary, href, slug, date } = props;
+  const {
+    banner,
+    tags,
+    title,
+    summary,
+    hrefSlug,
+    date,
+  } = props;
   const image = banner?.[0];
 
   const bannerImage = (
@@ -36,8 +42,8 @@ function BlogGridCard(props: BlogGridCardProps): React.ReactElement {
         }  onHover overflow-hidden  rounded-lg border-slate-100 border-opacity-60  bg-slate-50 dark:border-slate-800 dark:bg-slate-700`}
       >
         {banner &&
-          (href ? (
-            <Link href={`blog/${slug}`} aria-label={`Link to ${title}`}>
+          (hrefSlug ? (
+            <Link href={hrefSlug} aria-label={`Link to ${title}`}>
               {bannerImage}
             </Link>
           ) : (
@@ -51,9 +57,9 @@ function BlogGridCard(props: BlogGridCardProps): React.ReactElement {
               ))}
             </Link>
           </p>
-          <h2 className='mb-4 pb-[0.14em] text-base font-bold leading-[26.4px] text-slate-800 line-clamp-2 dark:text-slate-200 md:text-[22px]  lg:text-lg xl:text-[24px]'>
-            {slug && (
-              <Link href={`blog/${slug}`} aria-label={`Link to ${title}`}>
+          <h2 className="mb-4 text-base font-bold leading-[26.4px] text-slate-800  dark:text-slate-200 md:text-[22px]">
+            {hrefSlug && (
+              <Link href={hrefSlug} aria-label={`Link to ${title}`}>
                 {title}
               </Link>
             )}
