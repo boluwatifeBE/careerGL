@@ -1,5 +1,4 @@
-import { TagSEO } from '@/components/SEO';
-import siteMetadata from '@/data/siteMetadata';
+import { TagSEO, ufirstletter } from '@/components/SEO';
 import ListLayout from '@/layouts/ListLayout';
 import generateRss from '@/lib/generate-rss';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
@@ -38,8 +37,8 @@ export const getStaticProps: GetStaticProps<{
 
   // rss
   if (filteredPosts.length > 0) {
-    const rss = generateRss(filteredPosts, `tags/${tag}/feed.xml`);
-    const rssPath = path.join(root, 'public', 'tags', tag);
+    const rss = generateRss(filteredPosts, `topics/${tag}/feed.xml`);
+    const rssPath = path.join(root, 'public', 'topics', tag);
     fs.mkdirSync(rssPath, { recursive: true });
     fs.writeFileSync(path.join(rssPath, 'feed.xml'), rss);
   }
@@ -53,12 +52,16 @@ export default function Tag({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   // Capitalize and convert space to dash
   const title = `#${tag.split(' ').join('-').toUpperCase()}`;
+  // First letter capitalize
+  const tagTitle = ufirstletter(tag);
+  const tagDescription = `Explore best curated contents on the topic ${tag}`;
 
   return (
     <>
       <TagSEO
-        title={`${tag} - ${siteMetadata.title}`}
-        description={`${tag} tags - ${siteMetadata.author}`}
+        title={tagTitle}
+        description={`${tag} Topics: ${tagDescription}`}
+        slug={tag}
       />
       <ListLayout posts={posts} title={title} />
     </>

@@ -113,7 +113,7 @@ inquirer
     if (!fs.existsSync('data/blog'))
       fs.mkdirSync('data/blog', { recursive: true });
     const filePath = `data/blog/${fileName ? fileName : 'untitled'}.${
-      answers.extension ? answers.extension : 'md'
+      answers.extension ? answers.extension : 'mdx'
     }`;
     fs.writeFile(filePath, frontMatter, { flag: 'wx' }, err => {
       if (err) {

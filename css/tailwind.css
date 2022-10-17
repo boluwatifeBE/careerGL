@@ -32,3 +32,11 @@ input:-webkit-autofill:focus {
 .carousel {
   @apply flex snap-x snap-mandatory gap-6 overflow-x-hidden;
 }
+
+.onHover {
+  @apply duration-200 ease-linear hover:translate-x-2 hover:shadow-[-8px_8px_0_rgba(15,23,42)] dark:hover:shadow-[-8px_8px_0_rgba(241,245,249)];
+}
+
+.tagLink {
+  @apply mr-2 py-1 px-2 text-sm font-normal capitalize  text-slate-500 hover:border-useGL-main hover:text-useGL-darkMain dark:border-slate-400  dark:text-slate-400 dark:hover:text-useGL-main;
+}
