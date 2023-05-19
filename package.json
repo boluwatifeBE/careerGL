@@ -11,7 +11,7 @@
     "analyze": "cross-env ANALYZE=true next build",
     "prettier-check": "prettier -c './src/**/*.{ts,tsx,js}'",
     "prettier-fix-src": "prettier -c './src/**/*.{ts,tsx,js}' --write",
-    "prettier-fix-all": "prettier --write .",
+    "lint": "prettier --write .",
     "prepare": "husky install",
     "preview": "yarn build && yarn serve",
     "test-e2e": "cd e2e && yarn install --no-lockfile --ignore-optional && yarn e2e-prod"
