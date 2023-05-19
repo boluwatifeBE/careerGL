@@ -27,7 +27,7 @@ export default function Tags({
       <div className="fade-in divide-y-2 divide-gray-100 dark:divide-gray-800">
         <GlobalHeader slug={SLUG} />
 
-        <div className="">
+        <div className='flex max-w-lg flex-wrap'>
           {Object.keys(tags).length === 0 && "No tags found."}
           {sortedTags.map((t) => {
             return (
@@ -35,7 +35,7 @@ export default function Tags({
                 <Tag text={t} />
                 <Link
                   href={`/topics/${kebabCase(t)}`}
-                  className="-ml-2 text-sm font-semibold uppercase text-gray-600 dark:text-gray-300"
+                  className="text-sm font-semibold uppercase text-gray-600 dark:text-gray-300"
                 >
                   {` (${tags[t]})`}
                 </Link>

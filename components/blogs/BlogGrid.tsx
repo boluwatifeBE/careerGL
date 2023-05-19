@@ -9,12 +9,13 @@ interface Props {
 }
 
 export default function BlogGrid({ posts, maxDisplay }: Props) {
+  const maximumDisplay: number = !maxDisplay ? maxDisplay : MAX_DISPLAY;
   return (
     <>
       {!posts.length && <p className='mt-8 text-center'>No posts found</p>}
 
       {posts
-        .slice(0, maxDisplay)
+        .slice(0, maximumDisplay)
         .map(({ title, summary, slug, tags, images, date }) => (
           <>
             <BlogGridCard
