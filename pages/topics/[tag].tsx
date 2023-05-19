@@ -7,7 +7,7 @@ import kebabCase from '@/lib/utils/kebabCase';
 import fs from 'fs';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import path from 'path';
-import { PostFrontMatter } from 'types/PostFrontMatter';
+import { PostFrontMatter } from '@/types/PostFrontMatter';
 
 const root = process.cwd();
 

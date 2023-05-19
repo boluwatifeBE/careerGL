@@ -2,7 +2,7 @@ import { Header } from '@/components/Form';
 import { PageSEO } from '@/components/SEO';
 import siteMetadata from '@/data/siteMetadata';
 // import { useRandomColorPair } from '@/lib/hooks/useRandomColorPair';
-import { contact } from 'config/contact';
+import { contact } from '@/config/contact';
 // import { openPopupWidget } from 'react-calendly';
 // import { RoughNotation } from 'react-rough-notation';
 
@@ -48,7 +48,7 @@ function Contact(): React.ReactElement {
                 animationDuration={2000}
                 color={randomColor}
               > */}
-                schedule a meeting
+              schedule a meeting
               {/* </RoughNotation> */}
             </span>
           </p>

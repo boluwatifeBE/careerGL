@@ -4,12 +4,12 @@ We appreciate you for showing an interest to contribute to CareerGL (Career Guid
 
 Furthermore, Kindly have in mind that our aim is not to have the most extensive list of items but to have the list of guides most relevant today.
 
-Finally, These are *highly opinionated* and *curated*. Your opinion on any resource may not match the view of the curator.
+Finally, These are _highly opinionated_ and _curated_. Your opinion on any resource may not match the view of the curator.
 
 ## Contributing
 
-* [Submitting guidelines](./guideline.md)
-* [Adding resources](./adding.md)
+- [Submitting guidelines](./guideline.md)
+- [Adding resources](./adding.md)
 
 ## Steps
 

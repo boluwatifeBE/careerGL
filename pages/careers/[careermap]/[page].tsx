@@ -7,7 +7,7 @@ import {
   CareerMapType,
   CareerTreeType,
   getAllCareers,
-} from 'config/careers/careerType';
+} from '@/config/careers/careerType';
 import { readCareerContentsFilePath } from '@/lib/mdx';
 import { CareerTreeRender } from '@/components/careers/CareerTreeRender';
 import React from 'react';

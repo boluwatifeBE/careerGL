@@ -1,6 +1,6 @@
 import CardWithBanner from '@/components/CardWithBanner';
 import { PageSEO } from '@/components/SEO';
-import config from 'config';
+import config from '@/config/index';
 import { InferGetStaticPropsType } from 'next';
 
 const SLUG = 'come';

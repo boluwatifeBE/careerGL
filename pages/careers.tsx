@@ -1,10 +1,10 @@
 import { GlobalPageSEO } from '@/components/SEO';
 import { getFileBySlug } from '@/lib/mdx';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
-import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
-import config from 'config';
+import { AuthorFrontMatter } from '@/types/AuthorFrontMatter';
 import { ComponentProps } from 'react';
 import CareerGridLayout from '@/layouts/CareerGridLayout';
+import config from '@/config/index';
 
 // @ts-ignore
 export const getStaticProps: GetStaticProps<{

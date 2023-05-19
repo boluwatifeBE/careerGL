@@ -1,7 +1,7 @@
 import CourseContent from '@/components/CourseContent';
 import { Header } from '@/components/Form';
 import { PageSEO } from '@/components/SEO';
-import config from 'config';
+import config from '@/config/index';
 import { InferGetStaticPropsType } from 'next';
 
 const SLUG = 'go';

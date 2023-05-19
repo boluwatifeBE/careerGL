@@ -2,16 +2,16 @@ const fs = require('fs');
 const globby = require('globby');
 const matter = require('gray-matter');
 const prettier = require('prettier');
-const siteMetadata = require('../data/siteMetadata');
+const siteMetadata = require('../src/data/siteMetadata');
 
 (async () => {
   const prettierConfig = await prettier.resolveConfig('./.prettierrc.js');
   const pages = await globby([
     'pages/*.js',
     'pages/*.tsx',
-    'data/blog/**/*.mdx',
-    'data/blog/**/*.md',
-    'data/careers/*/*/*.json',
+    'src/data/blog/**/*.mdx',
+    'src/data/blog/**/*.md',
+    'src/data/careers/*/*/*.json',
     'public/tags/**/*.xml',
     '!pages/_*.js',
     '!pages/_*.tsx',
@@ -36,8 +36,8 @@ const siteMetadata = require('../data/siteMetadata');
                 }
                 const path = page
                   .replace('pages/', '/')
-                  .replace('data/blog', '/blog')
-                  .replace('data/careers', '/careers')
+                  .replace('src/data/blog', '/blog')
+                  .replace('src/data/careers', '/careers')
                   .replace('/content-paths.json', '')
                   .replace('public/', '/')
                   .replace('.js', '')

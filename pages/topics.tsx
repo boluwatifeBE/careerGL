@@ -1,17 +1,17 @@
-import { GlobalHeader } from "@/components/Form";
-import Link from "@/components/Link";
-import { GlobalPageSEO } from "@/components/SEO";
-import Tag from "@/components/Tag";
-import { getAllTags } from "@/lib/tags";
-import kebabCase from "@/lib/utils/kebabCase";
-import { GetStaticProps, InferGetStaticPropsType } from "next";
+import { GlobalHeader } from '@/components/Form';
+import Link from '@/components/Link';
+import { GlobalPageSEO } from '@/components/SEO';
+import Tag from '@/components/Tag';
+import { getAllTags } from '@/lib/tags';
+import kebabCase from '@/lib/utils/kebabCase';
+import { GetStaticProps, InferGetStaticPropsType } from 'next';
 
 const SLUG = 'topics';
 
 export const getStaticProps: GetStaticProps<{
   tags: Record<string, number>;
 }> = async () => {
-  const tags = await getAllTags("blog");
+  const tags = await getAllTags('blog');
 
   return { props: { tags } };
 };
@@ -24,18 +24,18 @@ export default function Tags({
     <>
       <GlobalPageSEO slug={SLUG} />
 
-      <div className="fade-in divide-y-2 divide-gray-100 dark:divide-gray-800">
+      <div className='fade-in divide-y-2 divide-gray-100 dark:divide-gray-800'>
         <GlobalHeader slug={SLUG} />
 
-        <div className="">
-          {Object.keys(tags).length === 0 && "No tags found."}
-          {sortedTags.map((t) => {
+        <div className='flex max-w-lg flex-wrap'>
+          {Object.keys(tags).length === 0 && 'No tags found.'}
+          {sortedTags.map(t => {
             return (
-              <div key={t} className="mt-2 mb-2 mr-5">
+              <div key={t} className='mt-2 mb-2 mr-5'>
                 <Tag text={t} />
                 <Link
                   href={`/topics/${kebabCase(t)}`}
-                  className="-ml-2 text-sm font-semibold uppercase text-gray-600 dark:text-gray-300"
+                  className='text-sm font-semibold uppercase text-gray-600 dark:text-gray-300'
                 >
                   {` (${tags[t]})`}
                 </Link>

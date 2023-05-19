@@ -6,10 +6,11 @@ You could help us improve CareerGL by contributing to existing guidelines or add
 
 ## Development
 
-Setup locally with just 3 steps: 
-* Clone the repository, 
-* Install the dependencies 
-* Start the application
+Setup locally with just 3 steps:
+
+- Clone the repository,
+- Install the dependencies
+- Start the application
 
 ```bash
 git clone git@github.com:boluwatifeBE/careerGL.git
@@ -27,7 +28,7 @@ To get started look at the [list of good first issues](https://github.com/boluwa
 - Improve the site's codebase
 - Add new guideline
 - Write tests
-- Create issues to discuss ideas 
+- Create issues to discuss ideas
 
 ## Thanks to all contributors ❤
 
@@ -38,4 +39,3 @@ To get started look at the [list of good first issues](https://github.com/boluwa
 ## License
 
 Coming Soon
-
