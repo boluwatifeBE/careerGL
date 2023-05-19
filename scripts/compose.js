@@ -6,7 +6,7 @@ const dedent = require('dedent');
 const root = process.cwd();
 
 const getAuthors = () => {
-  const authorPath = path.join(root, 'data', 'authors');
+  const authorPath = path.join(root, DirRoo.DATA, 'authors');
   const authorList = fs
     .readdirSync(authorPath)
     .map(filename => path.parse(filename).name);

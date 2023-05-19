@@ -2,13 +2,13 @@ import { PageSEO } from '@/components/SEO';
 import siteMetadata from '@/data/siteMetadata';
 import ListLayout from '@/layouts/ListLayout';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
-import { POSTS_PER_PAGE } from 'config';
+import { MaxDisplay } from '@/types/enums';
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
-import { PostFrontMatter } from 'types/PostFrontMatter';
+import { PostFrontMatter } from '@/types/PostFrontMatter';
 
 export const getStaticPaths: GetStaticPaths<{ page: string }> = async () => {
   const totalPosts = await getAllFilesFrontMatter('blog');
-  const totalPages = Math.ceil(totalPosts.length / POSTS_PER_PAGE);
+  const totalPages = Math.ceil(totalPosts.length / MaxDisplay.POSTS_PER_PAGE);
   const paths = Array.from({ length: totalPages }, (_, i) => ({
     params: { page: (i + 1).toString() },
   }));
@@ -30,12 +30,12 @@ export const getStaticProps: GetStaticProps<{
   const posts = await getAllFilesFrontMatter('blog');
   const pageNumber = parseInt(page as string);
   const initialDisplayPosts = posts.slice(
-    POSTS_PER_PAGE * (pageNumber - 1),
-    POSTS_PER_PAGE * pageNumber,
+    MaxDisplay.POSTS_PER_PAGE * (pageNumber - 1),
+    MaxDisplay.POSTS_PER_PAGE * pageNumber,
   );
   const pagination = {
     currentPage: pageNumber,
-    totalPages: Math.ceil(posts.length / POSTS_PER_PAGE),
+    totalPages: Math.ceil(posts.length / MaxDisplay.POSTS_PER_PAGE),
   };
 
   return {

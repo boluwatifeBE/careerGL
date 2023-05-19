@@ -9,10 +9,17 @@
     "type-check": "tsc",
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
+    "prettier-check": "prettier -c './src/**/*.{ts,tsx,js}'",
+    "prettier-fix-src": "prettier -c './src/**/*.{ts,tsx,js}' --write",
     "lint": "prettier --write .",
     "prepare": "husky install",
-    "preview": "npm run build && npm run serve",
+    "preview": "yarn build && yarn serve",
     "test-e2e": "cd e2e && yarn install --no-lockfile --ignore-optional && yarn e2e-prod"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run ts:check && npm run prettier:fix && git add ."
+    }
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.7",

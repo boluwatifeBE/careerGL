@@ -11,10 +11,10 @@ module.exports = {
   },
   content: [
     './pages/**/*.tsx',
-    './components/**/*.tsx',
-    './layouts/**/*.tsx',
-    './lib/**/*.ts',
-    './data/**/*.mdx',
+    './src/components/**/*.tsx',
+    './src/layouts/**/*.tsx',
+    './src/lib/**/*.ts',
+    './src/data/**/*.mdx',
   ],
   darkMode: 'class',
   theme: {

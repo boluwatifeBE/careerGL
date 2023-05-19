@@ -32,8 +32,8 @@ export default function Home({
         <FeaturedBlogAndAdsSection posts={posts} />
 
         {/* All blogs */}
-        <section className="mt-20 pt-20">
-          <BlogGridWrapper title={"Latest Articles"}>
+        <section className='mt-20 pt-20'>
+          <BlogGridWrapper title={'Latest Articles'}>
             <BlogGrid posts={posts} maxDisplay={3} />
           </BlogGridWrapper>
         </section>

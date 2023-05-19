@@ -2,7 +2,7 @@ import CardWithBanner from '@/components/CardWithBanner';
 import { Header } from '@/components/Form';
 import { PageSEO } from '@/components/SEO';
 import siteMetadata from '@/data/siteMetadata';
-import config from 'config';
+import config from '@/config/index';
 
 export default function Projects() {
   return (
