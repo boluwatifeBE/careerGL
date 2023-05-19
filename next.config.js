@@ -59,7 +59,7 @@ module.exports = withBundleAnalyzer({
   reactStrictMode: true,
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   eslint: {
-    dirs: ['pages', 'components', 'lib', 'layouts', 'scripts', 'config'],
+    dirs: ['pages', 'src/components', 'src/lib', 'src/layouts', 'src/scripts', 'src/config'],
   },
   images: {
     domains: ['firebasestorage.googleapis.com'],

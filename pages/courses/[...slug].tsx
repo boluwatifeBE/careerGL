@@ -7,9 +7,9 @@ import {
   getFiles,
 } from '@/lib/mdx';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
-import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
-import { CourseFrontMatter } from 'types/CourseFrontMatter';
-import { Toc } from 'types/Toc';
+import { AuthorFrontMatter } from '@/types/AuthorFrontMatter';
+import { CourseFrontMatter } from '@/types/CourseFrontMatter';
+import { Toc } from '@/types/Toc';
 
 const DEFAULT_LAYOUT = 'CourseLayout';
 

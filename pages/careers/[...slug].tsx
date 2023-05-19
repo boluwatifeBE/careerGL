@@ -1,9 +1,9 @@
-import config from 'config';
+import config from '@/config/index';
 import { Header } from '@/components/Form';
 import { PageSEO } from '@/components/SEO';
 import { InferGetStaticPropsType } from 'next';
 import Career from '@/components/careers/CareerPage';
-import { getAllCareers } from 'config/careers/careerType';
+import { getAllCareers } from '@/config/careers/careerType';
 
 type StaticPathItem = {
   params: {
@@ -13,10 +13,10 @@ type StaticPathItem = {
 
 export async function getStaticPaths() {
   const careers = getAllCareers();
-  const paramsList: StaticPathItem[] = careers.flatMap((career) => {
+  const paramsList: StaticPathItem[] = careers.flatMap(career => {
     return {
       params: {
-        slug: [career.parentId]
+        slug: [career.parentId],
       },
     };
   });
@@ -45,10 +45,11 @@ export async function getStaticProps(context: ContextType) {
 export default function CareerSlug(
   props: InferGetStaticPropsType<typeof getStaticProps>,
 ): React.ReactElement {
-  
   const { careerObject, slug } = props;
   const { title, description } = careerObject;
-  const careerContents = getAllCareers().filter((careermap) => careermap.parentId === slug);
+  const careerContents = getAllCareers().filter(
+    careermap => careermap.parentId === slug,
+  );
 
   return (
     <>
