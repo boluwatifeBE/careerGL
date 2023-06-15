@@ -1,14 +1,10 @@
 import headerNavLinks from '@/data/headerNavLinks';
 import siteMetadata from '@/data/siteMetadata';
-import Link from './Link';
+import Link from '../Link';
 import MobileNav from './MobileNav';
-import ThemeSwitch from './ThemeSwitch';
+import ThemeSwitch from '../ThemeSwitch';
 import Image from 'next/image';
 import { memo, useEffect, useState } from 'react';
-
-// interface Props {
-//   children: ReactNode;
-// }
 
 const AppHeader = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -108,6 +104,9 @@ const AppHeader = () => {
           </div>
         </div>
       </header>
+      {/* <CommandPalette navigation={navigation} />
+      <ThemeSwitch />
+    */}
     </div>
   );
 };

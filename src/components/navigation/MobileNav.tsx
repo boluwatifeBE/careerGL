@@ -1,6 +1,6 @@
 import headerNavLinks from '@/data/headerNavLinks';
 import { MouseEventHandler } from 'react';
-import Link from './Link';
+import Link from '../Link';
 
 type INav = {
   show: boolean;
