@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
+import { motion } from 'framer-motion';
 import { IoMdMoon as MoonIcon } from 'react-icons/io';
 import { IoSunnyOutline as SunIcon } from 'react-icons/io5';
 
@@ -10,30 +11,32 @@ const ThemeSwitch = () => {
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), []);
 
+  const SetThemeSwitch = () => {
+    setTheme(theme === 'dark' || resolvedTheme === 'dark' ? 'light' : 'dark')
+  }
   return (
-    <button
-      aria-label='Toggle Dark Mode'
-      type='button'
-      className='ml-1 mr-1 h-8 w-8 rounded p-1 sm:ml-4'
-      onClick={() =>
-        setTheme(
-          theme === 'dark' || resolvedTheme === 'dark' ? 'light' : 'dark',
-        )
-      }
-    >
-      <svg
-        xmlns='http://www.w3.org/2000/svg'
-        viewBox='0 0 20 20'
-        fill='currentColor'
-        className='text-gray-900 dark:text-gray-100'
+    <div className="ml-1 cursor-pointer rounded-full bg-zinc-300 ring-zinc-400 transition-all hover:bg-zinc-300 hover:ring-1 dark:bg-zinc-700 dark:ring-white dark:hover:bg-zinc-800">
+      <motion.button
+        className="flex h-8 w-8 items-center justify-center p-2"
+        whileTap={{
+          scale: 0.7,
+          rotate: 360,
+        }}
+        whileHover={mounted ? { scale: 1.1 } : {}}
+        transition={{ duration: 0.2, ease: 'easeIn' }}
+        aria-label="Toggle Dark Mode"
+        type="button"
+        onClick={() => {
+          SetThemeSwitch()
+        }}
       >
         {mounted && (theme === 'dark' || resolvedTheme === 'dark') ? (
-          <SunIcon className='fade-in text-xl' />
+          <SunIcon className="h-4 w-4 hover:animate-spin" />
         ) : (
-          <MoonIcon className='fade-in text-xl' />
+          <MoonIcon className="h-4 w-4 hover:animate-spin" />
         )}
-      </svg>
-    </button>
+      </motion.button>
+    </div>
   );
 };
 

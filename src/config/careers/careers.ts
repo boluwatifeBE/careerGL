@@ -11,40 +11,27 @@ export const careers: Career[] = [
     slug: 'programming',
     banner: '',
     description:
-      'Master the fundamentals and advanced features of the programming languages',
+      'Master the fundamentals to advanced features of the programming languages',
   },
   {
     title: 'Marketing',
     slug: 'marketing',
     banner: '',
     description:
-      'Master the fundamentals and advanced techniques of the Marketing career',
+      'Master the fundamentals to advanced techniques of the Marketing career',
   },
   {
     title: 'Graphics',
     slug: 'graphics',
     banner: '',
     description:
-      'Master the fundamentals and advanced features of the graphics',
-  },
-  {
-    title: 'Photography',
-    slug: 'photography',
-    banner: '',
-    description:
-      'Master the fundamentals and advanced features of the photography career',
-  },
-  {
-    title: 'Music',
-    slug: 'music',
-    banner: '',
-    description: 'Master the fundamentals and advanced features of the music',
+      'Master the fundamentals to advanced features of the graphics',
   },
   {
     title: 'Writing',
     slug: 'writing',
     banner: '',
     description:
-      'Master the fundamentals and advanced features of the teaching career',
+      'Master the fundamentals to advanced features of the writing career',
   },
 ];
