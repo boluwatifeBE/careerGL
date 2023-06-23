@@ -41,6 +41,6 @@ export const writing: CareerMapType[] = [
     contentPathsFilePath: '/careers/writing/copywriting/content-paths.json',
     id: 'copywriting',
     parentId: 'writing',
-    isUpcoming: false,
+    isUpcoming: true,
   },
 ];
